@@ -6,7 +6,7 @@ from discord.ext import commands
 from discord import Intents, Guild, Embed, Colour, Interaction 
 
 
-from Enum.Electric import Electric
+from Types.Electric import Electric
 
 load_dotenv()
 
@@ -119,7 +119,27 @@ async def pikachu(interaction: Interaction):
 
         await interaction.response.send_message(embed=embed)
         
-        
+@client.tree.command(name="electric", description="Displays text back in Electric font")
+async def electricCheck(interaction: Interaction, text: str):
+    
+    eWord = ""
+    
+    for char in text:
+        try: 
+            if char == " ":
+                
+                eWord += " "
+                
+            else:
+                # print(f"{char.upper()}")
+                eWord += Electric[f'{char.upper()}'].value
+        except KeyError:
+            await interaction.response.send_message(embed=Embed(title="Command Error", description=f"KeyError {char}. Invalid charactor."))
+            return
+            
+    embed = Embed(colour=Colour.yellow(), title=f"{interaction.user} says: ", description=eWord)
+    
+    await interaction.response.send_message(embed=embed)
         
 
 
