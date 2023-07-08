@@ -6,6 +6,8 @@ from discord.ext import commands
 from discord import Intents, Guild, Embed, Colour, Interaction 
 
 
+from Enum.Electric import Electric
+
 load_dotenv()
 
 def calcBar(cur: int, max: int) -> int:
@@ -26,15 +28,15 @@ def createBar(barLevel: int = 0):
     
         # print(barLevel)
         
-        BAR_START_EMPTY = "<:bar_start_empty:1125966950854574090>"
-        BAR_MIDDLE_EMPTY = "<:bar_middle_empty:1125966934391926824>"
-        BAR_END_EMPTY = "<:bar_end_empty:1125966913521057853>"
+        BAR_START_EMPTY = Electric.BAR_START_EMPTY
+        BAR_MIDDLE_EMPTY = Electric.BAR_MIDDLE_EMPTY
+        BAR_END_EMPTY = Electric.BAR_END_EMPTY
         
-        BAR_START_FILL_ELECTRIC = "<:bar_start_fill_electric:1125967053522739321>"
-        BAR_START_FILL_ELECTRIC_END = "<:bar_start_fill2_electric_128:1125985276410466386>"
-        BAR_MIDDLE_FILL_ELECTRIC= "<:bar_middle_fill_electric:1125967066894180372>"
-        BAR_MIDDLE_FILL_ELECTRIC_END = "<:bar_middle_fill2_electric_128:1125985217438548039>"
-        BAR_END_FILL_ELECTRIC = "<:bar_end_fill_electric:1125967075060494487>"
+        BAR_START_FILL_ELECTRIC = Electric.BAR_START_FILL
+        BAR_START_FILL_ELECTRIC_END = Electric.BAR_START_FILL_SPLIT
+        BAR_MIDDLE_FILL_ELECTRIC= Electric.BAR_MIDDLE_FILL
+        BAR_MIDDLE_FILL_ELECTRIC_END = Electric.BAR_MIDDLE_FILL_SPLIT
+        BAR_END_FILL_ELECTRIC = Electric.BAR_END_FILL
         
         bar = ""
         
@@ -100,7 +102,7 @@ client = Discorion()
 @commands.check_any(commands.is_owner())
 async def pikachu(interaction: Interaction):
             
-        embed = Embed(colour=Colour.yellow(), title=f"{interaction.user.display_name}'s", description="<:Electric_P2_128:1125980509676249109><:Electric_I2_128:1125980544920981585><:Electric_K2_128:1125980564487405588><:Electric_A2_128:1125980583814774888><:Electric_C2_128:1125980895917121556><:Electric_H2_128:1125980654857883689><:Electric_U2_128:1125980699749523527>")
+        embed = Embed(colour=Colour.yellow(), title=f"{interaction.user.display_name}'s", description="<:Electric_P3_128:1127055622861492244><:Electric_I3_128:1127055570776625193><:Electric_K2_128:1125980564487405588><:Electric_A2_128:1125980583814774888><:Electric_C2_128:1127054541909663795><:Electric_H2_128:1125980654857883689><:Electric_U2_128:1125980699749523527>")
         embed.set_image(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938978797916180/Electric_icon_SwSh.png")
         
@@ -108,14 +110,13 @@ async def pikachu(interaction: Interaction):
         embed.add_field(name="Level", value=f"5", inline=True)
         embed.add_field(name="", value=f"{createSeparator(10)}", inline=False)
         
-        embed.add_field(name="HP [35/180]", value=f"{createBar(calcBar(35, 180))}", inline=False)
-        embed.add_field(name="HP [35/180]", value=f"{createBar(calcBar(55, 103))}", inline=False)
+        embed.add_field(name="HP [100/180]", value=f"{createBar(calcBar(100, 180))}", inline=False)
+        embed.add_field(name="Attack [55/103]", value=f"{createBar(calcBar(55, 103))}", inline=False)
         embed.add_field(name="Defense [40/79]", value=f"{createBar(calcBar(40, 79))}", inline=False)
         embed.add_field(name="Special Attack [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
         embed.add_field(name="Special Defense [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
         embed.add_field(name="Speed [90/166]", value=f"{createBar(calcBar(90, 166))}", inline=False)
 
-        
         await interaction.response.send_message(embed=embed)
         
         
