@@ -1,5 +1,5 @@
 import math
-from Types.Electric import Electric
+from poketypes.electric import Electric
 
 # print(Electric["A"].value)
 
@@ -8,9 +8,3 @@ from Types.Electric import Electric
 bruh = ""
 
 bruh = 10*"*"
-
-# print(bruh)
-
-for a in "hello gay":
-    
-    print(a.upper())
