@@ -48,4 +48,5 @@ package.nls.*.json
 l10n/
 .env
 test/
-PokeTools/
+poketools/
+discord.log

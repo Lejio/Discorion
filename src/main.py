@@ -38,11 +38,12 @@ client = Discorion()
 async def pikachu(interaction: Interaction):
             
         embed = Embed(colour=Colour.yellow(), title=f"{interaction.user.display_name}'s", description=f"{Electric.P.value}{Electric.I.value}{Electric.K.value}{Electric.A.value}{Electric.C.value}{Electric.H.value}{Electric.U.value}")
-        embed.set_image(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938978797916180/Electric_icon_SwSh.png")
+        # embed.set_image(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
+        # embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938978797916180/Electric_icon_SwSh.png")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
         
         # embed.add_field(name="", value=f"{createSeparator(10)}", inline=False)
-        embed.add_field(name="Level", value=f"5", inline=True)
+        embed.add_field(name="Level", value=f"5", inline=False)
         # embed.add_field(name="", value=f"{createSeparator(10)}", inline=False)
         
         embed.add_field(name=f"{Electric.H.value}{Electric.P.value} [100/180]", value=f"{createBar(calcBar(100, 180))}", inline=False)
@@ -51,6 +52,8 @@ async def pikachu(interaction: Interaction):
         embed.add_field(name=f"{Electric.S.value}{Electric.P.value} {Electric.A.value}{Electric.T.value}{Electric.K.value} [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
         embed.add_field(name=f"{Electric.S.value}{Electric.P.value} {Electric.D.value}{Electric.E.value}{Electric.F.value} [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
         embed.add_field(name=f"{Electric.S.value}{Electric.P.value}{Electric.E.value}{Electric.E.value}{Electric.D.value} [90/166]", value=f"{createBar(calcBar(90, 166))}", inline=False)
+        embed.add_field(name='test', value=str(60*'#'), inline=False)
+        
 
         await interaction.response.send_message(embed=embed)
         
