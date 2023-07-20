@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-import math
+import time
 
 import logging
 from discord.ext import commands
@@ -8,6 +8,7 @@ from discord import Intents, Guild, Embed, Colour, Interaction, errors
 
 from poketools.pokemon.pokecalc import *
 from poketypes.electric import Electric
+from pokeguilds import TypeGuilds
 
 load_dotenv()
 
@@ -78,6 +79,41 @@ async def electricCheck(interaction: Interaction, text: str):
         await channel.send("Interaction took too long to load.", embed=embed)
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+
+
+@client.tree.command(name="addemoji", description="Adds emoji automatically")
+async def addElectricEmojis(interaction: Interaction):
+
+    channel = interaction.channel
+
+    await interaction.response.send_message("Adding Emoji")
+    
+    alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    
+    for g in TypeGuilds:
+        # print(g.value['name'])
+        guild = client.get_guild(int(g.value['origin']))
+        await channel.send(guild.name)
+        for a in alphabet:
+            
+            path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
+            with open(path, "rb") as image:
+                f = image.read()
+                b = bytes(f)
+            
+            c = f"{g.value['name'][0]}_{a}"
+            print(c)
+            
+            emoji = await guild.create_custom_emoji(name=c, image=b)
+            time.sleep(1.5)
+            await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
+        await channel.send()
+    
+    
+@client.tree.command(name="search", description="Searches for a pokemon")
+async def searchPokemon(interaction: Interaction):
+    pass
+    
 
 client.run(os.environ['DISCORD_API_KEY'], log_handler=handler)
         
