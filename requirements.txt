@@ -9,3 +9,14 @@ frozenlist==1.3.3
 idna==3.4
 multidict==6.0.4
 yarl==1.9.2
+
+
+# PokeTools requirements
+beautifulsoup4==4.12.2
+bs4==0.0.1
+soupsieve==2.4.1
+psycopg2-binary==2.9.6
+python-dotenv==1.0.0
+SQLAlchemy==2.0.19
+sqlalchemy-cockroachdb==2.0.1
+typing_extensions==4.7.1
