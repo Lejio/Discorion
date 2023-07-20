@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import os
 import time
+from datetime import datetime
 
 import logging
 from discord.ext import commands
@@ -8,10 +9,13 @@ from discord import Intents, Guild, Embed, Colour, Interaction, errors
 
 from poketools.pokemon.pokecalc import *
 from poketypes.electric import Electric
+from poketools.pokegenerator.pokedatabase import FetchWild
 from pokeguilds import TypeGuilds
+from poketranslator import Style, PokeTranslator
+
 
 load_dotenv()
-
+cogs: list = ["pokestyles"]
 
 class Discorion(commands.Bot):
     
@@ -21,8 +25,24 @@ class Discorion(commands.Bot):
     
     async def on_ready(self):
         
-        print("Discorion is ready!")
+        """
+        Client event. Runs when the bot is ready and has successfully logged in.
+        """
+        print(f"\n{datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
+
+        try:
         
+            for cog in cogs:  # Loads each config into the client.
+
+                await client.load_extension(cog)
+                print(f"Loaded cog {cog}")
+
+            print("Successfully loaded all Cogs\n")
+        
+        except commands.ExtensionAlreadyLoaded:
+        
+            print("Extension already loaded")
+            
         a = await self.tree.sync()
         print(f"{len(a)} Synced")
 
@@ -58,62 +78,47 @@ async def pikachu(interaction: Interaction):
 
         await interaction.response.send_message(embed=embed)
         
-        
-@client.tree.command(name="electric", description="Displays text back in Electric font")
-async def electricCheck(interaction: Interaction, text: str):
+
+# @client.tree.command(name="addemoji", description="Adds emoji automatically")
+# async def addElectricEmojis(interaction: Interaction):
+
+#     channel = interaction.channel
+
+#     await interaction.response.send_message("Adding Emoji")
     
-    channel = interaction.channel
-        
-    try: 
-        eWord = translateText(text_style=Electric, text=text)
-    except KeyError:
-        await interaction.response.send_message(embed=Embed(title="Command Error", description=f"KeyError '{eWord}' not supported."))
-        return
+#     alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    
+#     for g in TypeGuilds:
+#         # print(g.value['name'])
+#         guild = client.get_guild(int(g.value['origin']))
+#         await channel.send(guild.name)
+#         for a in alphabet:
             
-    embed = Embed(colour=Colour.yellow(), title=f"{interaction.user} says: ", description=eWord)
-    
-    # print(eWord)
-    try:
-        await interaction.response.send_message(embed=embed)
-    except errors.NotFound:
-        await channel.send("Interaction took too long to load.", embed=embed)
-
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-
-
-@client.tree.command(name="addemoji", description="Adds emoji automatically")
-async def addElectricEmojis(interaction: Interaction):
-
-    channel = interaction.channel
-
-    await interaction.response.send_message("Adding Emoji")
-    
-    alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    
-    for g in TypeGuilds:
-        # print(g.value['name'])
-        guild = client.get_guild(int(g.value['origin']))
-        await channel.send(guild.name)
-        for a in alphabet:
+#             path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
+#             with open(path, "rb") as image:
+#                 f = image.read()
+#                 b = bytes(f)
             
-            path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
-            with open(path, "rb") as image:
-                f = image.read()
-                b = bytes(f)
+#             c = f"{g.value['name'][0]}_{a}"
+#             print(c)
             
-            c = f"{g.value['name'][0]}_{a}"
-            print(c)
-            
-            emoji = await guild.create_custom_emoji(name=c, image=b)
-            time.sleep(1.5)
-            await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
-        await channel.send()
+#             emoji = await guild.create_custom_emoji(name=c, image=b)
+#             time.sleep(1.5)
+#             await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
+#         await channel.send()
     
     
-@client.tree.command(name="search", description="Searches for a pokemon")
+@client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
 async def searchPokemon(interaction: Interaction):
-    pass
+    fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     
+    pokemon = fetch.getRandom()
+    
+    pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1]}"
+    
+    await interaction.response.send_message(pokemonMessage)
+    
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 
 client.run(os.environ['DISCORD_API_KEY'], log_handler=handler)
         

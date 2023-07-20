@@ -1,2 +1,6 @@
+from poketranslator import PokeTranslator, Style
+from poketypes.electric import Electric
 
-print(f"{20*'#'}")
+a = Style('Bug')
+
+print(a)
