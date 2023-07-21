@@ -137,10 +137,10 @@ async def uploadSprites(interaction: Interaction):
             with open(JSON_DIR + str(poke) + ".json", "r") as file:
                 data = json.load(file)
                 
-            emoji = await guild.create_custom_emoji(name=f"{data['name']}", image=b)
-            data['discord_sprite'] = f"<:{data['name']}:{emoji.id}>"
+            emoji = await guild.create_custom_emoji(name=f"P{poke}", image=b)
+            data['discord_sprite'] = f"<:P{poke}:{emoji.id}>"
             
-            await channel.send(f'{data["name"]} - {data["discord_sprite"]}')
+            await channel.send(f'P{poke} - {data["discord_sprite"]}')
             
             with open(JSON_DIR + str(poke) + ".json", "w") as file:
                 json.dump(data, file, indent=4)
@@ -150,7 +150,7 @@ async def uploadSprites(interaction: Interaction):
             guild_num += 1
             guild = client.get_guild(discord_db[guild_num].value)
         
-        time.sleep(1.25)
+        time.sleep(1.5)
     
 
 '''
@@ -188,8 +188,8 @@ async def uploadSprites(interaction: Interaction):
         with open(JSON_DIR + str(i) + ".json", "w") as file:
             json.dump(data, file, indent=4)
         
-        # ---------- Sleep so we won't get rate limited by discord api (this should take 21mins and 5secs) ----------
-        time.sleep(1.25)
+        # ---------- Sleep so we won't get rate limited by discord api (this should take ~24mins) ----------
+        time.sleep(1.5)
 '''
 
         
