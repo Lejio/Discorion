@@ -2,16 +2,18 @@ from dotenv import load_dotenv
 import os
 import time
 from datetime import datetime
+import json
 
 import logging
 from discord.ext import commands
-from discord import Intents, Guild, Embed, Colour, Interaction, errors
+from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 
 from poketools.pokemon.pokecalc import *
 from poketypes.electric import Electric
 from poketools.pokegenerator.pokedatabase import FetchWild
 from pokeguilds import TypeGuilds
 from poketranslator import Style, PokeTranslator
+from discorddatabase import DiscordDatabase
 
 
 load_dotenv()
@@ -50,7 +52,9 @@ class Discorion(commands.Bot):
     
     async def on_guild_join(self, guild: Guild):
         
-        print(f"Joined {guild.name}/{guild.id}")
+        guild_id = guild.name.replace(" ", "_")
+        
+        print(f"{guild_id} = {guild.id}")
         
 client = Discorion()
 
@@ -94,10 +98,10 @@ async def pikachu(interaction: Interaction):
 #         await channel.send(guild.name)
 #         for a in alphabet:
             
-#             path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
-#             with open(path, "rb") as image:
-#                 f = image.read()
-#                 b = bytes(f)
+            # path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
+            # with open(path, "rb") as image:
+            #     f = image.read()
+            #     b = bytes(f)
             
 #             c = f"{g.value['name'][0]}_{a}"
 #             print(c)
@@ -107,15 +111,107 @@ async def pikachu(interaction: Interaction):
 #             await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
 #         await channel.send()
     
+
+@client.tree.command(name="upload-sprites", description="Uploads sprites and images to both discord and cockroachdb")
+async def uploadSprites(interaction: Interaction):
     
+    discord_db = list(DiscordDatabase)
+    # JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
+    channel = interaction.channel
+    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/test/'
+    SPRITES_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/'
+    await interaction.response.send_message(len(interaction.guild.emojis))
+    guild_num = 0
+    guild = client.get_guild(discord_db[guild_num].value)
+    
+    for poke in range(1, 1011):
+        
+        if len(guild.emojis) < 50:
+                
+            # Need to add different versions in the future.
+            with open(SPRITES_DIR + str(poke) + ".png", "rb") as image:
+                f = image.read()
+                b = bytes(f)
+                
+            
+            with open(JSON_DIR + str(poke) + ".json", "r") as file:
+                data = json.load(file)
+                
+            emoji = await guild.create_custom_emoji(name=f"{data['name']}", image=b)
+            data['discord_sprite'] = f"<:{data['name']}:{emoji.id}>"
+            
+            await channel.send(f'{data["name"]} - {data["discord_sprite"]}')
+            
+            with open(JSON_DIR + str(poke) + ".json", "w") as file:
+                json.dump(data, file, indent=4)
+            
+                
+        else:
+            guild_num += 1
+            guild = client.get_guild(discord_db[guild_num].value)
+        
+        time.sleep(1.25)
+    
+
+'''
+
+# Uploads official artwork and saves the link inside of the json info file.
+
+@client.tree.command(name="upload-official-art", description="Uploads official art to discord and adds them to the json list.")
+async def uploadSprites(interaction: Interaction):
+    
+    # ---------- Saves the channel so it could be used to send the image after interaction expires ---------- #
+    channel = interaction.channel
+    
+    await interaction.response.send_message("Uploading images now.")
+    
+    # ---------- path to the official-artwork folder, all of them in the format of [pokedex-number].png. ----------
+    path = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/other/official-artwork/'
+    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
+    
+    # ---------- Loops through all the pokedex numbers (1 - 1010) ----------
+    for i in range(1, 1010):
+        print(str(i))
+        message = await channel.send(file=File(path + str(i) + ".png"))
+        
+        # ---------- Saves the image url ----------
+        image_url = message.attachments[0].url
+        
+        # ---------- Loads json file ----------
+        with open(JSON_DIR + str(i) + ".json", "r") as file:
+            data = json.load(file)
+        
+        # ---------- Create a new key and set the image url ----------
+        data['discord_image'] = image_url
+        
+        # ---------- Saves the newly changed json back to its original file ----------
+        with open(JSON_DIR + str(i) + ".json", "w") as file:
+            json.dump(data, file, indent=4)
+        
+        # ---------- Sleep so we won't get rate limited by discord api (this should take 21mins and 5secs) ----------
+        time.sleep(1.25)
+'''
+
+        
+        
+@client.tree.command(name="check-image", description='just to check if image link works')
+async def checkImage(interaction: Interaction):
+    
+    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
+
+    with open(JSON_DIR + "1.json", "r") as file:
+            data = json.load(file)
+            
+    await interaction.response.send_message(data['discord_image'])
+    
+
 @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
 async def searchPokemon(interaction: Interaction):
     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     
     pokemon = fetch.getRandom()
     
-    pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1]}"
-    
+    pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1][pokemon[1]['name']]}"
     await interaction.response.send_message(pokemonMessage)
     
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')

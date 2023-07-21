@@ -1,3 +1,5 @@
+from discord import Colour
+
 from poketypes.bug import Bug
 from poketypes.dark import Dark
 from poketypes.dragon import Dragon
@@ -52,39 +54,39 @@ def Style(style: str):
         
     match filteredStyle:
         case 'Bug':
-            return Bug
+            return [Bug, Colour.from_rgb(169, 187, 34)]
         case 'Dark':
-            return Dark
+            return [Dark, Colour.from_rgb(119, 84, 68)]
         case 'Dragon':
-            return Dragon
+            return [Dragon, Colour.from_rgb(118, 102, 238)]
         case 'Electric':
-            return Electric
+            return [Electric, Colour.from_rgb(255, 204, 51)]
         case 'Fairy':
-            return Fairy
+            return [Fairy, Colour.from_rgb(238, 153, 238)]
         case 'Fighting':
-            return Fighting
+            return [Fighting, Colour.from_rgb(186, 85, 68)]
         case 'Fire':
-            return Fire
+            return [Fire, Colour.from_rgb(255, 68, 34)]
         case 'Flying':
-            return Flying
+            return [Flying, Colour.from_rgb(135, 153, 255)]
         case 'Ghost':
-            return Ghost
+            return [Ghost, Colour.from_rgb(102, 102, 186)]
         case 'Grass':
-            return Grass
+            return [Grass, Colour.from_rgb(118, 204, 85)]
         case 'Ground':
-            return Ground
+            return [Ground, Colour.from_rgb(221, 187, 84)]
         case 'Ice':
-            return Ice
+            return [Ice, Colour.from_rgb(101, 204, 255)]
         case 'Normal':
-            return Normal
+            return [Normal, Colour.from_rgb(170, 170, 153)]
         case 'Poison':
-            return Poison
+            return [Poison, Colour.from_rgb(170, 85, 153)]
         case 'Psychic':
-            return Psychic
+            return [Psychic, Colour.from_rgb(254, 84, 152)]
         case 'Rock':
-            return Rock
+            return [Rock, Colour.from_rgb(187, 170, 102)]
         case 'Steel':
-            return Steel
+            return [Steel, Colour.from_rgb(170, 170, 187)]
         case 'Water':
-            return Water
+            return [Water, Colour.from_rgb(51, 153, 254)]
         
