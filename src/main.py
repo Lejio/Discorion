@@ -82,49 +82,54 @@ async def pikachu(interaction: Interaction):
 
         await interaction.response.send_message(embed=embed)
         
+'''
 
-# @client.tree.command(name="addemoji", description="Adds emoji automatically")
-# async def addElectricEmojis(interaction: Interaction):
 
-#     channel = interaction.channel
+@client.tree.command(name="add-font-styles", description="Adds emoji automatically")
+@commands.check_any(commands.is_owner())
+async def addElectricEmojis(interaction: Interaction):
 
-#     await interaction.response.send_message("Adding Emoji")
+    channel = interaction.channel
+
+    await interaction.response.send_message("Adding Emoji")
     
-#     alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     
-#     for g in TypeGuilds:
-#         # print(g.value['name'])
-#         guild = client.get_guild(int(g.value['origin']))
-#         await channel.send(guild.name)
-#         for a in alphabet:
+    for g in TypeGuilds:
+        # print(g.value['name'])
+        guild = client.get_guild(int(g.value['origin']))
+        await channel.send(guild.name)
+        for a in alphabet:
             
-            # path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
-            # with open(path, "rb") as image:
-            #     f = image.read()
-            #     b = bytes(f)
+            path = f"./assets/pokefonts/{g.value['name']}/{g.value['name']}_{a}.png"
+            with open(path, "rb") as image:
+                f = image.read()
+                b = bytes(f)
             
-#             c = f"{g.value['name'][0]}_{a}"
-#             print(c)
+            c = f"{g.value['name'][0]}_{a}"
+            print(c)
             
-#             emoji = await guild.create_custom_emoji(name=c, image=b)
-#             time.sleep(1.5)
-#             await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
-#         await channel.send()
-    
+            emoji = await guild.create_custom_emoji(name=c, image=b)
+            time.sleep(1.5)
+            await channel.send(f'{a} = "<:{c}-{emoji.id}>"')
+        await channel.send()
+'''
 
 @client.tree.command(name="upload-sprites", description="Uploads sprites and images to both discord and cockroachdb")
+@commands.check_any(commands.is_owner())
 async def uploadSprites(interaction: Interaction):
     
     discord_db = list(DiscordDatabase)
-    # JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
+    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
     channel = interaction.channel
-    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/test/'
+    # JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/test/'
     SPRITES_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/'
     await interaction.response.send_message(len(interaction.guild.emojis))
+    # time.sleep(1800)
     guild_num = 0
     guild = client.get_guild(discord_db[guild_num].value)
     
-    for poke in range(1, 1011):
+    for poke in range(50, 1011):
         
         if len(guild.emojis) < 50:
                 
@@ -149,9 +154,53 @@ async def uploadSprites(interaction: Interaction):
         else:
             guild_num += 1
             guild = client.get_guild(discord_db[guild_num].value)
+            
+            # Need to add different versions in the future.
+            with open(SPRITES_DIR + str(poke) + ".png", "rb") as image:
+                f = image.read()
+                b = bytes(f)
+                
+            
+            with open(JSON_DIR + str(poke) + ".json", "r") as file:
+                data = json.load(file)
+                
+            emoji = await guild.create_custom_emoji(name=f"P{poke}", image=b)
+            data['discord_sprite'] = f"<:P{poke}:{emoji.id}>"
+            
+            await channel.send(f'P{poke} - {data["discord_sprite"]}')
+            
+            with open(JSON_DIR + str(poke) + ".json", "w") as file:
+                json.dump(data, file, indent=4)
         
-        time.sleep(1.5)
+        time.sleep(10)
     
+
+
+@client.tree.command(name="remove-sprites", description='removes all sprites')
+@commands.check_any(commands.is_owner())
+async def removeSprites(interaction: Interaction):
+    
+    await interaction.response.send_message("deleting emojis")
+    discord_db = list(DiscordDatabase)
+    guild_num = 0
+    guild = client.get_guild(discord_db[guild_num].value)
+    
+    if len(guild.emojis) < 50:
+        
+        for i in range(0, 50):
+            try:
+                print(guild.emojis[i])
+                emoji = await guild.delete_emoji(guild.emojis[i])
+                time.sleep(1.5)
+            except IndexError:
+                pass
+    
+
+    else:
+        guild_num += 1
+        guild = client.get_guild(discord_db[guild_num].value) 
+        
+
 
 '''
 
@@ -195,6 +244,7 @@ async def uploadSprites(interaction: Interaction):
         
         
 @client.tree.command(name="check-image", description='just to check if image link works')
+@commands.check_any(commands.is_owner())
 async def checkImage(interaction: Interaction):
     
     JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
