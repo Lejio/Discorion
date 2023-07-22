@@ -43,7 +43,7 @@ def StyleBundler():
             'Water': Water}
 
 def PokeTranslator(style: str, text: str):
-    return translateText(text_style=Style(style=style), text=text)
+    return translateText(text_style=Style(style=style)[0], text=text)
 
 def Types():
     return [Bug, Dark, Dragon, Electric, Fairy, Fighting, Fire, Flying, Ghost, Grass, Ground, Ice, Normal, Poison, Psychic, Rock, Steel, Water]
