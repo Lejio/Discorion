@@ -9,10 +9,8 @@ from discord.ext import commands
 from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 
 from poketools.pokemon.pokecalc import *
-from poketypes.electric import Electric
 from poketools.pokegenerator.pokedatabase import FetchWild
 # from pokeguilds import TypeGuilds
-# from poketranslator import Style, PokeTranslator
 # from discorddatabase import DiscordDatabase
 
 
@@ -62,22 +60,20 @@ client = Discorion()
 @commands.check_any(commands.is_owner())
 async def pikachu(interaction: Interaction):
             
-        embed = Embed(colour=Colour.yellow(), title=f"{interaction.user.display_name}'s", description=f"{Electric.P.value}{Electric.I.value}{Electric.K.value}{Electric.A.value}{Electric.C.value}{Electric.H.value}{Electric.U.value}")
+        embed = Embed(colour=Colour.yellow(), title=f"{interaction.user.display_name}'s", description=f"{translateText(text_style=Style('electric')[0], text='Pikachu')}")
         # embed.set_image(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
         # embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938978797916180/Electric_icon_SwSh.png")
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1125937900421398552/1125938114247016548/pikachu-removebg-preview.png")
         
-        # embed.add_field(name="", value=f"{createSeparator(10)}", inline=False)
         embed.add_field(name="Level", value=f"5", inline=False)
-        # embed.add_field(name="", value=f"{createSeparator(10)}", inline=False)
         
-        embed.add_field(name=f"{Electric.H.value}{Electric.P.value} [100/180]", value=f"{createBar(calcBar(100, 180))}", inline=False)
-        embed.add_field(name=f"{Electric.A.value}{Electric.T.value}{Electric.T.value}{Electric.A.value}{Electric.C.value}{Electric.K.value} [55/103]", value=f"{createBar(calcBar(55, 103))}", inline=False)
-        embed.add_field(name=f"{Electric.D.value}{Electric.E.value}{Electric.F.value}{Electric.E.value}{Electric.N.value}{Electric.S.value}{Electric.E.value} [40/79]", value=f"{createBar(calcBar(40, 79))}", inline=False)
-        embed.add_field(name=f"{Electric.S.value}{Electric.P.value} {Electric.A.value}{Electric.T.value}{Electric.K.value} [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
-        embed.add_field(name=f"{Electric.S.value}{Electric.P.value} {Electric.D.value}{Electric.E.value}{Electric.F.value} [50/94]", value=f"{createBar(calcBar(50, 94))}", inline=False)
-        embed.add_field(name=f"{Electric.S.value}{Electric.P.value}{Electric.E.value}{Electric.E.value}{Electric.D.value} [90/166]", value=f"{createBar(calcBar(90, 166))}", inline=False)
-        embed.add_field(name='test', value=str(60*'#'), inline=False)
+        embed.add_field(name=f"100 {translateText(text_style=Style('electric')[0], text='HP')} 180", value=f"{createBar(calcBar(100, 180))}", inline=False)
+        embed.add_field(name=f"55 {translateText(text_style=Style('electric')[0], text='Attack')} 103", value=f"{createBar(calcBar(55, 103))}", inline=False)
+        embed.add_field(name=f"40 {translateText(text_style=Style('electric')[0], text='Defense')} 79", value=f"{createBar(calcBar(40, 79))}", inline=False)
+        embed.add_field(name=f"50 {translateText(text_style=Style('electric')[0], text='Sp Atk')} 94", value=f"{createBar(calcBar(50, 94))}", inline=False)
+        embed.add_field(name=f"50 {translateText(text_style=Style('electric')[0], text='Sp Def')} 94", value=f"{createBar(calcBar(50, 94))}", inline=False)
+        embed.add_field(name=f"90 {translateText(text_style=Style('electric')[0], text='Speed')} 166", value=f"{createBar(calcBar(90, 166))}", inline=False)
+        # embed.add_field(name='test', value=str(60*'#'), inline=False)
         
 
         await interaction.response.send_message(embed=embed)
