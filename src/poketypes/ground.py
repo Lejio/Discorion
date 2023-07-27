@@ -28,3 +28,12 @@ class Ground(Enum):
     X = "<:G_X:1131684919781900309>"
     Y = "<:G_Y:1131684928539607070>"
     Z = "<:G_Z:1131684937385394287>"
+    
+    # ICON = '<:GroundIC:1133942336204836956>'
+    ICON = '<:Ground:1133950684522369044>'
+    
+    BAR_END_FILL = '<:bar_end_fill_ground:1133844404763901982>'
+    BAR_START_FILL = '<:bar_start_fill_ground:1133844537421349036>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_ground:1133844460946600018>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_ground:1133844429157978313>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_ground:1133844478344568832>'

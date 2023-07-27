@@ -27,3 +27,12 @@ class Poison(Enum):
     X = "<:P_X:1131682260819660800>"
     Y = "<:P_Y:1131682269350858822>"
     Z = "<:P_Z:1131682277714305024>"
+    
+    # ICON = '<:PoisonIC:1133942067551272990>'
+    ICON = '<:Poison:1133950982259216426>'
+    
+    BAR_END_FILL = '<:bar_end_fill_poison:1133845333944848555>'
+    BAR_START_FILL = '<:bar_start_fill_poison:1133845453822234674>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_poison:1133845499468849152>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_poison:1133845362642276492>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_poison:1133845518821359759>' 

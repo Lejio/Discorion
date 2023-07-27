@@ -29,3 +29,12 @@ class Bug(Enum):
     X = "<:B_X:1131688368040845413>"
     Y = "<:B_Y:1131688376437854278>"
     Z = "<:B_Z:1131688384193110056>"
+    
+    # ICON = '<:BugIC:1133942889710370866>'
+    ICON = '<:Bug:1133950296255643738>'
+        
+    BAR_END_FILL = '<:bar_end_fill_bug:1133843032026923109>'    
+    BAR_START_FILL = '<:bar_start_fill_bug:1133843160200646676>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_bug:1133843136569937960>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_bug:1133843046715375656>'
+    BAR_START_FILL_SPLIT = "<:bar_start_fill_split_bug:1133843202919628910>"

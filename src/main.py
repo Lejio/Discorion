@@ -10,12 +10,15 @@ from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 
 from poketools.pokemon.pokecalc import *
 from poketools.pokegenerator.pokedatabase import FetchWild
-# from pokeguilds import TypeGuilds
-# from discorddatabase import DiscordDatabase
+from poketranslator import *
+from pokemon.pokemon import Pokemon
+from poketools.pokequery import PokeQuery
+from pokeembed import *
 
 
 load_dotenv()
 cogs: list = ["pokestyles"]
+registry = json.load(open('./pokemon/registry.json'))
 
 class Discorion(commands.Bot):
     
@@ -67,12 +70,14 @@ async def pikachu(interaction: Interaction):
         
         embed.add_field(name="Level", value=f"5", inline=False)
         
-        embed.add_field(name=f"100 {translateText(text_style=Style('electric')[0], text='HP')} 180", value=f"{createBar(calcBar(100, 180))}", inline=False)
-        embed.add_field(name=f"55 {translateText(text_style=Style('electric')[0], text='Attack')} 103", value=f"{createBar(calcBar(55, 103))}", inline=False)
-        embed.add_field(name=f"40 {translateText(text_style=Style('electric')[0], text='Defense')} 79", value=f"{createBar(calcBar(40, 79))}", inline=False)
-        embed.add_field(name=f"50 {translateText(text_style=Style('electric')[0], text='Sp Atk')} 94", value=f"{createBar(calcBar(50, 94))}", inline=False)
-        embed.add_field(name=f"50 {translateText(text_style=Style('electric')[0], text='Sp Def')} 94", value=f"{createBar(calcBar(50, 94))}", inline=False)
-        embed.add_field(name=f"90 {translateText(text_style=Style('electric')[0], text='Speed')} 166", value=f"{createBar(calcBar(90, 166))}", inline=False)
+        style = Style('electric')[0]
+        
+        embed.add_field(name=f"{translateText(text_style=style, text='HP')} [100/180]", value=f"{createBar(calcBar(100, 180), style)}", inline=False)
+        embed.add_field(name=f"{translateText(text_style=style, text='Attack')} [55/103]", value=f"{createBar(calcBar(55, 103), style)}", inline=False)
+        embed.add_field(name=f"{translateText(text_style=style, text='Defense')} [40/79]", value=f"{createBar(calcBar(40, 79), style)}", inline=False)
+        embed.add_field(name=f"{translateText(text_style=style, text='Sp Atk')} [50/94]", value=f"{createBar(calcBar(50, 94), style)}", inline=False)
+        embed.add_field(name=f"{translateText(text_style=style, text='Sp Def')} [50/94]", value=f"{createBar(calcBar(50, 94), style)}", inline=False)
+        embed.add_field(name=f"{translateText(text_style=style, text='Speed')} [90/166]", value=f"{createBar(calcBar(90, 166), style)}", inline=False)
         # embed.add_field(name='test', value=str(60*'#'), inline=False)
         
 
@@ -264,10 +269,32 @@ async def uploadSprites(interaction: Interaction):
         time.sleep(1.5)
 '''
 
+
+@client.tree.command(name='search-pokemon', description='Searches for a pokemon via pokedex number or name.')
+async def searchPokemon(interaction: Interaction, pokemon: str):
+
+    try:
+        int(pokemon)
+        query_type = 'number_based'
+    except ValueError:
+        query_type = 'name_based'
+        
+    queryEngine = PokeQuery(pokemon_object=registry[query_type])
+    result_list = queryEngine.query(user_input=pokemon)
+    print(result_list)
+    fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
+    response = fetch.getPokemon(int(result_list[1]))
+    
+    pokemon_response = Pokemon(response[1])
+    
+    # pokeEmbed = PokeCard(pokemon=pokemon_response)
+    pokeEmbed = PokeEmbed(pokemon=pokemon_response)
+    
+    await interaction.response.send_message(embed=pokeEmbed)
     
 
 @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
-async def searchPokemon(interaction: Interaction):
+async def getRandomPokemon(interaction: Interaction):
     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     
     pokemon = fetch.getRandom()

@@ -28,3 +28,12 @@ class Fairy(Enum):
     X = "<:F_X:1131687621257605241>"
     Y = "<:F_Y:1131687629193216040>"
     Z = "<:F_Z:1131687636667465729>"
+    
+    # ICON = '<:FairyIC:1133942697275686962>'
+    ICON = '<:Fairy:1133950418154692669>'
+    
+    BAR_END_FILL = '<:bar_end_fill_fairy:1133843297522159647>'
+    BAR_START_FILL = '<:bar_start_fill_fairy:1133843416191619204>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_fairy:1133843344460632084>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_fairy:1133843314332946472>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_fairy:1133843390400843787>'

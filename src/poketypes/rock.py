@@ -28,3 +28,12 @@ class Rock(Enum):
     X = "<:R_X:1131678719421976668>"
     Y = "<:R_Y:1131678729941303296>"
     Z = "<:R_Z:1131678738011132004>"
+    
+    # ICON = '<:RockIC:1133942118235263027>'
+    ICON = '<:Rock:1133950917251711126>'
+
+    BAR_END_FILL = '<:bar_end_fill_rock:1133845175890890782>'
+    BAR_START_FILL = '<:bar_start_fill_rock:1133845241028419598>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_rock:1133845225027141632>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_rock:1133845197680279614>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_rock:1133845259261071520>'

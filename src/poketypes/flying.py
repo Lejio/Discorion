@@ -28,3 +28,12 @@ class Flying(Enum):
     X = "<:F_X:1131686489525342338>"
     Y = "<:F_Y:1131686497318355085>"
     Z = "<:F_Z:1131686505421737984>"
+    
+    # ICON = '<:FlyingIC:1133942526735294556>'
+    ICON = '<:Flying:1133950570454077531>'
+
+    BAR_END_FILL = '<:bar_end_fill_flying:1133843812695941180>'
+    BAR_START_FILL = '<:bar_start_fill_flying:1133843981629915186>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_flying:1133843876118016080>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_flying:1133843851174490192>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_flying:1133843938306953286>'

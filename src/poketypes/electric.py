@@ -29,6 +29,8 @@ class Electric(Enum):
     Y = "<:E_Y:1131688811093557298>"
     Z = "<:E_Z:1131688819146633306>"
     
+    # ICON = '<:ElectricIC:1133942950020272249>'
+    ICON = '<:Electric:1133950222163267614>'
     
     BAR_START_FILL_SPLIT = "<:bar_start_fill_split_electric:1127078354856706099>"
     BAR_START_FILL = "<:bar_start_fill_electric:1127061273775972502>"

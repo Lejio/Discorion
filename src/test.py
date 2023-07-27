@@ -1,41 +1,39 @@
-from discorddatabase import DiscordDatabase
+from pokemon.pokemon import Pokemon
+from poketools.pokequery import PokeQuery
+from poketools.pokegenerator.pokedatabase import FetchWild
+
+from dotenv import load_dotenv
+
 import json
+import os
 
-def test():
-    discord_db = list(DiscordDatabase)
-    # JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
-    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/test/'
-    SPRITES_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/'
-    guild_num = 0
-    
-    guild_emojis = 0
-        
-    for poke in range(1, 10):
-        
-        if guild_emojis < 50:
-                
-            # Need to add different versions in the future.
-            with open(SPRITES_DIR + str(poke) + ".png", "rb") as image:
-                f = image.read()
-                b = bytes(f)
-                img = SPRITES_DIR + str(poke) + ".png"
-                
-            
-            with open(JSON_DIR + str(poke) + ".json", "r") as file:
-                data = json.load(file)
-                
-            data['discord_sprite'] = f"<:{data['name']}:{img}>"
-            
-            
-            with open(JSON_DIR + str(poke) + ".json", "w") as file:
-                json.dump(data, file, indent=4)
-            
-            guild_emojis += 1
-            
-                
-        else:
-            guild_num += 1
-            
+load_dotenv()
 
-test()
-        
+registry = json.load(open('./pokemon/registry.json'))
+query_pokemon = input('Enter a pokemon: ')
+
+try:
+    int(query_pokemon)
+    query_type = 'number_based'
+except ValueError:
+    query_type = 'name_based'
+
+queryEngine = PokeQuery(pokemon_object=registry[query_type])
+result_list = queryEngine.query(user_input=query_pokemon)
+
+fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
+response = fetch.getPokemon(int(result_list[1]))
+
+print(result_list)
+
+# print(response[1])
+# data = None
+
+# with open('./pokemon/25.json') as raw:
+#     data = json.load(raw)
+
+pokemon = Pokemon(response[1])
+
+print(pokemon.versions[0].national_number)
+print(pokemon.versions[0].type)
+

@@ -28,3 +28,12 @@ class Ice(Enum):
     X = "<:I_X:1131684525408268430>"
     Y = "<:I_Y:1131684533092233221>"
     Z = "<:I_Z:1131684541296300032>"
+    
+    # ICON = '<:IceIC:1133942273269313672>'
+    ICON = '<:Ice:1133950755930382466>'
+
+    BAR_END_FILL = '<:bar_end_fill_ice:1133844585450323988>'
+    BAR_START_FILL = '<:bar_start_fill_ice:1133844701657698386>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_ice:1133844646674571346>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_ice:1133844606832873592>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_ice:1133844672054304789>'

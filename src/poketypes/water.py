@@ -28,3 +28,12 @@ class Water(Enum):
     X = "<:W_X:1131694887817990225>"
     Y = "<:W_Y:1131694896445657098>"
     Z = "<:W_Z:1131694904259653682>"
+    
+    # ICON = '<:WaterIC:1133942213601153038>'
+    ICON = '<:Water:1133950816500322304>'
+
+    BAR_END_FILL = '<:bar_end_fill_water:1133844773954920568>'
+    BAR_START_FILL = '<:bar_start_fill_water:1133844902862651453>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_water:1133844801834467471>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_water:1133844859309015131>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_water:1133844886119010356>'

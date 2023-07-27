@@ -28,3 +28,13 @@ class Psychic(Enum):
     X = "<:P_X:1131681565563437157>"
     Y = "<:P_Y:1131681574941884466>"
     Z = "<:P_Z:1131681582944624661>"
+    
+    # ICON = '<:PsychicIC:1133942167493169194>'
+    ICON = '<:Psychic:1133950873387683871>'
+
+    BAR_END_FILL = '<:bar_end_fill_psychic:1133844957522841780>'
+    BAR_START_FILL = '<:bar_start_fill_psychic:1133845111751585853>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_psychic:1133845021511127077>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_psychic:1133844984118910976>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_psychic:1133845075491819682>'
+    

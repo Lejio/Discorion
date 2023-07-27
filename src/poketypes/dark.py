@@ -29,3 +29,12 @@ class Dark(Enum):
     X = "<:D_X:1131688050121003028>"
     Y = "<:D_Y:1131688058106957944>"
     Z = "<:D_Z:1131688065878994994>"
+    
+    # ICON = '<:DarkIC:1133942823549403248>'
+    ICON = '<:Dark:1133950344251064412>'
+
+    BAR_END_FILL = '<:bar_end_fill_dark:1133851195497259038>'
+    BAR_START_FILL = '<:bar_start_fill_dark:1133851312216350812>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_dark:1133851248643284992>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_dark:1133851216162590873>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_dark:1133851279089733632>'

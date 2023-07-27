@@ -29,3 +29,12 @@ class Grass(Enum):
     X = "<:G_X:1131685301228666910>"
     Y = "<:G_Y:1131685308895862824>"
     Z = "<:G_Z:1131685317573877760>"
+    
+    # ICON = '<:GrassIC:1133942394543419464>'
+    ICON = '<:Grass:1133950635788742709>'
+    
+    BAR_END_FILL = '<:bar_end_fill_grass:1133844250770022480>'
+    BAR_START_FILL = '<:bar_start_fill_grass:1133844328284950599>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_grass:1133844314347274351>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_grass:1133844270026072104>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_grass:1133844346727305327>'

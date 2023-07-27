@@ -27,3 +27,12 @@ class Normal(Enum):
     X = "<:N_X:1131683789123354664>"
     Y = "<:N_Y:1131683796786368513>"
     Z = "<:N_Z:1131683805313380362>"
+    
+    # ICON = '<:NormalIC:1133941298450137128>'
+    ICON = '<:Normal:1133951091030106222>'
+    
+    BAR_END_FILL = '<:bar_end_fill_normal:1133851833488642210>'
+    BAR_START_FILL = '<:bar_start_fill_normal:1133851931455012944>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_normal:1133851881404383253>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_normal:1133851852732121159>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_normal:1133851907975286865>'

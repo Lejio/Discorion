@@ -28,3 +28,12 @@ class Fighting(Enum):
     X = "<:F_X:1131687191857348658>"
     Y = "<:F_Y:1131687201806233720>"
     Z = "<:F_Z:1131687210069004390>"
+    
+    # ICON = '<:FightingIC:1133942637817237504>'
+    ICON = '<:Fighting:1133950459019788338>'
+    
+    BAR_END_FILL = '<:bar_end_fill_fighting:1133843482511937647>'
+    BAR_START_FILL = '<:bar_start_fill_fighting:1133843538367484074>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_fighting:1133843556839194746>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_fighting:1133843519371489331>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_fighting:1133843573222150246>'

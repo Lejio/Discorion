@@ -30,3 +30,12 @@ class Dragon(Enum):
     X = "<:D_X:1131689181559672872>"
     Y = "<:D_Y:1131689190665506916>"
     Z = "<:D_Z:1131689199653879968>"
+    
+    # ICON = '<:DragonIC:1133942765701578822>'
+    ICON = '<:Dragon:1133950382561841303>'
+    
+    BAR_END_FILL = '<:bar_end_fill_dragon:1133842329657151614>'
+    BAR_START_FILL = '<:bar_start_fill_dragon:1133842745971196025>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_dragon:1133842370278998109>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_dragon:1133842353958957107>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_dragon:1133842410032603209>'

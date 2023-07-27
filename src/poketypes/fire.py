@@ -28,3 +28,12 @@ class Fire(Enum):
     X = "<:F_X:1131686882217046056>"
     Y = "<:F_Y:1131686891293524138>"
     Z = "<:F_Z:1131686899786989618>"
+    
+    # ICON = '<:FireIC:1133942586428620860>'
+    ICON = '<:Fire:1133950498345586689>'
+    
+    BAR_END_FILL = '<:bar_end_fill_fire:1133843621632806973>'
+    BAR_START_FILL = '<:bar_start_fill_fire:1133843726691737752>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_fire:1133843707397935264>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_fire:1133843649764007978>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_fire:1133843745431896104>'

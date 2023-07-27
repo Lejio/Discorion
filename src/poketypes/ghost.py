@@ -28,3 +28,12 @@ class Ghost(Enum):
     X = "<:G_X:1131685624550785154>"
     Y = "<:G_Y:1131685632717103164>"
     Z = "<:G_Z:1131685641755836466>"
+    
+    # ICON = '<:GhostIC:1133942459529973770>'
+    ICON = '<:Ghost:1133950605942083756>'
+    
+    BAR_END_FILL = '<:bar_end_fill_ghost:1133844071450943518>'
+    BAR_START_FILL = '<:bar_start_fill_ghost:1133844159661346856>'
+    BAR_MIDDLE_FILL_SPLIT = '<:bar_middle_fill_split_ghost:1133844178426662952>'
+    BAR_MIDDLE_FILL = '<:bar_middle_fill_ghost:1133844097325600838>'
+    BAR_START_FILL_SPLIT = '<:bar_start_fill_split_ghost:1133844196881596516>'
