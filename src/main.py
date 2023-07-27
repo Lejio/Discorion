@@ -280,15 +280,19 @@ async def searchPokemon(interaction: Interaction, pokemon: str):
         query_type = 'name_based'
         
     queryEngine = PokeQuery(pokemon_object=registry[query_type])
+    
     result_list = queryEngine.query(user_input=pokemon)
     print(result_list)
+    
+    if result_list is None:
+        await interaction.response.send_message(embed=Embed(colour=Colour.red(), title='404 Error: Pokemon Not Found'))
+        
     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     response = fetch.getPokemon(int(result_list[1]))
     
     pokemon_response = Pokemon(response[1])
     
-    # pokeEmbed = PokeCard(pokemon=pokemon_response)
-    pokeEmbed = PokeEmbed(pokemon=pokemon_response)
+    pokeEmbed = PokeStats(pokemon=pokemon_response)
     
     await interaction.response.send_message(embed=pokeEmbed)
     
