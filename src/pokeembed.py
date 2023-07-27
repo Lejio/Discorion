@@ -1,4 +1,9 @@
-from discord import Embed
+from typing import Any, List, Optional
+from discord import Embed, InteractionMessage, Interaction, SelectOption
+from discord.components import SelectOption
+from discord.interactions import Interaction
+from discord.ui import View, Button, Select, Item, button
+from discord.utils import MISSING
 from poketranslator import translateText, Style
 from poketools.pokemon.pokecalc import *
 from pokemon.pokemon import Pokemon
@@ -44,4 +49,84 @@ class PokeInfo(Embed):
         else:
             self.add_field(name='Pokedex Entry:', value="???", inline=False)
         self.set_image(url=pokemon.discord_image)
+
+
+class TestEmbed1(Embed):
+    def __init__(self):
+        super().__init__(title="TEST EMBED 1")
+        
+class TestEmbed2(Embed):
+    def __init__(self):
+        super().__init__(title="TEST EMBED 2")
+        
+class TestEmbed3(Embed):
+    def __init__(self):
+        super().__init__(title="TEST EMBED 3")
+        
+
+class TestPrag(View):
+    def __init__(self, pages: list):
+        super().__init__(timeout=600)
+        self.pages = pages
+        self.page_len = len(pages)
+        
+    
+    async def send(self, message: InteractionMessage):
+        
+        sel = VersionSelect(versions=['Pikachu', 'Partner Pikachu'])
+        self.add_item(sel)
+        self.curr_page = 0
+        # Make custom select object that is able to do callback functions.
+        # Add Embeds to a list and somehow make the buttons show each embed
+        self.prevButton.disabled = True
+        await message.edit(embed=self.pages[self.curr_page], view=self)
+        self.message = message
+        
+        
+    @button(label="Prev")
+    async def prevButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page -= 1
+        # print('Previous new page:', self.curr_page)
+        
+        if self.curr_page == 0:
+            # print('Disabling')
+            self.prevButton.disabled = True
+            self.nextButton.disabled = False    
+        else:
+            self.nextButton.disabled = False            
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+        
+        
+        
+    @button(label="Next")
+    async def nextButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page += 1
+        # print('Next new page:', self.curr_page)
+        
+        if self.curr_page + 1 == self.page_len:
+            # print('Disabling')
+            self.nextButton.disabled = True
+            self.prevButton.disabled = False
+        else:
+            self.prevButton.disabled = False
+              
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+        
+        
+
+class VersionSelect(Select):
+    
+    def __init__(self, versions: list) -> None:
+        options = [SelectOption(label=v, value=v) for v in versions]
+        super().__init__(min_values=1, max_values=1, options=options)
+        
+        self.options[0].default = True
+            
+    async def callback(self, interaction: Interaction):
+        await interaction.response.send_message(f"Selected: {self.values[0]}", ephemeral=True)
+    
         

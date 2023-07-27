@@ -269,32 +269,45 @@ async def uploadSprites(interaction: Interaction):
         time.sleep(1.5)
 '''
 
+@client.tree.command(name='test-prag', description='testing prag functionality')
+async def pragTest(interaction: Interaction):
+    await interaction.response.send_message(embed=Embed(title="Creating Test", colour=Colour.light_grey()))
+    message = await interaction.original_response()
+    pages = [TestEmbed1(), TestEmbed2(), TestEmbed3()]
+    prag = TestPrag(pages=pages)
+    await prag.send(message=message)
 
 @client.tree.command(name='search-pokemon', description='Searches for a pokemon via pokedex number or name.')
 async def searchPokemon(interaction: Interaction, pokemon: str):
 
+    message = None
+    
     try:
         int(pokemon)
         query_type = 'number_based'
     except ValueError:
         query_type = 'name_based'
-        
-    queryEngine = PokeQuery(pokemon_object=registry[query_type])
     
+    queryEngine = PokeQuery(pokemon_object=registry[query_type])
     result_list = queryEngine.query(user_input=pokemon)
-    print(result_list)
     
     if result_list is None:
         await interaction.response.send_message(embed=Embed(colour=Colour.red(), title='404 Error: Pokemon Not Found'))
+        return
+    else:
+        await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {result_list[0]}'))
+        message = await interaction.original_response()
         
     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     response = fetch.getPokemon(int(result_list[1]))
     
     pokemon_response = Pokemon(response[1])
     
-    pokeEmbed = PokeStats(pokemon=pokemon_response)
+    pokestats = PokeStats(pokemon=pokemon_response)
+    pokeinfo = PokeInfo(pokemon=pokemon_response)
     
-    await interaction.response.send_message(embed=pokeEmbed)
+    testview = TestPrag([pokeinfo, pokestats])
+    await testview.send(message=message)
     
 
 @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
