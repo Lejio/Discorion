@@ -1,7 +1,10 @@
-from typing import Any, List, Optional
+import datetime
+from typing import Any, List, Optional, Union
 from discord import Embed, InteractionMessage, Interaction, SelectOption
+from discord.colour import Colour
 from discord.components import SelectOption
 from discord.interactions import Interaction
+from discord.types.embed import EmbedType
 from discord.ui import View, Button, Select, Item, button
 from discord.utils import MISSING
 from poketranslator import translateText, Style
@@ -22,11 +25,28 @@ class PokeStats(Embed):
         style = Style(pokemon.versions[0].type[0])[0]
                 
         self.add_field(name=f"{translateText(text_style=style, text='HP')} [{int(version.stats['HP'].base)}/{int(version.stats['HP'].min)}]", value=f"{createBar(calcBar(int(version.stats['HP'].base), int(version.stats['HP'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        
         self.add_field(name=f"{translateText(text_style=style, text='Attack')} [{int(version.stats['Attack'].base)}/{int(version.stats['Attack'].min)}]", value=f"{createBar(calcBar(int(version.stats['Attack'].base), int(version.stats['Attack'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        
         self.add_field(name=f"{translateText(text_style=style, text='Defense')} [{int(version.stats['Defense'].base)}/{int(version.stats['Defense'].min)}]", value=f"{createBar(calcBar(int(version.stats['Defense'].base), int(version.stats['Defense'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        
         self.add_field(name=f"{translateText(text_style=style, text='Sp Atk')} [{int(version.stats['Sp. Atk'].base)}/{int(version.stats['Sp. Atk'].min)}]", value=f"{createBar(calcBar(int(version.stats['Sp. Atk'].base), int(version.stats['Sp. Atk'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        
         self.add_field(name=f"{translateText(text_style=style, text='Sp Def')} [{int(version.stats['Sp. Def'].base)}/{int(version.stats['Sp. Def'].min)}]", value=f"{createBar(calcBar(int(version.stats['Sp. Def'].base), int(version.stats['Sp. Def'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        
         self.add_field(name=f"{translateText(text_style=style, text='Speed')} [{int(version.stats['Speed'].base)}/{int(version.stats['Speed'].min)}]", value=f"{createBar(calcBar(int(version.stats['Speed'].base), int(version.stats['Speed'].min)), style)}", inline=False)
+        
+        self.add_field(name=f'{createSeparator(10)}', value=f'{translateText(text_style=style, text="Total")} [{version.stats["Total"]}]')
 
 
 class PokeInfo(Embed):
@@ -49,6 +69,30 @@ class PokeInfo(Embed):
         else:
             self.add_field(name='Pokedex Entry:', value="???", inline=False)
         self.set_image(url=pokemon.discord_image)
+        
+class PokePokedex(Embed):
+    
+    def __init__(self, pokemon: Pokemon):
+        style = Style(pokemon.versions[0].type[0])[0]
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'pokedex'), description=f"{createSeparator(10)}")
+        
+        version: Pokemon.Version = pokemon.versions[0]
+        
+        self.add_field(name=f'{translateText(text_style=style, text="number")}', value=f'{version.national_number}')
+        self.add_field(name=f'{translateText(text_style=style, text="species")}', value=f'{version.species}')
+
+        self.add_field(name=f'{translateText(text_style=style, text="weight")}', value=f'{version.weight}')
+        self.add_field(name=f'{translateText(text_style=style, text="height")}', value=f'{version.height}')
+
+        self.add_field(name=f'{translateText(text_style=style, text="base xp")}', value=f'{version.base_xp}')
+        self.add_field(name=f'{translateText(text_style=style, text="growth")}', value=f'{version.growth_rate}')
+        self.add_field(name=f'{translateText(text_style=style, text="catch")}', value=f'{version.catch_rate}')
+
+class PokeAttacks(Embed):
+    
+    def __init__(self, pokemon: Pokemon):
+        style = Style(pokemon.versions[0].type[0])[0]
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'moves'), description=f"{createSeparator(10)}")
 
 
 class TestEmbed1(Embed):
@@ -73,8 +117,8 @@ class TestPrag(View):
     
     async def send(self, message: InteractionMessage):
         
-        sel = VersionSelect(versions=['Pikachu', 'Partner Pikachu'])
-        self.add_item(sel)
+        # sel = VersionSelect(versions=['Pikachu', 'Partner Pikachu'])
+        # self.add_item(sel)
         self.curr_page = 0
         # Make custom select object that is able to do callback functions.
         # Add Embeds to a list and somehow make the buttons show each embed
@@ -120,6 +164,7 @@ class TestPrag(View):
 
 class VersionSelect(Select):
     
+    # Takes in the message and edits it based on the version selected.
     def __init__(self, versions: list) -> None:
         options = [SelectOption(label=v, value=v) for v in versions]
         super().__init__(min_values=1, max_values=1, options=options)
