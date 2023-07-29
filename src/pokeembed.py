@@ -1,22 +1,22 @@
-import datetime
-from typing import Any, List, Optional, Union
 from discord import Embed, InteractionMessage, Interaction, SelectOption
-from discord.colour import Colour
 from discord.components import SelectOption
 from discord.interactions import Interaction
-from discord.types.embed import EmbedType
 from discord.ui import View, Button, Select, Item, button
-from discord.utils import MISSING
 from poketranslator import translateText, Style
 from poketools.pokemon.pokecalc import *
-from pokemon.pokemon import Pokemon
+from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
 
 from random import Random
 
 class PokeStats(Embed):
+    """Creates a stats page for Pokemon. Is a discord embed object.
+
+    Args:
+        Embed (_type_): Discord.Embed
+    """
     
-    def __init__(self, pokemon: Pokemon):
+    def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(Style(pokemon.versions[0].type[0])[0], 'stats'), description=f"{createSeparator(10)}")
                 
         self.set_thumbnail(url=pokemon.discord_image)
@@ -51,7 +51,7 @@ class PokeStats(Embed):
 
 class PokeInfo(Embed):
     
-    def __init__(self, pokemon: Pokemon):
+    def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Search Result', description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}")        
         types = ''
         
@@ -72,11 +72,11 @@ class PokeInfo(Embed):
         
 class PokePokedex(Embed):
     
-    def __init__(self, pokemon: Pokemon):
+    def __init__(self, pokemon: PokeObject):
         style = Style(pokemon.versions[0].type[0])[0]
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'pokedex'), description=f"{createSeparator(10)}")
         
-        version: Pokemon.Version = pokemon.versions[0]
+        version: PokeObject.Version = pokemon.versions[0]
         
         self.add_field(name=f'{translateText(text_style=style, text="number")}', value=f'{version.national_number}')
         self.add_field(name=f'{translateText(text_style=style, text="species")}', value=f'{version.species}')
@@ -90,7 +90,7 @@ class PokePokedex(Embed):
 
 class PokeAttacks(Embed):
     
-    def __init__(self, pokemon: Pokemon):
+    def __init__(self, pokemon: PokeObject):
         style = Style(pokemon.versions[0].type[0])[0]
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'moves'), description=f"{createSeparator(10)}")
 

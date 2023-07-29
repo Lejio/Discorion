@@ -11,7 +11,7 @@ from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 from poketools.pokemon.pokecalc import *
 from poketools.pokegenerator.pokedatabase import FetchWild
 from poketranslator import *
-from pokemon.pokemon import Pokemon
+from pokemon.pokeobject import PokeObject
 from poketools.pokequery import PokeQuery
 from pokeembed import *
 
@@ -301,7 +301,7 @@ async def searchPokemon(interaction: Interaction, pokemon: str):
     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     response = fetch.getPokemon(int(result_list[1]))
     
-    pokemon_response = Pokemon(response[1])
+    pokemon_response = PokeObject(response[1])
     
     pokestats = PokeStats(pokemon=pokemon_response)
     pokeinfo = PokeInfo(pokemon=pokemon_response)
