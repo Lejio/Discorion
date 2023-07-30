@@ -31,7 +31,7 @@ class Discorion(commands.Bot):
         """
         Client event. Runs when the bot is ready and has successfully logged in.
         """
-        print(f"\n{datetime.datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
+        print(f"\n{datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
 
         try:
         
