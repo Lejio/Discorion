@@ -36,7 +36,7 @@ def StyleBundler():
             'Ground': Ground,
             'Ice': Ice, 
             'Normal': Normal, 
-            'Poison': Poison, 
+            'Poison': Poison,
             'Psychic': Psychic, 
             'Rock': Rock,
             'Steel': Steel, 
