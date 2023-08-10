@@ -1,4 +1,5 @@
 from enum import Enum
+from pokemon.pokemon import Pokemon
 
 
 class PokeballObject:

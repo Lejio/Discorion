@@ -31,6 +31,7 @@ class Fairy(Enum):
     
     # ICON = '<:FairyIC:1133942697275686962>'
     ICON = '<:Fairy:1133950418154692669>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131641763057127457/1139011467883073536/Fairy.png'
     
     BAR_END_FILL = '<:bar_end_fill_fairy:1133843297522159647>'
     BAR_START_FILL = '<:bar_start_fill_fairy:1133843416191619204>'

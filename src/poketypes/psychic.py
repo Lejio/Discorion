@@ -31,6 +31,7 @@ class Psychic(Enum):
     
     # ICON = '<:PsychicIC:1133942167493169194>'
     ICON = '<:Psychic:1133950873387683871>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643246561472585/1139012692737282108/Psychic.png'
 
     BAR_END_FILL = '<:bar_end_fill_psychic:1133844957522841780>'
     BAR_START_FILL = '<:bar_start_fill_psychic:1133845111751585853>'

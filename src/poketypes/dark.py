@@ -32,6 +32,7 @@ class Dark(Enum):
     
     # ICON = '<:DarkIC:1133942823549403248>'
     ICON = '<:Dark:1133950344251064412>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131641317349412896/1139011121244815381/Dark.png'
 
     BAR_END_FILL = '<:bar_end_fill_dark:1133851195497259038>'
     BAR_START_FILL = '<:bar_start_fill_dark:1133851312216350812>'

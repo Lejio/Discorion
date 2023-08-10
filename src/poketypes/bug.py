@@ -32,6 +32,7 @@ class Bug(Enum):
     
     # ICON = '<:BugIC:1133942889710370866>'
     ICON = '<:Bug:1133950296255643738>'
+    ICON_IMAGE = "https://cdn.discordapp.com/attachments/1131642327165837364/1139010943863500941/Bug.png"
         
     BAR_END_FILL = '<:bar_end_fill_bug:1133843032026923109>'    
     BAR_START_FILL = '<:bar_start_fill_bug:1133843160200646676>'

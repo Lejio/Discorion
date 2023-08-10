@@ -31,6 +31,7 @@ class Fire(Enum):
     
     # ICON = '<:FireIC:1133942586428620860>'
     ICON = '<:Fire:1133950498345586689>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131642028434915370/1139011684195909782/Fire.png'
     
     BAR_END_FILL = '<:bar_end_fill_fire:1133843621632806973>'
     BAR_START_FILL = '<:bar_start_fill_fire:1133843726691737752>'

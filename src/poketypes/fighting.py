@@ -31,6 +31,7 @@ class Fighting(Enum):
     
     # ICON = '<:FightingIC:1133942637817237504>'
     ICON = '<:Fighting:1133950459019788338>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131641904006692957/1139011555288166440/Fighting.png'
     
     BAR_END_FILL = '<:bar_end_fill_fighting:1133843482511937647>'
     BAR_START_FILL = '<:bar_start_fill_fighting:1133843538367484074>'

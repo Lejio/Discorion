@@ -31,6 +31,7 @@ class Water(Enum):
     
     # ICON = '<:WaterIC:1133942213601153038>'
     ICON = '<:Water:1133950816500322304>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643070060969986/1139013048045154354/Water.png'
 
     BAR_END_FILL = '<:bar_end_fill_water:1133844773954920568>'
     BAR_START_FILL = '<:bar_start_fill_water:1133844902862651453>'

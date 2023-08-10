@@ -31,6 +31,7 @@ class Electric(Enum):
     
     # ICON = '<:ElectricIC:1133942950020272249>'
     ICON = '<:Electric:1133950222163267614>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1125937900421398552/1139011385750204597/Electric.png'
     
     BAR_START_FILL_SPLIT = "<:bar_start_fill_split_electric:1127078354856706099>"
     BAR_START_FILL = "<:bar_start_fill_electric:1127061273775972502>"

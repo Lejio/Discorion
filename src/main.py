@@ -8,6 +8,10 @@ import logging
 from discord.ext import commands
 from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 
+from pymongo.collection import Collection
+
+from utils.supabase import supabase_loader
+from utils.pymongo import load_mongodb
 from poketools.pokemon.pokecalc import *
 from poketools.pokegenerator.pokedatabase import FetchWild
 from poketranslator import *
@@ -19,6 +23,7 @@ from pokeembed import *
 load_dotenv()
 cogs: list = ["pokestyles"]
 registry = json.load(open('./pokemon/registry.json'))
+cache: dict = {'supabase': supabase_loader(), 'mongodb': load_mongodb()['pokemon_templates']}
 
 class Discorion(commands.Bot):
     
@@ -60,28 +65,19 @@ class Discorion(commands.Bot):
 client = Discorion()
 
 
-@client.tree.command(name='test-prag', description='testing prag functionality')
-async def pragTest(interaction: Interaction):
-    await interaction.response.send_message(embed=Embed(title="Creating Test", colour=Colour.light_grey()))
-    message = await interaction.original_response()
-    pages = [TestEmbed1(), TestEmbed2(), TestEmbed3()]
-    prag = TestPrag(pages=pages)
-    await prag.send(message=message)
-
-
 @client.tree.command(name='search-pokemon', description='Searches for a pokemon via pokedex number or name.')
-async def searchPokemon(interaction: Interaction, pokemon: str):
+async def searchPokemon(interaction: Interaction, name: str):
 
     message = None
     
     try:
-        int(pokemon)
+        int(name)
         query_type = 'number_based'
     except ValueError:
         query_type = 'name_based'
     
     queryEngine = PokeQuery(pokemon_object=registry[query_type])
-    result_list = queryEngine.query(user_input=pokemon)
+    result_list = queryEngine.query(user_input=name)
     
     if result_list is None:
         await interaction.response.send_message(embed=Embed(colour=Colour.red(), title='404 Error: Pokemon Not Found'))
@@ -90,25 +86,23 @@ async def searchPokemon(interaction: Interaction, pokemon: str):
         await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {result_list[0]}'))
         message = await interaction.original_response()
         
-    fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
-    response = fetch.getPokemon(int(result_list[1]))
+    pokeCollection: Collection = cache['mongodb']['pokemon']
+    pokemon_response = PokeObject(pokeCollection.find_one({ "_id": int(result_list[1])})['data'])
     
-    pokemon_response = PokeObject(response[1])
-    
-    pokepage = [PokeStats(pokemon=pokemon_response), PokeInfo(pokemon=pokemon_response), PokePokedex(pokemon=pokemon_response)]
+    pokepage = [PokeInfo(pokemon=pokemon_response), PokeStats(pokemon=pokemon_response), PokePokedex(pokemon=pokemon_response)]
     
     testview = TestPrag(pokepage)
     await testview.send(message=message)
     
 
-@client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
-async def getRandomPokemon(interaction: Interaction):
-    fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
+# @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
+# async def getRandomPokemon(interaction: Interaction):
+#     fetch = FetchWild(os.environ['DATABASE_URL'], os.environ['DEFAULT_POKEMON_DATABASE'])
     
-    pokemon = fetch.getRandom()
+#     pokemon = fetch.getRandom()
     
-    pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1][pokemon[1]['name']]}"
-    await interaction.response.send_message(pokemonMessage)
+#     pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1][pokemon[1]['name']]}"
+#     await interaction.response.send_message(pokemonMessage)
     
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 

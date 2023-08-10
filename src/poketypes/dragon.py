@@ -33,6 +33,7 @@ class Dragon(Enum):
     
     # ICON = '<:DragonIC:1133942765701578822>'
     ICON = '<:Dragon:1133950382561841303>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131641471888523276/1139011270700437574/Dragon.png'
     
     BAR_END_FILL = '<:bar_end_fill_dragon:1133842329657151614>'
     BAR_START_FILL = '<:bar_start_fill_dragon:1133842745971196025>'

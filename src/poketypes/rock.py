@@ -31,6 +31,7 @@ class Rock(Enum):
     
     # ICON = '<:RockIC:1133942118235263027>'
     ICON = '<:Rock:1133950917251711126>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643315993976884/1139012800178561135/Rock.png'
 
     BAR_END_FILL = '<:bar_end_fill_rock:1133845175890890782>'
     BAR_START_FILL = '<:bar_start_fill_rock:1133845241028419598>'

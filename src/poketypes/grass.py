@@ -32,6 +32,7 @@ class Grass(Enum):
     
     # ICON = '<:GrassIC:1133942394543419464>'
     ICON = '<:Grass:1133950635788742709>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131641224470724721/1139012017097822388/Grass.png'
     
     BAR_END_FILL = '<:bar_end_fill_grass:1133844250770022480>'
     BAR_START_FILL = '<:bar_start_fill_grass:1133844328284950599>'

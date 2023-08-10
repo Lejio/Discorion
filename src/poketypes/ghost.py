@@ -31,6 +31,7 @@ class Ghost(Enum):
     
     # ICON = '<:GhostIC:1133942459529973770>'
     ICON = '<:Ghost:1133950605942083756>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131642232370368546/1139011868283916418/Ghost.png'
     
     BAR_END_FILL = '<:bar_end_fill_ghost:1133844071450943518>'
     BAR_START_FILL = '<:bar_start_fill_ghost:1133844159661346856>'

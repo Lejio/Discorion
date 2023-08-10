@@ -30,6 +30,7 @@ class Poison(Enum):
     
     # ICON = '<:PoisonIC:1133942067551272990>'
     ICON = '<:Poison:1133950982259216426>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643138717519994/1139012560721563730/Poison.png'
     
     BAR_END_FILL = '<:bar_end_fill_poison:1133845333944848555>'
     BAR_START_FILL = '<:bar_start_fill_poison:1133845453822234674>'

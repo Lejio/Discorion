@@ -31,6 +31,7 @@ class Ground(Enum):
     
     # ICON = '<:GroundIC:1133942336204836956>'
     ICON = '<:Ground:1133950684522369044>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131642401073676442/1139012115559088240/Ground.png'
     
     BAR_END_FILL = '<:bar_end_fill_ground:1133844404763901982>'
     BAR_START_FILL = '<:bar_start_fill_ground:1133844537421349036>'

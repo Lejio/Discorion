@@ -31,6 +31,7 @@ class Ice(Enum):
     
     # ICON = '<:IceIC:1133942273269313672>'
     ICON = '<:Ice:1133950755930382466>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131642467796656261/1139012229283446784/Ice.png'
 
     BAR_END_FILL = '<:bar_end_fill_ice:1133844585450323988>'
     BAR_START_FILL = '<:bar_start_fill_ice:1133844701657698386>'

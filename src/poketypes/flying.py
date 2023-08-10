@@ -31,6 +31,7 @@ class Flying(Enum):
     
     # ICON = '<:FlyingIC:1133942526735294556>'
     ICON = '<:Flying:1133950570454077531>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131642109779255348/1139011783600898198/Flying.png'
 
     BAR_END_FILL = '<:bar_end_fill_flying:1133843812695941180>'
     BAR_START_FILL = '<:bar_start_fill_flying:1133843981629915186>'

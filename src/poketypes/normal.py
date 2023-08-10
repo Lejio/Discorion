@@ -30,6 +30,7 @@ class Normal(Enum):
     
     # ICON = '<:NormalIC:1133941298450137128>'
     ICON = '<:Normal:1133951091030106222>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643449855201322/1139012404827672696/Normal.png'
     
     BAR_END_FILL = '<:bar_end_fill_normal:1133851833488642210>'
     BAR_START_FILL = '<:bar_start_fill_normal:1133851931455012944>'

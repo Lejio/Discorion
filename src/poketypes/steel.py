@@ -30,6 +30,7 @@ class Steel(Enum):
     
     # ICON = '<:SteelIC:1133942008583553125>'
     ICON = '<:Steel:1133951046796980316>'
+    ICON_IMAGE = 'https://cdn.discordapp.com/attachments/1131643383396446281/1139012945188233286/Steel.png'
 
     BAR_END_FILL = '<:bar_end_fill_steel:1133851658825240707>'
     BAR_START_FILL = '<:bar_start_fill_steel:1133851782947283064>'
