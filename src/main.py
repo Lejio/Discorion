@@ -21,7 +21,7 @@ from pokeembed import *
 
 
 load_dotenv()
-cogs: list = ["pokestyles"]
+cogs: list = ["pokestyles", "catch"]
 registry = json.load(open('./pokemon/registry.json'))
 cache: dict = {'supabase': supabase_loader(), 'mongodb': load_mongodb()['pokemon_templates']}
 
@@ -36,6 +36,12 @@ class Discorion(commands.Bot):
         """
         Client event. Runs when the bot is ready and has successfully logged in.
         """
+        
+        self.registry = registry
+        self.cache = cache
+        
+        print("Cache successfully loaded.")
+        
         print(f"\n{datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
 
         try:
