@@ -3,12 +3,14 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
+import random
+
 from poketranslator import Types, PokeTranslator, StyleBundler
 
 types = StyleBundler()
 
 @app_commands.default_permissions(administrator=True)
-class PokeStyles(commands.GroupCog):
+class PokeCatch(commands.GroupCog):
     
     def __init__(self, client: commands.Bot) -> None:
         super().__init__()
@@ -16,18 +18,19 @@ class PokeStyles(commands.GroupCog):
         self.client = client;
         self.registry = client.registry
         self.cache = client.cache
+        self.catch_registry = client.catch_registry
 
     # https://discordpy.readthedocs.io/en/stable/api.html?highlight=create_role#discord.Guild.create_role
-    @app_commands.command(name="style", description="Displays the input text in a certain style.")
-    @app_commands.describe(style="Available Styles")
-    @app_commands.choices(style=[discord.app_commands.Choice(name=type_, value=type_) for type_ in types])
+    @app_commands.command(name="catch", description="Spawns a random pokemon from the selected type.")
+    @app_commands.describe(type_="Available types.")
+    @app_commands.choices(type_=[discord.app_commands.Choice(name=type_, value=type_) for type_ in types])
 
-    async def displayStyledText(self, interaction: discord.Interaction, style: discord.app_commands.Choice[str], text: str):
+    async def spawnRandomPokemon(self, interaction: discord.Interaction, type_: discord.app_commands.Choice[str]):
         
-        translated = PokeTranslator(text=text, style=style.value)
+        random_pokemon = random.choices(self.catch_registry[type_.value]['name'], self.catch_registry[type_.value]['catch_rate'])
     
-        await interaction.response.send_message(translated)
+        await interaction.response.send_message(random_pokemon)
     
         
 async def setup(bot: commands.Bot):
-    await bot.add_cog(PokeStyles(bot))
+    await bot.add_cog(PokeCatch(bot))

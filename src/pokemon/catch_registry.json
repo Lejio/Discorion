@@ -1,0 +1,7609 @@
+{
+  "Bug": {
+    "name": [
+      {
+        "version": "Caterpie",
+        "pokedex_number": 10
+      },
+      {
+        "version": "Metapod",
+        "pokedex_number": 11
+      },
+      {
+        "version": "Butterfree",
+        "pokedex_number": 12
+      },
+      {
+        "version": "Weedle",
+        "pokedex_number": 13
+      },
+      {
+        "version": "Kakuna",
+        "pokedex_number": 14
+      },
+      {
+        "version": "Mega Beedrill",
+        "pokedex_number": 15
+      },
+      {
+        "version": "Beedrill",
+        "pokedex_number": 15
+      },
+      {
+        "version": "Paras",
+        "pokedex_number": 46
+      },
+      {
+        "version": "Parasect",
+        "pokedex_number": 47
+      },
+      {
+        "version": "Venonat",
+        "pokedex_number": 48
+      },
+      {
+        "version": "Venomoth",
+        "pokedex_number": 49
+      },
+      {
+        "version": "Scyther",
+        "pokedex_number": 123
+      },
+      {
+        "version": "Mega Pinsir",
+        "pokedex_number": 127
+      },
+      {
+        "version": "Pinsir",
+        "pokedex_number": 127
+      },
+      {
+        "version": "Ledyba",
+        "pokedex_number": 165
+      },
+      {
+        "version": "Ledian",
+        "pokedex_number": 166
+      },
+      {
+        "version": "Spinarak",
+        "pokedex_number": 167
+      },
+      {
+        "version": "Ariados",
+        "pokedex_number": 168
+      },
+      {
+        "version": "Yanma",
+        "pokedex_number": 193
+      },
+      {
+        "version": "Pineco",
+        "pokedex_number": 204
+      },
+      {
+        "version": "Forretress",
+        "pokedex_number": 205
+      },
+      {
+        "version": "Mega Scizor",
+        "pokedex_number": 212
+      },
+      {
+        "version": "Scizor",
+        "pokedex_number": 212
+      },
+      {
+        "version": "Shuckle",
+        "pokedex_number": 213
+      },
+      {
+        "version": "Mega Heracross",
+        "pokedex_number": 214
+      },
+      {
+        "version": "Heracross",
+        "pokedex_number": 214
+      },
+      {
+        "version": "Wurmple",
+        "pokedex_number": 265
+      },
+      {
+        "version": "Silcoon",
+        "pokedex_number": 266
+      },
+      {
+        "version": "Beautifly",
+        "pokedex_number": 267
+      },
+      {
+        "version": "Cascoon",
+        "pokedex_number": 268
+      },
+      {
+        "version": "Dustox",
+        "pokedex_number": 269
+      },
+      {
+        "version": "Surskit",
+        "pokedex_number": 283
+      },
+      {
+        "version": "Masquerain",
+        "pokedex_number": 284
+      },
+      {
+        "version": "Nincada",
+        "pokedex_number": 290
+      },
+      {
+        "version": "Ninjask",
+        "pokedex_number": 291
+      },
+      {
+        "version": "Shedinja",
+        "pokedex_number": 292
+      },
+      {
+        "version": "Volbeat",
+        "pokedex_number": 313
+      },
+      {
+        "version": "Illumise",
+        "pokedex_number": 314
+      },
+      {
+        "version": "Anorith",
+        "pokedex_number": 347
+      },
+      {
+        "version": "Armaldo",
+        "pokedex_number": 348
+      },
+      {
+        "version": "Kricketot",
+        "pokedex_number": 401
+      },
+      {
+        "version": "Kricketune",
+        "pokedex_number": 402
+      },
+      {
+        "version": "Plant Cloak",
+        "pokedex_number": 412
+      },
+      {
+        "version": "Sandy Cloak",
+        "pokedex_number": 412
+      },
+      {
+        "version": "Trash Cloak",
+        "pokedex_number": 412
+      },
+      {
+        "version": "Plant Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Sandy Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Trash Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Mothim",
+        "pokedex_number": 414
+      },
+      {
+        "version": "Combee",
+        "pokedex_number": 415
+      },
+      {
+        "version": "Vespiquen",
+        "pokedex_number": 416
+      },
+      {
+        "version": "Skorupi",
+        "pokedex_number": 451
+      },
+      {
+        "version": "Yanmega",
+        "pokedex_number": 469
+      },
+      {
+        "version": "Sewaddle",
+        "pokedex_number": 540
+      },
+      {
+        "version": "Swadloon",
+        "pokedex_number": 541
+      },
+      {
+        "version": "Leavanny",
+        "pokedex_number": 542
+      },
+      {
+        "version": "Venipede",
+        "pokedex_number": 543
+      },
+      {
+        "version": "Whirlipede",
+        "pokedex_number": 544
+      },
+      {
+        "version": "Scolipede",
+        "pokedex_number": 545
+      },
+      {
+        "version": "Dwebble",
+        "pokedex_number": 557
+      },
+      {
+        "version": "Crustle",
+        "pokedex_number": 558
+      },
+      {
+        "version": "Karrablast",
+        "pokedex_number": 588
+      },
+      {
+        "version": "Escavalier",
+        "pokedex_number": 589
+      },
+      {
+        "version": "Joltik",
+        "pokedex_number": 595
+      },
+      {
+        "version": "Galvantula",
+        "pokedex_number": 596
+      },
+      {
+        "version": "Shelmet",
+        "pokedex_number": 616
+      },
+      {
+        "version": "Accelgor",
+        "pokedex_number": 617
+      },
+      {
+        "version": "Durant",
+        "pokedex_number": 632
+      },
+      {
+        "version": "Larvesta",
+        "pokedex_number": 636
+      },
+      {
+        "version": "Volcarona",
+        "pokedex_number": 637
+      },
+      {
+        "version": "Genesect",
+        "pokedex_number": 649
+      },
+      {
+        "version": "Scatterbug",
+        "pokedex_number": 664
+      },
+      {
+        "version": "Spewpa",
+        "pokedex_number": 665
+      },
+      {
+        "version": "Vivillon",
+        "pokedex_number": 666
+      },
+      {
+        "version": "Grubbin",
+        "pokedex_number": 736
+      },
+      {
+        "version": "Charjabug",
+        "pokedex_number": 737
+      },
+      {
+        "version": "Vikavolt",
+        "pokedex_number": 738
+      },
+      {
+        "version": "Cutiefly",
+        "pokedex_number": 742
+      },
+      {
+        "version": "Ribombee",
+        "pokedex_number": 743
+      },
+      {
+        "version": "Dewpider",
+        "pokedex_number": 751
+      },
+      {
+        "version": "Araquanid",
+        "pokedex_number": 752
+      },
+      {
+        "version": "Wimpod",
+        "pokedex_number": 767
+      },
+      {
+        "version": "Golisopod",
+        "pokedex_number": 768
+      },
+      {
+        "version": "Buzzwole",
+        "pokedex_number": 794
+      },
+      {
+        "version": "Pheromosa",
+        "pokedex_number": 795
+      },
+      {
+        "version": "Blipbug",
+        "pokedex_number": 824
+      },
+      {
+        "version": "Dottler",
+        "pokedex_number": 825
+      },
+      {
+        "version": "Orbeetle",
+        "pokedex_number": 826
+      },
+      {
+        "version": "Sizzlipede",
+        "pokedex_number": 850
+      },
+      {
+        "version": "Centiskorch",
+        "pokedex_number": 851
+      },
+      {
+        "version": "Snom",
+        "pokedex_number": 872
+      },
+      {
+        "version": "Frosmoth",
+        "pokedex_number": 873
+      },
+      {
+        "version": "Kleavor",
+        "pokedex_number": 900
+      },
+      {
+        "version": "Tarountula",
+        "pokedex_number": 917
+      },
+      {
+        "version": "Spidops",
+        "pokedex_number": 918
+      },
+      {
+        "version": "Nymble",
+        "pokedex_number": 919
+      },
+      {
+        "version": "Lokix",
+        "pokedex_number": 920
+      },
+      {
+        "version": "Rellor",
+        "pokedex_number": 953
+      },
+      {
+        "version": "Rabsca",
+        "pokedex_number": 954
+      },
+      {
+        "version": "Slither Wing",
+        "pokedex_number": 988
+      }
+    ],
+    "catch_rate": [
+      255, 120, 45, 255, 120, 45, 45, 190, 75, 190, 75, 45, 45, 45, 255, 90,
+      255, 90, 75, 190, 75, 25, 25, 190, 45, 45, 255, 120, 45, 120, 45, 200, 75,
+      255, 120, 45, 150, 150, 45, 45, 255, 45, 120, 120, 120, 45, 45, 45, 45,
+      120, 45, 120, 30, 255, 120, 45, 255, 120, 45, 190, 75, 200, 75, 190, 75,
+      200, 75, 90, 45, 15, 3, 255, 120, 45, 255, 120, 45, 190, 75, 200, 100, 90,
+      45, 45, 45, 255, 120, 45, 190, 75, 190, 75, 15, 255, 120, 190, 30, 190,
+      45, 30
+    ]
+  },
+  "Dark": {
+    "name": [
+      {
+        "version": "Alolan Rattata",
+        "pokedex_number": 19
+      },
+      {
+        "version": "Alolan Raticate",
+        "pokedex_number": 20
+      },
+      {
+        "version": "Alolan Meowth",
+        "pokedex_number": 52
+      },
+      {
+        "version": "Alolan Persian",
+        "pokedex_number": 53
+      },
+      {
+        "version": "Alolan Grimer",
+        "pokedex_number": 88
+      },
+      {
+        "version": "Alolan Muk",
+        "pokedex_number": 89
+      },
+      {
+        "version": "Mega Gyarados",
+        "pokedex_number": 130
+      },
+      {
+        "version": "Galarian Moltres",
+        "pokedex_number": 146
+      },
+      {
+        "version": "Umbreon",
+        "pokedex_number": 197
+      },
+      {
+        "version": "Murkrow",
+        "pokedex_number": 198
+      },
+      {
+        "version": "Hisuian Qwilfish",
+        "pokedex_number": 211
+      },
+      {
+        "version": "Sneasel",
+        "pokedex_number": 215
+      },
+      {
+        "version": "Houndour",
+        "pokedex_number": 228
+      },
+      {
+        "version": "Mega Houndoom",
+        "pokedex_number": 229
+      },
+      {
+        "version": "Houndoom",
+        "pokedex_number": 229
+      },
+      {
+        "version": "Mega Tyranitar",
+        "pokedex_number": 248
+      },
+      {
+        "version": "Tyranitar",
+        "pokedex_number": 248
+      },
+      {
+        "version": "Poochyena",
+        "pokedex_number": 261
+      },
+      {
+        "version": "Mightyena",
+        "pokedex_number": 262
+      },
+      {
+        "version": "Galarian Zigzagoon",
+        "pokedex_number": 263
+      },
+      {
+        "version": "Galarian Linoone",
+        "pokedex_number": 264
+      },
+      {
+        "version": "Nuzleaf",
+        "pokedex_number": 274
+      },
+      {
+        "version": "Shiftry",
+        "pokedex_number": 275
+      },
+      {
+        "version": "Mega Sableye",
+        "pokedex_number": 302
+      },
+      {
+        "version": "Sableye",
+        "pokedex_number": 302
+      },
+      {
+        "version": "Carvanha",
+        "pokedex_number": 318
+      },
+      {
+        "version": "Mega Sharpedo",
+        "pokedex_number": 319
+      },
+      {
+        "version": "Sharpedo",
+        "pokedex_number": 319
+      },
+      {
+        "version": "Cacturne",
+        "pokedex_number": 332
+      },
+      {
+        "version": "Crawdaunt",
+        "pokedex_number": 342
+      },
+      {
+        "version": "Mega Absol",
+        "pokedex_number": 359
+      },
+      {
+        "version": "Absol",
+        "pokedex_number": 359
+      },
+      {
+        "version": "Honchkrow",
+        "pokedex_number": 430
+      },
+      {
+        "version": "Stunky",
+        "pokedex_number": 434
+      },
+      {
+        "version": "Skuntank",
+        "pokedex_number": 435
+      },
+      {
+        "version": "Spiritomb",
+        "pokedex_number": 442
+      },
+      {
+        "version": "Drapion",
+        "pokedex_number": 452
+      },
+      {
+        "version": "Weavile",
+        "pokedex_number": 461
+      },
+      {
+        "version": "Darkrai",
+        "pokedex_number": 491
+      },
+      {
+        "version": "Hisuian Samurott",
+        "pokedex_number": 503
+      },
+      {
+        "version": "Purrloin",
+        "pokedex_number": 509
+      },
+      {
+        "version": "Liepard",
+        "pokedex_number": 510
+      },
+      {
+        "version": "Sandile",
+        "pokedex_number": 551
+      },
+      {
+        "version": "Krokorok",
+        "pokedex_number": 552
+      },
+      {
+        "version": "Krookodile",
+        "pokedex_number": 553
+      },
+      {
+        "version": "Scraggy",
+        "pokedex_number": 559
+      },
+      {
+        "version": "Scrafty",
+        "pokedex_number": 560
+      },
+      {
+        "version": "Zorua",
+        "pokedex_number": 570
+      },
+      {
+        "version": "Zoroark",
+        "pokedex_number": 571
+      },
+      {
+        "version": "Pawniard",
+        "pokedex_number": 624
+      },
+      {
+        "version": "Bisharp",
+        "pokedex_number": 625
+      },
+      {
+        "version": "Vullaby",
+        "pokedex_number": 629
+      },
+      {
+        "version": "Mandibuzz",
+        "pokedex_number": 630
+      },
+      {
+        "version": "Deino",
+        "pokedex_number": 633
+      },
+      {
+        "version": "Zweilous",
+        "pokedex_number": 634
+      },
+      {
+        "version": "Hydreigon",
+        "pokedex_number": 635
+      },
+      {
+        "version": "Ash-Greninja",
+        "pokedex_number": 658
+      },
+      {
+        "version": "Greninja",
+        "pokedex_number": 658
+      },
+      {
+        "version": "Pangoro",
+        "pokedex_number": 675
+      },
+      {
+        "version": "Inkay",
+        "pokedex_number": 686
+      },
+      {
+        "version": "Malamar",
+        "pokedex_number": 687
+      },
+      {
+        "version": "Yveltal",
+        "pokedex_number": 717
+      },
+      {
+        "version": "Hoopa Unbound",
+        "pokedex_number": 720
+      },
+      {
+        "version": "Incineroar",
+        "pokedex_number": 727
+      },
+      {
+        "version": "Guzzlord",
+        "pokedex_number": 799
+      },
+      {
+        "version": "Nickit",
+        "pokedex_number": 827
+      },
+      {
+        "version": "Thievul",
+        "pokedex_number": 828
+      },
+      {
+        "version": "Impidimp",
+        "pokedex_number": 859
+      },
+      {
+        "version": "Morgrem",
+        "pokedex_number": 860
+      },
+      {
+        "version": "Grimmsnarl",
+        "pokedex_number": 861
+      },
+      {
+        "version": "Obstagoon",
+        "pokedex_number": 862
+      },
+      {
+        "version": "Full Belly Mode",
+        "pokedex_number": 877
+      },
+      {
+        "version": "Hangry Mode",
+        "pokedex_number": 877
+      },
+      {
+        "version": "Single Strike Style",
+        "pokedex_number": 892
+      },
+      {
+        "version": "Zarude",
+        "pokedex_number": 893
+      },
+      {
+        "version": "Overqwil",
+        "pokedex_number": 904
+      },
+      {
+        "version": "Meowscarada",
+        "pokedex_number": 908
+      },
+      {
+        "version": "Lokix",
+        "pokedex_number": 920
+      },
+      {
+        "version": "Maschiff",
+        "pokedex_number": 942
+      },
+      {
+        "version": "Mabosstiff",
+        "pokedex_number": 943
+      },
+      {
+        "version": "Bombirdier",
+        "pokedex_number": 962
+      },
+      {
+        "version": "Kingambit",
+        "pokedex_number": 983
+      },
+      {
+        "version": "Brute Bonnet",
+        "pokedex_number": 986
+      },
+      {
+        "version": "Iron Jugulis",
+        "pokedex_number": 993
+      },
+      {
+        "version": "Wo-Chien",
+        "pokedex_number": 1001
+      },
+      {
+        "version": "Chien-Pao",
+        "pokedex_number": 1002
+      },
+      {
+        "version": "Ting-Lu",
+        "pokedex_number": 1003
+      },
+      {
+        "version": "Chi-Yu",
+        "pokedex_number": 1004
+      },
+      {
+        "version": "Roaring Moon",
+        "pokedex_number": 1005
+      }
+    ],
+    "catch_rate": [
+      255, 127, 255, 90, 190, 75, 45, 3, 45, 30, 45, 60, 120, 45, 45, 45, 45,
+      255, 127, 255, 90, 120, 45, 45, 45, 225, 60, 60, 60, 155, 30, 30, 30, 225,
+      60, 100, 45, 45, 3, 45, 255, 90, 180, 90, 45, 180, 90, 75, 45, 120, 45,
+      190, 60, 45, 45, 45, 45, 45, 65, 190, 80, 45, 3, 45, 45, 255, 127, 255,
+      120, 45, 45, 180, 180, 3, 3, 45, 45, 30, 150, 75, 25, 25, 50, 30, 6, 6, 6,
+      6, 10
+    ]
+  },
+  "Dragon": {
+    "name": [
+      {
+        "version": "Mega Charizard X",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Alolan Exeggutor",
+        "pokedex_number": 103
+      },
+      {
+        "version": "Dratini",
+        "pokedex_number": 147
+      },
+      {
+        "version": "Dragonair",
+        "pokedex_number": 148
+      },
+      {
+        "version": "Dragonite",
+        "pokedex_number": 149
+      },
+      {
+        "version": "Mega Ampharos",
+        "pokedex_number": 181
+      },
+      {
+        "version": "Kingdra",
+        "pokedex_number": 230
+      },
+      {
+        "version": "Mega Sceptile",
+        "pokedex_number": 254
+      },
+      {
+        "version": "Vibrava",
+        "pokedex_number": 329
+      },
+      {
+        "version": "Flygon",
+        "pokedex_number": 330
+      },
+      {
+        "version": "Mega Altaria",
+        "pokedex_number": 334
+      },
+      {
+        "version": "Altaria",
+        "pokedex_number": 334
+      },
+      {
+        "version": "Bagon",
+        "pokedex_number": 371
+      },
+      {
+        "version": "Shelgon",
+        "pokedex_number": 372
+      },
+      {
+        "version": "Mega Salamence",
+        "pokedex_number": 373
+      },
+      {
+        "version": "Salamence",
+        "pokedex_number": 373
+      },
+      {
+        "version": "Mega Latias",
+        "pokedex_number": 380
+      },
+      {
+        "version": "Latias",
+        "pokedex_number": 380
+      },
+      {
+        "version": "Mega Latios",
+        "pokedex_number": 381
+      },
+      {
+        "version": "Latios",
+        "pokedex_number": 381
+      },
+      {
+        "version": "Mega Rayquaza",
+        "pokedex_number": 384
+      },
+      {
+        "version": "Rayquaza",
+        "pokedex_number": 384
+      },
+      {
+        "version": "Gible",
+        "pokedex_number": 443
+      },
+      {
+        "version": "Gabite",
+        "pokedex_number": 444
+      },
+      {
+        "version": "Mega Garchomp",
+        "pokedex_number": 445
+      },
+      {
+        "version": "Garchomp",
+        "pokedex_number": 445
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 483
+      },
+      {
+        "version": "Dialga",
+        "pokedex_number": 483
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 484
+      },
+      {
+        "version": "Palkia",
+        "pokedex_number": 484
+      },
+      {
+        "version": "Altered Forme",
+        "pokedex_number": 487
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 487
+      },
+      {
+        "version": "Axew",
+        "pokedex_number": 610
+      },
+      {
+        "version": "Fraxure",
+        "pokedex_number": 611
+      },
+      {
+        "version": "Haxorus",
+        "pokedex_number": 612
+      },
+      {
+        "version": "Druddigon",
+        "pokedex_number": 621
+      },
+      {
+        "version": "Deino",
+        "pokedex_number": 633
+      },
+      {
+        "version": "Zweilous",
+        "pokedex_number": 634
+      },
+      {
+        "version": "Hydreigon",
+        "pokedex_number": 635
+      },
+      {
+        "version": "Reshiram",
+        "pokedex_number": 643
+      },
+      {
+        "version": "Zekrom",
+        "pokedex_number": 644
+      },
+      {
+        "version": "White Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Black Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Dragalge",
+        "pokedex_number": 691
+      },
+      {
+        "version": "Tyrunt",
+        "pokedex_number": 696
+      },
+      {
+        "version": "Tyrantrum",
+        "pokedex_number": 697
+      },
+      {
+        "version": "Goomy",
+        "pokedex_number": 704
+      },
+      {
+        "version": "Hisuian Sliggoo",
+        "pokedex_number": 705
+      },
+      {
+        "version": "Sliggoo",
+        "pokedex_number": 705
+      },
+      {
+        "version": "Hisuian Goodra",
+        "pokedex_number": 706
+      },
+      {
+        "version": "Goodra",
+        "pokedex_number": 706
+      },
+      {
+        "version": "Noibat",
+        "pokedex_number": 714
+      },
+      {
+        "version": "Noivern",
+        "pokedex_number": 715
+      },
+      {
+        "version": "50% Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "10% Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "Complete Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "Turtonator",
+        "pokedex_number": 776
+      },
+      {
+        "version": "Drampa",
+        "pokedex_number": 780
+      },
+      {
+        "version": "Jangmo-o",
+        "pokedex_number": 782
+      },
+      {
+        "version": "Hakamo-o",
+        "pokedex_number": 783
+      },
+      {
+        "version": "Kommo-o",
+        "pokedex_number": 784
+      },
+      {
+        "version": "Guzzlord",
+        "pokedex_number": 799
+      },
+      {
+        "version": "Ultra Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Naganadel",
+        "pokedex_number": 804
+      },
+      {
+        "version": "Applin",
+        "pokedex_number": 840
+      },
+      {
+        "version": "Flapple",
+        "pokedex_number": 841
+      },
+      {
+        "version": "Appletun",
+        "pokedex_number": 842
+      },
+      {
+        "version": "Dracozolt",
+        "pokedex_number": 880
+      },
+      {
+        "version": "Dracovish",
+        "pokedex_number": 882
+      },
+      {
+        "version": "Duraludon",
+        "pokedex_number": 884
+      },
+      {
+        "version": "Dreepy",
+        "pokedex_number": 885
+      },
+      {
+        "version": "Drakloak",
+        "pokedex_number": 886
+      },
+      {
+        "version": "Dragapult",
+        "pokedex_number": 887
+      },
+      {
+        "version": "Eternamax",
+        "pokedex_number": 890
+      },
+      {
+        "version": "Eternatus",
+        "pokedex_number": 890
+      },
+      {
+        "version": "Regidrago",
+        "pokedex_number": 895
+      },
+      {
+        "version": "Cyclizar",
+        "pokedex_number": 967
+      },
+      {
+        "version": "Curly Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Droopy Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Stretchy Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Frigibax",
+        "pokedex_number": 996
+      },
+      {
+        "version": "Arctibax",
+        "pokedex_number": 997
+      },
+      {
+        "version": "Baxcalibur",
+        "pokedex_number": 998
+      },
+      {
+        "version": "Roaring Moon",
+        "pokedex_number": 1005
+      },
+      {
+        "version": "Koraidon",
+        "pokedex_number": 1007
+      },
+      {
+        "version": "Miraidon",
+        "pokedex_number": 1008
+      },
+      {
+        "version": "Walking Wake",
+        "pokedex_number": 1009
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 45, 45, 45, 45, 45, 120, 45, 45, 45, 45, 45, 45, 45, 3, 3, 3,
+      3, 3, 45, 45, 45, 45, 45, 3, 3, 3, 3, 3, 3, 75, 60, 45, 45, 45, 45, 45, 3,
+      3, 3, 3, 3, 55, 45, 45, 45, 45, 45, 45, 45, 190, 45, 3, 3, 3, 70, 70, 45,
+      45, 45, 45, 3, 45, 255, 45, 45, 45, 45, 45, 45, 45, 45, 0, 255, 3, 190,
+      100, 100, 100, 45, 25, 10, 10, 3, 3, 0
+    ]
+  },
+  "Electric": {
+    "name": [
+      {
+        "version": "Partner Pikachu",
+        "pokedex_number": 25
+      },
+      {
+        "version": "Pikachu",
+        "pokedex_number": 25
+      },
+      {
+        "version": "Alolan Raichu",
+        "pokedex_number": 26
+      },
+      {
+        "version": "Raichu",
+        "pokedex_number": 26
+      },
+      {
+        "version": "Alolan Geodude",
+        "pokedex_number": 74
+      },
+      {
+        "version": "Alolan Graveler",
+        "pokedex_number": 75
+      },
+      {
+        "version": "Alolan Golem",
+        "pokedex_number": 76
+      },
+      {
+        "version": "Magnemite",
+        "pokedex_number": 81
+      },
+      {
+        "version": "Magneton",
+        "pokedex_number": 82
+      },
+      {
+        "version": "Hisuian Voltorb",
+        "pokedex_number": 100
+      },
+      {
+        "version": "Voltorb",
+        "pokedex_number": 100
+      },
+      {
+        "version": "Hisuian Electrode",
+        "pokedex_number": 101
+      },
+      {
+        "version": "Electrode",
+        "pokedex_number": 101
+      },
+      {
+        "version": "Electabuzz",
+        "pokedex_number": 125
+      },
+      {
+        "version": "Jolteon",
+        "pokedex_number": 135
+      },
+      {
+        "version": "Zapdos",
+        "pokedex_number": 145
+      },
+      {
+        "version": "Chinchou",
+        "pokedex_number": 170
+      },
+      {
+        "version": "Lanturn",
+        "pokedex_number": 171
+      },
+      {
+        "version": "Pichu",
+        "pokedex_number": 172
+      },
+      {
+        "version": "Mareep",
+        "pokedex_number": 179
+      },
+      {
+        "version": "Flaaffy",
+        "pokedex_number": 180
+      },
+      {
+        "version": "Mega Ampharos",
+        "pokedex_number": 181
+      },
+      {
+        "version": "Ampharos",
+        "pokedex_number": 181
+      },
+      {
+        "version": "Elekid",
+        "pokedex_number": 239
+      },
+      {
+        "version": "Raikou",
+        "pokedex_number": 243
+      },
+      {
+        "version": "Electrike",
+        "pokedex_number": 309
+      },
+      {
+        "version": "Mega Manectric",
+        "pokedex_number": 310
+      },
+      {
+        "version": "Manectric",
+        "pokedex_number": 310
+      },
+      {
+        "version": "Plusle",
+        "pokedex_number": 311
+      },
+      {
+        "version": "Minun",
+        "pokedex_number": 312
+      },
+      {
+        "version": "Shinx",
+        "pokedex_number": 403
+      },
+      {
+        "version": "Luxio",
+        "pokedex_number": 404
+      },
+      {
+        "version": "Luxray",
+        "pokedex_number": 405
+      },
+      {
+        "version": "Pachirisu",
+        "pokedex_number": 417
+      },
+      {
+        "version": "Magnezone",
+        "pokedex_number": 462
+      },
+      {
+        "version": "Electivire",
+        "pokedex_number": 466
+      },
+      {
+        "version": "Heat Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Wash Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Frost Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Fan Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Mow Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Blitzle",
+        "pokedex_number": 522
+      },
+      {
+        "version": "Zebstrika",
+        "pokedex_number": 523
+      },
+      {
+        "version": "Emolga",
+        "pokedex_number": 587
+      },
+      {
+        "version": "Joltik",
+        "pokedex_number": 595
+      },
+      {
+        "version": "Galvantula",
+        "pokedex_number": 596
+      },
+      {
+        "version": "Tynamo",
+        "pokedex_number": 602
+      },
+      {
+        "version": "Eelektrik",
+        "pokedex_number": 603
+      },
+      {
+        "version": "Eelektross",
+        "pokedex_number": 604
+      },
+      {
+        "version": "Stunfisk",
+        "pokedex_number": 618
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 642
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 642
+      },
+      {
+        "version": "Zekrom",
+        "pokedex_number": 644
+      },
+      {
+        "version": "Helioptile",
+        "pokedex_number": 694
+      },
+      {
+        "version": "Heliolisk",
+        "pokedex_number": 695
+      },
+      {
+        "version": "Dedenne",
+        "pokedex_number": 702
+      },
+      {
+        "version": "Charjabug",
+        "pokedex_number": 737
+      },
+      {
+        "version": "Vikavolt",
+        "pokedex_number": 738
+      },
+      {
+        "version": "Pom-Pom Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Togedemaru",
+        "pokedex_number": 777
+      },
+      {
+        "version": "Tapu Koko",
+        "pokedex_number": 785
+      },
+      {
+        "version": "Xurkitree",
+        "pokedex_number": 796
+      },
+      {
+        "version": "Zeraora",
+        "pokedex_number": 807
+      },
+      {
+        "version": "Yamper",
+        "pokedex_number": 835
+      },
+      {
+        "version": "Boltund",
+        "pokedex_number": 836
+      },
+      {
+        "version": "Toxel",
+        "pokedex_number": 848
+      },
+      {
+        "version": "Amped Form",
+        "pokedex_number": 849
+      },
+      {
+        "version": "Low Key Form",
+        "pokedex_number": 849
+      },
+      {
+        "version": "Pincurchin",
+        "pokedex_number": 871
+      },
+      {
+        "version": "Full Belly Mode",
+        "pokedex_number": 877
+      },
+      {
+        "version": "Hangry Mode",
+        "pokedex_number": 877
+      },
+      {
+        "version": "Dracozolt",
+        "pokedex_number": 880
+      },
+      {
+        "version": "Arctozolt",
+        "pokedex_number": 881
+      },
+      {
+        "version": "Regieleki",
+        "pokedex_number": 894
+      },
+      {
+        "version": "Pawmi",
+        "pokedex_number": 921
+      },
+      {
+        "version": "Pawmo",
+        "pokedex_number": 922
+      },
+      {
+        "version": "Pawmot",
+        "pokedex_number": 923
+      },
+      {
+        "version": "Tadbulb",
+        "pokedex_number": 938
+      },
+      {
+        "version": "Bellibolt",
+        "pokedex_number": 939
+      },
+      {
+        "version": "Wattrel",
+        "pokedex_number": 940
+      },
+      {
+        "version": "Kilowattrel",
+        "pokedex_number": 941
+      },
+      {
+        "version": "Sandy Shocks",
+        "pokedex_number": 989
+      },
+      {
+        "version": "Iron Hands",
+        "pokedex_number": 992
+      },
+      {
+        "version": "Iron Thorns",
+        "pokedex_number": 995
+      },
+      {
+        "version": "Miraidon",
+        "pokedex_number": 1008
+      }
+    ],
+    "catch_rate": [
+      190, 190, 75, 75, 255, 120, 45, 190, 60, 190, 190, 60, 60, 45, 45, 3, 190,
+      75, 190, 235, 120, 45, 45, 45, 3, 120, 45, 45, 200, 200, 235, 120, 45,
+      200, 30, 30, 45, 45, 45, 45, 45, 45, 190, 75, 200, 190, 75, 190, 60, 30,
+      75, 3, 3, 3, 190, 75, 180, 120, 45, 45, 180, 3, 45, 3, 255, 45, 75, 45,
+      45, 75, 180, 180, 45, 45, 3, 190, 80, 45, 190, 50, 180, 90, 30, 50, 30, 3
+    ]
+  },
+  "Fairy": {
+    "name": [
+      {
+        "version": "Clefairy",
+        "pokedex_number": 35
+      },
+      {
+        "version": "Clefable",
+        "pokedex_number": 36
+      },
+      {
+        "version": "Alolan Ninetales",
+        "pokedex_number": 38
+      },
+      {
+        "version": "Jigglypuff",
+        "pokedex_number": 39
+      },
+      {
+        "version": "Wigglytuff",
+        "pokedex_number": 40
+      },
+      {
+        "version": "Galarian Rapidash",
+        "pokedex_number": 78
+      },
+      {
+        "version": "Galarian Weezing",
+        "pokedex_number": 110
+      },
+      {
+        "version": "Mr. Mime",
+        "pokedex_number": 122
+      },
+      {
+        "version": "Cleffa",
+        "pokedex_number": 173
+      },
+      {
+        "version": "Igglybuff",
+        "pokedex_number": 174
+      },
+      {
+        "version": "Togepi",
+        "pokedex_number": 175
+      },
+      {
+        "version": "Togetic",
+        "pokedex_number": 176
+      },
+      {
+        "version": "Marill",
+        "pokedex_number": 183
+      },
+      {
+        "version": "Azumarill",
+        "pokedex_number": 184
+      },
+      {
+        "version": "Snubbull",
+        "pokedex_number": 209
+      },
+      {
+        "version": "Granbull",
+        "pokedex_number": 210
+      },
+      {
+        "version": "Ralts",
+        "pokedex_number": 280
+      },
+      {
+        "version": "Kirlia",
+        "pokedex_number": 281
+      },
+      {
+        "version": "Mega Gardevoir",
+        "pokedex_number": 282
+      },
+      {
+        "version": "Gardevoir",
+        "pokedex_number": 282
+      },
+      {
+        "version": "Azurill",
+        "pokedex_number": 298
+      },
+      {
+        "version": "Mega Mawile",
+        "pokedex_number": 303
+      },
+      {
+        "version": "Mawile",
+        "pokedex_number": 303
+      },
+      {
+        "version": "Mega Altaria",
+        "pokedex_number": 334
+      },
+      {
+        "version": "Mime Jr.",
+        "pokedex_number": 439
+      },
+      {
+        "version": "Togekiss",
+        "pokedex_number": 468
+      },
+      {
+        "version": "Mega Audino",
+        "pokedex_number": 531
+      },
+      {
+        "version": "Cottonee",
+        "pokedex_number": 546
+      },
+      {
+        "version": "Whimsicott",
+        "pokedex_number": 547
+      },
+      {
+        "version": "Flab\u00e9b\u00e9",
+        "pokedex_number": 669
+      },
+      {
+        "version": "Floette",
+        "pokedex_number": 670
+      },
+      {
+        "version": "Florges",
+        "pokedex_number": 671
+      },
+      {
+        "version": "Spritzee",
+        "pokedex_number": 682
+      },
+      {
+        "version": "Aromatisse",
+        "pokedex_number": 683
+      },
+      {
+        "version": "Swirlix",
+        "pokedex_number": 684
+      },
+      {
+        "version": "Slurpuff",
+        "pokedex_number": 685
+      },
+      {
+        "version": "Sylveon",
+        "pokedex_number": 700
+      },
+      {
+        "version": "Dedenne",
+        "pokedex_number": 702
+      },
+      {
+        "version": "Carbink",
+        "pokedex_number": 703
+      },
+      {
+        "version": "Klefki",
+        "pokedex_number": 707
+      },
+      {
+        "version": "Xerneas",
+        "pokedex_number": 716
+      },
+      {
+        "version": "Mega Diancie",
+        "pokedex_number": 719
+      },
+      {
+        "version": "Diancie",
+        "pokedex_number": 719
+      },
+      {
+        "version": "Primarina",
+        "pokedex_number": 730
+      },
+      {
+        "version": "Cutiefly",
+        "pokedex_number": 742
+      },
+      {
+        "version": "Ribombee",
+        "pokedex_number": 743
+      },
+      {
+        "version": "Morelull",
+        "pokedex_number": 755
+      },
+      {
+        "version": "Shiinotic",
+        "pokedex_number": 756
+      },
+      {
+        "version": "Comfey",
+        "pokedex_number": 764
+      },
+      {
+        "version": "Mimikyu",
+        "pokedex_number": 778
+      },
+      {
+        "version": "Tapu Koko",
+        "pokedex_number": 785
+      },
+      {
+        "version": "Tapu Lele",
+        "pokedex_number": 786
+      },
+      {
+        "version": "Tapu Bulu",
+        "pokedex_number": 787
+      },
+      {
+        "version": "Tapu Fini",
+        "pokedex_number": 788
+      },
+      {
+        "version": "Magearna",
+        "pokedex_number": 801
+      },
+      {
+        "version": "Hatterene",
+        "pokedex_number": 858
+      },
+      {
+        "version": "Impidimp",
+        "pokedex_number": 859
+      },
+      {
+        "version": "Morgrem",
+        "pokedex_number": 860
+      },
+      {
+        "version": "Grimmsnarl",
+        "pokedex_number": 861
+      },
+      {
+        "version": "Milcery",
+        "pokedex_number": 868
+      },
+      {
+        "version": "Alcremie",
+        "pokedex_number": 869
+      },
+      {
+        "version": "Hero of Many Battles",
+        "pokedex_number": 888
+      },
+      {
+        "version": "Crowned Sword",
+        "pokedex_number": 888
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 905
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 905
+      },
+      {
+        "version": "Fidough",
+        "pokedex_number": 926
+      },
+      {
+        "version": "Dachsbun",
+        "pokedex_number": 927
+      },
+      {
+        "version": "Tinkatink",
+        "pokedex_number": 957
+      },
+      {
+        "version": "Tinkatuff",
+        "pokedex_number": 958
+      },
+      {
+        "version": "Tinkaton",
+        "pokedex_number": 959
+      },
+      {
+        "version": "Scream Tail",
+        "pokedex_number": 985
+      },
+      {
+        "version": "Flutter Mane",
+        "pokedex_number": 987
+      },
+      {
+        "version": "Iron Valiant",
+        "pokedex_number": 1006
+      }
+    ],
+    "catch_rate": [
+      150, 25, 75, 170, 50, 60, 60, 45, 150, 170, 190, 75, 190, 75, 190, 75,
+      235, 120, 45, 45, 150, 45, 45, 45, 145, 30, 255, 190, 75, 225, 120, 45,
+      200, 140, 200, 140, 45, 180, 60, 75, 45, 3, 3, 45, 190, 75, 190, 75, 60,
+      45, 3, 3, 3, 3, 3, 45, 255, 120, 45, 200, 100, 10, 10, 3, 3, 190, 90, 190,
+      90, 45, 50, 30, 10
+    ]
+  },
+  "Fighting": {
+    "name": [
+      {
+        "version": "Mankey",
+        "pokedex_number": 56
+      },
+      {
+        "version": "Primeape",
+        "pokedex_number": 57
+      },
+      {
+        "version": "Poliwrath",
+        "pokedex_number": 62
+      },
+      {
+        "version": "Machop",
+        "pokedex_number": 66
+      },
+      {
+        "version": "Machoke",
+        "pokedex_number": 67
+      },
+      {
+        "version": "Machamp",
+        "pokedex_number": 68
+      },
+      {
+        "version": "Galarian Farfetch'd",
+        "pokedex_number": 83
+      },
+      {
+        "version": "Hitmonlee",
+        "pokedex_number": 106
+      },
+      {
+        "version": "Hitmonchan",
+        "pokedex_number": 107
+      },
+      {
+        "version": "Combat Breed",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Blaze Breed",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Aqua Breed",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Galarian Zapdos",
+        "pokedex_number": 145
+      },
+      {
+        "version": "Mega Mewtwo X",
+        "pokedex_number": 150
+      },
+      {
+        "version": "Mega Heracross",
+        "pokedex_number": 214
+      },
+      {
+        "version": "Heracross",
+        "pokedex_number": 214
+      },
+      {
+        "version": "Hisuian Sneasel",
+        "pokedex_number": 215
+      },
+      {
+        "version": "Tyrogue",
+        "pokedex_number": 236
+      },
+      {
+        "version": "Hitmontop",
+        "pokedex_number": 237
+      },
+      {
+        "version": "Combusken",
+        "pokedex_number": 256
+      },
+      {
+        "version": "Mega Blaziken",
+        "pokedex_number": 257
+      },
+      {
+        "version": "Blaziken",
+        "pokedex_number": 257
+      },
+      {
+        "version": "Breloom",
+        "pokedex_number": 286
+      },
+      {
+        "version": "Makuhita",
+        "pokedex_number": 296
+      },
+      {
+        "version": "Hariyama",
+        "pokedex_number": 297
+      },
+      {
+        "version": "Meditite",
+        "pokedex_number": 307
+      },
+      {
+        "version": "Mega Medicham",
+        "pokedex_number": 308
+      },
+      {
+        "version": "Medicham",
+        "pokedex_number": 308
+      },
+      {
+        "version": "Monferno",
+        "pokedex_number": 391
+      },
+      {
+        "version": "Infernape",
+        "pokedex_number": 392
+      },
+      {
+        "version": "Mega Lopunny",
+        "pokedex_number": 428
+      },
+      {
+        "version": "Riolu",
+        "pokedex_number": 447
+      },
+      {
+        "version": "Mega Lucario",
+        "pokedex_number": 448
+      },
+      {
+        "version": "Lucario",
+        "pokedex_number": 448
+      },
+      {
+        "version": "Croagunk",
+        "pokedex_number": 453
+      },
+      {
+        "version": "Toxicroak",
+        "pokedex_number": 454
+      },
+      {
+        "version": "Mega Gallade",
+        "pokedex_number": 475
+      },
+      {
+        "version": "Gallade",
+        "pokedex_number": 475
+      },
+      {
+        "version": "Pignite",
+        "pokedex_number": 499
+      },
+      {
+        "version": "Emboar",
+        "pokedex_number": 500
+      },
+      {
+        "version": "Timburr",
+        "pokedex_number": 532
+      },
+      {
+        "version": "Gurdurr",
+        "pokedex_number": 533
+      },
+      {
+        "version": "Conkeldurr",
+        "pokedex_number": 534
+      },
+      {
+        "version": "Throh",
+        "pokedex_number": 538
+      },
+      {
+        "version": "Sawk",
+        "pokedex_number": 539
+      },
+      {
+        "version": "Hisuian Lilligant",
+        "pokedex_number": 549
+      },
+      {
+        "version": "Scraggy",
+        "pokedex_number": 559
+      },
+      {
+        "version": "Scrafty",
+        "pokedex_number": 560
+      },
+      {
+        "version": "Mienfoo",
+        "pokedex_number": 619
+      },
+      {
+        "version": "Mienshao",
+        "pokedex_number": 620
+      },
+      {
+        "version": "Cobalion",
+        "pokedex_number": 638
+      },
+      {
+        "version": "Terrakion",
+        "pokedex_number": 639
+      },
+      {
+        "version": "Virizion",
+        "pokedex_number": 640
+      },
+      {
+        "version": "Ordinary Form",
+        "pokedex_number": 647
+      },
+      {
+        "version": "Resolute Form",
+        "pokedex_number": 647
+      },
+      {
+        "version": "Pirouette Forme",
+        "pokedex_number": 648
+      },
+      {
+        "version": "Chesnaught",
+        "pokedex_number": 652
+      },
+      {
+        "version": "Pancham",
+        "pokedex_number": 674
+      },
+      {
+        "version": "Pangoro",
+        "pokedex_number": 675
+      },
+      {
+        "version": "Hawlucha",
+        "pokedex_number": 701
+      },
+      {
+        "version": "Hisuian Decidueye",
+        "pokedex_number": 724
+      },
+      {
+        "version": "Crabrawler",
+        "pokedex_number": 739
+      },
+      {
+        "version": "Crabominable",
+        "pokedex_number": 740
+      },
+      {
+        "version": "Stufful",
+        "pokedex_number": 759
+      },
+      {
+        "version": "Bewear",
+        "pokedex_number": 760
+      },
+      {
+        "version": "Passimian",
+        "pokedex_number": 766
+      },
+      {
+        "version": "Hakamo-o",
+        "pokedex_number": 783
+      },
+      {
+        "version": "Kommo-o",
+        "pokedex_number": 784
+      },
+      {
+        "version": "Buzzwole",
+        "pokedex_number": 794
+      },
+      {
+        "version": "Pheromosa",
+        "pokedex_number": 795
+      },
+      {
+        "version": "Marshadow",
+        "pokedex_number": 802
+      },
+      {
+        "version": "Clobbopus",
+        "pokedex_number": 852
+      },
+      {
+        "version": "Grapploct",
+        "pokedex_number": 853
+      },
+      {
+        "version": "Sirfetch'd",
+        "pokedex_number": 865
+      },
+      {
+        "version": "Falinks",
+        "pokedex_number": 870
+      },
+      {
+        "version": "Hero of Many Battles",
+        "pokedex_number": 889
+      },
+      {
+        "version": "Crowned Shield",
+        "pokedex_number": 889
+      },
+      {
+        "version": "Kubfu",
+        "pokedex_number": 891
+      },
+      {
+        "version": "Single Strike Style",
+        "pokedex_number": 892
+      },
+      {
+        "version": "Rapid Strike Style",
+        "pokedex_number": 892
+      },
+      {
+        "version": "Sneasler",
+        "pokedex_number": 903
+      },
+      {
+        "version": "Quaquaval",
+        "pokedex_number": 914
+      },
+      {
+        "version": "Pawmo",
+        "pokedex_number": 922
+      },
+      {
+        "version": "Pawmot",
+        "pokedex_number": 923
+      },
+      {
+        "version": "Flamigo",
+        "pokedex_number": 973
+      },
+      {
+        "version": "Annihilape",
+        "pokedex_number": 979
+      },
+      {
+        "version": "Great Tusk",
+        "pokedex_number": 984
+      },
+      {
+        "version": "Slither Wing",
+        "pokedex_number": 988
+      },
+      {
+        "version": "Iron Hands",
+        "pokedex_number": 992
+      },
+      {
+        "version": "Iron Valiant",
+        "pokedex_number": 1006
+      },
+      {
+        "version": "Koraidon",
+        "pokedex_number": 1007
+      }
+    ],
+    "catch_rate": [
+      190, 75, 45, 180, 90, 45, 45, 45, 45, 45, 45, 45, 3, 3, 45, 45, 60, 75,
+      45, 45, 45, 45, 90, 180, 200, 180, 90, 90, 45, 45, 60, 75, 45, 45, 140,
+      75, 45, 45, 45, 45, 180, 90, 45, 45, 45, 75, 180, 90, 180, 45, 3, 3, 3, 3,
+      3, 3, 45, 220, 65, 100, 45, 225, 60, 140, 70, 45, 45, 45, 45, 45, 3, 180,
+      45, 45, 45, 10, 10, 3, 3, 3, 20, 45, 80, 45, 100, 45, 30, 30, 50, 10, 3
+    ]
+  },
+  "Fire": {
+    "name": [
+      {
+        "version": "Charmander",
+        "pokedex_number": 4
+      },
+      {
+        "version": "Charmeleon",
+        "pokedex_number": 5
+      },
+      {
+        "version": "Mega Charizard X",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Mega Charizard Y",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Charizard",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Vulpix",
+        "pokedex_number": 37
+      },
+      {
+        "version": "Ninetales",
+        "pokedex_number": 38
+      },
+      {
+        "version": "Hisuian Growlithe",
+        "pokedex_number": 58
+      },
+      {
+        "version": "Growlithe",
+        "pokedex_number": 58
+      },
+      {
+        "version": "Hisuian Arcanine",
+        "pokedex_number": 59
+      },
+      {
+        "version": "Arcanine",
+        "pokedex_number": 59
+      },
+      {
+        "version": "Ponyta",
+        "pokedex_number": 77
+      },
+      {
+        "version": "Rapidash",
+        "pokedex_number": 78
+      },
+      {
+        "version": "Alolan Marowak",
+        "pokedex_number": 105
+      },
+      {
+        "version": "Magmar",
+        "pokedex_number": 126
+      },
+      {
+        "version": "Blaze Breed",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Flareon",
+        "pokedex_number": 136
+      },
+      {
+        "version": "Moltres",
+        "pokedex_number": 146
+      },
+      {
+        "version": "Cyndaquil",
+        "pokedex_number": 155
+      },
+      {
+        "version": "Quilava",
+        "pokedex_number": 156
+      },
+      {
+        "version": "Hisuian Typhlosion",
+        "pokedex_number": 157
+      },
+      {
+        "version": "Typhlosion",
+        "pokedex_number": 157
+      },
+      {
+        "version": "Slugma",
+        "pokedex_number": 218
+      },
+      {
+        "version": "Magcargo",
+        "pokedex_number": 219
+      },
+      {
+        "version": "Houndour",
+        "pokedex_number": 228
+      },
+      {
+        "version": "Mega Houndoom",
+        "pokedex_number": 229
+      },
+      {
+        "version": "Houndoom",
+        "pokedex_number": 229
+      },
+      {
+        "version": "Magby",
+        "pokedex_number": 240
+      },
+      {
+        "version": "Entei",
+        "pokedex_number": 244
+      },
+      {
+        "version": "Ho-oh",
+        "pokedex_number": 250
+      },
+      {
+        "version": "Torchic",
+        "pokedex_number": 255
+      },
+      {
+        "version": "Combusken",
+        "pokedex_number": 256
+      },
+      {
+        "version": "Mega Blaziken",
+        "pokedex_number": 257
+      },
+      {
+        "version": "Blaziken",
+        "pokedex_number": 257
+      },
+      {
+        "version": "Numel",
+        "pokedex_number": 322
+      },
+      {
+        "version": "Mega Camerupt",
+        "pokedex_number": 323
+      },
+      {
+        "version": "Camerupt",
+        "pokedex_number": 323
+      },
+      {
+        "version": "Torkoal",
+        "pokedex_number": 324
+      },
+      {
+        "version": "Sunny Form",
+        "pokedex_number": 351
+      },
+      {
+        "version": "Primal Groudon",
+        "pokedex_number": 383
+      },
+      {
+        "version": "Chimchar",
+        "pokedex_number": 390
+      },
+      {
+        "version": "Monferno",
+        "pokedex_number": 391
+      },
+      {
+        "version": "Infernape",
+        "pokedex_number": 392
+      },
+      {
+        "version": "Magmortar",
+        "pokedex_number": 467
+      },
+      {
+        "version": "Heat Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Heatran",
+        "pokedex_number": 485
+      },
+      {
+        "version": "Victini",
+        "pokedex_number": 494
+      },
+      {
+        "version": "Tepig",
+        "pokedex_number": 498
+      },
+      {
+        "version": "Pignite",
+        "pokedex_number": 499
+      },
+      {
+        "version": "Emboar",
+        "pokedex_number": 500
+      },
+      {
+        "version": "Pansear",
+        "pokedex_number": 513
+      },
+      {
+        "version": "Simisear",
+        "pokedex_number": 514
+      },
+      {
+        "version": "Darumaka",
+        "pokedex_number": 554
+      },
+      {
+        "version": "Standard Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Zen Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Galarian Zen Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Litwick",
+        "pokedex_number": 607
+      },
+      {
+        "version": "Lampent",
+        "pokedex_number": 608
+      },
+      {
+        "version": "Chandelure",
+        "pokedex_number": 609
+      },
+      {
+        "version": "Heatmor",
+        "pokedex_number": 631
+      },
+      {
+        "version": "Larvesta",
+        "pokedex_number": 636
+      },
+      {
+        "version": "Volcarona",
+        "pokedex_number": 637
+      },
+      {
+        "version": "Reshiram",
+        "pokedex_number": 643
+      },
+      {
+        "version": "Fennekin",
+        "pokedex_number": 653
+      },
+      {
+        "version": "Braixen",
+        "pokedex_number": 654
+      },
+      {
+        "version": "Delphox",
+        "pokedex_number": 655
+      },
+      {
+        "version": "Fletchinder",
+        "pokedex_number": 662
+      },
+      {
+        "version": "Talonflame",
+        "pokedex_number": 663
+      },
+      {
+        "version": "Litleo",
+        "pokedex_number": 667
+      },
+      {
+        "version": "Pyroar",
+        "pokedex_number": 668
+      },
+      {
+        "version": "Volcanion",
+        "pokedex_number": 721
+      },
+      {
+        "version": "Litten",
+        "pokedex_number": 725
+      },
+      {
+        "version": "Torracat",
+        "pokedex_number": 726
+      },
+      {
+        "version": "Incineroar",
+        "pokedex_number": 727
+      },
+      {
+        "version": "Baile Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Salandit",
+        "pokedex_number": 757
+      },
+      {
+        "version": "Salazzle",
+        "pokedex_number": 758
+      },
+      {
+        "version": "Turtonator",
+        "pokedex_number": 776
+      },
+      {
+        "version": "Blacephalon",
+        "pokedex_number": 806
+      },
+      {
+        "version": "Scorbunny",
+        "pokedex_number": 813
+      },
+      {
+        "version": "Raboot",
+        "pokedex_number": 814
+      },
+      {
+        "version": "Cinderace",
+        "pokedex_number": 815
+      },
+      {
+        "version": "Carkol",
+        "pokedex_number": 838
+      },
+      {
+        "version": "Coalossal",
+        "pokedex_number": 839
+      },
+      {
+        "version": "Sizzlipede",
+        "pokedex_number": 850
+      },
+      {
+        "version": "Centiskorch",
+        "pokedex_number": 851
+      },
+      {
+        "version": "Fuecoco",
+        "pokedex_number": 909
+      },
+      {
+        "version": "Crocalor",
+        "pokedex_number": 910
+      },
+      {
+        "version": "Skeledirge",
+        "pokedex_number": 911
+      },
+      {
+        "version": "Charcadet",
+        "pokedex_number": 935
+      },
+      {
+        "version": "Armarouge",
+        "pokedex_number": 936
+      },
+      {
+        "version": "Ceruledge",
+        "pokedex_number": 937
+      },
+      {
+        "version": "Scovillain",
+        "pokedex_number": 952
+      },
+      {
+        "version": "Iron Moth",
+        "pokedex_number": 994
+      },
+      {
+        "version": "Chi-Yu",
+        "pokedex_number": 1004
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 45, 45, 190, 75, 190, 190, 75, 75, 190, 60, 75, 45, 45, 45, 3,
+      45, 45, 45, 45, 190, 75, 120, 45, 45, 45, 3, 3, 45, 45, 45, 45, 255, 150,
+      150, 90, 45, 5, 45, 45, 45, 30, 45, 3, 3, 45, 45, 45, 190, 75, 120, 60,
+      60, 60, 190, 90, 45, 90, 45, 15, 3, 45, 45, 45, 120, 45, 220, 65, 3, 45,
+      45, 45, 45, 120, 45, 70, 30, 45, 45, 45, 120, 45, 190, 75, 45, 45, 45, 90,
+      25, 25, 75, 30, 6
+    ]
+  },
+  "Flying": {
+    "name": [
+      {
+        "version": "Mega Charizard Y",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Charizard",
+        "pokedex_number": 6
+      },
+      {
+        "version": "Butterfree",
+        "pokedex_number": 12
+      },
+      {
+        "version": "Pidgey",
+        "pokedex_number": 16
+      },
+      {
+        "version": "Pidgeotto",
+        "pokedex_number": 17
+      },
+      {
+        "version": "Mega Pidgeot",
+        "pokedex_number": 18
+      },
+      {
+        "version": "Pidgeot",
+        "pokedex_number": 18
+      },
+      {
+        "version": "Spearow",
+        "pokedex_number": 21
+      },
+      {
+        "version": "Fearow",
+        "pokedex_number": 22
+      },
+      {
+        "version": "Zubat",
+        "pokedex_number": 41
+      },
+      {
+        "version": "Golbat",
+        "pokedex_number": 42
+      },
+      {
+        "version": "Farfetch'd",
+        "pokedex_number": 83
+      },
+      {
+        "version": "Doduo",
+        "pokedex_number": 84
+      },
+      {
+        "version": "Dodrio",
+        "pokedex_number": 85
+      },
+      {
+        "version": "Scyther",
+        "pokedex_number": 123
+      },
+      {
+        "version": "Mega Pinsir",
+        "pokedex_number": 127
+      },
+      {
+        "version": "Gyarados",
+        "pokedex_number": 130
+      },
+      {
+        "version": "Mega Aerodactyl",
+        "pokedex_number": 142
+      },
+      {
+        "version": "Aerodactyl",
+        "pokedex_number": 142
+      },
+      {
+        "version": "Galarian Articuno",
+        "pokedex_number": 144
+      },
+      {
+        "version": "Articuno",
+        "pokedex_number": 144
+      },
+      {
+        "version": "Galarian Zapdos",
+        "pokedex_number": 145
+      },
+      {
+        "version": "Zapdos",
+        "pokedex_number": 145
+      },
+      {
+        "version": "Galarian Moltres",
+        "pokedex_number": 146
+      },
+      {
+        "version": "Moltres",
+        "pokedex_number": 146
+      },
+      {
+        "version": "Dragonite",
+        "pokedex_number": 149
+      },
+      {
+        "version": "Hoothoot",
+        "pokedex_number": 163
+      },
+      {
+        "version": "Noctowl",
+        "pokedex_number": 164
+      },
+      {
+        "version": "Ledyba",
+        "pokedex_number": 165
+      },
+      {
+        "version": "Ledian",
+        "pokedex_number": 166
+      },
+      {
+        "version": "Crobat",
+        "pokedex_number": 169
+      },
+      {
+        "version": "Togetic",
+        "pokedex_number": 176
+      },
+      {
+        "version": "Natu",
+        "pokedex_number": 177
+      },
+      {
+        "version": "Xatu",
+        "pokedex_number": 178
+      },
+      {
+        "version": "Hoppip",
+        "pokedex_number": 187
+      },
+      {
+        "version": "Skiploom",
+        "pokedex_number": 188
+      },
+      {
+        "version": "Jumpluff",
+        "pokedex_number": 189
+      },
+      {
+        "version": "Yanma",
+        "pokedex_number": 193
+      },
+      {
+        "version": "Murkrow",
+        "pokedex_number": 198
+      },
+      {
+        "version": "Gligar",
+        "pokedex_number": 207
+      },
+      {
+        "version": "Delibird",
+        "pokedex_number": 225
+      },
+      {
+        "version": "Mantine",
+        "pokedex_number": 226
+      },
+      {
+        "version": "Skarmory",
+        "pokedex_number": 227
+      },
+      {
+        "version": "Lugia",
+        "pokedex_number": 249
+      },
+      {
+        "version": "Ho-oh",
+        "pokedex_number": 250
+      },
+      {
+        "version": "Beautifly",
+        "pokedex_number": 267
+      },
+      {
+        "version": "Taillow",
+        "pokedex_number": 276
+      },
+      {
+        "version": "Swellow",
+        "pokedex_number": 277
+      },
+      {
+        "version": "Wingull",
+        "pokedex_number": 278
+      },
+      {
+        "version": "Pelipper",
+        "pokedex_number": 279
+      },
+      {
+        "version": "Masquerain",
+        "pokedex_number": 284
+      },
+      {
+        "version": "Ninjask",
+        "pokedex_number": 291
+      },
+      {
+        "version": "Swablu",
+        "pokedex_number": 333
+      },
+      {
+        "version": "Altaria",
+        "pokedex_number": 334
+      },
+      {
+        "version": "Tropius",
+        "pokedex_number": 357
+      },
+      {
+        "version": "Mega Salamence",
+        "pokedex_number": 373
+      },
+      {
+        "version": "Salamence",
+        "pokedex_number": 373
+      },
+      {
+        "version": "Mega Rayquaza",
+        "pokedex_number": 384
+      },
+      {
+        "version": "Rayquaza",
+        "pokedex_number": 384
+      },
+      {
+        "version": "Starly",
+        "pokedex_number": 396
+      },
+      {
+        "version": "Staravia",
+        "pokedex_number": 397
+      },
+      {
+        "version": "Staraptor",
+        "pokedex_number": 398
+      },
+      {
+        "version": "Mothim",
+        "pokedex_number": 414
+      },
+      {
+        "version": "Combee",
+        "pokedex_number": 415
+      },
+      {
+        "version": "Vespiquen",
+        "pokedex_number": 416
+      },
+      {
+        "version": "Drifloon",
+        "pokedex_number": 425
+      },
+      {
+        "version": "Drifblim",
+        "pokedex_number": 426
+      },
+      {
+        "version": "Honchkrow",
+        "pokedex_number": 430
+      },
+      {
+        "version": "Chatot",
+        "pokedex_number": 441
+      },
+      {
+        "version": "Mantyke",
+        "pokedex_number": 458
+      },
+      {
+        "version": "Togekiss",
+        "pokedex_number": 468
+      },
+      {
+        "version": "Yanmega",
+        "pokedex_number": 469
+      },
+      {
+        "version": "Gliscor",
+        "pokedex_number": 472
+      },
+      {
+        "version": "Fan Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Sky Forme",
+        "pokedex_number": 492
+      },
+      {
+        "version": "Pidove",
+        "pokedex_number": 519
+      },
+      {
+        "version": "Tranquill",
+        "pokedex_number": 520
+      },
+      {
+        "version": "Unfezant",
+        "pokedex_number": 521
+      },
+      {
+        "version": "Woobat",
+        "pokedex_number": 527
+      },
+      {
+        "version": "Swoobat",
+        "pokedex_number": 528
+      },
+      {
+        "version": "Sigilyph",
+        "pokedex_number": 561
+      },
+      {
+        "version": "Archen",
+        "pokedex_number": 566
+      },
+      {
+        "version": "Archeops",
+        "pokedex_number": 567
+      },
+      {
+        "version": "Ducklett",
+        "pokedex_number": 580
+      },
+      {
+        "version": "Swanna",
+        "pokedex_number": 581
+      },
+      {
+        "version": "Emolga",
+        "pokedex_number": 587
+      },
+      {
+        "version": "Rufflet",
+        "pokedex_number": 627
+      },
+      {
+        "version": "Hisuian Braviary",
+        "pokedex_number": 628
+      },
+      {
+        "version": "Braviary",
+        "pokedex_number": 628
+      },
+      {
+        "version": "Vullaby",
+        "pokedex_number": 629
+      },
+      {
+        "version": "Mandibuzz",
+        "pokedex_number": 630
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 641
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 641
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 642
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 642
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 645
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 645
+      },
+      {
+        "version": "Fletchling",
+        "pokedex_number": 661
+      },
+      {
+        "version": "Fletchinder",
+        "pokedex_number": 662
+      },
+      {
+        "version": "Talonflame",
+        "pokedex_number": 663
+      },
+      {
+        "version": "Vivillon",
+        "pokedex_number": 666
+      },
+      {
+        "version": "Hawlucha",
+        "pokedex_number": 701
+      },
+      {
+        "version": "Noibat",
+        "pokedex_number": 714
+      },
+      {
+        "version": "Noivern",
+        "pokedex_number": 715
+      },
+      {
+        "version": "Yveltal",
+        "pokedex_number": 717
+      },
+      {
+        "version": "Rowlet",
+        "pokedex_number": 722
+      },
+      {
+        "version": "Dartrix",
+        "pokedex_number": 723
+      },
+      {
+        "version": "Pikipek",
+        "pokedex_number": 731
+      },
+      {
+        "version": "Trumbeak",
+        "pokedex_number": 732
+      },
+      {
+        "version": "Toucannon",
+        "pokedex_number": 733
+      },
+      {
+        "version": "Baile Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Pom-Pom Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Pa'u Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Sensu Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Meteor Form",
+        "pokedex_number": 774
+      },
+      {
+        "version": "Core Form",
+        "pokedex_number": 774
+      },
+      {
+        "version": "Celesteela",
+        "pokedex_number": 797
+      },
+      {
+        "version": "Rookidee",
+        "pokedex_number": 821
+      },
+      {
+        "version": "Corvisquire",
+        "pokedex_number": 822
+      },
+      {
+        "version": "Corviknight",
+        "pokedex_number": 823
+      },
+      {
+        "version": "Cramorant",
+        "pokedex_number": 845
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 905
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 905
+      },
+      {
+        "version": "Green Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Blue Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Yellow Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "White Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Wattrel",
+        "pokedex_number": 940
+      },
+      {
+        "version": "Kilowattrel",
+        "pokedex_number": 941
+      },
+      {
+        "version": "Bombirdier",
+        "pokedex_number": 962
+      },
+      {
+        "version": "Flamigo",
+        "pokedex_number": 973
+      },
+      {
+        "version": "Iron Jugulis",
+        "pokedex_number": 993
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 255, 120, 45, 45, 255, 90, 255, 90, 45, 190, 45, 45, 45, 45,
+      45, 45, 3, 3, 3, 3, 3, 3, 45, 255, 90, 255, 90, 90, 75, 190, 75, 255, 120,
+      45, 75, 30, 60, 45, 25, 25, 3, 3, 45, 200, 45, 190, 45, 75, 120, 255, 45,
+      200, 45, 45, 3, 45, 255, 120, 45, 45, 120, 45, 125, 60, 30, 30, 25, 30,
+      30, 30, 45, 45, 255, 120, 45, 190, 45, 45, 45, 45, 190, 45, 200, 190, 60,
+      60, 190, 60, 3, 3, 3, 3, 3, 3, 255, 120, 45, 45, 100, 190, 45, 45, 45, 45,
+      255, 120, 45, 45, 45, 45, 45, 30, 30, 45, 255, 120, 45, 45, 3, 3, 190,
+      190, 190, 190, 180, 90, 25, 100, 30
+    ]
+  },
+  "Ghost": {
+    "name": [
+      {
+        "version": "Gastly",
+        "pokedex_number": 92
+      },
+      {
+        "version": "Haunter",
+        "pokedex_number": 93
+      },
+      {
+        "version": "Mega Gengar",
+        "pokedex_number": 94
+      },
+      {
+        "version": "Gengar",
+        "pokedex_number": 94
+      },
+      {
+        "version": "Alolan Marowak",
+        "pokedex_number": 105
+      },
+      {
+        "version": "Hisuian Typhlosion",
+        "pokedex_number": 157
+      },
+      {
+        "version": "Misdreavus",
+        "pokedex_number": 200
+      },
+      {
+        "version": "Galarian Corsola",
+        "pokedex_number": 222
+      },
+      {
+        "version": "Shedinja",
+        "pokedex_number": 292
+      },
+      {
+        "version": "Mega Sableye",
+        "pokedex_number": 302
+      },
+      {
+        "version": "Sableye",
+        "pokedex_number": 302
+      },
+      {
+        "version": "Shuppet",
+        "pokedex_number": 353
+      },
+      {
+        "version": "Mega Banette",
+        "pokedex_number": 354
+      },
+      {
+        "version": "Banette",
+        "pokedex_number": 354
+      },
+      {
+        "version": "Duskull",
+        "pokedex_number": 355
+      },
+      {
+        "version": "Dusclops",
+        "pokedex_number": 356
+      },
+      {
+        "version": "Drifloon",
+        "pokedex_number": 425
+      },
+      {
+        "version": "Drifblim",
+        "pokedex_number": 426
+      },
+      {
+        "version": "Mismagius",
+        "pokedex_number": 429
+      },
+      {
+        "version": "Spiritomb",
+        "pokedex_number": 442
+      },
+      {
+        "version": "Dusknoir",
+        "pokedex_number": 477
+      },
+      {
+        "version": "Froslass",
+        "pokedex_number": 478
+      },
+      {
+        "version": "Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Altered Forme",
+        "pokedex_number": 487
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 487
+      },
+      {
+        "version": "Galarian Yamask",
+        "pokedex_number": 562
+      },
+      {
+        "version": "Yamask",
+        "pokedex_number": 562
+      },
+      {
+        "version": "Cofagrigus",
+        "pokedex_number": 563
+      },
+      {
+        "version": "Hisuian Zorua",
+        "pokedex_number": 570
+      },
+      {
+        "version": "Hisuian Zoroark",
+        "pokedex_number": 571
+      },
+      {
+        "version": "Frillish",
+        "pokedex_number": 592
+      },
+      {
+        "version": "Jellicent",
+        "pokedex_number": 593
+      },
+      {
+        "version": "Litwick",
+        "pokedex_number": 607
+      },
+      {
+        "version": "Lampent",
+        "pokedex_number": 608
+      },
+      {
+        "version": "Chandelure",
+        "pokedex_number": 609
+      },
+      {
+        "version": "Golett",
+        "pokedex_number": 622
+      },
+      {
+        "version": "Golurk",
+        "pokedex_number": 623
+      },
+      {
+        "version": "Honedge",
+        "pokedex_number": 679
+      },
+      {
+        "version": "Doublade",
+        "pokedex_number": 680
+      },
+      {
+        "version": "Shield Forme",
+        "pokedex_number": 681
+      },
+      {
+        "version": "Blade Forme",
+        "pokedex_number": 681
+      },
+      {
+        "version": "Phantump",
+        "pokedex_number": 708
+      },
+      {
+        "version": "Trevenant",
+        "pokedex_number": 709
+      },
+      {
+        "version": "Average Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Small Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Large Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Super Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Average Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Small Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Large Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Super Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Hoopa Confined",
+        "pokedex_number": 720
+      },
+      {
+        "version": "Decidueye",
+        "pokedex_number": 724
+      },
+      {
+        "version": "Sensu Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Sandygast",
+        "pokedex_number": 769
+      },
+      {
+        "version": "Palossand",
+        "pokedex_number": 770
+      },
+      {
+        "version": "Mimikyu",
+        "pokedex_number": 778
+      },
+      {
+        "version": "Dhelmise",
+        "pokedex_number": 781
+      },
+      {
+        "version": "Lunala",
+        "pokedex_number": 792
+      },
+      {
+        "version": "Dawn Wings Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Marshadow",
+        "pokedex_number": 802
+      },
+      {
+        "version": "Blacephalon",
+        "pokedex_number": 806
+      },
+      {
+        "version": "Sinistea",
+        "pokedex_number": 854
+      },
+      {
+        "version": "Polteageist",
+        "pokedex_number": 855
+      },
+      {
+        "version": "Cursola",
+        "pokedex_number": 864
+      },
+      {
+        "version": "Runerigus",
+        "pokedex_number": 867
+      },
+      {
+        "version": "Dreepy",
+        "pokedex_number": 885
+      },
+      {
+        "version": "Drakloak",
+        "pokedex_number": 886
+      },
+      {
+        "version": "Dragapult",
+        "pokedex_number": 887
+      },
+      {
+        "version": "Spectrier",
+        "pokedex_number": 897
+      },
+      {
+        "version": "Shadow Rider",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 902
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 902
+      },
+      {
+        "version": "Skeledirge",
+        "pokedex_number": 911
+      },
+      {
+        "version": "Ceruledge",
+        "pokedex_number": 937
+      },
+      {
+        "version": "Bramblin",
+        "pokedex_number": 946
+      },
+      {
+        "version": "Brambleghast",
+        "pokedex_number": 947
+      },
+      {
+        "version": "Greavard",
+        "pokedex_number": 971
+      },
+      {
+        "version": "Houndstone",
+        "pokedex_number": 972
+      },
+      {
+        "version": "Annihilape",
+        "pokedex_number": 979
+      },
+      {
+        "version": "Flutter Mane",
+        "pokedex_number": 987
+      },
+      {
+        "version": "Chest Form",
+        "pokedex_number": 999
+      },
+      {
+        "version": "Roaming Form",
+        "pokedex_number": 999
+      },
+      {
+        "version": "Gholdengo",
+        "pokedex_number": 1000
+      }
+    ],
+    "catch_rate": [
+      190, 90, 45, 45, 75, 45, 45, 60, 45, 45, 45, 225, 45, 45, 190, 90, 125,
+      60, 45, 100, 45, 75, 45, 3, 3, 190, 190, 90, 75, 45, 190, 60, 190, 90, 45,
+      190, 90, 180, 90, 45, 45, 120, 60, 120, 120, 120, 120, 60, 60, 60, 60, 3,
+      45, 45, 140, 60, 45, 25, 45, 3, 3, 30, 120, 60, 30, 90, 45, 45, 45, 3, 3,
+      45, 45, 45, 25, 190, 45, 120, 60, 45, 30, 45, 45, 45
+    ]
+  },
+  "Grass": {
+    "name": [
+      {
+        "version": "Bulbasaur",
+        "pokedex_number": 1
+      },
+      {
+        "version": "Ivysaur",
+        "pokedex_number": 2
+      },
+      {
+        "version": "Mega Venusaur",
+        "pokedex_number": 3
+      },
+      {
+        "version": "Venusaur",
+        "pokedex_number": 3
+      },
+      {
+        "version": "Oddish",
+        "pokedex_number": 43
+      },
+      {
+        "version": "Gloom",
+        "pokedex_number": 44
+      },
+      {
+        "version": "Vileplume",
+        "pokedex_number": 45
+      },
+      {
+        "version": "Paras",
+        "pokedex_number": 46
+      },
+      {
+        "version": "Parasect",
+        "pokedex_number": 47
+      },
+      {
+        "version": "Bellsprout",
+        "pokedex_number": 69
+      },
+      {
+        "version": "Weepinbell",
+        "pokedex_number": 70
+      },
+      {
+        "version": "Victreebel",
+        "pokedex_number": 71
+      },
+      {
+        "version": "Hisuian Voltorb",
+        "pokedex_number": 100
+      },
+      {
+        "version": "Hisuian Electrode",
+        "pokedex_number": 101
+      },
+      {
+        "version": "Exeggcute",
+        "pokedex_number": 102
+      },
+      {
+        "version": "Alolan Exeggutor",
+        "pokedex_number": 103
+      },
+      {
+        "version": "Exeggutor",
+        "pokedex_number": 103
+      },
+      {
+        "version": "Tangela",
+        "pokedex_number": 114
+      },
+      {
+        "version": "Chikorita",
+        "pokedex_number": 152
+      },
+      {
+        "version": "Bayleef",
+        "pokedex_number": 153
+      },
+      {
+        "version": "Meganium",
+        "pokedex_number": 154
+      },
+      {
+        "version": "Bellossom",
+        "pokedex_number": 182
+      },
+      {
+        "version": "Hoppip",
+        "pokedex_number": 187
+      },
+      {
+        "version": "Skiploom",
+        "pokedex_number": 188
+      },
+      {
+        "version": "Jumpluff",
+        "pokedex_number": 189
+      },
+      {
+        "version": "Sunkern",
+        "pokedex_number": 191
+      },
+      {
+        "version": "Sunflora",
+        "pokedex_number": 192
+      },
+      {
+        "version": "Celebi",
+        "pokedex_number": 251
+      },
+      {
+        "version": "Treecko",
+        "pokedex_number": 252
+      },
+      {
+        "version": "Grovyle",
+        "pokedex_number": 253
+      },
+      {
+        "version": "Mega Sceptile",
+        "pokedex_number": 254
+      },
+      {
+        "version": "Sceptile",
+        "pokedex_number": 254
+      },
+      {
+        "version": "Lotad",
+        "pokedex_number": 270
+      },
+      {
+        "version": "Lombre",
+        "pokedex_number": 271
+      },
+      {
+        "version": "Ludicolo",
+        "pokedex_number": 272
+      },
+      {
+        "version": "Seedot",
+        "pokedex_number": 273
+      },
+      {
+        "version": "Nuzleaf",
+        "pokedex_number": 274
+      },
+      {
+        "version": "Shiftry",
+        "pokedex_number": 275
+      },
+      {
+        "version": "Shroomish",
+        "pokedex_number": 285
+      },
+      {
+        "version": "Breloom",
+        "pokedex_number": 286
+      },
+      {
+        "version": "Roselia",
+        "pokedex_number": 315
+      },
+      {
+        "version": "Cacnea",
+        "pokedex_number": 331
+      },
+      {
+        "version": "Cacturne",
+        "pokedex_number": 332
+      },
+      {
+        "version": "Lileep",
+        "pokedex_number": 345
+      },
+      {
+        "version": "Cradily",
+        "pokedex_number": 346
+      },
+      {
+        "version": "Tropius",
+        "pokedex_number": 357
+      },
+      {
+        "version": "Turtwig",
+        "pokedex_number": 387
+      },
+      {
+        "version": "Grotle",
+        "pokedex_number": 388
+      },
+      {
+        "version": "Torterra",
+        "pokedex_number": 389
+      },
+      {
+        "version": "Budew",
+        "pokedex_number": 406
+      },
+      {
+        "version": "Roserade",
+        "pokedex_number": 407
+      },
+      {
+        "version": "Plant Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Cherubi",
+        "pokedex_number": 420
+      },
+      {
+        "version": "Cherrim",
+        "pokedex_number": 421
+      },
+      {
+        "version": "Carnivine",
+        "pokedex_number": 455
+      },
+      {
+        "version": "Snover",
+        "pokedex_number": 459
+      },
+      {
+        "version": "Mega Abomasnow",
+        "pokedex_number": 460
+      },
+      {
+        "version": "Abomasnow",
+        "pokedex_number": 460
+      },
+      {
+        "version": "Tangrowth",
+        "pokedex_number": 465
+      },
+      {
+        "version": "Leafeon",
+        "pokedex_number": 470
+      },
+      {
+        "version": "Mow Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Land Forme",
+        "pokedex_number": 492
+      },
+      {
+        "version": "Sky Forme",
+        "pokedex_number": 492
+      },
+      {
+        "version": "Snivy",
+        "pokedex_number": 495
+      },
+      {
+        "version": "Servine",
+        "pokedex_number": 496
+      },
+      {
+        "version": "Serperior",
+        "pokedex_number": 497
+      },
+      {
+        "version": "Pansage",
+        "pokedex_number": 511
+      },
+      {
+        "version": "Simisage",
+        "pokedex_number": 512
+      },
+      {
+        "version": "Sewaddle",
+        "pokedex_number": 540
+      },
+      {
+        "version": "Swadloon",
+        "pokedex_number": 541
+      },
+      {
+        "version": "Leavanny",
+        "pokedex_number": 542
+      },
+      {
+        "version": "Cottonee",
+        "pokedex_number": 546
+      },
+      {
+        "version": "Whimsicott",
+        "pokedex_number": 547
+      },
+      {
+        "version": "Petilil",
+        "pokedex_number": 548
+      },
+      {
+        "version": "Hisuian Lilligant",
+        "pokedex_number": 549
+      },
+      {
+        "version": "Lilligant",
+        "pokedex_number": 549
+      },
+      {
+        "version": "Maractus",
+        "pokedex_number": 556
+      },
+      {
+        "version": "Deerling",
+        "pokedex_number": 585
+      },
+      {
+        "version": "Sawsbuck",
+        "pokedex_number": 586
+      },
+      {
+        "version": "Foongus",
+        "pokedex_number": 590
+      },
+      {
+        "version": "Amoonguss",
+        "pokedex_number": 591
+      },
+      {
+        "version": "Ferroseed",
+        "pokedex_number": 597
+      },
+      {
+        "version": "Ferrothorn",
+        "pokedex_number": 598
+      },
+      {
+        "version": "Virizion",
+        "pokedex_number": 640
+      },
+      {
+        "version": "Chespin",
+        "pokedex_number": 650
+      },
+      {
+        "version": "Quilladin",
+        "pokedex_number": 651
+      },
+      {
+        "version": "Chesnaught",
+        "pokedex_number": 652
+      },
+      {
+        "version": "Skiddo",
+        "pokedex_number": 672
+      },
+      {
+        "version": "Gogoat",
+        "pokedex_number": 673
+      },
+      {
+        "version": "Phantump",
+        "pokedex_number": 708
+      },
+      {
+        "version": "Trevenant",
+        "pokedex_number": 709
+      },
+      {
+        "version": "Average Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Small Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Large Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Super Size",
+        "pokedex_number": 710
+      },
+      {
+        "version": "Average Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Small Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Large Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Super Size",
+        "pokedex_number": 711
+      },
+      {
+        "version": "Rowlet",
+        "pokedex_number": 722
+      },
+      {
+        "version": "Dartrix",
+        "pokedex_number": 723
+      },
+      {
+        "version": "Hisuian Decidueye",
+        "pokedex_number": 724
+      },
+      {
+        "version": "Decidueye",
+        "pokedex_number": 724
+      },
+      {
+        "version": "Fomantis",
+        "pokedex_number": 753
+      },
+      {
+        "version": "Lurantis",
+        "pokedex_number": 754
+      },
+      {
+        "version": "Morelull",
+        "pokedex_number": 755
+      },
+      {
+        "version": "Shiinotic",
+        "pokedex_number": 756
+      },
+      {
+        "version": "Bounsweet",
+        "pokedex_number": 761
+      },
+      {
+        "version": "Steenee",
+        "pokedex_number": 762
+      },
+      {
+        "version": "Tsareena",
+        "pokedex_number": 763
+      },
+      {
+        "version": "Dhelmise",
+        "pokedex_number": 781
+      },
+      {
+        "version": "Tapu Bulu",
+        "pokedex_number": 787
+      },
+      {
+        "version": "Kartana",
+        "pokedex_number": 798
+      },
+      {
+        "version": "Grookey",
+        "pokedex_number": 810
+      },
+      {
+        "version": "Thwackey",
+        "pokedex_number": 811
+      },
+      {
+        "version": "Rillaboom",
+        "pokedex_number": 812
+      },
+      {
+        "version": "Gossifleur",
+        "pokedex_number": 829
+      },
+      {
+        "version": "Eldegoss",
+        "pokedex_number": 830
+      },
+      {
+        "version": "Applin",
+        "pokedex_number": 840
+      },
+      {
+        "version": "Flapple",
+        "pokedex_number": 841
+      },
+      {
+        "version": "Appletun",
+        "pokedex_number": 842
+      },
+      {
+        "version": "Zarude",
+        "pokedex_number": 893
+      },
+      {
+        "version": "Calyrex",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Sprigatito",
+        "pokedex_number": 906
+      },
+      {
+        "version": "Floragato",
+        "pokedex_number": 907
+      },
+      {
+        "version": "Meowscarada",
+        "pokedex_number": 908
+      },
+      {
+        "version": "Smoliv",
+        "pokedex_number": 928
+      },
+      {
+        "version": "Dolliv",
+        "pokedex_number": 929
+      },
+      {
+        "version": "Arboliva",
+        "pokedex_number": 930
+      },
+      {
+        "version": "Bramblin",
+        "pokedex_number": 946
+      },
+      {
+        "version": "Brambleghast",
+        "pokedex_number": 947
+      },
+      {
+        "version": "Toedscool",
+        "pokedex_number": 948
+      },
+      {
+        "version": "Toedscruel",
+        "pokedex_number": 949
+      },
+      {
+        "version": "Capsakid",
+        "pokedex_number": 951
+      },
+      {
+        "version": "Scovillain",
+        "pokedex_number": 952
+      },
+      {
+        "version": "Brute Bonnet",
+        "pokedex_number": 986
+      },
+      {
+        "version": "Wo-Chien",
+        "pokedex_number": 1001
+      },
+      {
+        "version": "Iron Leaves",
+        "pokedex_number": 1010
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 45, 255, 120, 45, 190, 75, 255, 120, 45, 190, 60, 90, 45, 45,
+      45, 45, 45, 45, 45, 255, 120, 45, 235, 120, 45, 45, 45, 45, 45, 255, 120,
+      45, 255, 120, 45, 255, 90, 150, 190, 60, 45, 45, 200, 45, 45, 45, 255, 75,
+      45, 190, 75, 200, 120, 60, 60, 30, 45, 45, 45, 45, 45, 45, 45, 190, 75,
+      255, 120, 45, 190, 75, 190, 75, 75, 255, 190, 75, 190, 75, 255, 90, 3, 45,
+      45, 45, 200, 45, 120, 60, 120, 120, 120, 120, 60, 60, 60, 60, 45, 45, 45,
+      45, 190, 75, 190, 75, 235, 120, 45, 25, 3, 45, 45, 45, 45, 190, 75, 255,
+      45, 45, 3, 3, 45, 45, 45, 255, 120, 45, 190, 45, 190, 90, 190, 75, 50, 6,
+      0
+    ]
+  },
+  "Ground": {
+    "name": [
+      {
+        "version": "Sandshrew",
+        "pokedex_number": 27
+      },
+      {
+        "version": "Sandslash",
+        "pokedex_number": 28
+      },
+      {
+        "version": "Nidoqueen",
+        "pokedex_number": 31
+      },
+      {
+        "version": "Nidoking",
+        "pokedex_number": 34
+      },
+      {
+        "version": "Alolan Diglett",
+        "pokedex_number": 50
+      },
+      {
+        "version": "Diglett",
+        "pokedex_number": 50
+      },
+      {
+        "version": "Alolan Dugtrio",
+        "pokedex_number": 51
+      },
+      {
+        "version": "Dugtrio",
+        "pokedex_number": 51
+      },
+      {
+        "version": "Geodude",
+        "pokedex_number": 74
+      },
+      {
+        "version": "Graveler",
+        "pokedex_number": 75
+      },
+      {
+        "version": "Golem",
+        "pokedex_number": 76
+      },
+      {
+        "version": "Onix",
+        "pokedex_number": 95
+      },
+      {
+        "version": "Cubone",
+        "pokedex_number": 104
+      },
+      {
+        "version": "Marowak",
+        "pokedex_number": 105
+      },
+      {
+        "version": "Rhyhorn",
+        "pokedex_number": 111
+      },
+      {
+        "version": "Rhydon",
+        "pokedex_number": 112
+      },
+      {
+        "version": "Paldean Wooper",
+        "pokedex_number": 194
+      },
+      {
+        "version": "Wooper",
+        "pokedex_number": 194
+      },
+      {
+        "version": "Quagsire",
+        "pokedex_number": 195
+      },
+      {
+        "version": "Gligar",
+        "pokedex_number": 207
+      },
+      {
+        "version": "Mega Steelix",
+        "pokedex_number": 208
+      },
+      {
+        "version": "Steelix",
+        "pokedex_number": 208
+      },
+      {
+        "version": "Swinub",
+        "pokedex_number": 220
+      },
+      {
+        "version": "Piloswine",
+        "pokedex_number": 221
+      },
+      {
+        "version": "Phanpy",
+        "pokedex_number": 231
+      },
+      {
+        "version": "Donphan",
+        "pokedex_number": 232
+      },
+      {
+        "version": "Larvitar",
+        "pokedex_number": 246
+      },
+      {
+        "version": "Pupitar",
+        "pokedex_number": 247
+      },
+      {
+        "version": "Marshtomp",
+        "pokedex_number": 259
+      },
+      {
+        "version": "Mega Swampert",
+        "pokedex_number": 260
+      },
+      {
+        "version": "Swampert",
+        "pokedex_number": 260
+      },
+      {
+        "version": "Nincada",
+        "pokedex_number": 290
+      },
+      {
+        "version": "Numel",
+        "pokedex_number": 322
+      },
+      {
+        "version": "Mega Camerupt",
+        "pokedex_number": 323
+      },
+      {
+        "version": "Camerupt",
+        "pokedex_number": 323
+      },
+      {
+        "version": "Trapinch",
+        "pokedex_number": 328
+      },
+      {
+        "version": "Vibrava",
+        "pokedex_number": 329
+      },
+      {
+        "version": "Flygon",
+        "pokedex_number": 330
+      },
+      {
+        "version": "Barboach",
+        "pokedex_number": 339
+      },
+      {
+        "version": "Whiscash",
+        "pokedex_number": 340
+      },
+      {
+        "version": "Baltoy",
+        "pokedex_number": 343
+      },
+      {
+        "version": "Claydol",
+        "pokedex_number": 344
+      },
+      {
+        "version": "Primal Groudon",
+        "pokedex_number": 383
+      },
+      {
+        "version": "Groudon",
+        "pokedex_number": 383
+      },
+      {
+        "version": "Torterra",
+        "pokedex_number": 389
+      },
+      {
+        "version": "Sandy Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Gastrodon",
+        "pokedex_number": 423
+      },
+      {
+        "version": "Gible",
+        "pokedex_number": 443
+      },
+      {
+        "version": "Gabite",
+        "pokedex_number": 444
+      },
+      {
+        "version": "Mega Garchomp",
+        "pokedex_number": 445
+      },
+      {
+        "version": "Garchomp",
+        "pokedex_number": 445
+      },
+      {
+        "version": "Hippopotas",
+        "pokedex_number": 449
+      },
+      {
+        "version": "Hippowdon",
+        "pokedex_number": 450
+      },
+      {
+        "version": "Rhyperior",
+        "pokedex_number": 464
+      },
+      {
+        "version": "Gliscor",
+        "pokedex_number": 472
+      },
+      {
+        "version": "Mamoswine",
+        "pokedex_number": 473
+      },
+      {
+        "version": "Drilbur",
+        "pokedex_number": 529
+      },
+      {
+        "version": "Excadrill",
+        "pokedex_number": 530
+      },
+      {
+        "version": "Palpitoad",
+        "pokedex_number": 536
+      },
+      {
+        "version": "Seismitoad",
+        "pokedex_number": 537
+      },
+      {
+        "version": "Sandile",
+        "pokedex_number": 551
+      },
+      {
+        "version": "Krokorok",
+        "pokedex_number": 552
+      },
+      {
+        "version": "Krookodile",
+        "pokedex_number": 553
+      },
+      {
+        "version": "Galarian Yamask",
+        "pokedex_number": 562
+      },
+      {
+        "version": "Galarian Stunfisk",
+        "pokedex_number": 618
+      },
+      {
+        "version": "Stunfisk",
+        "pokedex_number": 618
+      },
+      {
+        "version": "Golett",
+        "pokedex_number": 622
+      },
+      {
+        "version": "Golurk",
+        "pokedex_number": 623
+      },
+      {
+        "version": "Incarnate Forme",
+        "pokedex_number": 645
+      },
+      {
+        "version": "Therian Forme",
+        "pokedex_number": 645
+      },
+      {
+        "version": "Diggersby",
+        "pokedex_number": 660
+      },
+      {
+        "version": "50% Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "10% Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "Complete Forme",
+        "pokedex_number": 718
+      },
+      {
+        "version": "Mudbray",
+        "pokedex_number": 749
+      },
+      {
+        "version": "Mudsdale",
+        "pokedex_number": 750
+      },
+      {
+        "version": "Sandygast",
+        "pokedex_number": 769
+      },
+      {
+        "version": "Palossand",
+        "pokedex_number": 770
+      },
+      {
+        "version": "Silicobra",
+        "pokedex_number": 843
+      },
+      {
+        "version": "Sandaconda",
+        "pokedex_number": 844
+      },
+      {
+        "version": "Runerigus",
+        "pokedex_number": 867
+      },
+      {
+        "version": "Ursaluna",
+        "pokedex_number": 901
+      },
+      {
+        "version": "Toedscool",
+        "pokedex_number": 948
+      },
+      {
+        "version": "Toedscruel",
+        "pokedex_number": 949
+      },
+      {
+        "version": "Clodsire",
+        "pokedex_number": 980
+      },
+      {
+        "version": "Great Tusk",
+        "pokedex_number": 984
+      },
+      {
+        "version": "Sandy Shocks",
+        "pokedex_number": 989
+      },
+      {
+        "version": "Iron Treads",
+        "pokedex_number": 990
+      },
+      {
+        "version": "Ting-Lu",
+        "pokedex_number": 1003
+      }
+    ],
+    "catch_rate": [
+      255, 90, 45, 45, 255, 255, 50, 50, 255, 120, 45, 45, 190, 75, 120, 60,
+      255, 255, 90, 60, 25, 25, 225, 75, 120, 60, 45, 45, 45, 45, 45, 255, 255,
+      150, 150, 255, 120, 45, 190, 75, 255, 90, 5, 3, 45, 45, 75, 45, 45, 45,
+      45, 140, 60, 30, 30, 50, 120, 60, 120, 45, 180, 90, 45, 190, 75, 75, 190,
+      90, 3, 3, 127, 3, 3, 3, 190, 60, 140, 60, 255, 120, 90, 20, 190, 90, 90,
+      30, 30, 30, 6
+    ]
+  },
+  "Ice": {
+    "name": [
+      {
+        "version": "Alolan Sandshrew",
+        "pokedex_number": 27
+      },
+      {
+        "version": "Alolan Sandslash",
+        "pokedex_number": 28
+      },
+      {
+        "version": "Alolan Vulpix",
+        "pokedex_number": 37
+      },
+      {
+        "version": "Alolan Ninetales",
+        "pokedex_number": 38
+      },
+      {
+        "version": "Dewgong",
+        "pokedex_number": 87
+      },
+      {
+        "version": "Cloyster",
+        "pokedex_number": 91
+      },
+      {
+        "version": "Galarian Mr. Mime",
+        "pokedex_number": 122
+      },
+      {
+        "version": "Jynx",
+        "pokedex_number": 124
+      },
+      {
+        "version": "Lapras",
+        "pokedex_number": 131
+      },
+      {
+        "version": "Articuno",
+        "pokedex_number": 144
+      },
+      {
+        "version": "Sneasel",
+        "pokedex_number": 215
+      },
+      {
+        "version": "Swinub",
+        "pokedex_number": 220
+      },
+      {
+        "version": "Piloswine",
+        "pokedex_number": 221
+      },
+      {
+        "version": "Delibird",
+        "pokedex_number": 225
+      },
+      {
+        "version": "Smoochum",
+        "pokedex_number": 238
+      },
+      {
+        "version": "Snowy Form",
+        "pokedex_number": 351
+      },
+      {
+        "version": "Snorunt",
+        "pokedex_number": 361
+      },
+      {
+        "version": "Mega Glalie",
+        "pokedex_number": 362
+      },
+      {
+        "version": "Glalie",
+        "pokedex_number": 362
+      },
+      {
+        "version": "Spheal",
+        "pokedex_number": 363
+      },
+      {
+        "version": "Sealeo",
+        "pokedex_number": 364
+      },
+      {
+        "version": "Walrein",
+        "pokedex_number": 365
+      },
+      {
+        "version": "Regice",
+        "pokedex_number": 378
+      },
+      {
+        "version": "Snover",
+        "pokedex_number": 459
+      },
+      {
+        "version": "Mega Abomasnow",
+        "pokedex_number": 460
+      },
+      {
+        "version": "Abomasnow",
+        "pokedex_number": 460
+      },
+      {
+        "version": "Weavile",
+        "pokedex_number": 461
+      },
+      {
+        "version": "Glaceon",
+        "pokedex_number": 471
+      },
+      {
+        "version": "Mamoswine",
+        "pokedex_number": 473
+      },
+      {
+        "version": "Froslass",
+        "pokedex_number": 478
+      },
+      {
+        "version": "Frost Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Galarian Darumaka",
+        "pokedex_number": 554
+      },
+      {
+        "version": "Galarian Standard Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Galarian Zen Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Vanillite",
+        "pokedex_number": 582
+      },
+      {
+        "version": "Vanillish",
+        "pokedex_number": 583
+      },
+      {
+        "version": "Vanilluxe",
+        "pokedex_number": 584
+      },
+      {
+        "version": "Cubchoo",
+        "pokedex_number": 613
+      },
+      {
+        "version": "Beartic",
+        "pokedex_number": 614
+      },
+      {
+        "version": "Cryogonal",
+        "pokedex_number": 615
+      },
+      {
+        "version": "White Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Black Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Kyurem",
+        "pokedex_number": 646
+      },
+      {
+        "version": "Amaura",
+        "pokedex_number": 698
+      },
+      {
+        "version": "Aurorus",
+        "pokedex_number": 699
+      },
+      {
+        "version": "Bergmite",
+        "pokedex_number": 712
+      },
+      {
+        "version": "Hisuian Avalugg",
+        "pokedex_number": 713
+      },
+      {
+        "version": "Avalugg",
+        "pokedex_number": 713
+      },
+      {
+        "version": "Crabominable",
+        "pokedex_number": 740
+      },
+      {
+        "version": "Mr. Rime",
+        "pokedex_number": 866
+      },
+      {
+        "version": "Snom",
+        "pokedex_number": 872
+      },
+      {
+        "version": "Frosmoth",
+        "pokedex_number": 873
+      },
+      {
+        "version": "Ice Face",
+        "pokedex_number": 875
+      },
+      {
+        "version": "Noice Face",
+        "pokedex_number": 875
+      },
+      {
+        "version": "Arctozolt",
+        "pokedex_number": 881
+      },
+      {
+        "version": "Arctovish",
+        "pokedex_number": 883
+      },
+      {
+        "version": "Glastrier",
+        "pokedex_number": 896
+      },
+      {
+        "version": "Ice Rider",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Cetoddle",
+        "pokedex_number": 974
+      },
+      {
+        "version": "Cetitan",
+        "pokedex_number": 975
+      },
+      {
+        "version": "Iron Bundle",
+        "pokedex_number": 991
+      },
+      {
+        "version": "Frigibax",
+        "pokedex_number": 996
+      },
+      {
+        "version": "Arctibax",
+        "pokedex_number": 997
+      },
+      {
+        "version": "Baxcalibur",
+        "pokedex_number": 998
+      },
+      {
+        "version": "Chien-Pao",
+        "pokedex_number": 1002
+      }
+    ],
+    "catch_rate": [
+      255, 90, 190, 75, 75, 60, 45, 45, 45, 3, 60, 225, 75, 45, 45, 45, 190, 75,
+      75, 255, 120, 45, 3, 120, 60, 60, 45, 45, 50, 75, 45, 120, 60, 60, 255,
+      120, 45, 120, 60, 25, 3, 3, 3, 45, 45, 190, 55, 55, 60, 45, 190, 75, 60,
+      60, 45, 45, 3, 3, 150, 50, 50, 45, 25, 10, 6
+    ]
+  },
+  "Normal": {
+    "name": [
+      {
+        "version": "Pidgey",
+        "pokedex_number": 16
+      },
+      {
+        "version": "Pidgeotto",
+        "pokedex_number": 17
+      },
+      {
+        "version": "Mega Pidgeot",
+        "pokedex_number": 18
+      },
+      {
+        "version": "Pidgeot",
+        "pokedex_number": 18
+      },
+      {
+        "version": "Alolan Rattata",
+        "pokedex_number": 19
+      },
+      {
+        "version": "Rattata",
+        "pokedex_number": 19
+      },
+      {
+        "version": "Alolan Raticate",
+        "pokedex_number": 20
+      },
+      {
+        "version": "Raticate",
+        "pokedex_number": 20
+      },
+      {
+        "version": "Spearow",
+        "pokedex_number": 21
+      },
+      {
+        "version": "Fearow",
+        "pokedex_number": 22
+      },
+      {
+        "version": "Jigglypuff",
+        "pokedex_number": 39
+      },
+      {
+        "version": "Wigglytuff",
+        "pokedex_number": 40
+      },
+      {
+        "version": "Meowth",
+        "pokedex_number": 52
+      },
+      {
+        "version": "Persian",
+        "pokedex_number": 53
+      },
+      {
+        "version": "Farfetch'd",
+        "pokedex_number": 83
+      },
+      {
+        "version": "Doduo",
+        "pokedex_number": 84
+      },
+      {
+        "version": "Dodrio",
+        "pokedex_number": 85
+      },
+      {
+        "version": "Lickitung",
+        "pokedex_number": 108
+      },
+      {
+        "version": "Chansey",
+        "pokedex_number": 113
+      },
+      {
+        "version": "Mega Kangaskhan",
+        "pokedex_number": 115
+      },
+      {
+        "version": "Kangaskhan",
+        "pokedex_number": 115
+      },
+      {
+        "version": "Tauros",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Ditto",
+        "pokedex_number": 132
+      },
+      {
+        "version": "Partner Eevee",
+        "pokedex_number": 133
+      },
+      {
+        "version": "Eevee",
+        "pokedex_number": 133
+      },
+      {
+        "version": "Porygon",
+        "pokedex_number": 137
+      },
+      {
+        "version": "Snorlax",
+        "pokedex_number": 143
+      },
+      {
+        "version": "Sentret",
+        "pokedex_number": 161
+      },
+      {
+        "version": "Furret",
+        "pokedex_number": 162
+      },
+      {
+        "version": "Hoothoot",
+        "pokedex_number": 163
+      },
+      {
+        "version": "Noctowl",
+        "pokedex_number": 164
+      },
+      {
+        "version": "Igglybuff",
+        "pokedex_number": 174
+      },
+      {
+        "version": "Aipom",
+        "pokedex_number": 190
+      },
+      {
+        "version": "Girafarig",
+        "pokedex_number": 203
+      },
+      {
+        "version": "Dunsparce",
+        "pokedex_number": 206
+      },
+      {
+        "version": "Teddiursa",
+        "pokedex_number": 216
+      },
+      {
+        "version": "Ursaring",
+        "pokedex_number": 217
+      },
+      {
+        "version": "Porygon2",
+        "pokedex_number": 233
+      },
+      {
+        "version": "Stantler",
+        "pokedex_number": 234
+      },
+      {
+        "version": "Smeargle",
+        "pokedex_number": 235
+      },
+      {
+        "version": "Miltank",
+        "pokedex_number": 241
+      },
+      {
+        "version": "Blissey",
+        "pokedex_number": 242
+      },
+      {
+        "version": "Galarian Zigzagoon",
+        "pokedex_number": 263
+      },
+      {
+        "version": "Zigzagoon",
+        "pokedex_number": 263
+      },
+      {
+        "version": "Galarian Linoone",
+        "pokedex_number": 264
+      },
+      {
+        "version": "Linoone",
+        "pokedex_number": 264
+      },
+      {
+        "version": "Taillow",
+        "pokedex_number": 276
+      },
+      {
+        "version": "Swellow",
+        "pokedex_number": 277
+      },
+      {
+        "version": "Slakoth",
+        "pokedex_number": 287
+      },
+      {
+        "version": "Vigoroth",
+        "pokedex_number": 288
+      },
+      {
+        "version": "Slaking",
+        "pokedex_number": 289
+      },
+      {
+        "version": "Whismur",
+        "pokedex_number": 293
+      },
+      {
+        "version": "Loudred",
+        "pokedex_number": 294
+      },
+      {
+        "version": "Exploud",
+        "pokedex_number": 295
+      },
+      {
+        "version": "Azurill",
+        "pokedex_number": 298
+      },
+      {
+        "version": "Skitty",
+        "pokedex_number": 300
+      },
+      {
+        "version": "Delcatty",
+        "pokedex_number": 301
+      },
+      {
+        "version": "Spinda",
+        "pokedex_number": 327
+      },
+      {
+        "version": "Swablu",
+        "pokedex_number": 333
+      },
+      {
+        "version": "Zangoose",
+        "pokedex_number": 335
+      },
+      {
+        "version": "Castform",
+        "pokedex_number": 351
+      },
+      {
+        "version": "Kecleon",
+        "pokedex_number": 352
+      },
+      {
+        "version": "Starly",
+        "pokedex_number": 396
+      },
+      {
+        "version": "Staravia",
+        "pokedex_number": 397
+      },
+      {
+        "version": "Staraptor",
+        "pokedex_number": 398
+      },
+      {
+        "version": "Bidoof",
+        "pokedex_number": 399
+      },
+      {
+        "version": "Bibarel",
+        "pokedex_number": 400
+      },
+      {
+        "version": "Ambipom",
+        "pokedex_number": 424
+      },
+      {
+        "version": "Buneary",
+        "pokedex_number": 427
+      },
+      {
+        "version": "Mega Lopunny",
+        "pokedex_number": 428
+      },
+      {
+        "version": "Lopunny",
+        "pokedex_number": 428
+      },
+      {
+        "version": "Glameow",
+        "pokedex_number": 431
+      },
+      {
+        "version": "Purugly",
+        "pokedex_number": 432
+      },
+      {
+        "version": "Happiny",
+        "pokedex_number": 440
+      },
+      {
+        "version": "Chatot",
+        "pokedex_number": 441
+      },
+      {
+        "version": "Munchlax",
+        "pokedex_number": 446
+      },
+      {
+        "version": "Lickilicky",
+        "pokedex_number": 463
+      },
+      {
+        "version": "Porygon-Z",
+        "pokedex_number": 474
+      },
+      {
+        "version": "Regigigas",
+        "pokedex_number": 486
+      },
+      {
+        "version": "Arceus",
+        "pokedex_number": 493
+      },
+      {
+        "version": "Patrat",
+        "pokedex_number": 504
+      },
+      {
+        "version": "Watchog",
+        "pokedex_number": 505
+      },
+      {
+        "version": "Lillipup",
+        "pokedex_number": 506
+      },
+      {
+        "version": "Herdier",
+        "pokedex_number": 507
+      },
+      {
+        "version": "Stoutland",
+        "pokedex_number": 508
+      },
+      {
+        "version": "Pidove",
+        "pokedex_number": 519
+      },
+      {
+        "version": "Tranquill",
+        "pokedex_number": 520
+      },
+      {
+        "version": "Unfezant",
+        "pokedex_number": 521
+      },
+      {
+        "version": "Mega Audino",
+        "pokedex_number": 531
+      },
+      {
+        "version": "Audino",
+        "pokedex_number": 531
+      },
+      {
+        "version": "Hisuian Zorua",
+        "pokedex_number": 570
+      },
+      {
+        "version": "Hisuian Zoroark",
+        "pokedex_number": 571
+      },
+      {
+        "version": "Minccino",
+        "pokedex_number": 572
+      },
+      {
+        "version": "Cinccino",
+        "pokedex_number": 573
+      },
+      {
+        "version": "Deerling",
+        "pokedex_number": 585
+      },
+      {
+        "version": "Sawsbuck",
+        "pokedex_number": 586
+      },
+      {
+        "version": "Bouffalant",
+        "pokedex_number": 626
+      },
+      {
+        "version": "Rufflet",
+        "pokedex_number": 627
+      },
+      {
+        "version": "Braviary",
+        "pokedex_number": 628
+      },
+      {
+        "version": "Aria Forme",
+        "pokedex_number": 648
+      },
+      {
+        "version": "Pirouette Forme",
+        "pokedex_number": 648
+      },
+      {
+        "version": "Bunnelby",
+        "pokedex_number": 659
+      },
+      {
+        "version": "Diggersby",
+        "pokedex_number": 660
+      },
+      {
+        "version": "Fletchling",
+        "pokedex_number": 661
+      },
+      {
+        "version": "Litleo",
+        "pokedex_number": 667
+      },
+      {
+        "version": "Pyroar",
+        "pokedex_number": 668
+      },
+      {
+        "version": "Furfrou",
+        "pokedex_number": 676
+      },
+      {
+        "version": "Helioptile",
+        "pokedex_number": 694
+      },
+      {
+        "version": "Heliolisk",
+        "pokedex_number": 695
+      },
+      {
+        "version": "Pikipek",
+        "pokedex_number": 731
+      },
+      {
+        "version": "Trumbeak",
+        "pokedex_number": 732
+      },
+      {
+        "version": "Toucannon",
+        "pokedex_number": 733
+      },
+      {
+        "version": "Yungoos",
+        "pokedex_number": 734
+      },
+      {
+        "version": "Gumshoos",
+        "pokedex_number": 735
+      },
+      {
+        "version": "Stufful",
+        "pokedex_number": 759
+      },
+      {
+        "version": "Bewear",
+        "pokedex_number": 760
+      },
+      {
+        "version": "Oranguru",
+        "pokedex_number": 765
+      },
+      {
+        "version": "Type: Null",
+        "pokedex_number": 772
+      },
+      {
+        "version": "Silvally",
+        "pokedex_number": 773
+      },
+      {
+        "version": "Komala",
+        "pokedex_number": 775
+      },
+      {
+        "version": "Drampa",
+        "pokedex_number": 780
+      },
+      {
+        "version": "Skwovet",
+        "pokedex_number": 819
+      },
+      {
+        "version": "Greedent",
+        "pokedex_number": 820
+      },
+      {
+        "version": "Wooloo",
+        "pokedex_number": 831
+      },
+      {
+        "version": "Dubwool",
+        "pokedex_number": 832
+      },
+      {
+        "version": "Obstagoon",
+        "pokedex_number": 862
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 876
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 876
+      },
+      {
+        "version": "Wyrdeer",
+        "pokedex_number": 899
+      },
+      {
+        "version": "Ursaluna",
+        "pokedex_number": 901
+      },
+      {
+        "version": "Lechonk",
+        "pokedex_number": 915
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 916
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 916
+      },
+      {
+        "version": "Tandemaus",
+        "pokedex_number": 924
+      },
+      {
+        "version": "Family of Four",
+        "pokedex_number": 925
+      },
+      {
+        "version": "Family of Three",
+        "pokedex_number": 925
+      },
+      {
+        "version": "Smoliv",
+        "pokedex_number": 928
+      },
+      {
+        "version": "Dolliv",
+        "pokedex_number": 929
+      },
+      {
+        "version": "Arboliva",
+        "pokedex_number": 930
+      },
+      {
+        "version": "Green Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Blue Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Yellow Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "White Plumage",
+        "pokedex_number": 931
+      },
+      {
+        "version": "Shroodle",
+        "pokedex_number": 944
+      },
+      {
+        "version": "Grafaiai",
+        "pokedex_number": 945
+      },
+      {
+        "version": "Cyclizar",
+        "pokedex_number": 967
+      },
+      {
+        "version": "Farigiraf",
+        "pokedex_number": 981
+      },
+      {
+        "version": "Two-Segment Form",
+        "pokedex_number": 982
+      },
+      {
+        "version": "Three-Segment Form",
+        "pokedex_number": 982
+      }
+    ],
+    "catch_rate": [
+      255, 120, 45, 45, 255, 255, 127, 127, 255, 90, 170, 50, 255, 90, 45, 190,
+      45, 45, 30, 45, 45, 45, 35, 45, 45, 45, 25, 255, 90, 255, 90, 170, 45, 60,
+      190, 120, 60, 45, 45, 45, 45, 30, 255, 255, 90, 90, 200, 45, 255, 120, 45,
+      190, 120, 45, 150, 255, 60, 255, 255, 90, 45, 200, 255, 120, 45, 255, 127,
+      45, 190, 60, 60, 190, 75, 130, 30, 50, 30, 30, 3, 3, 255, 255, 255, 120,
+      45, 255, 120, 45, 255, 255, 75, 45, 255, 60, 190, 75, 45, 190, 60, 3, 3,
+      255, 127, 255, 220, 65, 160, 190, 75, 255, 120, 45, 255, 127, 140, 70, 45,
+      3, 3, 45, 70, 255, 90, 255, 127, 45, 30, 30, 45, 20, 255, 100, 100, 150,
+      75, 75, 255, 120, 45, 190, 190, 190, 190, 190, 90, 190, 45, 45, 45
+    ]
+  },
+  "Poison": {
+    "name": [
+      {
+        "version": "Bulbasaur",
+        "pokedex_number": 1
+      },
+      {
+        "version": "Ivysaur",
+        "pokedex_number": 2
+      },
+      {
+        "version": "Mega Venusaur",
+        "pokedex_number": 3
+      },
+      {
+        "version": "Venusaur",
+        "pokedex_number": 3
+      },
+      {
+        "version": "Weedle",
+        "pokedex_number": 13
+      },
+      {
+        "version": "Kakuna",
+        "pokedex_number": 14
+      },
+      {
+        "version": "Mega Beedrill",
+        "pokedex_number": 15
+      },
+      {
+        "version": "Beedrill",
+        "pokedex_number": 15
+      },
+      {
+        "version": "Ekans",
+        "pokedex_number": 23
+      },
+      {
+        "version": "Arbok",
+        "pokedex_number": 24
+      },
+      {
+        "version": "Nidoran\u2640 (female)",
+        "pokedex_number": 29
+      },
+      {
+        "version": "Nidorina",
+        "pokedex_number": 30
+      },
+      {
+        "version": "Nidoqueen",
+        "pokedex_number": 31
+      },
+      {
+        "version": "Nidoran\u2642 (male)",
+        "pokedex_number": 32
+      },
+      {
+        "version": "Nidorino",
+        "pokedex_number": 33
+      },
+      {
+        "version": "Nidoking",
+        "pokedex_number": 34
+      },
+      {
+        "version": "Zubat",
+        "pokedex_number": 41
+      },
+      {
+        "version": "Golbat",
+        "pokedex_number": 42
+      },
+      {
+        "version": "Oddish",
+        "pokedex_number": 43
+      },
+      {
+        "version": "Gloom",
+        "pokedex_number": 44
+      },
+      {
+        "version": "Vileplume",
+        "pokedex_number": 45
+      },
+      {
+        "version": "Venonat",
+        "pokedex_number": 48
+      },
+      {
+        "version": "Venomoth",
+        "pokedex_number": 49
+      },
+      {
+        "version": "Bellsprout",
+        "pokedex_number": 69
+      },
+      {
+        "version": "Weepinbell",
+        "pokedex_number": 70
+      },
+      {
+        "version": "Victreebel",
+        "pokedex_number": 71
+      },
+      {
+        "version": "Tentacool",
+        "pokedex_number": 72
+      },
+      {
+        "version": "Tentacruel",
+        "pokedex_number": 73
+      },
+      {
+        "version": "Galarian Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Alolan Grimer",
+        "pokedex_number": 88
+      },
+      {
+        "version": "Grimer",
+        "pokedex_number": 88
+      },
+      {
+        "version": "Alolan Muk",
+        "pokedex_number": 89
+      },
+      {
+        "version": "Muk",
+        "pokedex_number": 89
+      },
+      {
+        "version": "Gastly",
+        "pokedex_number": 92
+      },
+      {
+        "version": "Haunter",
+        "pokedex_number": 93
+      },
+      {
+        "version": "Mega Gengar",
+        "pokedex_number": 94
+      },
+      {
+        "version": "Gengar",
+        "pokedex_number": 94
+      },
+      {
+        "version": "Koffing",
+        "pokedex_number": 109
+      },
+      {
+        "version": "Galarian Weezing",
+        "pokedex_number": 110
+      },
+      {
+        "version": "Weezing",
+        "pokedex_number": 110
+      },
+      {
+        "version": "Spinarak",
+        "pokedex_number": 167
+      },
+      {
+        "version": "Ariados",
+        "pokedex_number": 168
+      },
+      {
+        "version": "Crobat",
+        "pokedex_number": 169
+      },
+      {
+        "version": "Paldean Wooper",
+        "pokedex_number": 194
+      },
+      {
+        "version": "Galarian Slowking",
+        "pokedex_number": 199
+      },
+      {
+        "version": "Hisuian Qwilfish",
+        "pokedex_number": 211
+      },
+      {
+        "version": "Qwilfish",
+        "pokedex_number": 211
+      },
+      {
+        "version": "Hisuian Sneasel",
+        "pokedex_number": 215
+      },
+      {
+        "version": "Dustox",
+        "pokedex_number": 269
+      },
+      {
+        "version": "Roselia",
+        "pokedex_number": 315
+      },
+      {
+        "version": "Gulpin",
+        "pokedex_number": 316
+      },
+      {
+        "version": "Swalot",
+        "pokedex_number": 317
+      },
+      {
+        "version": "Seviper",
+        "pokedex_number": 336
+      },
+      {
+        "version": "Budew",
+        "pokedex_number": 406
+      },
+      {
+        "version": "Roserade",
+        "pokedex_number": 407
+      },
+      {
+        "version": "Stunky",
+        "pokedex_number": 434
+      },
+      {
+        "version": "Skuntank",
+        "pokedex_number": 435
+      },
+      {
+        "version": "Skorupi",
+        "pokedex_number": 451
+      },
+      {
+        "version": "Drapion",
+        "pokedex_number": 452
+      },
+      {
+        "version": "Croagunk",
+        "pokedex_number": 453
+      },
+      {
+        "version": "Toxicroak",
+        "pokedex_number": 454
+      },
+      {
+        "version": "Venipede",
+        "pokedex_number": 543
+      },
+      {
+        "version": "Whirlipede",
+        "pokedex_number": 544
+      },
+      {
+        "version": "Scolipede",
+        "pokedex_number": 545
+      },
+      {
+        "version": "Trubbish",
+        "pokedex_number": 568
+      },
+      {
+        "version": "Garbodor",
+        "pokedex_number": 569
+      },
+      {
+        "version": "Foongus",
+        "pokedex_number": 590
+      },
+      {
+        "version": "Amoonguss",
+        "pokedex_number": 591
+      },
+      {
+        "version": "Skrelp",
+        "pokedex_number": 690
+      },
+      {
+        "version": "Dragalge",
+        "pokedex_number": 691
+      },
+      {
+        "version": "Mareanie",
+        "pokedex_number": 747
+      },
+      {
+        "version": "Toxapex",
+        "pokedex_number": 748
+      },
+      {
+        "version": "Salandit",
+        "pokedex_number": 757
+      },
+      {
+        "version": "Salazzle",
+        "pokedex_number": 758
+      },
+      {
+        "version": "Nihilego",
+        "pokedex_number": 793
+      },
+      {
+        "version": "Poipole",
+        "pokedex_number": 803
+      },
+      {
+        "version": "Naganadel",
+        "pokedex_number": 804
+      },
+      {
+        "version": "Toxel",
+        "pokedex_number": 848
+      },
+      {
+        "version": "Amped Form",
+        "pokedex_number": 849
+      },
+      {
+        "version": "Low Key Form",
+        "pokedex_number": 849
+      },
+      {
+        "version": "Eternamax",
+        "pokedex_number": 890
+      },
+      {
+        "version": "Eternatus",
+        "pokedex_number": 890
+      },
+      {
+        "version": "Sneasler",
+        "pokedex_number": 903
+      },
+      {
+        "version": "Overqwil",
+        "pokedex_number": 904
+      },
+      {
+        "version": "Shroodle",
+        "pokedex_number": 944
+      },
+      {
+        "version": "Grafaiai",
+        "pokedex_number": 945
+      },
+      {
+        "version": "Varoom",
+        "pokedex_number": 965
+      },
+      {
+        "version": "Revavroom",
+        "pokedex_number": 966
+      },
+      {
+        "version": "Glimmet",
+        "pokedex_number": 969
+      },
+      {
+        "version": "Glimmora",
+        "pokedex_number": 970
+      },
+      {
+        "version": "Clodsire",
+        "pokedex_number": 980
+      },
+      {
+        "version": "Iron Moth",
+        "pokedex_number": 994
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 45, 255, 120, 45, 45, 255, 90, 235, 120, 45, 235, 120, 45,
+      255, 90, 255, 120, 45, 190, 75, 255, 120, 45, 190, 60, 75, 190, 190, 75,
+      75, 190, 90, 45, 45, 190, 60, 60, 255, 90, 90, 255, 70, 45, 45, 60, 45,
+      150, 225, 75, 90, 255, 75, 225, 60, 120, 45, 140, 75, 255, 120, 45, 190,
+      60, 190, 75, 225, 55, 190, 75, 120, 45, 45, 45, 45, 75, 45, 45, 0, 255,
+      20, 45, 190, 90, 190, 75, 70, 25, 90, 30
+    ]
+  },
+  "Psychic": {
+    "name": [
+      {
+        "version": "Alolan Raichu",
+        "pokedex_number": 26
+      },
+      {
+        "version": "Abra",
+        "pokedex_number": 63
+      },
+      {
+        "version": "Kadabra",
+        "pokedex_number": 64
+      },
+      {
+        "version": "Mega Alakazam",
+        "pokedex_number": 65
+      },
+      {
+        "version": "Alakazam",
+        "pokedex_number": 65
+      },
+      {
+        "version": "Galarian Ponyta",
+        "pokedex_number": 77
+      },
+      {
+        "version": "Galarian Rapidash",
+        "pokedex_number": 78
+      },
+      {
+        "version": "Galarian Slowpoke",
+        "pokedex_number": 79
+      },
+      {
+        "version": "Slowpoke",
+        "pokedex_number": 79
+      },
+      {
+        "version": "Mega Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Galarian Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Drowzee",
+        "pokedex_number": 96
+      },
+      {
+        "version": "Hypno",
+        "pokedex_number": 97
+      },
+      {
+        "version": "Exeggcute",
+        "pokedex_number": 102
+      },
+      {
+        "version": "Exeggutor",
+        "pokedex_number": 103
+      },
+      {
+        "version": "Starmie",
+        "pokedex_number": 121
+      },
+      {
+        "version": "Galarian Mr. Mime",
+        "pokedex_number": 122
+      },
+      {
+        "version": "Mr. Mime",
+        "pokedex_number": 122
+      },
+      {
+        "version": "Jynx",
+        "pokedex_number": 124
+      },
+      {
+        "version": "Galarian Articuno",
+        "pokedex_number": 144
+      },
+      {
+        "version": "Mega Mewtwo X",
+        "pokedex_number": 150
+      },
+      {
+        "version": "Mega Mewtwo Y",
+        "pokedex_number": 150
+      },
+      {
+        "version": "Mewtwo",
+        "pokedex_number": 150
+      },
+      {
+        "version": "Mew",
+        "pokedex_number": 151
+      },
+      {
+        "version": "Natu",
+        "pokedex_number": 177
+      },
+      {
+        "version": "Xatu",
+        "pokedex_number": 178
+      },
+      {
+        "version": "Espeon",
+        "pokedex_number": 196
+      },
+      {
+        "version": "Galarian Slowking",
+        "pokedex_number": 199
+      },
+      {
+        "version": "Slowking",
+        "pokedex_number": 199
+      },
+      {
+        "version": "Unown",
+        "pokedex_number": 201
+      },
+      {
+        "version": "Wobbuffet",
+        "pokedex_number": 202
+      },
+      {
+        "version": "Girafarig",
+        "pokedex_number": 203
+      },
+      {
+        "version": "Smoochum",
+        "pokedex_number": 238
+      },
+      {
+        "version": "Lugia",
+        "pokedex_number": 249
+      },
+      {
+        "version": "Celebi",
+        "pokedex_number": 251
+      },
+      {
+        "version": "Ralts",
+        "pokedex_number": 280
+      },
+      {
+        "version": "Kirlia",
+        "pokedex_number": 281
+      },
+      {
+        "version": "Mega Gardevoir",
+        "pokedex_number": 282
+      },
+      {
+        "version": "Gardevoir",
+        "pokedex_number": 282
+      },
+      {
+        "version": "Meditite",
+        "pokedex_number": 307
+      },
+      {
+        "version": "Mega Medicham",
+        "pokedex_number": 308
+      },
+      {
+        "version": "Medicham",
+        "pokedex_number": 308
+      },
+      {
+        "version": "Spoink",
+        "pokedex_number": 325
+      },
+      {
+        "version": "Grumpig",
+        "pokedex_number": 326
+      },
+      {
+        "version": "Lunatone",
+        "pokedex_number": 337
+      },
+      {
+        "version": "Solrock",
+        "pokedex_number": 338
+      },
+      {
+        "version": "Baltoy",
+        "pokedex_number": 343
+      },
+      {
+        "version": "Claydol",
+        "pokedex_number": 344
+      },
+      {
+        "version": "Chimecho",
+        "pokedex_number": 358
+      },
+      {
+        "version": "Wynaut",
+        "pokedex_number": 360
+      },
+      {
+        "version": "Beldum",
+        "pokedex_number": 374
+      },
+      {
+        "version": "Metang",
+        "pokedex_number": 375
+      },
+      {
+        "version": "Mega Metagross",
+        "pokedex_number": 376
+      },
+      {
+        "version": "Metagross",
+        "pokedex_number": 376
+      },
+      {
+        "version": "Mega Latias",
+        "pokedex_number": 380
+      },
+      {
+        "version": "Latias",
+        "pokedex_number": 380
+      },
+      {
+        "version": "Mega Latios",
+        "pokedex_number": 381
+      },
+      {
+        "version": "Latios",
+        "pokedex_number": 381
+      },
+      {
+        "version": "Jirachi",
+        "pokedex_number": 385
+      },
+      {
+        "version": "Normal Forme",
+        "pokedex_number": 386
+      },
+      {
+        "version": "Attack Forme",
+        "pokedex_number": 386
+      },
+      {
+        "version": "Defense Forme",
+        "pokedex_number": 386
+      },
+      {
+        "version": "Speed Forme",
+        "pokedex_number": 386
+      },
+      {
+        "version": "Chingling",
+        "pokedex_number": 433
+      },
+      {
+        "version": "Bronzor",
+        "pokedex_number": 436
+      },
+      {
+        "version": "Bronzong",
+        "pokedex_number": 437
+      },
+      {
+        "version": "Mime Jr.",
+        "pokedex_number": 439
+      },
+      {
+        "version": "Mega Gallade",
+        "pokedex_number": 475
+      },
+      {
+        "version": "Gallade",
+        "pokedex_number": 475
+      },
+      {
+        "version": "Uxie",
+        "pokedex_number": 480
+      },
+      {
+        "version": "Mesprit",
+        "pokedex_number": 481
+      },
+      {
+        "version": "Azelf",
+        "pokedex_number": 482
+      },
+      {
+        "version": "Cresselia",
+        "pokedex_number": 488
+      },
+      {
+        "version": "Victini",
+        "pokedex_number": 494
+      },
+      {
+        "version": "Munna",
+        "pokedex_number": 517
+      },
+      {
+        "version": "Musharna",
+        "pokedex_number": 518
+      },
+      {
+        "version": "Woobat",
+        "pokedex_number": 527
+      },
+      {
+        "version": "Swoobat",
+        "pokedex_number": 528
+      },
+      {
+        "version": "Zen Mode",
+        "pokedex_number": 555
+      },
+      {
+        "version": "Sigilyph",
+        "pokedex_number": 561
+      },
+      {
+        "version": "Gothita",
+        "pokedex_number": 574
+      },
+      {
+        "version": "Gothorita",
+        "pokedex_number": 575
+      },
+      {
+        "version": "Gothitelle",
+        "pokedex_number": 576
+      },
+      {
+        "version": "Solosis",
+        "pokedex_number": 577
+      },
+      {
+        "version": "Duosion",
+        "pokedex_number": 578
+      },
+      {
+        "version": "Reuniclus",
+        "pokedex_number": 579
+      },
+      {
+        "version": "Elgyem",
+        "pokedex_number": 605
+      },
+      {
+        "version": "Beheeyem",
+        "pokedex_number": 606
+      },
+      {
+        "version": "Hisuian Braviary",
+        "pokedex_number": 628
+      },
+      {
+        "version": "Aria Forme",
+        "pokedex_number": 648
+      },
+      {
+        "version": "Delphox",
+        "pokedex_number": 655
+      },
+      {
+        "version": "Espurr",
+        "pokedex_number": 677
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 678
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 678
+      },
+      {
+        "version": "Inkay",
+        "pokedex_number": 686
+      },
+      {
+        "version": "Malamar",
+        "pokedex_number": 687
+      },
+      {
+        "version": "Hoopa Confined",
+        "pokedex_number": 720
+      },
+      {
+        "version": "Hoopa Unbound",
+        "pokedex_number": 720
+      },
+      {
+        "version": "Pa'u Style",
+        "pokedex_number": 741
+      },
+      {
+        "version": "Oranguru",
+        "pokedex_number": 765
+      },
+      {
+        "version": "Bruxish",
+        "pokedex_number": 779
+      },
+      {
+        "version": "Tapu Lele",
+        "pokedex_number": 786
+      },
+      {
+        "version": "Cosmog",
+        "pokedex_number": 789
+      },
+      {
+        "version": "Cosmoem",
+        "pokedex_number": 790
+      },
+      {
+        "version": "Solgaleo",
+        "pokedex_number": 791
+      },
+      {
+        "version": "Lunala",
+        "pokedex_number": 792
+      },
+      {
+        "version": "Dusk Mane Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Dawn Wings Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Ultra Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Dottler",
+        "pokedex_number": 825
+      },
+      {
+        "version": "Orbeetle",
+        "pokedex_number": 826
+      },
+      {
+        "version": "Hatenna",
+        "pokedex_number": 856
+      },
+      {
+        "version": "Hattrem",
+        "pokedex_number": 857
+      },
+      {
+        "version": "Hatterene",
+        "pokedex_number": 858
+      },
+      {
+        "version": "Mr. Rime",
+        "pokedex_number": 866
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 876
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 876
+      },
+      {
+        "version": "Ice Rider",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Shadow Rider",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Calyrex",
+        "pokedex_number": 898
+      },
+      {
+        "version": "Wyrdeer",
+        "pokedex_number": 899
+      },
+      {
+        "version": "Armarouge",
+        "pokedex_number": 936
+      },
+      {
+        "version": "Rabsca",
+        "pokedex_number": 954
+      },
+      {
+        "version": "Flittle",
+        "pokedex_number": 955
+      },
+      {
+        "version": "Espathra",
+        "pokedex_number": 956
+      },
+      {
+        "version": "Veluza",
+        "pokedex_number": 976
+      },
+      {
+        "version": "Farigiraf",
+        "pokedex_number": 981
+      },
+      {
+        "version": "Scream Tail",
+        "pokedex_number": 985
+      },
+      {
+        "version": "Iron Leaves",
+        "pokedex_number": 1010
+      }
+    ],
+    "catch_rate": [
+      75, 200, 100, 50, 50, 190, 60, 190, 190, 75, 75, 75, 190, 75, 90, 45, 60,
+      45, 45, 45, 3, 3, 3, 3, 45, 190, 75, 45, 70, 70, 225, 45, 60, 45, 3, 45,
+      235, 120, 45, 45, 180, 90, 90, 255, 60, 45, 45, 255, 90, 45, 125, 3, 3, 3,
+      3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 120, 255, 90, 145, 45, 45, 3, 3, 3, 3, 3,
+      190, 75, 190, 45, 60, 45, 200, 100, 50, 200, 100, 50, 255, 90, 60, 3, 45,
+      190, 75, 75, 190, 80, 3, 3, 45, 45, 80, 3, 45, 45, 45, 45, 3, 3, 3, 255,
+      120, 45, 235, 120, 45, 45, 30, 30, 3, 3, 3, 45, 25, 45, 120, 60, 100, 45,
+      50, 0
+    ]
+  },
+  "Rock": {
+    "name": [
+      {
+        "version": "Hisuian Growlithe",
+        "pokedex_number": 58
+      },
+      {
+        "version": "Hisuian Arcanine",
+        "pokedex_number": 59
+      },
+      {
+        "version": "Alolan Geodude",
+        "pokedex_number": 74
+      },
+      {
+        "version": "Geodude",
+        "pokedex_number": 74
+      },
+      {
+        "version": "Alolan Graveler",
+        "pokedex_number": 75
+      },
+      {
+        "version": "Graveler",
+        "pokedex_number": 75
+      },
+      {
+        "version": "Alolan Golem",
+        "pokedex_number": 76
+      },
+      {
+        "version": "Golem",
+        "pokedex_number": 76
+      },
+      {
+        "version": "Onix",
+        "pokedex_number": 95
+      },
+      {
+        "version": "Rhyhorn",
+        "pokedex_number": 111
+      },
+      {
+        "version": "Rhydon",
+        "pokedex_number": 112
+      },
+      {
+        "version": "Omanyte",
+        "pokedex_number": 138
+      },
+      {
+        "version": "Omastar",
+        "pokedex_number": 139
+      },
+      {
+        "version": "Kabuto",
+        "pokedex_number": 140
+      },
+      {
+        "version": "Kabutops",
+        "pokedex_number": 141
+      },
+      {
+        "version": "Mega Aerodactyl",
+        "pokedex_number": 142
+      },
+      {
+        "version": "Aerodactyl",
+        "pokedex_number": 142
+      },
+      {
+        "version": "Sudowoodo",
+        "pokedex_number": 185
+      },
+      {
+        "version": "Shuckle",
+        "pokedex_number": 213
+      },
+      {
+        "version": "Magcargo",
+        "pokedex_number": 219
+      },
+      {
+        "version": "Corsola",
+        "pokedex_number": 222
+      },
+      {
+        "version": "Larvitar",
+        "pokedex_number": 246
+      },
+      {
+        "version": "Pupitar",
+        "pokedex_number": 247
+      },
+      {
+        "version": "Mega Tyranitar",
+        "pokedex_number": 248
+      },
+      {
+        "version": "Tyranitar",
+        "pokedex_number": 248
+      },
+      {
+        "version": "Nosepass",
+        "pokedex_number": 299
+      },
+      {
+        "version": "Aron",
+        "pokedex_number": 304
+      },
+      {
+        "version": "Lairon",
+        "pokedex_number": 305
+      },
+      {
+        "version": "Aggron",
+        "pokedex_number": 306
+      },
+      {
+        "version": "Lunatone",
+        "pokedex_number": 337
+      },
+      {
+        "version": "Solrock",
+        "pokedex_number": 338
+      },
+      {
+        "version": "Lileep",
+        "pokedex_number": 345
+      },
+      {
+        "version": "Cradily",
+        "pokedex_number": 346
+      },
+      {
+        "version": "Anorith",
+        "pokedex_number": 347
+      },
+      {
+        "version": "Armaldo",
+        "pokedex_number": 348
+      },
+      {
+        "version": "Relicanth",
+        "pokedex_number": 369
+      },
+      {
+        "version": "Regirock",
+        "pokedex_number": 377
+      },
+      {
+        "version": "Cranidos",
+        "pokedex_number": 408
+      },
+      {
+        "version": "Rampardos",
+        "pokedex_number": 409
+      },
+      {
+        "version": "Shieldon",
+        "pokedex_number": 410
+      },
+      {
+        "version": "Bastiodon",
+        "pokedex_number": 411
+      },
+      {
+        "version": "Bonsly",
+        "pokedex_number": 438
+      },
+      {
+        "version": "Rhyperior",
+        "pokedex_number": 464
+      },
+      {
+        "version": "Probopass",
+        "pokedex_number": 476
+      },
+      {
+        "version": "Roggenrola",
+        "pokedex_number": 524
+      },
+      {
+        "version": "Boldore",
+        "pokedex_number": 525
+      },
+      {
+        "version": "Gigalith",
+        "pokedex_number": 526
+      },
+      {
+        "version": "Dwebble",
+        "pokedex_number": 557
+      },
+      {
+        "version": "Crustle",
+        "pokedex_number": 558
+      },
+      {
+        "version": "Tirtouga",
+        "pokedex_number": 564
+      },
+      {
+        "version": "Carracosta",
+        "pokedex_number": 565
+      },
+      {
+        "version": "Archen",
+        "pokedex_number": 566
+      },
+      {
+        "version": "Archeops",
+        "pokedex_number": 567
+      },
+      {
+        "version": "Terrakion",
+        "pokedex_number": 639
+      },
+      {
+        "version": "Binacle",
+        "pokedex_number": 688
+      },
+      {
+        "version": "Barbaracle",
+        "pokedex_number": 689
+      },
+      {
+        "version": "Tyrunt",
+        "pokedex_number": 696
+      },
+      {
+        "version": "Tyrantrum",
+        "pokedex_number": 697
+      },
+      {
+        "version": "Amaura",
+        "pokedex_number": 698
+      },
+      {
+        "version": "Aurorus",
+        "pokedex_number": 699
+      },
+      {
+        "version": "Carbink",
+        "pokedex_number": 703
+      },
+      {
+        "version": "Hisuian Avalugg",
+        "pokedex_number": 713
+      },
+      {
+        "version": "Mega Diancie",
+        "pokedex_number": 719
+      },
+      {
+        "version": "Diancie",
+        "pokedex_number": 719
+      },
+      {
+        "version": "Own Tempo Rockruff",
+        "pokedex_number": 744
+      },
+      {
+        "version": "Rockruff",
+        "pokedex_number": 744
+      },
+      {
+        "version": "Midday Form",
+        "pokedex_number": 745
+      },
+      {
+        "version": "Midnight Form",
+        "pokedex_number": 745
+      },
+      {
+        "version": "Dusk Form",
+        "pokedex_number": 745
+      },
+      {
+        "version": "Meteor Form",
+        "pokedex_number": 774
+      },
+      {
+        "version": "Core Form",
+        "pokedex_number": 774
+      },
+      {
+        "version": "Nihilego",
+        "pokedex_number": 793
+      },
+      {
+        "version": "Stakataka",
+        "pokedex_number": 805
+      },
+      {
+        "version": "Drednaw",
+        "pokedex_number": 834
+      },
+      {
+        "version": "Rolycoly",
+        "pokedex_number": 837
+      },
+      {
+        "version": "Carkol",
+        "pokedex_number": 838
+      },
+      {
+        "version": "Coalossal",
+        "pokedex_number": 839
+      },
+      {
+        "version": "Stonjourner",
+        "pokedex_number": 874
+      },
+      {
+        "version": "Kleavor",
+        "pokedex_number": 900
+      },
+      {
+        "version": "Nacli",
+        "pokedex_number": 932
+      },
+      {
+        "version": "Naclstack",
+        "pokedex_number": 933
+      },
+      {
+        "version": "Garganacl",
+        "pokedex_number": 934
+      },
+      {
+        "version": "Klawf",
+        "pokedex_number": 950
+      },
+      {
+        "version": "Glimmet",
+        "pokedex_number": 969
+      },
+      {
+        "version": "Glimmora",
+        "pokedex_number": 970
+      },
+      {
+        "version": "Iron Thorns",
+        "pokedex_number": 995
+      }
+    ],
+    "catch_rate": [
+      190, 75, 255, 255, 120, 120, 45, 45, 45, 120, 60, 45, 45, 45, 45, 45, 45,
+      65, 190, 75, 60, 45, 45, 45, 45, 255, 180, 90, 45, 45, 45, 45, 45, 45, 45,
+      25, 3, 45, 45, 45, 45, 255, 30, 60, 255, 120, 45, 190, 75, 45, 45, 45, 45,
+      3, 120, 45, 45, 45, 45, 45, 60, 55, 3, 3, 190, 190, 90, 90, 90, 30, 30,
+      45, 30, 75, 255, 120, 45, 60, 15, 255, 120, 45, 120, 70, 25, 30
+    ]
+  },
+  "Steel": {
+    "name": [
+      {
+        "version": "Alolan Sandshrew",
+        "pokedex_number": 27
+      },
+      {
+        "version": "Alolan Sandslash",
+        "pokedex_number": 28
+      },
+      {
+        "version": "Alolan Diglett",
+        "pokedex_number": 50
+      },
+      {
+        "version": "Alolan Dugtrio",
+        "pokedex_number": 51
+      },
+      {
+        "version": "Galarian Meowth",
+        "pokedex_number": 52
+      },
+      {
+        "version": "Magnemite",
+        "pokedex_number": 81
+      },
+      {
+        "version": "Magneton",
+        "pokedex_number": 82
+      },
+      {
+        "version": "Forretress",
+        "pokedex_number": 205
+      },
+      {
+        "version": "Mega Steelix",
+        "pokedex_number": 208
+      },
+      {
+        "version": "Steelix",
+        "pokedex_number": 208
+      },
+      {
+        "version": "Mega Scizor",
+        "pokedex_number": 212
+      },
+      {
+        "version": "Scizor",
+        "pokedex_number": 212
+      },
+      {
+        "version": "Skarmory",
+        "pokedex_number": 227
+      },
+      {
+        "version": "Mega Mawile",
+        "pokedex_number": 303
+      },
+      {
+        "version": "Mawile",
+        "pokedex_number": 303
+      },
+      {
+        "version": "Aron",
+        "pokedex_number": 304
+      },
+      {
+        "version": "Lairon",
+        "pokedex_number": 305
+      },
+      {
+        "version": "Mega Aggron",
+        "pokedex_number": 306
+      },
+      {
+        "version": "Aggron",
+        "pokedex_number": 306
+      },
+      {
+        "version": "Beldum",
+        "pokedex_number": 374
+      },
+      {
+        "version": "Metang",
+        "pokedex_number": 375
+      },
+      {
+        "version": "Mega Metagross",
+        "pokedex_number": 376
+      },
+      {
+        "version": "Metagross",
+        "pokedex_number": 376
+      },
+      {
+        "version": "Registeel",
+        "pokedex_number": 379
+      },
+      {
+        "version": "Jirachi",
+        "pokedex_number": 385
+      },
+      {
+        "version": "Empoleon",
+        "pokedex_number": 395
+      },
+      {
+        "version": "Shieldon",
+        "pokedex_number": 410
+      },
+      {
+        "version": "Bastiodon",
+        "pokedex_number": 411
+      },
+      {
+        "version": "Trash Cloak",
+        "pokedex_number": 413
+      },
+      {
+        "version": "Bronzor",
+        "pokedex_number": 436
+      },
+      {
+        "version": "Bronzong",
+        "pokedex_number": 437
+      },
+      {
+        "version": "Mega Lucario",
+        "pokedex_number": 448
+      },
+      {
+        "version": "Lucario",
+        "pokedex_number": 448
+      },
+      {
+        "version": "Magnezone",
+        "pokedex_number": 462
+      },
+      {
+        "version": "Probopass",
+        "pokedex_number": 476
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 483
+      },
+      {
+        "version": "Dialga",
+        "pokedex_number": 483
+      },
+      {
+        "version": "Heatran",
+        "pokedex_number": 485
+      },
+      {
+        "version": "Excadrill",
+        "pokedex_number": 530
+      },
+      {
+        "version": "Escavalier",
+        "pokedex_number": 589
+      },
+      {
+        "version": "Ferroseed",
+        "pokedex_number": 597
+      },
+      {
+        "version": "Ferrothorn",
+        "pokedex_number": 598
+      },
+      {
+        "version": "Klink",
+        "pokedex_number": 599
+      },
+      {
+        "version": "Klang",
+        "pokedex_number": 600
+      },
+      {
+        "version": "Klinklang",
+        "pokedex_number": 601
+      },
+      {
+        "version": "Galarian Stunfisk",
+        "pokedex_number": 618
+      },
+      {
+        "version": "Pawniard",
+        "pokedex_number": 624
+      },
+      {
+        "version": "Bisharp",
+        "pokedex_number": 625
+      },
+      {
+        "version": "Durant",
+        "pokedex_number": 632
+      },
+      {
+        "version": "Cobalion",
+        "pokedex_number": 638
+      },
+      {
+        "version": "Genesect",
+        "pokedex_number": 649
+      },
+      {
+        "version": "Honedge",
+        "pokedex_number": 679
+      },
+      {
+        "version": "Doublade",
+        "pokedex_number": 680
+      },
+      {
+        "version": "Shield Forme",
+        "pokedex_number": 681
+      },
+      {
+        "version": "Blade Forme",
+        "pokedex_number": 681
+      },
+      {
+        "version": "Hisuian Sliggoo",
+        "pokedex_number": 705
+      },
+      {
+        "version": "Hisuian Goodra",
+        "pokedex_number": 706
+      },
+      {
+        "version": "Klefki",
+        "pokedex_number": 707
+      },
+      {
+        "version": "Togedemaru",
+        "pokedex_number": 777
+      },
+      {
+        "version": "Solgaleo",
+        "pokedex_number": 791
+      },
+      {
+        "version": "Celesteela",
+        "pokedex_number": 797
+      },
+      {
+        "version": "Kartana",
+        "pokedex_number": 798
+      },
+      {
+        "version": "Dusk Mane Necrozma",
+        "pokedex_number": 800
+      },
+      {
+        "version": "Magearna",
+        "pokedex_number": 801
+      },
+      {
+        "version": "Stakataka",
+        "pokedex_number": 805
+      },
+      {
+        "version": "Meltan",
+        "pokedex_number": 808
+      },
+      {
+        "version": "Melmetal",
+        "pokedex_number": 809
+      },
+      {
+        "version": "Corviknight",
+        "pokedex_number": 823
+      },
+      {
+        "version": "Perrserker",
+        "pokedex_number": 863
+      },
+      {
+        "version": "Cufant",
+        "pokedex_number": 878
+      },
+      {
+        "version": "Copperajah",
+        "pokedex_number": 879
+      },
+      {
+        "version": "Duraludon",
+        "pokedex_number": 884
+      },
+      {
+        "version": "Crowned Sword",
+        "pokedex_number": 888
+      },
+      {
+        "version": "Crowned Shield",
+        "pokedex_number": 889
+      },
+      {
+        "version": "Tinkatink",
+        "pokedex_number": 957
+      },
+      {
+        "version": "Tinkatuff",
+        "pokedex_number": 958
+      },
+      {
+        "version": "Tinkaton",
+        "pokedex_number": 959
+      },
+      {
+        "version": "Varoom",
+        "pokedex_number": 965
+      },
+      {
+        "version": "Revavroom",
+        "pokedex_number": 966
+      },
+      {
+        "version": "Orthworm",
+        "pokedex_number": 968
+      },
+      {
+        "version": "Kingambit",
+        "pokedex_number": 983
+      },
+      {
+        "version": "Iron Treads",
+        "pokedex_number": 990
+      },
+      {
+        "version": "Gholdengo",
+        "pokedex_number": 1000
+      }
+    ],
+    "catch_rate": [
+      255, 90, 255, 50, 255, 190, 60, 75, 25, 25, 25, 25, 25, 45, 45, 180, 90,
+      45, 45, 3, 3, 3, 3, 3, 3, 45, 45, 45, 45, 255, 90, 45, 45, 30, 60, 3, 3,
+      3, 60, 75, 255, 90, 130, 60, 30, 75, 120, 45, 90, 3, 3, 180, 90, 45, 45,
+      45, 45, 75, 180, 45, 45, 45, 3, 3, 30, 3, 3, 45, 90, 190, 90, 45, 10, 10,
+      190, 90, 45, 190, 75, 25, 25, 30, 45
+    ]
+  },
+  "Water": {
+    "name": [
+      {
+        "version": "Squirtle",
+        "pokedex_number": 7
+      },
+      {
+        "version": "Wartortle",
+        "pokedex_number": 8
+      },
+      {
+        "version": "Mega Blastoise",
+        "pokedex_number": 9
+      },
+      {
+        "version": "Blastoise",
+        "pokedex_number": 9
+      },
+      {
+        "version": "Psyduck",
+        "pokedex_number": 54
+      },
+      {
+        "version": "Golduck",
+        "pokedex_number": 55
+      },
+      {
+        "version": "Poliwag",
+        "pokedex_number": 60
+      },
+      {
+        "version": "Poliwhirl",
+        "pokedex_number": 61
+      },
+      {
+        "version": "Poliwrath",
+        "pokedex_number": 62
+      },
+      {
+        "version": "Tentacool",
+        "pokedex_number": 72
+      },
+      {
+        "version": "Tentacruel",
+        "pokedex_number": 73
+      },
+      {
+        "version": "Slowpoke",
+        "pokedex_number": 79
+      },
+      {
+        "version": "Mega Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Slowbro",
+        "pokedex_number": 80
+      },
+      {
+        "version": "Seel",
+        "pokedex_number": 86
+      },
+      {
+        "version": "Dewgong",
+        "pokedex_number": 87
+      },
+      {
+        "version": "Shellder",
+        "pokedex_number": 90
+      },
+      {
+        "version": "Cloyster",
+        "pokedex_number": 91
+      },
+      {
+        "version": "Krabby",
+        "pokedex_number": 98
+      },
+      {
+        "version": "Kingler",
+        "pokedex_number": 99
+      },
+      {
+        "version": "Horsea",
+        "pokedex_number": 116
+      },
+      {
+        "version": "Seadra",
+        "pokedex_number": 117
+      },
+      {
+        "version": "Goldeen",
+        "pokedex_number": 118
+      },
+      {
+        "version": "Seaking",
+        "pokedex_number": 119
+      },
+      {
+        "version": "Staryu",
+        "pokedex_number": 120
+      },
+      {
+        "version": "Starmie",
+        "pokedex_number": 121
+      },
+      {
+        "version": "Aqua Breed",
+        "pokedex_number": 128
+      },
+      {
+        "version": "Magikarp",
+        "pokedex_number": 129
+      },
+      {
+        "version": "Mega Gyarados",
+        "pokedex_number": 130
+      },
+      {
+        "version": "Gyarados",
+        "pokedex_number": 130
+      },
+      {
+        "version": "Lapras",
+        "pokedex_number": 131
+      },
+      {
+        "version": "Vaporeon",
+        "pokedex_number": 134
+      },
+      {
+        "version": "Omanyte",
+        "pokedex_number": 138
+      },
+      {
+        "version": "Omastar",
+        "pokedex_number": 139
+      },
+      {
+        "version": "Kabuto",
+        "pokedex_number": 140
+      },
+      {
+        "version": "Kabutops",
+        "pokedex_number": 141
+      },
+      {
+        "version": "Totodile",
+        "pokedex_number": 158
+      },
+      {
+        "version": "Croconaw",
+        "pokedex_number": 159
+      },
+      {
+        "version": "Feraligatr",
+        "pokedex_number": 160
+      },
+      {
+        "version": "Chinchou",
+        "pokedex_number": 170
+      },
+      {
+        "version": "Lanturn",
+        "pokedex_number": 171
+      },
+      {
+        "version": "Marill",
+        "pokedex_number": 183
+      },
+      {
+        "version": "Azumarill",
+        "pokedex_number": 184
+      },
+      {
+        "version": "Politoed",
+        "pokedex_number": 186
+      },
+      {
+        "version": "Wooper",
+        "pokedex_number": 194
+      },
+      {
+        "version": "Quagsire",
+        "pokedex_number": 195
+      },
+      {
+        "version": "Slowking",
+        "pokedex_number": 199
+      },
+      {
+        "version": "Qwilfish",
+        "pokedex_number": 211
+      },
+      {
+        "version": "Corsola",
+        "pokedex_number": 222
+      },
+      {
+        "version": "Remoraid",
+        "pokedex_number": 223
+      },
+      {
+        "version": "Octillery",
+        "pokedex_number": 224
+      },
+      {
+        "version": "Mantine",
+        "pokedex_number": 226
+      },
+      {
+        "version": "Kingdra",
+        "pokedex_number": 230
+      },
+      {
+        "version": "Suicune",
+        "pokedex_number": 245
+      },
+      {
+        "version": "Mudkip",
+        "pokedex_number": 258
+      },
+      {
+        "version": "Marshtomp",
+        "pokedex_number": 259
+      },
+      {
+        "version": "Mega Swampert",
+        "pokedex_number": 260
+      },
+      {
+        "version": "Swampert",
+        "pokedex_number": 260
+      },
+      {
+        "version": "Lotad",
+        "pokedex_number": 270
+      },
+      {
+        "version": "Lombre",
+        "pokedex_number": 271
+      },
+      {
+        "version": "Ludicolo",
+        "pokedex_number": 272
+      },
+      {
+        "version": "Wingull",
+        "pokedex_number": 278
+      },
+      {
+        "version": "Pelipper",
+        "pokedex_number": 279
+      },
+      {
+        "version": "Surskit",
+        "pokedex_number": 283
+      },
+      {
+        "version": "Carvanha",
+        "pokedex_number": 318
+      },
+      {
+        "version": "Mega Sharpedo",
+        "pokedex_number": 319
+      },
+      {
+        "version": "Sharpedo",
+        "pokedex_number": 319
+      },
+      {
+        "version": "Wailmer",
+        "pokedex_number": 320
+      },
+      {
+        "version": "Wailord",
+        "pokedex_number": 321
+      },
+      {
+        "version": "Barboach",
+        "pokedex_number": 339
+      },
+      {
+        "version": "Whiscash",
+        "pokedex_number": 340
+      },
+      {
+        "version": "Corphish",
+        "pokedex_number": 341
+      },
+      {
+        "version": "Crawdaunt",
+        "pokedex_number": 342
+      },
+      {
+        "version": "Feebas",
+        "pokedex_number": 349
+      },
+      {
+        "version": "Milotic",
+        "pokedex_number": 350
+      },
+      {
+        "version": "Rainy Form",
+        "pokedex_number": 351
+      },
+      {
+        "version": "Spheal",
+        "pokedex_number": 363
+      },
+      {
+        "version": "Sealeo",
+        "pokedex_number": 364
+      },
+      {
+        "version": "Walrein",
+        "pokedex_number": 365
+      },
+      {
+        "version": "Clamperl",
+        "pokedex_number": 366
+      },
+      {
+        "version": "Huntail",
+        "pokedex_number": 367
+      },
+      {
+        "version": "Gorebyss",
+        "pokedex_number": 368
+      },
+      {
+        "version": "Relicanth",
+        "pokedex_number": 369
+      },
+      {
+        "version": "Luvdisc",
+        "pokedex_number": 370
+      },
+      {
+        "version": "Primal Kyogre",
+        "pokedex_number": 382
+      },
+      {
+        "version": "Kyogre",
+        "pokedex_number": 382
+      },
+      {
+        "version": "Piplup",
+        "pokedex_number": 393
+      },
+      {
+        "version": "Prinplup",
+        "pokedex_number": 394
+      },
+      {
+        "version": "Empoleon",
+        "pokedex_number": 395
+      },
+      {
+        "version": "Bibarel",
+        "pokedex_number": 400
+      },
+      {
+        "version": "Buizel",
+        "pokedex_number": 418
+      },
+      {
+        "version": "Floatzel",
+        "pokedex_number": 419
+      },
+      {
+        "version": "Shellos",
+        "pokedex_number": 422
+      },
+      {
+        "version": "Gastrodon",
+        "pokedex_number": 423
+      },
+      {
+        "version": "Finneon",
+        "pokedex_number": 456
+      },
+      {
+        "version": "Lumineon",
+        "pokedex_number": 457
+      },
+      {
+        "version": "Mantyke",
+        "pokedex_number": 458
+      },
+      {
+        "version": "Wash Rotom",
+        "pokedex_number": 479
+      },
+      {
+        "version": "Origin Forme",
+        "pokedex_number": 484
+      },
+      {
+        "version": "Palkia",
+        "pokedex_number": 484
+      },
+      {
+        "version": "Phione",
+        "pokedex_number": 489
+      },
+      {
+        "version": "Manaphy",
+        "pokedex_number": 490
+      },
+      {
+        "version": "Oshawott",
+        "pokedex_number": 501
+      },
+      {
+        "version": "Dewott",
+        "pokedex_number": 502
+      },
+      {
+        "version": "Hisuian Samurott",
+        "pokedex_number": 503
+      },
+      {
+        "version": "Samurott",
+        "pokedex_number": 503
+      },
+      {
+        "version": "Panpour",
+        "pokedex_number": 515
+      },
+      {
+        "version": "Simipour",
+        "pokedex_number": 516
+      },
+      {
+        "version": "Tympole",
+        "pokedex_number": 535
+      },
+      {
+        "version": "Palpitoad",
+        "pokedex_number": 536
+      },
+      {
+        "version": "Seismitoad",
+        "pokedex_number": 537
+      },
+      {
+        "version": "Red-Striped Form",
+        "pokedex_number": 550
+      },
+      {
+        "version": "Blue-Striped Form",
+        "pokedex_number": 550
+      },
+      {
+        "version": "White-Striped Form",
+        "pokedex_number": 550
+      },
+      {
+        "version": "Tirtouga",
+        "pokedex_number": 564
+      },
+      {
+        "version": "Carracosta",
+        "pokedex_number": 565
+      },
+      {
+        "version": "Ducklett",
+        "pokedex_number": 580
+      },
+      {
+        "version": "Swanna",
+        "pokedex_number": 581
+      },
+      {
+        "version": "Frillish",
+        "pokedex_number": 592
+      },
+      {
+        "version": "Jellicent",
+        "pokedex_number": 593
+      },
+      {
+        "version": "Alomomola",
+        "pokedex_number": 594
+      },
+      {
+        "version": "Ordinary Form",
+        "pokedex_number": 647
+      },
+      {
+        "version": "Resolute Form",
+        "pokedex_number": 647
+      },
+      {
+        "version": "Froakie",
+        "pokedex_number": 656
+      },
+      {
+        "version": "Frogadier",
+        "pokedex_number": 657
+      },
+      {
+        "version": "Ash-Greninja",
+        "pokedex_number": 658
+      },
+      {
+        "version": "Greninja",
+        "pokedex_number": 658
+      },
+      {
+        "version": "Binacle",
+        "pokedex_number": 688
+      },
+      {
+        "version": "Barbaracle",
+        "pokedex_number": 689
+      },
+      {
+        "version": "Skrelp",
+        "pokedex_number": 690
+      },
+      {
+        "version": "Clauncher",
+        "pokedex_number": 692
+      },
+      {
+        "version": "Clawitzer",
+        "pokedex_number": 693
+      },
+      {
+        "version": "Volcanion",
+        "pokedex_number": 721
+      },
+      {
+        "version": "Popplio",
+        "pokedex_number": 728
+      },
+      {
+        "version": "Brionne",
+        "pokedex_number": 729
+      },
+      {
+        "version": "Primarina",
+        "pokedex_number": 730
+      },
+      {
+        "version": "Solo Form",
+        "pokedex_number": 746
+      },
+      {
+        "version": "School Form",
+        "pokedex_number": 746
+      },
+      {
+        "version": "Mareanie",
+        "pokedex_number": 747
+      },
+      {
+        "version": "Toxapex",
+        "pokedex_number": 748
+      },
+      {
+        "version": "Dewpider",
+        "pokedex_number": 751
+      },
+      {
+        "version": "Araquanid",
+        "pokedex_number": 752
+      },
+      {
+        "version": "Wimpod",
+        "pokedex_number": 767
+      },
+      {
+        "version": "Golisopod",
+        "pokedex_number": 768
+      },
+      {
+        "version": "Pyukumuku",
+        "pokedex_number": 771
+      },
+      {
+        "version": "Bruxish",
+        "pokedex_number": 779
+      },
+      {
+        "version": "Tapu Fini",
+        "pokedex_number": 788
+      },
+      {
+        "version": "Sobble",
+        "pokedex_number": 816
+      },
+      {
+        "version": "Drizzile",
+        "pokedex_number": 817
+      },
+      {
+        "version": "Inteleon",
+        "pokedex_number": 818
+      },
+      {
+        "version": "Chewtle",
+        "pokedex_number": 833
+      },
+      {
+        "version": "Drednaw",
+        "pokedex_number": 834
+      },
+      {
+        "version": "Cramorant",
+        "pokedex_number": 845
+      },
+      {
+        "version": "Arrokuda",
+        "pokedex_number": 846
+      },
+      {
+        "version": "Barraskewda",
+        "pokedex_number": 847
+      },
+      {
+        "version": "Dracovish",
+        "pokedex_number": 882
+      },
+      {
+        "version": "Arctovish",
+        "pokedex_number": 883
+      },
+      {
+        "version": "Rapid Strike Style",
+        "pokedex_number": 892
+      },
+      {
+        "version": "Male",
+        "pokedex_number": 902
+      },
+      {
+        "version": "Female",
+        "pokedex_number": 902
+      },
+      {
+        "version": "Quaxly",
+        "pokedex_number": 912
+      },
+      {
+        "version": "Quaxwell",
+        "pokedex_number": 913
+      },
+      {
+        "version": "Quaquaval",
+        "pokedex_number": 914
+      },
+      {
+        "version": "Wiglett",
+        "pokedex_number": 960
+      },
+      {
+        "version": "Wugtrio",
+        "pokedex_number": 961
+      },
+      {
+        "version": "Finizen",
+        "pokedex_number": 963
+      },
+      {
+        "version": "Zero Form",
+        "pokedex_number": 964
+      },
+      {
+        "version": "Hero Form",
+        "pokedex_number": 964
+      },
+      {
+        "version": "Veluza",
+        "pokedex_number": 976
+      },
+      {
+        "version": "Dondozo",
+        "pokedex_number": 977
+      },
+      {
+        "version": "Curly Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Droopy Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Stretchy Form",
+        "pokedex_number": 978
+      },
+      {
+        "version": "Iron Bundle",
+        "pokedex_number": 991
+      },
+      {
+        "version": "Walking Wake",
+        "pokedex_number": 1009
+      }
+    ],
+    "catch_rate": [
+      45, 45, 45, 45, 190, 75, 255, 120, 45, 190, 60, 190, 75, 75, 190, 75, 190,
+      60, 225, 60, 225, 75, 225, 60, 225, 60, 45, 255, 45, 45, 45, 45, 45, 45,
+      45, 45, 45, 45, 45, 190, 75, 190, 75, 45, 255, 90, 70, 45, 60, 190, 75,
+      25, 45, 3, 45, 45, 45, 45, 255, 120, 45, 190, 45, 200, 225, 60, 60, 125,
+      60, 190, 75, 205, 155, 255, 60, 45, 255, 120, 45, 255, 60, 60, 25, 225, 5,
+      3, 45, 45, 45, 127, 190, 75, 190, 75, 190, 75, 25, 45, 3, 3, 30, 3, 45,
+      45, 45, 45, 190, 75, 255, 120, 45, 25, 25, 25, 45, 45, 190, 45, 190, 60,
+      75, 3, 3, 45, 45, 45, 45, 120, 45, 225, 225, 55, 3, 45, 45, 45, 60, 60,
+      190, 75, 200, 100, 90, 45, 60, 80, 3, 45, 45, 45, 255, 75, 45, 255, 60,
+      45, 45, 3, 45, 45, 45, 45, 45, 255, 50, 200, 45, 45, 100, 25, 100, 100,
+      100, 50, 0
+    ]
+  }
+}

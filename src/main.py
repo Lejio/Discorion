@@ -23,6 +23,7 @@ from pokeembed import *
 load_dotenv()
 cogs: list = ["pokestyles", "catch"]
 registry = json.load(open('./pokemon/registry.json'))
+catch_registry = json.load(open('./pokemon/catch_registry.json'))
 cache: dict = {'supabase': supabase_loader(), 'mongodb': load_mongodb()['pokemon_templates']}
 
 class Discorion(commands.Bot):
@@ -39,6 +40,7 @@ class Discorion(commands.Bot):
         
         self.registry = registry
         self.cache = cache
+        self.catch_registry = catch_registry
         
         print("Cache successfully loaded.")
         
