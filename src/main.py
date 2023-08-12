@@ -46,7 +46,7 @@ class Discorion(commands.Bot):
         
         print("Cache successfully loaded.")
         
-        print(f"\n{datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
+        print(f"\n{datetime.datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
 
         try:
         
@@ -107,18 +107,15 @@ async def searchPokemon(interaction: Interaction, name: str):
     
 @client.tree.command(name="test-select", description="Testing select pagination.")
 async def testPagination(interaction: Interaction):
-    
-    message = interaction.message
+    await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {6}'))
+    message = await interaction.original_response()
     
     pokeCollection: Collection = cache['mongodb']['pokemon']
     pokemon_response = PokeObject(pokeCollection.find_one({ "_id": 6})['data'])
     
     pokeselect = PokemonSelect(pokemon=pokemon_response, message=message)
     
-    view = View()
-    view.add_item(pokeselect)
-    
-    await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {6}'))
+    await pokeselect.send()
 
 # @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
 # async def getRandomPokemon(interaction: Interaction):

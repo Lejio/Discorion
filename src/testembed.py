@@ -1,4 +1,8 @@
+import datetime
 from random import Random
+from typing import Any, Optional, Union
+from discord.colour import Colour
+from discord.types.embed import EmbedType
 from discord.ui import Select, button, View, Button
 from discord import SelectOption, Interaction, Message, InteractionMessage, Embed
 from poketools.pokemon.pokecalc import calcBar, createBar, createSeparator, translateText
@@ -84,21 +88,28 @@ class PokedexPageOne(Embed):
         else:
             self.add_field(name='Pokedex Entry:', value="???", inline=False)
         self.set_image(url=pokemon.discord_image)
+  
+class MovesPage(Embed):
+    def __init__(self, pokemon: PokeObject, num: int):
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Moves Page', description=f'Page {num} of the moves page')        
 
-    
 class PokedexInformation(View):
-    def __init__(self, pokemon: PokeObject):
+    def __init__(self, pages: [Embed]):
         super().__init__(timeout=600)
-        self.pages = PokemonPage(pokemon=pokemon)
-        self.page_len = len(self.pages)
+        self.pages = pages
+        self.page_len = len(pages)
         
     
-    async def send(self, message: InteractionMessage):
-        
+    async def send(self, message: InteractionMessage, select: Select):
+        self.add_item(select)
         self.curr_page = 0
         # Make custom select object that is able to do callback functions.
         # Add Embeds to a list and somehow make the buttons show each embed
         self.prevButton.disabled = True
+        
+        if self.page_len == 1:
+            self.nextButton.disabled = True
+            
         await message.edit(embed=self.pages[self.curr_page], view=self)
         self.message = message
         
@@ -136,40 +147,182 @@ class PokedexInformation(View):
         
         await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
+class EvolutionPageOne(Embed):
+    def __init__(self, pokemon: PokeObject):
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage One', description='Stage one in the evolution of this pokemon')
 
-class EvolutionInformation(list):
-    
+class EvolutionPageTwo(Embed):
     def __init__(self, pokemon: PokeObject):
-        pass
-    
-class MovesInformation(list):
-    
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage Two', description='Stage two in the evolution of this pokemon')
+
+class EvolutionPageThree(Embed):
     def __init__(self, pokemon: PokeObject):
-        pass
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage Three', description='Stage three in the evolution of this pokemon')
+
+class EvolutionInformation(View):
+    
+    def __init__(self, pages: [Embed]):
+        super().__init__(timeout=600)
+        self.pages = pages
+        self.page_len = len(pages)
+        
+    
+    async def send(self, message: InteractionMessage, select: Select):
+        
+        self.curr_page = 0
+        # Make custom select object that is able to do callback functions.
+        # Add Embeds to a list and somehow make the buttons show each embed
+        self.prevButton.disabled = True
+        
+        if self.page_len == 1:
+            self.nextButton.disabled = True
+            
+        self.add_item(select)
+        await message.edit(embed=self.pages[self.curr_page], view=self)
+        self.message = message
+        
+        
+    @button(label="Prev")
+    async def prevButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page -= 1
+        # print('Previous new page:', self.curr_page)
+        
+        if self.curr_page == 0:
+            # print('Disabling')
+            self.prevButton.disabled = True
+            self.nextButton.disabled = False    
+        else:
+            self.nextButton.disabled = False            
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+        
+        
+        
+    @button(label="Next")
+    async def nextButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page += 1
+        # print('Next new page:', self.curr_page)
+        
+        if self.curr_page + 1 == self.page_len:
+            # print('Disabling')
+            self.nextButton.disabled = True
+            self.prevButton.disabled = False
+        else:
+            self.prevButton.disabled = False
+              
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+    
+class MovesInformation(View):
+    
+    def __init__(self, pages: [Embed]):
+        super().__init__(timeout=600)
+        self.pages = pages
+        self.page_len = len(pages)
+        
+    
+    async def send(self, message: InteractionMessage, select: Select):
+        
+        self.curr_page = 0
+        # Make custom select object that is able to do callback functions.
+        # Add Embeds to a list and somehow make the buttons show each embed
+        self.prevButton.disabled = True
+        
+        if self.page_len == 1:
+            self.nextButton.disabled = True
+        
+        self.add_item(select)
+        await message.edit(embed=self.pages[self.curr_page], view=self)
+        self.message = message
+        
+        
+    @button(label="Prev")
+    async def prevButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page -= 1
+        # print('Previous new page:', self.curr_page)
+        
+        if self.curr_page == 0:
+            # print('Disabling')
+            self.prevButton.disabled = True
+            self.nextButton.disabled = False    
+        else:
+            self.nextButton.disabled = False            
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+        
+        
+        
+    @button(label="Next")
+    async def nextButton(self, interaction: Interaction, button: Button):
+        await interaction.response.defer()
+        self.curr_page += 1
+        # print('Next new page:', self.curr_page)
+        
+        if self.curr_page + 1 == self.page_len:
+            # print('Disabling')
+            self.nextButton.disabled = True
+            self.prevButton.disabled = False
+        else:
+            self.prevButton.disabled = False
+              
+        
+        await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
 class PokemonPage(dict):
     
     def __init__(self, pokemon: PokeObject):
         
-        self['Pokedex Information'] = PokedexInformation(pokemon)
-        self['Evolution Information'] = EvolutionInformation(pokemon)
-        self['Moves Information'] = MovesInformation(pokemon)
+        self['Pokedex Information'] = PokedexInformation([PokedexPageOne(pokemon), PokedexPageTwo(pokemon), PokedexPageThree(pokemon)])
+        self['Evolution Information'] = EvolutionInformation([EvolutionPageOne(pokemon), EvolutionPageTwo(pokemon), EvolutionPageThree(pokemon)])
+        self['Moves Information'] = MovesInformation([MovesPage(pokemon, 1)])
 
 class PokemonSelect(Select):
     
         # Takes in the message and edits it based on the version selected.
-    def __init__(self, pokemon: PokeObject, message: Message) -> None:
+    def __init__(self, pokemon: PokeObject, message: InteractionMessage) -> None:
         pokepage = PokemonPage(pokemon=pokemon)
         options = [SelectOption(label=v, value=v) for v in pokepage]
         super().__init__(min_values=1, max_values=1, options=options)
-        
+        self.pokemon = pokemon
         self.message = message
         self.options[0].default = True
+        self.default_val = self.options[0]
+    async def send(self):
+        pokepage = None
+        
+        match self.options[0].value:
+            case 'Pokedex Information':
+                pokepage = PokedexInformation([PokedexPageOne(self.pokemon), PokedexPageTwo(self.pokemon), PokedexPageThree(self.pokemon)])
+            case 'Evolution Information':
+                pokepage = EvolutionInformation([EvolutionPageOne(self.pokemon), EvolutionPageTwo(self.pokemon), EvolutionPageThree(self.pokemon)])
+            case 'Moves Information':
+                pokepage = MovesInformation([MovesPage(self.pokemon, 1)])
+        
+        await pokepage.send(message=self.message, select=self)
             
     async def callback(self, interaction: Interaction):
         
+        self.default_val.default = False
         
-        
-        self.message.edit()
+        pokepage = None
+        match self.values[0]:
+            case 'Pokedex Information':
+                pokepage = PokedexInformation([PokedexPageOne(self.pokemon), PokedexPageTwo(self.pokemon), PokedexPageThree(self.pokemon)])
+                self.options[0].default = True
+                self.default_val = self.options[0]
+            case 'Evolution Information':
+                pokepage = EvolutionInformation([EvolutionPageOne(self.pokemon), EvolutionPageTwo(self.pokemon), EvolutionPageThree(self.pokemon)])
+                self.options[1].default = True
+                self.default_val = self.options[1]
+            case 'Moves Information':
+                pokepage = MovesInformation([MovesPage(self.pokemon, 1)])
+                self.options[2].default = True
+                self.default_val = self.options[2]
+                
         await interaction.response.defer()
+        await pokepage.send(message=self.message, select=self)
+        
 
