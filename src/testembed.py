@@ -1,20 +1,36 @@
-from discord import Embed, InteractionMessage, Interaction, SelectOption
-from discord.components import SelectOption
-from discord.interactions import Interaction
-from discord.ui import View, Button, Select, Item, button
-from poketranslator import translateText, Style
-from poketools.pokemon.pokecalc import *
+from random import Random
+from discord.ui import Select, button, View, Button
+from discord import SelectOption, Interaction, Message, InteractionMessage, Embed
+from poketools.pokemon.pokecalc import calcBar, createBar, createSeparator, translateText
+from poketranslator import Style, StyleBundler
+
 from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
 
-from random import Random
 
-class PokeStats(Embed):
-    """Creates a stats page for Pokemon. Is a discord embed object.
+class PokedexPageThree(Embed):
+    
+    def __init__(self, pokemon: PokeObject):
+        style = Style(pokemon.versions[0].type[0])[0]
+        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'pokedex'), description=f"{createSeparator(10)}")
+        
+        version: PokeObject.Version = pokemon.versions[0]
+        self.set_thumbnail(url=style.ICON_IMAGE.value)
+        self.add_field(name=f'{translateText(text_style=style, text="number")}', value=f'{version.national_number}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="species")}', value=f'{version.species}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="weight")}', value=f'{version.weight}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="height")}', value=f'{version.height}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="base xp")}', value=f'{version.base_xp}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="growth")}', value=f'{version.growth_rate}', inline=False)
+        self.add_field(name=f'{Default.BLANK.value}', value='')
+        self.add_field(name=f'{translateText(text_style=style, text="catch")}', value=f'{version.catch_rate}', inline=False)
 
-    Args:
-        Embed (_type_): Discord.Embed
-    """
+class PokedexPageTwo(Embed):
     
     def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(Style(pokemon.versions[0].type[0])[0], 'stats'), description=f"{createSeparator(10)}")
@@ -47,9 +63,8 @@ class PokeStats(Embed):
         self.add_field(name=f"{translateText(text_style=style, text='Speed')} [{int(version.stats['Speed'].base)}/{int(version.stats['Speed'].min)}]", value=f"{createBar(calcBar(int(version.stats['Speed'].base), int(version.stats['Speed'].min)), style)}", inline=False)
         
         self.add_field(name=f'{createSeparator(10)}', value=f'{translateText(text_style=style, text="Total")} **[{version.stats["Total"]}]**')
-
-
-class PokeInfo(Embed):
+        
+class PokedexPageOne(Embed):
     
     def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Search Result', description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}")        
@@ -69,43 +84,13 @@ class PokeInfo(Embed):
         else:
             self.add_field(name='Pokedex Entry:', value="???", inline=False)
         self.set_image(url=pokemon.discord_image)
-        
-        
-class PokePokedex(Embed):
-    
-    def __init__(self, pokemon: PokeObject):
-        style = Style(pokemon.versions[0].type[0])[0]
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'pokedex'), description=f"{createSeparator(10)}")
-        
-        version: PokeObject.Version = pokemon.versions[0]
-        self.set_thumbnail(url=style.ICON_IMAGE.value)
-        self.add_field(name=f'{translateText(text_style=style, text="number")}', value=f'{version.national_number}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="species")}', value=f'{version.species}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="weight")}', value=f'{version.weight}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="height")}', value=f'{version.height}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="base xp")}', value=f'{version.base_xp}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="growth")}', value=f'{version.growth_rate}', inline=False)
-        self.add_field(name=f'{Default.BLANK.value}', value='')
-        self.add_field(name=f'{translateText(text_style=style, text="catch")}', value=f'{version.catch_rate}', inline=False)
-        
 
-class PokeAttacks(Embed):
     
+class PokedexInformation(View):
     def __init__(self, pokemon: PokeObject):
-        style = Style(pokemon.versions[0].type[0])[0]
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(style, 'moves'), description=f"{createSeparator(10)}")
-        
-
-class TestPrag(View):
-    def __init__(self, pages: list[Embed]):
         super().__init__(timeout=600)
-        self.pages = pages
-        self.page_len = len(pages)
+        self.pages = PokemonPage(pokemon=pokemon)
+        self.page_len = len(self.pages)
         
     
     async def send(self, message: InteractionMessage):
@@ -150,18 +135,41 @@ class TestPrag(View):
               
         
         await self.message.edit(embed=self.pages[self.curr_page], view=self)
-        
-        
 
-class VersionSelect(Select):
+
+class EvolutionInformation(list):
     
-    # Takes in the message and edits it based on the version selected.
-    def __init__(self, versions: list) -> None:
-        options = [SelectOption(label=v, value=v) for v in versions]
+    def __init__(self, pokemon: PokeObject):
+        pass
+    
+class MovesInformation(list):
+    
+    def __init__(self, pokemon: PokeObject):
+        pass
+
+class PokemonPage(dict):
+    
+    def __init__(self, pokemon: PokeObject):
+        
+        self['Pokedex Information'] = PokedexInformation(pokemon)
+        self['Evolution Information'] = EvolutionInformation(pokemon)
+        self['Moves Information'] = MovesInformation(pokemon)
+
+class PokemonSelect(Select):
+    
+        # Takes in the message and edits it based on the version selected.
+    def __init__(self, pokemon: PokeObject, message: Message) -> None:
+        pokepage = PokemonPage(pokemon=pokemon)
+        options = [SelectOption(label=v, value=v) for v in pokepage]
         super().__init__(min_values=1, max_values=1, options=options)
         
+        self.message = message
         self.options[0].default = True
             
     async def callback(self, interaction: Interaction):
-        await interaction.response.send_message(f"Selected: {self.values[0]}", ephemeral=True)
-    
+        
+        
+        
+        self.message.edit()
+        await interaction.response.defer()
+

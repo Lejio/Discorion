@@ -19,6 +19,8 @@ from pokemon.pokeobject import PokeObject
 from poketools.pokequery import PokeQuery
 from pokeembed import *
 
+from testembed import *
+
 
 load_dotenv()
 cogs: list = ["pokestyles", "catch"]
@@ -102,6 +104,21 @@ async def searchPokemon(interaction: Interaction, name: str):
     testview = TestPrag(pokepage)
     await testview.send(message=message)
     
+    
+@client.tree.command(name="test-select", description="Testing select pagination.")
+async def testPagination(interaction: Interaction):
+    
+    message = interaction.message
+    
+    pokeCollection: Collection = cache['mongodb']['pokemon']
+    pokemon_response = PokeObject(pokeCollection.find_one({ "_id": 6})['data'])
+    
+    pokeselect = PokemonSelect(pokemon=pokemon_response, message=message)
+    
+    view = View()
+    view.add_item(pokeselect)
+    
+    await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {6}'))
 
 # @client.tree.command(name="get-random-pokemon", description="Searches for a pokemon")
 # async def getRandomPokemon(interaction: Interaction):
