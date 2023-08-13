@@ -1,6 +1,4 @@
-import datetime
 from random import Random
-from typing import Any, Optional, Union
 from discord.colour import Colour
 from discord.types.embed import EmbedType
 from discord.ui import Select, button, View, Button
@@ -150,6 +148,9 @@ class PokedexInformation(View):
 class EvolutionPageOne(Embed):
     def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage One', description='Stage one in the evolution of this pokemon')
+        evolution_tree = pokemon.evolution_tree[0]
+        for i in evolution_tree:
+            print(i)
 
 class EvolutionPageTwo(Embed):
     def __init__(self, pokemon: PokeObject):

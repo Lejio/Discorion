@@ -46,7 +46,7 @@ class Discorion(commands.Bot):
         
         print("Cache successfully loaded.")
         
-        print(f"\n{datetime.datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
+        print(f"\n{datetime.utcnow()}: Logged in successfully as: " + str(client.user) + "\n")
 
         try:
         
