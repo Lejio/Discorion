@@ -10,7 +10,7 @@ from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
 
 
-class PokedexPageThree(Embed):
+class PokedexExtras(Embed):
     
     def __init__(self, pokemon: PokeObject):
         style = Style(pokemon.versions[0].type[0])[0]
@@ -32,7 +32,7 @@ class PokedexPageThree(Embed):
         self.add_field(name=f'{Default.BLANK.value}', value='')
         self.add_field(name=f'{translateText(text_style=style, text="catch")}', value=f'{version.catch_rate}', inline=False)
 
-class PokedexPageTwo(Embed):
+class PokedexStats(Embed):
     
     def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=translateText(Style(pokemon.versions[0].type[0])[0], 'stats'), description=f"{createSeparator(10)}")
@@ -66,7 +66,7 @@ class PokedexPageTwo(Embed):
         
         self.add_field(name=f'{createSeparator(10)}', value=f'{translateText(text_style=style, text="Total")} **[{version.stats["Total"]}]**')
         
-class PokedexPageOne(Embed):
+class PokedexFrontPage(Embed):
     
     def __init__(self, pokemon: PokeObject):
         super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Search Result', description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}")        
@@ -187,10 +187,8 @@ class EvolutionInformation(View):
     async def prevButton(self, interaction: Interaction, button: Button):
         await interaction.response.defer()
         self.curr_page -= 1
-        # print('Previous new page:', self.curr_page)
         
         if self.curr_page == 0:
-            # print('Disabling')
             self.prevButton.disabled = True
             self.nextButton.disabled = False    
         else:
@@ -276,13 +274,12 @@ class PokemonPage(dict):
     
     def __init__(self, pokemon: PokeObject):
         
-        self['Pokedex Information'] = PokedexInformation([PokedexPageOne(pokemon), PokedexPageTwo(pokemon), PokedexPageThree(pokemon)])
+        self['Pokedex Information'] = PokedexInformation([PokedexFrontPage(pokemon), PokedexStats(pokemon), PokedexExtras(pokemon)])
         self['Evolution Information'] = EvolutionInformation([EvolutionPageOne(pokemon), EvolutionPageTwo(pokemon), EvolutionPageThree(pokemon)])
         self['Moves Information'] = MovesInformation([MovesPage(pokemon, 1)])
 
 class PokemonSelect(Select):
     
-        # Takes in the message and edits it based on the version selected.
     def __init__(self, pokemon: PokeObject, message: InteractionMessage) -> None:
         pokepage = PokemonPage(pokemon=pokemon)
         options = [SelectOption(label=v, value=v) for v in pokepage]
@@ -291,12 +288,13 @@ class PokemonSelect(Select):
         self.message = message
         self.options[0].default = True
         self.default_val = self.options[0]
+        
     async def send(self):
         pokepage = None
         
         match self.options[0].value:
             case 'Pokedex Information':
-                pokepage = PokedexInformation([PokedexPageOne(self.pokemon), PokedexPageTwo(self.pokemon), PokedexPageThree(self.pokemon)])
+                pokepage = PokedexInformation([PokedexFrontPage(self.pokemon), PokedexStats(self.pokemon), PokedexExtras(self.pokemon)])
             case 'Evolution Information':
                 pokepage = EvolutionInformation([EvolutionPageOne(self.pokemon), EvolutionPageTwo(self.pokemon), EvolutionPageThree(self.pokemon)])
             case 'Moves Information':
@@ -311,7 +309,7 @@ class PokemonSelect(Select):
         pokepage = None
         match self.values[0]:
             case 'Pokedex Information':
-                pokepage = PokedexInformation([PokedexPageOne(self.pokemon), PokedexPageTwo(self.pokemon), PokedexPageThree(self.pokemon)])
+                pokepage = PokedexInformation([PokedexFrontPage(self.pokemon), PokedexStats(self.pokemon), PokedexExtras(self.pokemon)])
                 self.options[0].default = True
                 self.default_val = self.options[0]
             case 'Evolution Information':
