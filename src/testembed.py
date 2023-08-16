@@ -185,8 +185,7 @@ class EvolutionInformation(View):
         super().__init__(timeout=600)
         self.pokemon = pokemon
         self.cache = cache
-        self.raw_evolution_tree = pokemon.evolution_tree[0] if pokemon.evolution_tree != [] else []
-       
+        self.raw_evolution_tree = pokemon.evolution_tree if pokemon.evolution_tree != [] else []
         self.pages = self.generate_pages()
         self.page_len = len(self.pages)
         
@@ -204,26 +203,27 @@ class EvolutionInformation(View):
         if self.raw_evolution_tree == []:
                 pages.append(self.EvolutionPage(pokemon=self.pokemon, no_evolution = True))
                 return pages
-        
-        for stage in self.raw_evolution_tree:
-            if pages == []:
-                pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['from']['nationalNo'][1:]))))
-                evo_tree[str(int(stage['from']['nationalNo'][1:]))] = evo_cnt
-                
-                evo_cnt += 1
-                
-                pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
-                evo_tree[str(int(stage['to']['nationalNo'][1:]))] = evo_cnt
-            else:
-                from_stage = evo_tree.get(str(int(stage['from']['nationalNo'][1:])))
-                
-                if from_stage:
-                    pages.append(self.EvolutionPage(stage_number=from_stage + 1, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
-                    evo_tree[str(int(stage['to']['nationalNo'][1:]))] = from_stage + 1
+            
+        for tree in self.raw_evolution_tree:
+            for stage in tree:
+                if pages == []:
+                    pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['from']['nationalNo'][1:]))))
+                    evo_tree[str(int(stage['from']['nationalNo'][1:]))] = evo_cnt
                     
+                    evo_cnt += 1
+                    
+                    pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
+                    evo_tree[str(int(stage['to']['nationalNo'][1:]))] = evo_cnt
                 else:
+                    from_stage = evo_tree.get(str(int(stage['from']['nationalNo'][1:])))
+                    
+                    if from_stage:
+                        pages.append(self.EvolutionPage(stage_number=from_stage + 1, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
+                        evo_tree[str(int(stage['to']['nationalNo'][1:]))] = from_stage + 1
+                        
+                    else:
 
-                    raise Exception(f'From evolution is {from_stage} even though it is not the base pokemon.')
+                        raise Exception(f'From evolution is {from_stage} even though it is not the base pokemon.')
                 
         return pages
     
