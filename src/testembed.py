@@ -185,9 +185,8 @@ class EvolutionInformation(View):
         super().__init__(timeout=600)
         self.pokemon = pokemon
         self.cache = cache
-        self.raw_evolution_tree = pokemon.evolution_tree[0]
+        self.raw_evolution_tree = pokemon.evolution_tree[0] if pokemon.evolution_tree != [] else []
        
-        
         self.pages = self.generate_pages()
         self.page_len = len(self.pages)
         
@@ -202,6 +201,10 @@ class EvolutionInformation(View):
         evo_tree: dict = {}
         evo_cnt: int = 1
         
+        if self.raw_evolution_tree == []:
+                pages.append(self.EvolutionPage(pokemon=self.pokemon, no_evolution = True))
+                return pages
+        
         for stage in self.raw_evolution_tree:
             if pages == []:
                 pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['from']['nationalNo'][1:]))))
@@ -211,8 +214,6 @@ class EvolutionInformation(View):
                 
                 pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
                 evo_tree[str(int(stage['to']['nationalNo'][1:]))] = evo_cnt
-            elif self.raw_evolution_tree is []:
-                pages.append(self.EvolutionPage(pokemon=self.pokemon, no_evolution = True))
             else:
                 from_stage = evo_tree.get(str(int(stage['from']['nationalNo'][1:])))
                 
@@ -221,9 +222,7 @@ class EvolutionInformation(View):
                     evo_tree[str(int(stage['to']['nationalNo'][1:]))] = from_stage + 1
                     
                 else:
-                    print(stage)
-                    print(evo_tree)
-                    print(str(int(stage['to']['nationalNo'][1:])))
+
                     raise Exception(f'From evolution is {from_stage} even though it is not the base pokemon.')
                 
         return pages

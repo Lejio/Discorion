@@ -106,12 +106,12 @@ async def searchPokemon(interaction: Interaction, name: str):
     
     
 @client.tree.command(name="test-select", description="Testing select pagination.")
-async def testPagination(interaction: Interaction):
-    await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {6}'))
+async def testPagination(interaction: Interaction, poke_id: int):
+    await interaction.response.send_message(embed=Embed(color=Colour.yellow(), title=f'Generating result for {poke_id}'))
     message = await interaction.original_response()
     
     pokeCollection: Collection = cache['mongodb']['pokemon']
-    pokemon_response = PokeObject(pokeCollection.find_one({ "_id": 6})['data'])
+    pokemon_response = PokeObject(pokeCollection.find_one({ "_id": poke_id})['data'])
     
     pokeselect = PokemonSelect(pokemon=pokemon_response, message=message, cache=cache)
     
