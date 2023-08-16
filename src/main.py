@@ -113,7 +113,7 @@ async def testPagination(interaction: Interaction):
     pokeCollection: Collection = cache['mongodb']['pokemon']
     pokemon_response = PokeObject(pokeCollection.find_one({ "_id": 6})['data'])
     
-    pokeselect = PokemonSelect(pokemon=pokemon_response, message=message)
+    pokeselect = PokemonSelect(pokemon=pokemon_response, message=message, cache=cache)
     
     await pokeselect.send()
 

@@ -1,10 +1,13 @@
 from random import Random
+from typing import List
 from discord.colour import Colour
 from discord.types.embed import EmbedType
 from discord.ui import Select, button, View, Button
 from discord import SelectOption, Interaction, Message, InteractionMessage, Embed
 from poketools.pokemon.pokecalc import calcBar, createBar, createSeparator, translateText
-from poketranslator import Style, StyleBundler
+from poketranslator import Style
+
+from pymongo.collection import Collection
 
 from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
@@ -144,33 +147,90 @@ class PokedexInformation(View):
               
         
         await self.message.edit(embed=self.pages[self.curr_page], view=self)
-
-class EvolutionPageOne(Embed):
-    def __init__(self, pokemon: PokeObject):
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage One', description='Stage one in the evolution of this pokemon')
-        evolution_tree = pokemon.evolution_tree[0]
-        for i in evolution_tree:
-            print(i)
-
-class EvolutionPageTwo(Embed):
-    def __init__(self, pokemon: PokeObject):
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage Two', description='Stage two in the evolution of this pokemon')
-
-class EvolutionPageThree(Embed):
-    def __init__(self, pokemon: PokeObject):
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Evolution Stage Three', description='Stage three in the evolution of this pokemon')
-
+        
 class EvolutionInformation(View):
     
-    def __init__(self, pages: [Embed]):
-        super().__init__(timeout=600)
-        self.pages = pages
-        self.page_len = len(pages)
+    class EvolutionPage(Embed):
+        def __init__(self, stage_number: int = None, pokemon: PokeObject = PokeObject, requirement: str | None = None, no_evolution = False):
+            if no_evolution:
+                super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=f'This pokemon has no evolutions.')
+                return None
+            super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=f'Evolution stage {stage_number}', description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}")        
+            types = ''
+            self._stage = stage_number
+            self._name = pokemon.name
+            for s in pokemon.versions[0].type:
+                types += Style(style=s)[0].ICON.value
+                types += Default.BLANK.value
+                
+            self.add_field(name=types, value=str(createSeparator(16)), inline=False)
+            
+            if len(pokemon.pokedex_entries) > 0:
+                rand = Random()
+                entry = rand.randint(0, len(pokemon.pokedex_entries) - 1)
+                self.add_field(name='Pokedex Entry:', value=pokemon.pokedex_entries[entry].entries[rand.randint(0, len(pokemon.pokedex_entries[entry].entries) - 1)], inline=False)
+            else:
+                self.add_field(name='Pokedex Entry:', value="???", inline=False)
+            self.set_image(url=pokemon.discord_image)
         
+        @property
+        def name(self) -> str:
+            return self._name
+
+        @property
+        def stage(self) -> int:
+            return self._stage
+    
+    def __init__(self, cache, pokemon: PokeObject) -> None:
+        super().__init__(timeout=600)
+        self.pokemon = pokemon
+        self.cache = cache
+        self.raw_evolution_tree = pokemon.evolution_tree[0]
+       
+        
+        self.pages = self.generate_pages()
+        self.page_len = len(self.pages)
+        
+    def find_stage(self, _id: str) -> PokeObject:
+        
+        pokeCollection: Collection = self.cache['mongodb']['pokemon']
+        return PokeObject(pokeCollection.find_one({ "_id": _id})['data'])    
+    
+    def generate_pages(self) -> List[Embed]:
+        
+        pages: List[self.EvolutionPage] = []
+        evo_tree: dict = {}
+        evo_cnt: int = 1
+        
+        for stage in self.raw_evolution_tree:
+            if pages == []:
+                pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['from']['nationalNo'][1:]))))
+                evo_tree[str(int(stage['from']['nationalNo'][1:]))] = evo_cnt
+                
+                evo_cnt += 1
+                
+                pages.append(self.EvolutionPage(stage_number=evo_cnt, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
+                evo_tree[str(int(stage['to']['nationalNo'][1:]))] = evo_cnt
+            elif self.raw_evolution_tree is []:
+                pages.append(self.EvolutionPage(pokemon=self.pokemon, no_evolution = True))
+            else:
+                from_stage = evo_tree.get(str(int(stage['from']['nationalNo'][1:])))
+                
+                if from_stage:
+                    pages.append(self.EvolutionPage(stage_number=from_stage + 1, pokemon=self.find_stage(int(stage['to']['nationalNo'][1:])), requirement=stage['requirement']))
+                    evo_tree[str(int(stage['to']['nationalNo'][1:]))] = from_stage + 1
+                    
+                else:
+                    print(stage)
+                    print(evo_tree)
+                    print(str(int(stage['to']['nationalNo'][1:])))
+                    raise Exception(f'From evolution is {from_stage} even though it is not the base pokemon.')
+                
+        return pages
     
     async def send(self, message: InteractionMessage, select: Select):
         
-        self.curr_page = 0
+        self.curr_page: int = 0
         # Make custom select object that is able to do callback functions.
         # Add Embeds to a list and somehow make the buttons show each embed
         self.prevButton.disabled = True
@@ -272,18 +332,19 @@ class MovesInformation(View):
 
 class PokemonPage(dict):
     
-    def __init__(self, pokemon: PokeObject):
+    def __init__(self, pokemon: PokeObject, cache):
         
         self['Pokedex Information'] = PokedexInformation([PokedexFrontPage(pokemon), PokedexStats(pokemon), PokedexExtras(pokemon)])
-        self['Evolution Information'] = EvolutionInformation([EvolutionPageOne(pokemon), EvolutionPageTwo(pokemon), EvolutionPageThree(pokemon)])
+        self['Evolution Information'] = EvolutionInformation(cache=cache, pokemon=pokemon)
         self['Moves Information'] = MovesInformation([MovesPage(pokemon, 1)])
 
 class PokemonSelect(Select):
     
-    def __init__(self, pokemon: PokeObject, message: InteractionMessage) -> None:
-        pokepage = PokemonPage(pokemon=pokemon)
+    def __init__(self, pokemon: PokeObject, cache, message: InteractionMessage) -> None:
+        pokepage = PokemonPage(cache=cache, pokemon=pokemon)
         options = [SelectOption(label=v, value=v) for v in pokepage]
         super().__init__(min_values=1, max_values=1, options=options)
+        self.cache = cache
         self.pokemon = pokemon
         self.message = message
         self.options[0].default = True
@@ -296,7 +357,7 @@ class PokemonSelect(Select):
             case 'Pokedex Information':
                 pokepage = PokedexInformation([PokedexFrontPage(self.pokemon), PokedexStats(self.pokemon), PokedexExtras(self.pokemon)])
             case 'Evolution Information':
-                pokepage = EvolutionInformation([EvolutionPageOne(self.pokemon), EvolutionPageTwo(self.pokemon), EvolutionPageThree(self.pokemon)])
+                pokepage = EvolutionInformation(self.cache, pokemon=self.pokemon)
             case 'Moves Information':
                 pokepage = MovesInformation([MovesPage(self.pokemon, 1)])
         
@@ -313,7 +374,7 @@ class PokemonSelect(Select):
                 self.options[0].default = True
                 self.default_val = self.options[0]
             case 'Evolution Information':
-                pokepage = EvolutionInformation([EvolutionPageOne(self.pokemon), EvolutionPageTwo(self.pokemon), EvolutionPageThree(self.pokemon)])
+                pokepage = EvolutionInformation(cache=self.cache, pokemon=self.pokemon)
                 self.options[1].default = True
                 self.default_val = self.options[1]
             case 'Moves Information':
