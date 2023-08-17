@@ -1,3 +1,5 @@
+import csv
+import time
 from dotenv import load_dotenv
 import os
 # import time
@@ -9,6 +11,7 @@ from discord.ext import commands
 from discord import Intents, Guild, Embed, Colour, Interaction, errors, File
 
 from pymongo.collection import Collection
+from discord.discorddatabase import DiscordDatabase
 
 from utils.supabase import supabase_loader
 from utils.pymongo import load_mongodb
@@ -24,7 +27,7 @@ from testembed import *
 
 load_dotenv()
 cogs: list = ["pokestyles", "catch"]
-registry = json.load(open('./pokemon/registry.json'))
+registry = json.load(open('./pokemon/registry_v2.json'))
 catch_registry = json.load(open('./pokemon/catch_registry.json'))
 cache: dict = {'supabase': supabase_loader(), 'mongodb': load_mongodb()['pokemon_templates']}
 
@@ -125,7 +128,90 @@ async def testPagination(interaction: Interaction, poke_id: int):
     
 #     pokemonMessage = f"Pokedex Number: {pokemon[0]}\n{pokemon[1][pokemon[1]['name']]}"
 #     await interaction.response.send_message(pokemonMessage)
+
+@client.tree.command(name="upload-sprites", description="Uploads sprites and images to both discord and cockroachdb")
+@commands.check_any(commands.is_owner())
+async def uploadSprites(interaction: Interaction):
     
+    # ---------- Changes DiscordDatabase enum into a list ----------
+    discord_db = list(DiscordDatabase)
+    
+    # ---------- Defines constant paths to both the json (where the pokemon info is stored) and sprites ----------
+    JSON_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/pokedex/'
+    SPRITES_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/'
+    IMAGE_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/other/official-artwork/'
+
+        # ---------- Saves the channel from interaction to send a message for each emoji created. ----------
+    channel = interaction.channel
+    
+    # ---------- Sends beginning message to avoid interaction not responded error ----------
+    await interaction.response.send_message("Beginning upload.")
+
+    
+    
+    # # ---------- Guild number starts a one, and gradually increases as space runs out. ----------
+    # guild_num = 0
+    # guild = client.get_guild(discord_db[guild_num].value)
+    
+    # # ---------- Loop that goes through the specified range of pokemons that needs to be uploaded. ----------
+    # for poke in range(50, 1011):
+        
+    #     # ---------- Checks guild if there is still space left (full - 50). ----------
+    #     if len(guild.emojis) < 50:
+                
+    #         # ---------- Translates [current index].png image into bytes. ----------
+    #         with open(SPRITES_DIR + str(poke) + ".png", "rb") as image:
+    #             f = image.read()
+    #             imageBytes = bytes(f)
+                
+    #         # ---------- Loads the pokemon json file related to the current index. ----------
+    #         with open(JSON_DIR + str(poke) + ".json", "r") as file:
+    #             data = json.load(file)
+            
+    #         # ---------- Runs async function that creates the emoij. ----------
+    #         emoji = await guild.create_custom_emoji(name=f"P{poke}", image=imageBytes)
+            
+    #         # ---------- Sets/Creates new key in json that stores the created emojis id. ----------
+    #         data['discord_sprite'] = f"<:P{poke}:{emoji.id}>"
+            
+    #         # ---------- Sends confirmation. ----------
+    #         await channel.send(f'P{poke} - {data["discord_sprite"]}')
+            
+    #         # ---------- Saves the json changes. ----------
+    #         with open(JSON_DIR + str(poke) + ".json", "w") as file:
+    #             json.dump(data, file, indent=4)
+            
+                
+    #     else:
+    #         # ---------- Else runs when server is full. ----------
+            
+    #         # ---------- Increment the guild_num by one to move onto the next server listed in DiscordDatabase ----------
+    #         guild_num += 1
+    #         guild = client.get_guild(discord_db[guild_num].value)
+            
+    #         # ----------  Does the same thing as above ----------
+    #         with open(SPRITES_DIR + str(poke) + ".png", "rb") as image:
+    #             f = image.read()
+    #             b = bytes(f)
+                
+            
+    #         with open(JSON_DIR + str(poke) + ".json", "r") as file:
+    #             data = json.load(file)
+                
+    #         emoji = await guild.create_custom_emoji(name=f"P{poke}", image=b)
+    #         data['discord_sprite'] = f"<:P{poke}:{emoji.id}>"
+            
+    #         await channel.send(f'P{poke} - {data["discord_sprite"]}')
+            
+    #         with open(JSON_DIR + str(poke) + ".json", "w") as file:
+    #             json.dump(data, file, indent=4)
+            
+    #         # ---------------------------------------------------
+        
+    #     # ----------  Sleeps the function so we do not get rate limited by discord api. ----------
+    #     time.sleep(10)
+        
+        
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 
 client.run(os.environ['DISCORD_API_KEY'], log_handler=handler)

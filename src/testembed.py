@@ -88,11 +88,7 @@ class PokedexFrontPage(Embed):
             self.add_field(name='Pokedex Entry:', value=pokemon.pokedex_entries[entry].entries[rand.randint(0, len(pokemon.pokedex_entries[entry].entries) - 1)], inline=False)
         else:
             self.add_field(name='Pokedex Entry:', value="???", inline=False)
-        self.set_image(url=pokemon.discord_image)
-  
-class MovesPage(Embed):
-    def __init__(self, pokemon: PokeObject, num: int):
-        super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Moves Page', description=f'Page {num} of the moves page')        
+        self.set_image(url=pokemon.discord_image)    
 
 class PokedexInformation(View):
     def __init__(self, pages: [Embed]):
@@ -156,7 +152,7 @@ class EvolutionInformation(View):
                 super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=f'This pokemon has no evolutions.')
                 return None
             super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title=f'Evolution stage {stage_number}', description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}")        
-            types = ''
+            types: str = ''
             self._stage = stage_number
             self._name = pokemon.name
             for s in pokemon.versions[0].type:
@@ -172,6 +168,9 @@ class EvolutionInformation(View):
             else:
                 self.add_field(name='Pokedex Entry:', value="???", inline=False)
             self.set_image(url=pokemon.discord_image)
+            
+            self.add_field(name='**Requirement**', value=requirement[1:-1] if requirement is not None else 'None', inline=False)
+
         
         @property
         def name(self) -> str:
@@ -275,10 +274,25 @@ class EvolutionInformation(View):
     
 class MovesInformation(View):
     
-    def __init__(self, pages: [Embed]):
+    class MovesPage(Embed):
+        def __init__(self, pokemon: PokeObject, num: int, range_: List[int]):
+            super().__init__(colour=Style(pokemon.versions[0].type[0])[1], title='Moves Page', description=f'Page {num} of the moves page')
+            
+            if len(range_) != 2:
+                raise IndexError('Invalid pair range.')
+            
+            
+            try:
+                self.add_field(name='Moves', value=str(pokemon.attacks))
+            except Exception:
+                print(str(pokemon.attacks))
+            
+    def __init__(self, pokemon: PokeObject):
         super().__init__(timeout=600)
-        self.pages = pages
-        self.page_len = len(pages)
+        self.pages = [self.MovesPage(pokemon, 1, [0,0])]
+        self.page_len = len(self.pages)
+        
+        
         
     
     async def send(self, message: InteractionMessage, select: Select):
@@ -320,7 +334,7 @@ class MovesInformation(View):
         # print('Next new page:', self.curr_page)
         
         if self.curr_page + 1 == self.page_len:
-            # print('Disabling')
+
             self.nextButton.disabled = True
             self.prevButton.disabled = False
         else:
@@ -335,7 +349,7 @@ class PokemonPage(dict):
         
         self['Pokedex Information'] = PokedexInformation([PokedexFrontPage(pokemon), PokedexStats(pokemon), PokedexExtras(pokemon)])
         self['Evolution Information'] = EvolutionInformation(cache=cache, pokemon=pokemon)
-        self['Moves Information'] = MovesInformation([MovesPage(pokemon, 1)])
+        self['Moves Information'] = MovesInformation(pokemon)
 
 class PokemonSelect(Select):
     
@@ -358,7 +372,7 @@ class PokemonSelect(Select):
             case 'Evolution Information':
                 pokepage = EvolutionInformation(self.cache, pokemon=self.pokemon)
             case 'Moves Information':
-                pokepage = MovesInformation([MovesPage(self.pokemon, 1)])
+                pokepage = MovesInformation(self.pokemon)
         
         await pokepage.send(message=self.message, select=self)
             
@@ -377,11 +391,9 @@ class PokemonSelect(Select):
                 self.options[1].default = True
                 self.default_val = self.options[1]
             case 'Moves Information':
-                pokepage = MovesInformation([MovesPage(self.pokemon, 1)])
+                pokepage = MovesInformation(pokemon=self.pokemon)
                 self.options[2].default = True
                 self.default_val = self.options[2]
                 
         await interaction.response.defer()
         await pokepage.send(message=self.message, select=self)
-        
-

@@ -1,7 +1,11 @@
 from enum import Enum
 
 class DiscordDatabase(Enum):
-    
+    """List of all pokemon databases and their IDs.
+
+    Args:
+        Enum (_type_): This class inherits the Enum class.
+    """    
     pokebase_1 = 1131724949359431843
     pokebase_2 = 1131724997837201532
     pokebase_3 = 1131725059162128384

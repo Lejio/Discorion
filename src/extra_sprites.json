@@ -1,0 +1,514 @@
+{
+    "Deoxys": {
+        "Speed Forme": "10003"
+    },
+    "Wormadam": {
+        "Trash Cloak": "10005"
+    },
+    "Shaymin": {
+        "Sky Forme": "10006"
+    },
+    "Giratina": {
+        "Origin Forme": "10007"
+    },
+    "Rotom": {
+        "Mow Rotom": "10012"
+    },
+    "Castform": {
+        "Snowy Form": "10015"
+    },
+    "Basculin": {
+        "White-Striped Form": "10247"
+    },
+    "Darmanitan": {},
+    "Meloetta": {
+        "Pirouette Forme": "10018"
+    },
+    "Tornadus": {
+        "Therian Forme": "10019"
+    },
+    "Thundurus": {
+        "Therian Forme": "10020"
+    },
+    "Landorus": {
+        "Therian Forme": "10021"
+    },
+    "Kyurem": {
+        "White Kyurem": "10023"
+    },
+    "Keldeo": {
+        "Resolute Form": "10024"
+    },
+    "Meowstic": {
+        "Female": "10025"
+    },
+    "Aegislash": {
+        "Blade Forme": "10026"
+    },
+    "Pumpkaboo": {
+        "Super Size": "10029"
+    },
+    "Gourgeist": {
+        "Super Size": "10032"
+    },
+    "Venusaur": {
+        "gmax": "10195"
+    },
+    "Charizard": {
+        "gmax": "10196"
+    },
+    "Blastoise": {
+        "gmax": "10197"
+    },
+    "Alakazam": {
+        "Mega Alakazam": "10037"
+    },
+    "Gengar": {
+        "gmax": "10202"
+    },
+    "kangaskhan": {
+        "Mega Kangaskhan": "10039"
+    },
+    "Pinsir": {
+        "Mega Pinsir": "10040"
+    },
+    "Gyarados": {
+        "Mega Gyarados": "10041"
+    },
+    "Aerodactyl": {
+        "Mega Aerodactyl": "10042"
+    },
+    "Mewtwo": {},
+    "Ampharos": {
+        "Mega Ampharos": "10045"
+    },
+    "Scizor": {
+        "Mega Scizor": "10046"
+    },
+    "Heracross": {
+        "Mega Heracross": "10047"
+    },
+    "Houndoom": {
+        "Mega Houndoom": "10048"
+    },
+    "Tyranitar": {
+        "Mega Tyranitar": "10049"
+    },
+    "Blaziken": {
+        "Mega Blaziken": "10050"
+    },
+    "Gardevoir": {
+        "Mega Gardevoir": "10051"
+    },
+    "Mawile": {
+        "Mega Mawile": "10052"
+    },
+    "Aggron": {
+        "Mega Aggron": "10053"
+    },
+    "Medicham": {
+        "Mega Medicham": "10054"
+    },
+    "Manectric": {
+        "Mega Manectric": "10055"
+    },
+    "Banette": {
+        "Mega Banette": "10056"
+    },
+    "Absol": {
+        "Mega Absol": "10057"
+    },
+    "Garchomp": {
+        "Mega Garchomp": "10058"
+    },
+    "Lucario": {
+        "Mega Lucario": "10059"
+    },
+    "Abomasnow": {
+        "Mega Abomasnow": "10060"
+    },
+    "Floette": {},
+    "Latias": {
+        "Mega Latias": "10062"
+    },
+    "Latios": {
+        "Mega Latios": "10063"
+    },
+    "Swampert": {
+        "Mega Swampert": "10064"
+    },
+    "Sceptile": {
+        "Mega Sceptile": "10065"
+    },
+    "Sableye": {
+        "Mega Sableye": "10066"
+    },
+    "Altaria": {
+        "Mega Altaria": "10067"
+    },
+    "Gallade": {
+        "Mega Gallade": "10068"
+    },
+    "Audino": {
+        "Mega Audino": "10069"
+    },
+    "Sharpedo": {
+        "Mega Sharpedo": "10070"
+    },
+    "Slowbro": {
+        "Galarian Slowbro": "10165"
+    },
+    "Steelix": {
+        "Mega Steelix": "10072"
+    },
+    "Pidgeot": {
+        "Mega Pidgeot": "10073"
+    },
+    "Glalie": {
+        "Mega Glalie": "10074"
+    },
+    "Diancie": {
+        "Mega Diancie": "10075"
+    },
+    "Metagross": {
+        "Mega Metagross": "10076"
+    },
+    "Kyogre": {
+        "Primal Kyogre": "10077"
+    },
+    "Groudon": {
+        "Primal Groudon": "10078"
+    },
+    "Rayquaza": {
+        "Mega Rayquaza": "10079"
+    },
+    "Pikachu ": {},
+    "Pikachu": {
+        "gmax": "10199"
+    },
+    "Hoopa": {
+        "Hoopa Unbound": "10086"
+    },
+    "Camerupt": {
+        "Mega Camerupt": "10087"
+    },
+    "Lopunny": {
+        "Mega Lopunny": "10088"
+    },
+    "Salamence": {
+        "Mega Salamence": "10089"
+    },
+    "Beedrill": {
+        "Mega Beedrill": "10090"
+    },
+    "Rattata": {
+        "Alolan Rattata": "10091"
+    },
+    "Raticate": {},
+    "Raichu": {
+        "Alolan Raichu": "10100"
+    },
+    "Sandshrew": {
+        "Alolan Sandshrew": "10101"
+    },
+    "Sandslash": {
+        "Alolan Sandslash": "10102"
+    },
+    "Vulpix": {
+        "Alolan Vulpix": "10103"
+    },
+    "Ninetales": {
+        "Alolan Ninetales": "10104"
+    },
+    "Diglett": {
+        "Alolan Diglett": "10105"
+    },
+    "Dugtrio": {
+        "Alolan Dugtrio": "10106"
+    },
+    "Meowth": {
+        "gmax": "10200"
+    },
+    "Persian": {
+        "Alolan Persian": "10108"
+    },
+    "Geodude": {
+        "Alolan Geodude": "10109"
+    },
+    "Graveler": {
+        "Alolan Graveler": "10110"
+    },
+    "Golem": {
+        "Alolan Golem": "10111"
+    },
+    "Grimer": {
+        "Alolan Grimer": "10112"
+    },
+    "Muk": {
+        "Alolan Muk": "10113"
+    },
+    "Exeggutor": {
+        "Alolan Exeggutor": "10114"
+    },
+    "Marowak": {},
+    "Greninja": {
+        "Ash-Greninja": "10117"
+    },
+    "Zygarde": {
+        "10% Forme": "10181"
+    },
+    "Gumshoos": {},
+    "Vikavolt": {},
+    "Oricorio": {
+        "Sensu Style": "10125"
+    },
+    "Lycanroc": {
+        "Dusk Form": "10152"
+    },
+    "Wishiwashi": {
+        "School Form": "10127"
+    },
+    "Lurantis": {},
+    "Salazzle": {},
+    "Minior": {},
+    "Mimikyu": {},
+    "Kommo-o": {},
+    "Magearna": {},
+    "Ribombee": {},
+    "Rockruff": {
+        "Own Tempo Rockruff": "10151"
+    },
+    "Araquanid": {},
+    "Togedemaru": {},
+    "Necrozma": {
+        "Ultra Necrozma": "10157"
+    },
+    "Eevee": {
+        "gmax": "10205"
+    },
+    "Ponyta": {
+        "Galarian Ponyta": "10162"
+    },
+    "Rapidash": {
+        "Galarian Rapidash": "10163"
+    },
+    "Slowpoke": {
+        "Galarian Slowpoke": "10164"
+    },
+    "Farfetchd": {
+        "Galarian Farfetch'd": "10166"
+    },
+    "Weezing": {
+        "Galarian Weezing": "10167"
+    },
+    "Mr Mime": {
+        "Galarian Mr. Mime": "10168"
+    },
+    "Articuno": {
+        "Galarian Articuno": "10169"
+    },
+    "Zapdos": {
+        "Galarian Zapdos": "10170"
+    },
+    "Moltres": {
+        "Galarian Moltres": "10171"
+    },
+    "Slowking": {
+        "Galarian Slowking": "10172"
+    },
+    "Corsola": {
+        "Galarian Corsola": "10173"
+    },
+    "Zigzagoon": {
+        "Galarian Zigzagoon": "10174"
+    },
+    "Linoone": {
+        "Galarian Linoone": "10175"
+    },
+    "Darumaka": {
+        "Galarian Darumaka": "10176"
+    },
+    "Yamask": {},
+    "Stunfisk": {
+        "Galarian Stunfisk": "10180"
+    },
+    "Cramorant": {},
+    "Toxtricity": {},
+    "Eiscue": {
+        "Noice Face": "10185"
+    },
+    "Indeedee": {
+        "Female": "10186"
+    },
+    "Morpeko": {
+        "Hangry Mode": "10187"
+    },
+    "Zacian": {
+        "Crowned Sword": "10188"
+    },
+    "Zamazenta": {
+        "Crowned Shield": "10189"
+    },
+    "Eternatus": {
+        "Eternamax": "10190"
+    },
+    "Urshifu": {},
+    "Zarude": {},
+    "Calyrex": {
+        "Shadow Rider": "10194"
+    },
+    "Butterfree": {
+        "gmax": "10198"
+    },
+    "Machamp": {
+        "gmax": "10201"
+    },
+    "Kingler": {
+        "gmax": "10203"
+    },
+    "Lapras": {
+        "gmax": "10204"
+    },
+    "Snorlax": {
+        "gmax": "10206"
+    },
+    "Garbodor": {
+        "gmax": "10207"
+    },
+    "Melmetal": {
+        "gmax": "10208"
+    },
+    "Rillaboom": {
+        "gmax": "10209"
+    },
+    "Cinderace": {
+        "gmax": "10210"
+    },
+    "Inteleon": {
+        "gmax": "10211"
+    },
+    "Corviknight ": {
+        "gmax": "10212"
+    },
+    "Orbeetle": {
+        "gmax": "10213"
+    },
+    "Drednaw": {
+        "gmax": "10214"
+    },
+    "Coalossal": {
+        "gmax": "10215"
+    },
+    "Flapple": {
+        "gmax": "10216"
+    },
+    "Appletun": {
+        "gmax": "10217"
+    },
+    "Sandaconda": {
+        "gmax": "10218"
+    },
+    "Centiskorch": {
+        "gmax": "10220"
+    },
+    "Hatterene": {
+        "gmax": "10221"
+    },
+    "Grimmsnarl": {
+        "gmax": "10222"
+    },
+    "Alcremie": {
+        "gmax": "10223"
+    },
+    "Copperajah": {
+        "gmax": "10224"
+    },
+    "Duraludon": {
+        "gmax": "10225"
+    },
+    "Growlithe": {
+        "Hisuian Growlithe": "10229"
+    },
+    "Arcanine": {
+        "Hisuian Arcanine": "10230"
+    },
+    "Voltorb": {
+        "Hisuian Voltorb": "10231"
+    },
+    "Electrode": {
+        "Hisuian Electrode": "10232"
+    },
+    "Typhlosion": {
+        "Hisuian Typhlosion": "10233"
+    },
+    "Qwilfish": {
+        "Hisuian Qwilfish": "10234"
+    },
+    "Sneasel": {
+        "Hisuian Sneasel": "10235"
+    },
+    "Samurott": {
+        "Hisuian Samurott": "10236"
+    },
+    "Lilligant": {
+        "Hisuian Lilligant": "10237"
+    },
+    "Zorua": {
+        "Hisuian Zorua": "10238"
+    },
+    "Zoroark": {
+        "Hisuian Zoroark": "10239"
+    },
+    "Braviary": {
+        "Hisuian Braviary": "10240"
+    },
+    "Sligoo": {
+        "Hisuian Sliggoo": "10241"
+    },
+    "Goodra": {
+        "Hisuian Goodra": "10242"
+    },
+    "Avalugg": {
+        "Hisuian Avalugg": "10243"
+    },
+    "Decidueye": {
+        "Hisuian Decidueye": "10244"
+    },
+    "Dialga": {
+        "Origin Forme": "10245"
+    },
+    "Palkia": {
+        "Origin Forme": "10246"
+    },
+    "Basculegion": {
+        "Female": "10248"
+    },
+    "Enamorous": {
+        "Therian Forme": "10249"
+    },
+    "Tauros": {},
+    "Wooper": {
+        "Paldean Wooper": "10253"
+    },
+    "Oinkologne": {
+        "Female": "10254"
+    },
+    "Dudunsparce": {
+        "Three-Segment Form": "10255"
+    },
+    "Palafin": {
+        "Hero Form": "10256"
+    },
+    "Maushold": {
+        "Family of Three": "10257"
+    },
+    "Tatsugiri": {
+        "Stretchy Form": "10259"
+    },
+    "Squawkabilly": {
+        "White Plumage": "10262"
+    },
+    "Gimmighoul": {
+        "Roaming Form": "10263"
+    }
+}
