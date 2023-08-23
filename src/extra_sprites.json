@@ -1,514 +1,1164 @@
 {
-    "Deoxys": {
-        "Speed Forme": "10003"
-    },
-    "Wormadam": {
-        "Trash Cloak": "10005"
-    },
-    "Shaymin": {
-        "Sky Forme": "10006"
-    },
-    "Giratina": {
-        "Origin Forme": "10007"
-    },
-    "Rotom": {
-        "Mow Rotom": "10012"
-    },
-    "Castform": {
-        "Snowy Form": "10015"
-    },
-    "Basculin": {
-        "White-Striped Form": "10247"
-    },
-    "Darmanitan": {},
-    "Meloetta": {
-        "Pirouette Forme": "10018"
-    },
-    "Tornadus": {
-        "Therian Forme": "10019"
-    },
-    "Thundurus": {
-        "Therian Forme": "10020"
-    },
-    "Landorus": {
-        "Therian Forme": "10021"
-    },
-    "Kyurem": {
-        "White Kyurem": "10023"
-    },
-    "Keldeo": {
-        "Resolute Form": "10024"
-    },
-    "Meowstic": {
-        "Female": "10025"
-    },
-    "Aegislash": {
-        "Blade Forme": "10026"
-    },
-    "Pumpkaboo": {
-        "Super Size": "10029"
-    },
-    "Gourgeist": {
-        "Super Size": "10032"
-    },
-    "Venusaur": {
-        "gmax": "10195"
-    },
-    "Charizard": {
-        "gmax": "10196"
-    },
-    "Blastoise": {
-        "gmax": "10197"
-    },
-    "Alakazam": {
-        "Mega Alakazam": "10037"
-    },
-    "Gengar": {
-        "gmax": "10202"
-    },
-    "kangaskhan": {
-        "Mega Kangaskhan": "10039"
-    },
-    "Pinsir": {
-        "Mega Pinsir": "10040"
-    },
-    "Gyarados": {
-        "Mega Gyarados": "10041"
-    },
-    "Aerodactyl": {
-        "Mega Aerodactyl": "10042"
-    },
-    "Mewtwo": {},
-    "Ampharos": {
-        "Mega Ampharos": "10045"
-    },
-    "Scizor": {
-        "Mega Scizor": "10046"
-    },
-    "Heracross": {
-        "Mega Heracross": "10047"
-    },
-    "Houndoom": {
-        "Mega Houndoom": "10048"
-    },
-    "Tyranitar": {
-        "Mega Tyranitar": "10049"
-    },
-    "Blaziken": {
-        "Mega Blaziken": "10050"
-    },
-    "Gardevoir": {
-        "Mega Gardevoir": "10051"
-    },
-    "Mawile": {
-        "Mega Mawile": "10052"
-    },
-    "Aggron": {
-        "Mega Aggron": "10053"
-    },
-    "Medicham": {
-        "Mega Medicham": "10054"
-    },
-    "Manectric": {
-        "Mega Manectric": "10055"
-    },
-    "Banette": {
-        "Mega Banette": "10056"
-    },
-    "Absol": {
-        "Mega Absol": "10057"
-    },
-    "Garchomp": {
-        "Mega Garchomp": "10058"
-    },
-    "Lucario": {
-        "Mega Lucario": "10059"
-    },
-    "Abomasnow": {
-        "Mega Abomasnow": "10060"
-    },
-    "Floette": {},
-    "Latias": {
-        "Mega Latias": "10062"
-    },
-    "Latios": {
-        "Mega Latios": "10063"
-    },
-    "Swampert": {
-        "Mega Swampert": "10064"
-    },
-    "Sceptile": {
-        "Mega Sceptile": "10065"
-    },
-    "Sableye": {
-        "Mega Sableye": "10066"
-    },
-    "Altaria": {
-        "Mega Altaria": "10067"
-    },
-    "Gallade": {
-        "Mega Gallade": "10068"
-    },
-    "Audino": {
-        "Mega Audino": "10069"
-    },
-    "Sharpedo": {
-        "Mega Sharpedo": "10070"
-    },
-    "Slowbro": {
-        "Galarian Slowbro": "10165"
-    },
-    "Steelix": {
-        "Mega Steelix": "10072"
-    },
-    "Pidgeot": {
-        "Mega Pidgeot": "10073"
-    },
-    "Glalie": {
-        "Mega Glalie": "10074"
-    },
-    "Diancie": {
-        "Mega Diancie": "10075"
-    },
-    "Metagross": {
-        "Mega Metagross": "10076"
-    },
-    "Kyogre": {
-        "Primal Kyogre": "10077"
-    },
-    "Groudon": {
-        "Primal Groudon": "10078"
-    },
-    "Rayquaza": {
-        "Mega Rayquaza": "10079"
-    },
-    "Pikachu ": {},
-    "Pikachu": {
-        "gmax": "10199"
-    },
-    "Hoopa": {
-        "Hoopa Unbound": "10086"
-    },
-    "Camerupt": {
-        "Mega Camerupt": "10087"
-    },
-    "Lopunny": {
-        "Mega Lopunny": "10088"
-    },
-    "Salamence": {
-        "Mega Salamence": "10089"
-    },
-    "Beedrill": {
-        "Mega Beedrill": "10090"
-    },
-    "Rattata": {
-        "Alolan Rattata": "10091"
-    },
-    "Raticate": {},
-    "Raichu": {
-        "Alolan Raichu": "10100"
-    },
-    "Sandshrew": {
-        "Alolan Sandshrew": "10101"
-    },
-    "Sandslash": {
-        "Alolan Sandslash": "10102"
-    },
-    "Vulpix": {
-        "Alolan Vulpix": "10103"
-    },
-    "Ninetales": {
-        "Alolan Ninetales": "10104"
-    },
-    "Diglett": {
-        "Alolan Diglett": "10105"
-    },
-    "Dugtrio": {
-        "Alolan Dugtrio": "10106"
-    },
-    "Meowth": {
-        "gmax": "10200"
-    },
-    "Persian": {
-        "Alolan Persian": "10108"
-    },
-    "Geodude": {
-        "Alolan Geodude": "10109"
-    },
-    "Graveler": {
-        "Alolan Graveler": "10110"
-    },
-    "Golem": {
-        "Alolan Golem": "10111"
-    },
-    "Grimer": {
-        "Alolan Grimer": "10112"
-    },
-    "Muk": {
-        "Alolan Muk": "10113"
-    },
-    "Exeggutor": {
-        "Alolan Exeggutor": "10114"
-    },
-    "Marowak": {},
-    "Greninja": {
-        "Ash-Greninja": "10117"
-    },
-    "Zygarde": {
-        "10% Forme": "10181"
-    },
-    "Gumshoos": {},
-    "Vikavolt": {},
-    "Oricorio": {
-        "Sensu Style": "10125"
-    },
-    "Lycanroc": {
-        "Dusk Form": "10152"
-    },
-    "Wishiwashi": {
-        "School Form": "10127"
-    },
-    "Lurantis": {},
-    "Salazzle": {},
-    "Minior": {},
-    "Mimikyu": {},
-    "Kommo-o": {},
-    "Magearna": {},
-    "Ribombee": {},
-    "Rockruff": {
-        "Own Tempo Rockruff": "10151"
-    },
-    "Araquanid": {},
-    "Togedemaru": {},
-    "Necrozma": {
-        "Ultra Necrozma": "10157"
-    },
-    "Eevee": {
-        "gmax": "10205"
-    },
-    "Ponyta": {
-        "Galarian Ponyta": "10162"
-    },
-    "Rapidash": {
-        "Galarian Rapidash": "10163"
-    },
-    "Slowpoke": {
-        "Galarian Slowpoke": "10164"
-    },
-    "Farfetchd": {
-        "Galarian Farfetch'd": "10166"
-    },
-    "Weezing": {
-        "Galarian Weezing": "10167"
-    },
-    "Mr Mime": {
-        "Galarian Mr. Mime": "10168"
-    },
-    "Articuno": {
-        "Galarian Articuno": "10169"
-    },
-    "Zapdos": {
-        "Galarian Zapdos": "10170"
-    },
-    "Moltres": {
-        "Galarian Moltres": "10171"
-    },
-    "Slowking": {
-        "Galarian Slowking": "10172"
-    },
-    "Corsola": {
-        "Galarian Corsola": "10173"
-    },
-    "Zigzagoon": {
-        "Galarian Zigzagoon": "10174"
-    },
-    "Linoone": {
-        "Galarian Linoone": "10175"
-    },
-    "Darumaka": {
-        "Galarian Darumaka": "10176"
-    },
-    "Yamask": {},
-    "Stunfisk": {
-        "Galarian Stunfisk": "10180"
-    },
-    "Cramorant": {},
-    "Toxtricity": {},
-    "Eiscue": {
-        "Noice Face": "10185"
-    },
-    "Indeedee": {
-        "Female": "10186"
-    },
-    "Morpeko": {
-        "Hangry Mode": "10187"
-    },
-    "Zacian": {
-        "Crowned Sword": "10188"
-    },
-    "Zamazenta": {
-        "Crowned Shield": "10189"
-    },
-    "Eternatus": {
-        "Eternamax": "10190"
-    },
-    "Urshifu": {},
-    "Zarude": {},
-    "Calyrex": {
-        "Shadow Rider": "10194"
-    },
-    "Butterfree": {
-        "gmax": "10198"
-    },
-    "Machamp": {
-        "gmax": "10201"
-    },
-    "Kingler": {
-        "gmax": "10203"
-    },
-    "Lapras": {
-        "gmax": "10204"
-    },
-    "Snorlax": {
-        "gmax": "10206"
-    },
-    "Garbodor": {
-        "gmax": "10207"
-    },
-    "Melmetal": {
-        "gmax": "10208"
-    },
-    "Rillaboom": {
-        "gmax": "10209"
-    },
-    "Cinderace": {
-        "gmax": "10210"
-    },
-    "Inteleon": {
-        "gmax": "10211"
-    },
-    "Corviknight ": {
-        "gmax": "10212"
-    },
-    "Orbeetle": {
-        "gmax": "10213"
-    },
-    "Drednaw": {
-        "gmax": "10214"
-    },
-    "Coalossal": {
-        "gmax": "10215"
-    },
-    "Flapple": {
-        "gmax": "10216"
-    },
-    "Appletun": {
-        "gmax": "10217"
-    },
-    "Sandaconda": {
-        "gmax": "10218"
-    },
-    "Centiskorch": {
-        "gmax": "10220"
-    },
-    "Hatterene": {
-        "gmax": "10221"
-    },
-    "Grimmsnarl": {
-        "gmax": "10222"
-    },
-    "Alcremie": {
-        "gmax": "10223"
-    },
-    "Copperajah": {
-        "gmax": "10224"
-    },
-    "Duraludon": {
-        "gmax": "10225"
-    },
-    "Growlithe": {
-        "Hisuian Growlithe": "10229"
-    },
-    "Arcanine": {
-        "Hisuian Arcanine": "10230"
-    },
-    "Voltorb": {
-        "Hisuian Voltorb": "10231"
-    },
-    "Electrode": {
-        "Hisuian Electrode": "10232"
-    },
-    "Typhlosion": {
-        "Hisuian Typhlosion": "10233"
-    },
-    "Qwilfish": {
-        "Hisuian Qwilfish": "10234"
-    },
-    "Sneasel": {
-        "Hisuian Sneasel": "10235"
-    },
-    "Samurott": {
-        "Hisuian Samurott": "10236"
-    },
-    "Lilligant": {
-        "Hisuian Lilligant": "10237"
-    },
-    "Zorua": {
-        "Hisuian Zorua": "10238"
-    },
-    "Zoroark": {
-        "Hisuian Zoroark": "10239"
-    },
-    "Braviary": {
-        "Hisuian Braviary": "10240"
-    },
-    "Sligoo": {
-        "Hisuian Sliggoo": "10241"
-    },
-    "Goodra": {
-        "Hisuian Goodra": "10242"
-    },
-    "Avalugg": {
-        "Hisuian Avalugg": "10243"
-    },
-    "Decidueye": {
-        "Hisuian Decidueye": "10244"
-    },
-    "Dialga": {
-        "Origin Forme": "10245"
-    },
-    "Palkia": {
-        "Origin Forme": "10246"
-    },
-    "Basculegion": {
-        "Female": "10248"
-    },
-    "Enamorous": {
-        "Therian Forme": "10249"
-    },
-    "Tauros": {},
-    "Wooper": {
-        "Paldean Wooper": "10253"
-    },
-    "Oinkologne": {
-        "Female": "10254"
-    },
-    "Dudunsparce": {
-        "Three-Segment Form": "10255"
-    },
-    "Palafin": {
-        "Hero Form": "10256"
-    },
-    "Maushold": {
-        "Family of Three": "10257"
-    },
-    "Tatsugiri": {
-        "Stretchy Form": "10259"
-    },
-    "Squawkabilly": {
-        "White Plumage": "10262"
-    },
-    "Gimmighoul": {
-        "Roaming Form": "10263"
+  "308": {
+    "mega": {
+      "sprite": null,
+      "png": null
     }
+  },
+  "649": {
+    "chill": {
+      "sprite": null,
+      "png": null
+    },
+    "shock": {
+      "sprite": null,
+      "png": null
+    },
+    "burn": {
+      "sprite": null,
+      "png": null
+    },
+    "douse": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "6": {
+    "mega-y": {
+      "sprite": null,
+      "png": null
+    },
+    "mega-x": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "201": {
+    "p": {
+      "sprite": null,
+      "png": null
+    },
+    "g": {
+      "sprite": null,
+      "png": null
+    },
+    "f": {
+      "sprite": null,
+      "png": null
+    },
+    "q": {
+      "sprite": null,
+      "png": null
+    },
+    "s": {
+      "sprite": null,
+      "png": null
+    },
+    "d": {
+      "sprite": null,
+      "png": null
+    },
+    "e": {
+      "sprite": null,
+      "png": null
+    },
+    "r": {
+      "sprite": null,
+      "png": null
+    },
+    "a": {
+      "sprite": null,
+      "png": null
+    },
+    "v": {
+      "sprite": null,
+      "png": null
+    },
+    "w": {
+      "sprite": null,
+      "png": null
+    },
+    "b": {
+      "sprite": null,
+      "png": null
+    },
+    "u": {
+      "sprite": null,
+      "png": null
+    },
+    "t": {
+      "sprite": null,
+      "png": null
+    },
+    "c": {
+      "sprite": null,
+      "png": null
+    },
+    "exclamation": {
+      "sprite": null,
+      "png": null
+    },
+    "question": {
+      "sprite": null,
+      "png": null
+    },
+    "n": {
+      "sprite": null,
+      "png": null
+    },
+    "y": {
+      "sprite": null,
+      "png": null
+    },
+    "x": {
+      "sprite": null,
+      "png": null
+    },
+    "o": {
+      "sprite": null,
+      "png": null
+    },
+    "m": {
+      "sprite": null,
+      "png": null
+    },
+    "z": {
+      "sprite": null,
+      "png": null
+    },
+    "l": {
+      "sprite": null,
+      "png": null
+    },
+    "h": {
+      "sprite": null,
+      "png": null
+    },
+    "i": {
+      "sprite": null,
+      "png": null
+    },
+    "k": {
+      "sprite": null,
+      "png": null
+    },
+    "j": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "550": {
+    "blue-striped": {
+      "sprite": null,
+      "png": null
+    },
+    "red-striped": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "248": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "127": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "773": {
+    "ice": {
+      "sprite": null,
+      "png": null
+    },
+    "flying": {
+      "sprite": null,
+      "png": null
+    },
+    "electric": {
+      "sprite": null,
+      "png": null
+    },
+    "poison": {
+      "sprite": null,
+      "png": null
+    },
+    "fairy": {
+      "sprite": null,
+      "png": null
+    },
+    "ground": {
+      "sprite": null,
+      "png": null
+    },
+    "ghost": {
+      "sprite": null,
+      "png": null
+    },
+    "normal": {
+      "sprite": null,
+      "png": null
+    },
+    "bug": {
+      "sprite": null,
+      "png": null
+    },
+    "psychic": {
+      "sprite": null,
+      "png": null
+    },
+    "dragon": {
+      "sprite": null,
+      "png": null
+    },
+    "grass": {
+      "sprite": null,
+      "png": null
+    },
+    "rock": {
+      "sprite": null,
+      "png": null
+    },
+    "water": {
+      "sprite": null,
+      "png": null
+    },
+    "fighting": {
+      "sprite": null,
+      "png": null
+    },
+    "fire": {
+      "sprite": null,
+      "png": null
+    },
+    "steel": {
+      "sprite": null,
+      "png": null
+    },
+    "dark": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "647": {
+    "resolute": {
+      "sprite": null,
+      "png": null
+    },
+    "ordinary": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "711": {
+    "super": {
+      "sprite": null,
+      "png": null
+    },
+    "average": {
+      "sprite": null,
+      "png": null
+    },
+    "large": {
+      "sprite": null,
+      "png": null
+    },
+    "small": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "775": {
+    "form-1": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "386": {
+    "defense": {
+      "sprite": null,
+      "png": null
+    },
+    "speed": {
+      "sprite": null,
+      "png": null
+    },
+    "normal": {
+      "sprite": null,
+      "png": null
+    },
+    "attack": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "302": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "303": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "493": {
+    "psychic": {
+      "sprite": null,
+      "png": null
+    },
+    "grass": {
+      "sprite": null,
+      "png": null
+    },
+    "ice": {
+      "sprite": null,
+      "png": null
+    },
+    "water": {
+      "sprite": null,
+      "png": null
+    },
+    "ground": {
+      "sprite": null,
+      "png": null
+    },
+    "normal": {
+      "sprite": null,
+      "png": null
+    },
+    "poison": {
+      "sprite": null,
+      "png": null
+    },
+    "flying": {
+      "sprite": null,
+      "png": null
+    },
+    "bug": {
+      "sprite": null,
+      "png": null
+    },
+    "steel": {
+      "sprite": null,
+      "png": null
+    },
+    "electric": {
+      "sprite": null,
+      "png": null
+    },
+    "unknown": {
+      "sprite": null,
+      "png": null
+    },
+    "rock": {
+      "sprite": null,
+      "png": null
+    },
+    "dragon": {
+      "sprite": null,
+      "png": null
+    },
+    "fairy": {
+      "sprite": null,
+      "png": null
+    },
+    "dark": {
+      "sprite": null,
+      "png": null
+    },
+    "fire": {
+      "sprite": null,
+      "png": null
+    },
+    "fighting": {
+      "sprite": null,
+      "png": null
+    },
+    "ghost": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "181": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "94": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "671": {
+    "orange": {
+      "sprite": null,
+      "png": null
+    },
+    "red": {
+      "sprite": null,
+      "png": null
+    },
+    "blue": {
+      "sprite": null,
+      "png": null
+    },
+    "white": {
+      "sprite": null,
+      "png": null
+    },
+    "yellow": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "784": {
+    "totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "130": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "678": {
+    "male": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "412": {
+    "trash": {
+      "sprite": null,
+      "png": null
+    },
+    "sandy": {
+      "sprite": null,
+      "png": null
+    },
+    "plant": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "778": {
+    "disguised": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "260": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "3": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "351": {
+    "snowy": {
+      "sprite": null,
+      "png": null
+    },
+    "rainy": {
+      "sprite": null,
+      "png": null
+    },
+    "sunny": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "492": {
+    "sky": {
+      "sprite": null,
+      "png": null
+    },
+    "land": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "586": {
+    "winter": {
+      "sprite": null,
+      "png": null
+    },
+    "spring": {
+      "sprite": null,
+      "png": null
+    },
+    "summer": {
+      "sprite": null,
+      "png": null
+    },
+    "autumn": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "229": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "150": {
+    "mega-y": {
+      "sprite": null,
+      "png": null
+    },
+    "mega-x": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "254": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "666": {
+    "ocean": {
+      "sprite": null,
+      "png": null
+    },
+    "savanna": {
+      "sprite": null,
+      "png": null
+    },
+    "polar": {
+      "sprite": null,
+      "png": null
+    },
+    "meadow": {
+      "sprite": null,
+      "png": null
+    },
+    "fancy": {
+      "sprite": null,
+      "png": null
+    },
+    "icy-snow": {
+      "sprite": null,
+      "png": null
+    },
+    "continental": {
+      "sprite": null,
+      "png": null
+    },
+    "poke-ball": {
+      "sprite": null,
+      "png": null
+    },
+    "river": {
+      "sprite": null,
+      "png": null
+    },
+    "monsoon": {
+      "sprite": null,
+      "png": null
+    },
+    "tundra": {
+      "sprite": null,
+      "png": null
+    },
+    "archipelago": {
+      "sprite": null,
+      "png": null
+    },
+    "elegant": {
+      "sprite": null,
+      "png": null
+    },
+    "sun": {
+      "sprite": null,
+      "png": null
+    },
+    "modern": {
+      "sprite": null,
+      "png": null
+    },
+    "sandstorm": {
+      "sprite": null,
+      "png": null
+    },
+    "garden": {
+      "sprite": null,
+      "png": null
+    },
+    "jungle": {
+      "sprite": null,
+      "png": null
+    },
+    "marine": {
+      "sprite": null,
+      "png": null
+    },
+    "high-plains": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "676": {
+    "diamond": {
+      "sprite": null,
+      "png": null
+    },
+    "kabuki": {
+      "sprite": null,
+      "png": null
+    },
+    "star": {
+      "sprite": null,
+      "png": null
+    },
+    "debutante": {
+      "sprite": null,
+      "png": null
+    },
+    "pharaoh": {
+      "sprite": null,
+      "png": null
+    },
+    "heart": {
+      "sprite": null,
+      "png": null
+    },
+    "natural": {
+      "sprite": null,
+      "png": null
+    },
+    "la-reine": {
+      "sprite": null,
+      "png": null
+    },
+    "matron": {
+      "sprite": null,
+      "png": null
+    },
+    "dandy": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "479": {
+    "fan": {
+      "sprite": null,
+      "png": null
+    },
+    "frost": {
+      "sprite": null,
+      "png": null
+    },
+    "mow": {
+      "sprite": null,
+      "png": null
+    },
+    "heat": {
+      "sprite": null,
+      "png": null
+    },
+    "wash": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "9": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "710": {
+    "average": {
+      "sprite": null,
+      "png": null
+    },
+    "super": {
+      "sprite": null,
+      "png": null
+    },
+    "large": {
+      "sprite": null,
+      "png": null
+    },
+    "small": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "362": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "670": {
+    "yellow": {
+      "sprite": null,
+      "png": null
+    },
+    "red": {
+      "sprite": null,
+      "png": null
+    },
+    "orange": {
+      "sprite": null,
+      "png": null
+    },
+    "white": {
+      "sprite": null,
+      "png": null
+    },
+    "blue": {
+      "sprite": null,
+      "png": null
+    },
+    "eternal": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "716": {
+    "active": {
+      "sprite": null,
+      "png": null
+    },
+    "neutral": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "319": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "282": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "642": {
+    "incarnate": {
+      "sprite": null,
+      "png": null
+    },
+    "therian": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "669": {
+    "red": {
+      "sprite": null,
+      "png": null
+    },
+    "yellow": {
+      "sprite": null,
+      "png": null
+    },
+    "blue": {
+      "sprite": null,
+      "png": null
+    },
+    "white": {
+      "sprite": null,
+      "png": null
+    },
+    "orange": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "741": {
+    "baile": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "646": {
+    "white": {
+      "sprite": null,
+      "png": null
+    },
+    "black": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "380": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "381": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "383": {
+    "primal": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "413": {
+    "trash": {
+      "sprite": null,
+      "png": null
+    },
+    "sandy": {
+      "sprite": null,
+      "png": null
+    },
+    "plant": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "475": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "645": {
+    "incarnate": {
+      "sprite": null,
+      "png": null
+    },
+    "therian": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "585": {
+    "autumn": {
+      "sprite": null,
+      "png": null
+    },
+    "summer": {
+      "sprite": null,
+      "png": null
+    },
+    "winter": {
+      "sprite": null,
+      "png": null
+    },
+    "spring": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "745": {
+    "midday": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "641": {
+    "incarnate": {
+      "sprite": null,
+      "png": null
+    },
+    "therian": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "373": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "115": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "384": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "257": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "65": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "80": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "720": {
+    "unbound": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "681": {
+    "blade": {
+      "sprite": null,
+      "png": null
+    },
+    "shield": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "354": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "665": {
+    "icy-snow": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "214": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "323": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "18": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "422": {
+    "east": {
+      "sprite": null,
+      "png": null
+    },
+    "west": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "423": {
+    "east": {
+      "sprite": null,
+      "png": null
+    },
+    "west": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "208": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "555": {
+    "standard": {
+      "sprite": null,
+      "png": null
+    },
+    "zen": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "376": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "445": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "531": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "648": {
+    "aria": {
+      "sprite": null,
+      "png": null
+    },
+    "pirouette": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "421": {
+    "overcast": {
+      "sprite": null,
+      "png": null
+    },
+    "sunshine": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "334": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "487": {
+    "origin": {
+      "sprite": null,
+      "png": null
+    },
+    "altered": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "664": {
+    "icy-snow": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "869": {
+    "gmax": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "306": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "egg": {
+    "manaphy": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "414": {
+    "plant": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "719": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "448": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "310": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "359": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "746": {
+    "solo": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "15": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "774": {
+    "red-meteor": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "460": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "212": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "428": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "382": {
+    "primal": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "142": {
+    "mega": {
+      "sprite": null,
+      "png": null
+    }
+  }
 }
