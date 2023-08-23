@@ -145,47 +145,64 @@ async def uploadSprites(interaction: Interaction):
     
     # ---------- Sends beginning message to avoid interaction not responded error ----------
     await interaction.response.send_message("Beginning upload.")
-
+        
     sprite_versions: dict = {}
-    # sprites_list: list = os.listdir(SPRITES_DIR)
     
-    with open('extra_sprites.json', 'r') as extra_sprites:
+    with open('pokemon_forms_1_clean.csv', 'r') as csvfile:
+        reader = csv.reader(csvfile)
         
-        sprites_list = json.load(extra_sprites)
-        
-        
-        
-    
-    for raw_sprite in sprites_list:
-        
-        for version in sprites_list[raw_sprite]:
-            # sprite = raw_sprite.split('.')[0]
+        for row in reader:
+            '''
+                row:
+                1: The sprite number (int 10000 - 10263)
+                2: Pokemon Name (str)
+                3: Form (str) - Naming based on Pokemondb.net
+            '''
+            # The pokemon version number.
+            current_number = list(row)[0]
             
-            sprite = '-'.join([raw_sprite, version])
-            print(sprite)
-            if len(sprite.split('-')) > 1:
+            # Catches the first row (which states the column names).
+            try:
+                int(current_number)
+            except ValueError:
+                continue
+            
+            queryEngine = PokeQuery(pokemon_object=registry['name_based'])
+            result_list = queryEngine.query(user_input=row[1])
+            # print(result_list)
+            # The pokemon number (not the sprite number).
+            sprite_number = int(result_list[1]['id'])
+            # The pokemon version name.
+            version_name = row[2]
+            
+            # try:
+            #     with open(f'{SPRITES_DIR}{current_number}.png') as sprite:
+            #         payload['emoji'] = sprite.name
+
+            #     with open(f'{IMAGE_DIR}{current_number}.png') as image:
+            #         payload['png'] = image.name
                 
-                sprite_split = sprite.split('-')
-                sprite_number = sprite_split[0]
-                sprite_version_combined = '-'.join(sprite_split[1:])
+            # except FileNotFoundError:
+            #     print('Not found: ' + current_number)
                 
-                payload = await uploader(channel=channel, sprite_name=sprite, guild_num=guild_num, number=sprite_number, sprite_version="_".join(sprite_split[1:]))
+            payload = await uploader(channel=channel, guild_num=guild_num, version_id=current_number)
+    
+            # Checks if the number already exists in the sprite_versions dictionary.
+            if sprite_number in sprite_versions.keys():
+                sprite_versions[sprite_number][version_name] = {
+                    'sprite': payload['emoji'],
+                    'png': payload['png']
+                }
                 
-                if sprite_number in sprite_versions.keys():
-                    sprite_versions[sprite_number][sprite_version_combined] = {
-                        'sprite': payload['emoji'],
-                        'png': payload['png']
+            else:
+                # Creates a new key entry.
+                sprite_versions[sprite_number] = {}
+                sprite_versions[sprite_number][version_name] = {
+                    'sprite': payload['emoji'],
+                    'png': payload['png']
                     }
-                    
-                else:
-                    sprite_versions[sprite_number] = {}
-                    sprite_versions[sprite_number][sprite_version_combined] = {
-                        'sprite': payload['emoji'],
-                        'png': payload['png']
-                    }
-                    # await uploader(channel=channel)
-                
-                channel.send(f'{sprite_number} | {sprite_version_combined}')
+            # await channel.send(f'{sprite_number} | {version_name}')
+            print(f'{sprite_number} | {version_name}')
                 
             time.sleep(10)
         
@@ -194,7 +211,7 @@ async def uploadSprites(interaction: Interaction):
         json.dump(sprite_versions, outfile, indent=4)
         
 
-async def uploader(channel: TextChannel, sprite_name, guild_num, number, sprite_version) -> dict:
+async def uploader(channel: TextChannel, guild_num: list, version_id: str) -> dict:
     
     SPRITES_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/'
     IMAGE_DIR = '/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/sprites/pokemon/other/official-artwork/'
@@ -213,20 +230,21 @@ async def uploader(channel: TextChannel, sprite_name, guild_num, number, sprite_
         guild_num[0] += 1
         guild = client.get_guild(discord_db[guild_num[0]].value)
         
-    with open(SPRITES_DIR + str(sprite_name) + ".png", "rb") as image:
-        f = image.read()
-        imageBytes = bytes(f)
-
-    emoji: Emoji = await guild.create_custom_emoji(name=f"P{number}_{sprite_version}", image=imageBytes)
     try:
-        message = await channel.send(file=File(IMAGE_DIR + str(sprite_name + ".png")))
-    except Exception:
-        print(f'{sprite_name}')
-    
-    image_url = message.attachments[0].url
-    
-    payload['emoji'] = f'<:P{number}_{sprite_version}:{emoji.id}>'
-    payload['png'] = image_url
+        with open(SPRITES_DIR + str(version_id) + ".png", "rb") as image:
+            f = image.read()
+            imageBytes = bytes(f)
+
+        emoji: Emoji = await guild.create_custom_emoji(name=f"P{version_id}", image=imageBytes)
+        message = await channel.send(file=File(IMAGE_DIR + str(version_id + ".png")))
+
+        image_url = message.attachments[0].url
+        
+        payload['emoji'] = f'<:P{version_id}:{emoji.id}>'
+        payload['png'] = image_url
+    except Exception as error:
+        print(f'ERR: {version_id}')
+        print(error)
     
     return payload
         

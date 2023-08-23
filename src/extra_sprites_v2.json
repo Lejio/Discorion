@@ -1,0 +1,1416 @@
+{
+  "386": {
+    "Attack Forme": {
+      "sprite": "<:P10001:1143981215901294633>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981218115895296/10001.png"
+    },
+    "Defense Forme": {
+      "sprite": "<:P10002:1143981261321424996>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981262403547267/10002.png"
+    },
+    "Speed Forme": {
+      "sprite": "<:P10003:1143981306007535646>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981307270021191/10003.png"
+    }
+  },
+  "413": {
+    "Sandy Cloak": {
+      "sprite": "<:P10004:1143981350781714432>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981352727887993/10004.png"
+    },
+    "Trash Cloak": {
+      "sprite": "<:P10005:1143981396369604699>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981398848454706/10005.png"
+    }
+  },
+  "492": {
+    "Sky Forme": {
+      "sprite": "<:P10006:1143981443274526740>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981444583133334/10006.png"
+    }
+  },
+  "487": {
+    "Origin Forme": {
+      "sprite": "<:P10007:1143981487834800158>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981489369923644/10007.png"
+    }
+  },
+  "479": {
+    "Heat Rotom": {
+      "sprite": "<:P10008:1143981534261547048>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981535482085386/10008.png"
+    },
+    "Wash Rotom": {
+      "sprite": "<:P10009:1143981578771501086>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981580013023262/10009.png"
+    },
+    "Frost Rotom": {
+      "sprite": "<:P10010:1143981623562489896>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981624950796368/10010.png"
+    },
+    "Fan Rotom": {
+      "sprite": "<:P10011:1143981667845931071>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981669729181898/10011.png"
+    },
+    "Mow Rotom": {
+      "sprite": "<:P10012:1143981712683061419>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981714016833586/10012.png"
+    }
+  },
+  "351": {
+    "Sunny Form": {
+      "sprite": "<:P10013:1143981757511778426>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981759252414514/10013.png"
+    },
+    "Rainy Form": {
+      "sprite": "<:P10014:1143981802403401888>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981803829477406/10014.png"
+    },
+    "Snowy Form": {
+      "sprite": "<:P10015:1143981846510719078>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981848037425223/10015.png"
+    }
+  },
+  "550": {
+    "Blue-Striped Form": {
+      "sprite": "<:P10016:1143981891079372982>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981893046521976/10016.png"
+    },
+    "White-Striped Form": {
+      "sprite": "<:P10247:1143992304881901628>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992306551238746/10247.png"
+    }
+  },
+  "555": {
+    "Zen Mode": {
+      "sprite": "<:P10017:1143981936449167360>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981938152050718/10017.png"
+    },
+    "Galarian Darmanitan": {
+      "sprite": "<:P10177:1143989039976960030>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989041470120006/10177.png"
+    },
+    "Galarian Zen Mode": {
+      "sprite": "<:P10178:1143989085229301861>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989086714089564/10178.png"
+    }
+  },
+  "648": {
+    "Pirouette Forme": {
+      "sprite": "<:P10018:1143981981831532604>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143981983123386478/10018.png"
+    }
+  },
+  "641": {
+    "Therian Forme": {
+      "sprite": "<:P10019:1143982026488299630>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982028749017098/10019.png"
+    }
+  },
+  "642": {
+    "Therian Forme": {
+      "sprite": "<:P10020:1143982072529166336>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982074034933760/10020.png"
+    }
+  },
+  "645": {
+    "Therian Forme": {
+      "sprite": "<:P10021:1143982119002046725>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982120604283030/10021.png"
+    }
+  },
+  "646": {
+    "Black Kyurem": {
+      "sprite": "<:P10022:1143982163801419828>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982165344923668/10022.png"
+    },
+    "White Kyurem": {
+      "sprite": "<:P10023:1143982208453976086>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982210198806578/10023.png"
+    }
+  },
+  "647": {
+    "Resolute Form": {
+      "sprite": "<:P10024:1143982253567905803>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982254532595752/10024.png"
+    }
+  },
+  "678": {
+    "Female": {
+      "sprite": "<:P10025:1143982297650045118>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982299382296636/10025.png"
+    }
+  },
+  "681": {
+    "Blade Forme": {
+      "sprite": "<:P10026:1143982343552507986>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982344966000720/10026.png"
+    }
+  },
+  "710": {
+    "Small Size": {
+      "sprite": "<:P10027:1143982388750319707>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982389920534628/10027.png"
+    },
+    "Large Size": {
+      "sprite": "<:P10028:1143982434036220066>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982435600715796/10028.png"
+    },
+    "Super Size": {
+      "sprite": "<:P10029:1143982479116619778>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982481192792074/10029.png"
+    }
+  },
+  "711": {
+    "Small Size": {
+      "sprite": "<:P10030:1143982525094572132>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982527736987748/10030.png"
+    },
+    "Large Size": {
+      "sprite": "<:P10031:1143982571923963934>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982574142763019/10031.png"
+    },
+    "Super Size": {
+      "sprite": "<:P10032:1143982618321371241>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982620804395038/10032.png"
+    }
+  },
+  "3": {
+    "Mega Venusaur": {
+      "sprite": "<:P10033:1143982664827813900>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982666358734878/10033.png"
+    },
+    "Gigantamax Venusaur": {
+      "sprite": "<:P10195:1143989838975078552>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989840694759424/10195.png"
+    }
+  },
+  "6": {
+    "Mega Charizard X": {
+      "sprite": "<:P10034:1143982709417459732>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982710428282981/10034.png"
+    },
+    "Mega Charizard Y": {
+      "sprite": "<:P10035:1143982753247936625>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982755059871814/10035.png"
+    },
+    "Gigantamax Charizard": {
+      "sprite": "<:P10196:1143989884181299250>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989885242445844/10196.png"
+    }
+  },
+  "9": {
+    "Mega Blastoise": {
+      "sprite": "<:P10036:1143982798437355632>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982799745978491/10036.png"
+    },
+    "Gigantamax Blastoise": {
+      "sprite": "<:P10197:1143989928263434252>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989929597210695/10197.png"
+    }
+  },
+  "65": {
+    "Mega Alakazam": {
+      "sprite": "<:P10037:1143982843354161193>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982850216046753/10037.png"
+    }
+  },
+  "94": {
+    "Mega Gengar": {
+      "sprite": "<:P10038:1143982893580959817>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982895069937805/10038.png"
+    },
+    "Gigantamax Gengar": {
+      "sprite": "<:P10202:1143990153455616001>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990154650996746/10202.png"
+    }
+  },
+  "115": {
+    "Mega Kangaskhan": {
+      "sprite": "<:P10039:1143982938061557891>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982939525365770/10039.png"
+    }
+  },
+  "127": {
+    "Mega Pinsir": {
+      "sprite": "<:P10040:1143982984312131625>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143982985637535865/10040.png"
+    }
+  },
+  "130": {
+    "Mega Gyarados": {
+      "sprite": "<:P10041:1143983028696268841>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983029862277220/10041.png"
+    }
+  },
+  "142": {
+    "Mega Aerodactyl": {
+      "sprite": "<:P10042:1143983072954556518>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983076142227608/10042.png"
+    }
+  },
+  "150": {
+    "Mega Mewtwo X": {
+      "sprite": "<:P10043:1143983120232759406>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983121855959040/10043.png"
+    },
+    "Mega Mewtwo Y": {
+      "sprite": "<:P10044:1143983165732556850>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983167833915455/10044.png"
+    }
+  },
+  "181": {
+    "Mega Ampharos": {
+      "sprite": "<:P10045:1143983211618242650>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983212801048628/10045.png"
+    }
+  },
+  "212": {
+    "Mega Scizor": {
+      "sprite": "<:P10046:1143983255830405241>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983257604591728/10046.png"
+    }
+  },
+  "214": {
+    "Mega Heracross": {
+      "sprite": "<:P10047:1143983300885614592>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983301858701393/10047.png"
+    }
+  },
+  "229": {
+    "Mega Houndoom": {
+      "sprite": "<:P10048:1143983345185849364>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983347320750213/10048.png"
+    }
+  },
+  "248": {
+    "Mega Tyranitar": {
+      "sprite": "<:P10049:1143983391298043984>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983393026097173/10049.png"
+    }
+  },
+  "257": {
+    "Mega Blaziken": {
+      "sprite": "<:P10050:1143983436059660308>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983436999172197/10050.png"
+    }
+  },
+  "282": {
+    "Mega Gardevoir": {
+      "sprite": "<:P10051:1143983480049504268>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983482306056304/10051.png"
+    }
+  },
+  "303": {
+    "Mega Mawile": {
+      "sprite": "<:P10052:1143983525280882740>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983526476251188/10052.png"
+    }
+  },
+  "306": {
+    "Mega Aggron": {
+      "sprite": "<:P10053:1143983569904095282>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983572399698000/10053.png"
+    }
+  },
+  "308": {
+    "Mega Medicham": {
+      "sprite": "<:P10054:1143983615768805436>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983617173889044/10054.png"
+    }
+  },
+  "310": {
+    "Mega Manectric": {
+      "sprite": "<:P10055:1143983660228423721>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983661658685491/10055.png"
+    }
+  },
+  "354": {
+    "Mega Banette": {
+      "sprite": "<:P10056:1143983705531097210>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983706936201266/10056.png"
+    }
+  },
+  "359": {
+    "Mega Absol": {
+      "sprite": "<:P10057:1143983750422741003>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983752041730128/10057.png"
+    }
+  },
+  "445": {
+    "Mega Garchomp": {
+      "sprite": "<:P10058:1143983797038239845>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983798908878888/10058.png"
+    }
+  },
+  "448": {
+    "Mega Lucario": {
+      "sprite": "<:P10059:1143983842215067749>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983843469185154/10059.png"
+    }
+  },
+  "460": {
+    "Mega Abomasnow": {
+      "sprite": "<:P10060:1143983887035408496>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983888750891018/10060.png"
+    }
+  },
+  "670": {
+    "Eternal Flower Forme": {
+      "sprite": "<:P10061:1143983931956400259>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983933038538823/10061.png"
+    }
+  },
+  "380": {
+    "Mega Latias": {
+      "sprite": "<:P10062:1143983976143388794>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143983977678503936/10062.png"
+    }
+  },
+  "381": {
+    "Mega Latios": {
+      "sprite": "<:P10063:1143984020892422265>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984022180077679/10063.png"
+    }
+  },
+  "260": {
+    "Mega Swampert": {
+      "sprite": "<:P10064:1143984065570144338>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984067210121306/10064.png"
+    }
+  },
+  "254": {
+    "Mega Sceptile": {
+      "sprite": "<:P10065:1143984110424031284>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984111690723492/10065.png"
+    }
+  },
+  "302": {
+    "Mega Sableye": {
+      "sprite": "<:P10066:1143984155156287598>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984156834009168/10066.png"
+    }
+  },
+  "334": {
+    "Mega Altaria": {
+      "sprite": "<:P10067:1143984200651898980>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984202308669580/10067.png"
+    }
+  },
+  "475": {
+    "Mega Gallade": {
+      "sprite": "<:P10068:1143984245665181777>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984246835400754/10068.png"
+    }
+  },
+  "531": {
+    "Mega Audino": {
+      "sprite": "<:P10069:1143984290430988318>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984292049981440/10069.png"
+    }
+  },
+  "319": {
+    "Mega Sharpedo": {
+      "sprite": "<:P10070:1143984335331008593>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984336723529820/10070.png"
+    }
+  },
+  "80": {
+    "Mega Slowbro": {
+      "sprite": "<:P10071:1143984379555762197>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984381086683186/10071.png"
+    },
+    "Galarian Slowbro": {
+      "sprite": "<:P10165:1143988502879547553>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988503898771538/10165.png"
+    }
+  },
+  "208": {
+    "Mega Steelix": {
+      "sprite": "<:P10072:1143984425906999357>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984427026894989/10072.png"
+    }
+  },
+  "18": {
+    "Mega Pidgeot": {
+      "sprite": "<:P10073:1143984470882537523>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984472056938517/10073.png"
+    }
+  },
+  "362": {
+    "Mega Glalie": {
+      "sprite": "<:P10074:1143984515715440770>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984517221191710/10074.png"
+    }
+  },
+  "719": {
+    "Mega Diancie": {
+      "sprite": "<:P10075:1143984560439316591>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984561655644301/10075.png"
+    }
+  },
+  "376": {
+    "Mega Metagross": {
+      "sprite": "<:P10076:1143984604873764884>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984606052368464/10076.png"
+    }
+  },
+  "382": {
+    "Primal Kyogre": {
+      "sprite": "<:P10077:1143984649253703831>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984650281300008/10077.png"
+    }
+  },
+  "383": {
+    "Primal Groudon": {
+      "sprite": "<:P10078:1143984694204047471>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984695865004083/10078.png"
+    }
+  },
+  "384": {
+    "Mega Rayquaza": {
+      "sprite": "<:P10079:1143984739515105452>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984740702109696/10079.png"
+    }
+  },
+  "25": {
+    "Rock Star Pikachu ": {
+      "sprite": "<:P10080:1143984783974748200>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984785799250050/10080.png"
+    },
+    "Belle Pikachu ": {
+      "sprite": "<:P10081:1143984828690214989>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984830468603984/10081.png"
+    },
+    "Pop Star Pikachu ": {
+      "sprite": "<:P10082:1143984873929973790>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984875897114674/10082.png"
+    },
+    "Phd Pikachu ": {
+      "sprite": "<:P10083:1143984919232647198>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984920625168528/10083.png"
+    },
+    "Libre Pikachu ": {
+      "sprite": "<:P10084:1143984963830693919>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143984965038657638/10084.png"
+    },
+    "Cosplay Pikachu ": {
+      "sprite": "<:P10085:1143985008516808845>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985009624109167/10085.png"
+    },
+    "Original Cap": {
+      "sprite": "<:P10094:1143985413111939072>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985414433144922/10094.png"
+    },
+    "Hoenn Cap": {
+      "sprite": "<:P10095:1143985457399607317>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985459068944515/10095.png"
+    },
+    "Sinnoh Cap": {
+      "sprite": "<:P10096:1143985502240903280>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985503306252428/10096.png"
+    },
+    "Unova Cap": {
+      "sprite": "<:P10097:1143985546243346532>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985547203850291/10097.png"
+    },
+    "Kalos Cap": {
+      "sprite": "<:P10098:1143985590371627028>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985591520870502/10098.png"
+    },
+    "Alolan Cap": {
+      "sprite": "<:P10099:1143985634889965749>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985635795939370/10099.png"
+    },
+    "Partner Cap Pikachu": {
+      "sprite": "<:P10148:1143987750664679535>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987752480800978/10148.png"
+    },
+    "Starter": {
+      "sprite": null,
+      "png": null
+    },
+    "World Cap Pikachu": {
+      "sprite": null,
+      "png": null
+    },
+    "Gigantamax Pikachu": {
+      "sprite": "<:P10199:1143990017543389184>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990020034805760/10199.png"
+    }
+  },
+  "720": {
+    "Hoopa Unbound": {
+      "sprite": "<:P10086:1143985053462974535>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985055572693042/10086.png"
+    }
+  },
+  "323": {
+    "Mega Camerupt": {
+      "sprite": "<:P10087:1143985098857914489>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985100556611604/10087.png"
+    }
+  },
+  "428": {
+    "Mega Lopunny": {
+      "sprite": "<:P10088:1143985144693264444>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985145972539423/10088.png"
+    }
+  },
+  "373": {
+    "Mega Salamence": {
+      "sprite": "<:P10089:1143985189475860691>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985190595731637/10089.png"
+    }
+  },
+  "15": {
+    "Mega Beedrill": {
+      "sprite": "<:P10090:1143985233553793117>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985235680317470/10090.png"
+    }
+  },
+  "19": {
+    "Alolan Rattata": {
+      "sprite": "<:P10091:1143985278885830806>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985280408367114/10091.png"
+    }
+  },
+  "20": {
+    "Alolan Raticate": {
+      "sprite": "<:P10092:1143985323483857017>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985324968652840/10092.png"
+    },
+    "Alolan Totem": {
+      "sprite": "<:P10093:1143985368400666745>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985369747038319/10093.png"
+    }
+  },
+  "26": {
+    "Alolan Raichu": {
+      "sprite": "<:P10100:1143985678913376256>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985680192651315/10100.png"
+    }
+  },
+  "27": {
+    "Alolan Sandshrew": {
+      "sprite": "<:P10101:1143985723184255026>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985724782301264/10101.png"
+    }
+  },
+  "28": {
+    "Alolan Sandslash": {
+      "sprite": "<:P10102:1143985768193327116>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985775239761931/10102.png"
+    }
+  },
+  "37": {
+    "Alolan Vulpix": {
+      "sprite": "<:P10103:1143985818231373875>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985819602931832/10103.png"
+    }
+  },
+  "38": {
+    "Alolan Ninetales": {
+      "sprite": "<:P10104:1143985862846189568>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985864310005812/10104.png"
+    }
+  },
+  "50": {
+    "Alolan Diglett": {
+      "sprite": "<:P10105:1143985908178239580>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985909944045588/10105.png"
+    }
+  },
+  "51": {
+    "Alolan Dugtrio": {
+      "sprite": "<:P10106:1143985953652875264>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143985955083145287/10106.png"
+    }
+  },
+  "52": {
+    "Alolan Meowth": {
+      "sprite": "<:P10107:1143985998678736928>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986000910090280/10107.png"
+    },
+    "Galarian Meowth": {
+      "sprite": "<:P10161:1143988322788708352>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988324785201192/10161.png"
+    },
+    "Gigantamax Meowth": {
+      "sprite": "<:P10200:1143990064691556463>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990065811439797/10200.png"
+    }
+  },
+  "53": {
+    "Alolan Persian": {
+      "sprite": "<:P10108:1143986044161753120>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986045663318176/10108.png"
+    }
+  },
+  "74": {
+    "Alolan Geodude": {
+      "sprite": "<:P10109:1143986088948547674>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986090483646504/10109.png"
+    }
+  },
+  "75": {
+    "Alolan Graveler": {
+      "sprite": "<:P10110:1143986133655625831>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986137455669398/10110.png"
+    }
+  },
+  "76": {
+    "Alolan Golem": {
+      "sprite": "<:P10111:1143986180468252774>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986182158557315/10111.png"
+    }
+  },
+  "88": {
+    "Alolan Grimer": {
+      "sprite": "<:P10112:1143986225519280158>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986227075358830/10112.png"
+    }
+  },
+  "89": {
+    "Alolan Muk": {
+      "sprite": "<:P10113:1143986271694360637>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986273011380394/10113.png"
+    }
+  },
+  "103": {
+    "Alolan Exeggutor": {
+      "sprite": "<:P10114:1143986316342734952>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986318054019092/10114.png"
+    }
+  },
+  "105": {
+    "Alolan Marowak": {
+      "sprite": "<:P10115:1143986361649606658>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986363365081200/10115.png"
+    },
+    "Alola Totem": {
+      "sprite": "<:P10149:1143987796126728212>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987798265827328/10149.png"
+    }
+  },
+  "658": {
+    "Battle Bond Greninja": {
+      "sprite": "<:P10116:1143986407107477504>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986408743247983/10116.png"
+    },
+    "Ash Greninja": {
+      "sprite": "<:P10117:1143986452619862109>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986454675062854/10117.png"
+    }
+  },
+  "718": {
+    "10% Forme": {
+      "sprite": "<:P10118:1143986498501345310>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986499981942854/10118.png"
+    },
+    "50% Forme": {
+      "sprite": "<:P10119:1143986543111975042>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986544483520532/10119.png"
+    },
+    "Complete Forme": {
+      "sprite": "<:P10120:1143986587844218890>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986589006057544/10120.png"
+    },
+    "10% Form": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "735": {
+    "Totem": {
+      "sprite": "<:P10121:1143986632631001208>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986634099019927/10121.png"
+    }
+  },
+  "738": {
+    "Totem": {
+      "sprite": "<:P10122:1143986677648478228>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986680110530654/10122.png"
+    }
+  },
+  "741": {
+    "Pom-Pom Style": {
+      "sprite": "<:P10123:1143986723542540479>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986724641443952/10123.png"
+    },
+    "Pa'u Style": {
+      "sprite": "<:P10124:1143986768228659301>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986769403072612/10124.png"
+    },
+    "Sensu Style": {
+      "sprite": "<:P10125:1143986812411453471>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986813376139435/10125.png"
+    }
+  },
+  "745": {
+    "Midnight Form": {
+      "sprite": "<:P10126:1143986856850100284>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986858427158669/10126.png"
+    },
+    "Dusk Form": {
+      "sprite": "<:P10152:1143987931640512522>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987932919767171/10152.png"
+    }
+  },
+  "746": {
+    "School Form": {
+      "sprite": "<:P10127:1143986901813039235>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986903272673290/10127.png"
+    }
+  },
+  "754": {
+    "Totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "758": {
+    "Totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "774": {
+    "Orange Meteor": {
+      "sprite": "<:P10130:1143987031089889363>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987032901832924/10130.png"
+    },
+    "Yellow Meteor": {
+      "sprite": "<:P10131:1143987076354822257>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987078531657848/10131.png"
+    },
+    "Green Meteor": {
+      "sprite": "<:P10132:1143987121540038738>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987124132139138/10132.png"
+    },
+    "Blue Meteor": {
+      "sprite": "<:P10133:1143987168101011516>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987169539661976/10133.png"
+    },
+    "Indigo Meteor": {
+      "sprite": "<:P10134:1143987212799721503>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987214326440057/10134.png"
+    },
+    "Violet Meteor": {
+      "sprite": "<:P10135:1143987257494212830>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987258760900719/10135.png"
+    },
+    "Red Core": {
+      "sprite": "<:P10136:1143987302931116092>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987304822739096/10136.png"
+    },
+    "Orange Core": {
+      "sprite": "<:P10137:1143987347927601242>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987349261385738/10137.png"
+    },
+    "Yellow Core": {
+      "sprite": "<:P10138:1143987393037340722>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987394140442714/10138.png"
+    },
+    "Green Core": {
+      "sprite": "<:P10139:1143987437572460567>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987438969180170/10139.png"
+    },
+    "Blue Core": {
+      "sprite": "<:P10140:1143987482015309914>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987483655274606/10140.png"
+    },
+    "Indigo Core": {
+      "sprite": "<:P10141:1143987527485767750>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987528559501464/10141.png"
+    },
+    "Violet Core": {
+      "sprite": "<:P10142:1143987572150902856>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987573337882664/10142.png"
+    }
+  },
+  "778": {
+    "Totem Disguised Mimikyu": {
+      "sprite": "<:P10144:1143987616795078717>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987618112098445/10144.png"
+    }
+  },
+  "784": {
+    "Totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "801": {
+    "Original Color Magearna": {
+      "sprite": "<:P10147:1143987704879657000>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987706586738848/10147.png"
+    }
+  },
+  "743": {
+    "Totem": {
+      "sprite": "<:P10150:1143987841685262336>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987842968731758/10150.png"
+    }
+  },
+  "744": {
+    "Own Tempo": {
+      "sprite": "<:P10151:1143987886664986706>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987888363675699/10151.png"
+    }
+  },
+  "752": {
+    "Totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "777": {
+    "Totem": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "800": {
+    "Dusk Mane Necrozma": {
+      "sprite": "<:P10155:1143988061001228381>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988063735918683/10155.png"
+    },
+    "Dawn Wings Necrozma": {
+      "sprite": "<:P10156:1143988107021144154>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988108216500264/10156.png"
+    },
+    "Ultra Necrozma": {
+      "sprite": "<:P10157:1143988151413649469>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988152739045486/10157.png"
+    }
+  },
+  "133": {
+    "Starter": {
+      "sprite": null,
+      "png": null
+    },
+    "Gigantamax Eevee": {
+      "sprite": "<:P10205:1143990286947717250>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990288143101972/10205.png"
+    }
+  },
+  "77": {
+    "Galarian Ponyta": {
+      "sprite": "<:P10162:1143988369240633426>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988371023216780/10162.png"
+    }
+  },
+  "78": {
+    "Galarian Rapidash": {
+      "sprite": "<:P10163:1143988414102917281>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988415289888768/10163.png"
+    }
+  },
+  "79": {
+    "Galarian Slowpoke": {
+      "sprite": "<:P10164:1143988458336038944>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988459825016932/10164.png"
+    }
+  },
+  "83": {
+    "Galarian Farfetch'd": {
+      "sprite": "<:P10166:1143988546982662215>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988548240941158/10166.png"
+    }
+  },
+  "110": {
+    "Galarian Weezing": {
+      "sprite": "<:P10167:1143988591631007754>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988592662822912/10167.png"
+    }
+  },
+  "122": {
+    "Galarian Mr. Mime": {
+      "sprite": "<:P10168:1143988636409401515>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988637869031576/10168.png"
+    }
+  },
+  "144": {
+    "Galarian Articuno": {
+      "sprite": "<:P10169:1143988681301053453>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988683704377444/10169.png"
+    }
+  },
+  "145": {
+    "Galarian Zapdos": {
+      "sprite": "<:P10170:1143988726977015899>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988728180781177/10170.png"
+    }
+  },
+  "146": {
+    "Galarian Moltres": {
+      "sprite": "<:P10171:1143988771042381956>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988772443267123/10171.png"
+    }
+  },
+  "199": {
+    "Galarian Slowking": {
+      "sprite": "<:P10172:1143988815573291029>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988817175511050/10172.png"
+    }
+  },
+  "222": {
+    "Galarian Corsola": {
+      "sprite": "<:P10173:1143988861085679648>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988862281060413/10173.png"
+    }
+  },
+  "263": {
+    "Galarian Zigzagoon": {
+      "sprite": "<:P10174:1143988905197195444>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988906635821127/10174.png"
+    }
+  },
+  "264": {
+    "Galarian Linoone": {
+      "sprite": "<:P10175:1143988949866528770>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988951435198505/10175.png"
+    }
+  },
+  "554": {
+    "Galarian Darumaka": {
+      "sprite": "<:P10176:1143988994573602849>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143988995836096532/10176.png"
+    }
+  },
+  "562": {
+    "Galarian Yamask": {
+      "sprite": "<:P10179:1143989130049630309>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989131140153494/10179.png"
+    }
+  },
+  "618": {
+    "Galarian Stunfisk": {
+      "sprite": "<:P10180:1143989174756724736>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989175918547045/10180.png"
+    }
+  },
+  "845": {
+    "Gulping": {
+      "sprite": null,
+      "png": null
+    },
+    "Gorging": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "849": {
+    "Low key Form": {
+      "sprite": "<:P10184:1143989345687175309>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989347314577548/10184.png"
+    },
+    "Amped Form Gigantamax": {
+      "sprite": "<:P10219:1143990917229973615>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990918391799898/10219.png"
+    },
+    "Low Key Gigantamax": {
+      "sprite": "<:P10228:1143991456109965522>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991457259200592/10228.png"
+    }
+  },
+  "875": {
+    "Noice Face": {
+      "sprite": "<:P10185:1143989390444601494>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989391723860069/10185.png"
+    }
+  },
+  "876": {
+    "Female ": {
+      "sprite": "<:P10186:1144002171583594627>",
+      "png": "https://media.discordapp.net/attachments/1133943228660449342/1144000370192953544/10186.png?width=950&height=950"
+    }
+  },
+  "877": {
+    "Hangry Mode": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "888": {
+    "Crowned Sword": {
+      "sprite": "<:P10188:1143989520304451656>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989521621467206/10188.png"
+    }
+  },
+  "889": {
+    "Crowned Shield": {
+      "sprite": "<:P10189:1143989564881518772>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989566173356132/10189.png"
+    }
+  },
+  "890": {
+    "Eternamax": {
+      "sprite": "<:P10190:1143989609739583559>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989611085959168/10190.png"
+    }
+  },
+  "892": {
+    "Rapid Strike Style": {
+      "sprite": "<:P10191:1143989654639607919>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989656103440565/10191.png"
+    },
+    "Single Strike Gigantamax": {
+      "sprite": "<:P10226:1143991365085171762>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991366129569865/10226.png"
+    },
+    "Rapid Strike Gigantamax": {
+      "sprite": "<:P10227:1143991410371072160>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991412296253490/10227.png"
+    }
+  },
+  "893": {
+    "Dada": {
+      "sprite": null,
+      "png": null
+    }
+  },
+  "898": {
+    "Ice Rider": {
+      "sprite": "<:P10193:1143989742501900299>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989744552910918/10193.png"
+    },
+    "Shadow Rider": {
+      "sprite": "<:P10194:1143989791973716069>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989794846814309/10194.png"
+    }
+  },
+  "12": {
+    "Gigantamax Butterfree": {
+      "sprite": "<:P10198:1143989973008273438>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989974056833144/10198.png"
+    }
+  },
+  "68": {
+    "Gigantamax Machamp": {
+      "sprite": "<:P10201:1143990109381857380>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990110484967544/10201.png"
+    }
+  },
+  "99": {
+    "Gigantamax Kingler": {
+      "sprite": "<:P10203:1143990197898453023>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990199047696434/10203.png"
+    }
+  },
+  "131": {
+    "Gigantamax Lapras": {
+      "sprite": "<:P10204:1143990242240634942>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990243746390136/10204.png"
+    }
+  },
+  "143": {
+    "Gigantamax Snorlax": {
+      "sprite": "<:P10206:1143990331575111810>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990332678226070/10206.png"
+    }
+  },
+  "569": {
+    "Gigantamax Garbodor": {
+      "sprite": "<:P10207:1143990375921492008>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990377339179018/10207.png"
+    }
+  },
+  "809": {
+    "Gigantamax Melmetal": {
+      "sprite": "<:P10208:1143990420930568232>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990422398578739/10208.png"
+    }
+  },
+  "812": {
+    "Gigantamax Rillaboom": {
+      "sprite": "<:P10209:1143990466753343488>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990468288463000/10209.png"
+    }
+  },
+  "815": {
+    "Gigantamax Cinderace": {
+      "sprite": "<:P10210:1143990511296856144>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990512471261185/10210.png"
+    }
+  },
+  "818": {
+    "Gigantamax Inteleon": {
+      "sprite": "<:P10211:1143990556423360624>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990557761359913/10211.png"
+    }
+  },
+  "823": {
+    "Gigantamax Corviknight ": {
+      "sprite": "<:P10212:1143990601298231326>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990602485219348/10212.png"
+    }
+  },
+  "826": {
+    "Gigantamax Orbeetle": {
+      "sprite": "<:P10213:1143990646013702285>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990647238438932/10213.png"
+    }
+  },
+  "834": {
+    "Gigantamax Drednaw": {
+      "sprite": "<:P10214:1143990690796281866>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990692432064623/10214.png"
+    }
+  },
+  "839": {
+    "Gigantamax Coalossal": {
+      "sprite": "<:P10215:1143990735641788428>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990737223032842/10215.png"
+    }
+  },
+  "841": {
+    "Gigantamax Flapple": {
+      "sprite": "<:P10216:1143990780755718244>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990782034968716/10216.png"
+    }
+  },
+  "842": {
+    "Gigantamax Appletun": {
+      "sprite": "<:P10217:1143990825722839163>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990827207630901/10217.png"
+    }
+  },
+  "844": {
+    "Gigantamax Sandaconda": {
+      "sprite": "<:P10218:1143990871591747726>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990873277865994/10218.png"
+    }
+  },
+  "851": {
+    "Gigantamax Centiskorch": {
+      "sprite": "<:P10220:1143990961702195270>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990962935304293/10220.png"
+    }
+  },
+  "858": {
+    "Gigantamax Hatterene": {
+      "sprite": "<:P10221:1143991006925172858>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991008334454895/10221.png"
+    }
+  },
+  "861": {
+    "Gigantamax Grimmsnarl": {
+      "sprite": "<:P10222:1143991053117034567>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991054220136559/10222.png"
+    }
+  },
+  "869": {
+    "Gigantamax Alcremie": {
+      "sprite": "<:P10223:1143991227738509393>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991229273608263/10223.png"
+    }
+  },
+  "879": {
+    "Gigantamax Copperajah": {
+      "sprite": "<:P10224:1143991273074729000>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991277772361851/10224.png"
+    }
+  },
+  "884": {
+    "Gigantamax Duraludon": {
+      "sprite": "<:P10225:1143991320977883227>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991322026450944/10225.png"
+    }
+  },
+  "58": {
+    "Hisuian Growlithe": {
+      "sprite": "<:P10229:1143991500573769848>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991501676892180/10229.png"
+    }
+  },
+  "59": {
+    "Hisuian Arcanine": {
+      "sprite": "<:P10230:1143991544798523472>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991546086174861/10230.png"
+    }
+  },
+  "100": {
+    "Hisuian Voltorb": {
+      "sprite": "<:P10231:1143991589337837649>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991590843596830/10231.png"
+    }
+  },
+  "101": {
+    "Hisuian Electrode": {
+      "sprite": "<:P10232:1143991634179129355>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991635609391115/10232.png"
+    }
+  },
+  "157": {
+    "Hisuian Typhlosion": {
+      "sprite": "<:P10233:1143991678642950296>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991679599247400/10233.png"
+    }
+  },
+  "211": {
+    "Hisuian Qwilfish": {
+      "sprite": "<:P10234:1143991724016947241>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991725610774598/10234.png"
+    }
+  },
+  "215": {
+    "Hisuian Sneasel": {
+      "sprite": "<:P10235:1143991769294446712>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991770632429669/10235.png"
+    }
+  },
+  "503": {
+    "Hisuian Samurott": {
+      "sprite": "<:P10236:1143991814081220708>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991815729590352/10236.png"
+    }
+  },
+  "549": {
+    "Hisuian Lilligant": {
+      "sprite": "<:P10237:1143991859312611440>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991860403113994/10237.png"
+    }
+  },
+  "570": {
+    "Hisuian Zorua": {
+      "sprite": "<:P10238:1143991903621230622>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991904862732328/10238.png"
+    }
+  },
+  "571": {
+    "Hisuian Zoroark": {
+      "sprite": "<:P10239:1143991948336701450>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991949624348783/10239.png"
+    }
+  },
+  "628": {
+    "Hisuian Braviary": {
+      "sprite": "<:P10240:1143991993102520420>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991994318848171/10240.png"
+    }
+  },
+  "705": {
+    "Hisuian Sligoo": {
+      "sprite": "<:P10241:1143992037511811233>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992038405193809/10241.png"
+    }
+  },
+  "706": {
+    "Hisuian Goodra": {
+      "sprite": "<:P10242:1143992081728147648>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992083103875094/10242.png"
+    }
+  },
+  "713": {
+    "Hisuian Avalugg": {
+      "sprite": "<:P10243:1143992126737232043>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992128347844759/10243.png"
+    }
+  },
+  "724": {
+    "Hisuian Decidueye": {
+      "sprite": "<:P10244:1143992171603693598>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992172526448722/10244.png"
+    }
+  },
+  "483": {
+    "Origin Forme": {
+      "sprite": "<:P10245:1143992215769731194>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992217304830103/10245.png"
+    }
+  },
+  "484": {
+    "Origin Forme": {
+      "sprite": "<:P10246:1143992260808167495>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992261860917380/10246.png"
+    }
+  },
+  "902": {
+    "Female ": {
+      "sprite": "<:P10248:1143992350675320853>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992351979753544/10248.png"
+    }
+  },
+  "905": {
+    "Therian Forme": {
+      "sprite": "<:P10249:1143992395562766548>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992396762329239/10249.png"
+    }
+  },
+  "128": {
+    "Combat Breed": {
+      "sprite": "<:P10250:1143992440269852712>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992441461022830/10250.png"
+    },
+    "Blaze Breed": {
+      "sprite": "<:P10251:1143992485278916678>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992486767898765/10251.png"
+    },
+    "Aqua Breed": {
+      "sprite": "<:P10252:1143992530116026448>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992531424649339/10252.png"
+    }
+  },
+  "194": {
+    "Paldea Wooper": {
+      "sprite": "<:P10253:1143992574261084171>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992575750049802/10253.png"
+    }
+  },
+  "916": {
+    "Female ": {
+      "sprite": "<:P10254:1143992619177889924>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992626106863676/10254.png"
+    }
+  },
+  "982": {
+    "Three-Segment Form": {
+      "sprite": "<:P10255:1143992669496938736>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992671241769040/10255.png"
+    }
+  },
+  "964": {
+    "Hero Form": {
+      "sprite": "<:P10256:1143992714610888815>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992715713990666/10256.png"
+    }
+  },
+  "925": {
+    "Family of Three": {
+      "sprite": "<:P10257:1143992759074697257>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992760450424832/10257.png"
+    }
+  },
+  "978": {
+    "Droopy Form": {
+      "sprite": "<:P10258:1143992803748233318>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992805006508042/10258.png"
+    },
+    "Stretchy Form": {
+      "sprite": "<:P10259:1143992853408776384>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992855099101255/10259.png"
+    }
+  },
+  "931": {
+    "Blue Plumage": {
+      "sprite": "<:P10260:1143992898921173012>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992900171092018/10260.png"
+    },
+    "Yellow Plumage": {
+      "sprite": "<:P10261:1143992943720546405>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992944978837584/10261.png"
+    },
+    "White Plumage": {
+      "sprite": "<:P10262:1143992988754776134>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143992990411534336/10262.png"
+    }
+  },
+  "999": {
+    "Roaming Form": {
+      "sprite": "<:P10263:1143993033864532031>",
+      "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143993035366088836/10263.png"
+    }
+  }
+}
