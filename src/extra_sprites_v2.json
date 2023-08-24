@@ -526,14 +526,6 @@
       "sprite": "<:P10148:1143987750664679535>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987752480800978/10148.png"
     },
-    "Starter": {
-      "sprite": null,
-      "png": null
-    },
-    "World Cap Pikachu": {
-      "sprite": null,
-      "png": null
-    },
     "Gigantamax Pikachu": {
       "sprite": "<:P10199:1143990017543389184>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990020034805760/10199.png"
@@ -715,10 +707,6 @@
     "Complete Forme": {
       "sprite": "<:P10120:1143986587844218890>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986589006057544/10120.png"
-    },
-    "10% Form": {
-      "sprite": null,
-      "png": null
     }
   },
   "735": {
@@ -761,18 +749,6 @@
     "School Form": {
       "sprite": "<:P10127:1143986901813039235>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143986903272673290/10127.png"
-    }
-  },
-  "754": {
-    "Totem": {
-      "sprite": null,
-      "png": null
-    }
-  },
-  "758": {
-    "Totem": {
-      "sprite": null,
-      "png": null
     }
   },
   "774": {
@@ -835,12 +811,6 @@
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987618112098445/10144.png"
     }
   },
-  "784": {
-    "Totem": {
-      "sprite": null,
-      "png": null
-    }
-  },
   "801": {
     "Original Color Magearna": {
       "sprite": "<:P10147:1143987704879657000>",
@@ -859,18 +829,6 @@
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143987888363675699/10151.png"
     }
   },
-  "752": {
-    "Totem": {
-      "sprite": null,
-      "png": null
-    }
-  },
-  "777": {
-    "Totem": {
-      "sprite": null,
-      "png": null
-    }
-  },
   "800": {
     "Dusk Mane Necrozma": {
       "sprite": "<:P10155:1143988061001228381>",
@@ -886,10 +844,6 @@
     }
   },
   "133": {
-    "Starter": {
-      "sprite": null,
-      "png": null
-    },
     "Gigantamax Eevee": {
       "sprite": "<:P10205:1143990286947717250>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143990288143101972/10205.png"
@@ -991,16 +945,6 @@
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143989175918547045/10180.png"
     }
   },
-  "845": {
-    "Gulping": {
-      "sprite": null,
-      "png": null
-    },
-    "Gorging": {
-      "sprite": null,
-      "png": null
-    }
-  },
   "849": {
     "Low key Form": {
       "sprite": "<:P10184:1143989345687175309>",
@@ -1029,8 +973,8 @@
   },
   "877": {
     "Hangry Mode": {
-      "sprite": null,
-      "png": null
+      "sprite": "<:P10187:1144005396210647090>",
+      "png": "https://media.discordapp.net/attachments/1133943228660449342/1144005743566131332/877-hangry.png?width=950&height=950"
     }
   },
   "888": {
@@ -1063,12 +1007,6 @@
     "Rapid Strike Gigantamax": {
       "sprite": "<:P10227:1143991410371072160>",
       "png": "https://cdn.discordapp.com/attachments/1133943228660449342/1143991412296253490/10227.png"
-    }
-  },
-  "893": {
-    "Dada": {
-      "sprite": null,
-      "png": null
     }
   },
   "898": {
