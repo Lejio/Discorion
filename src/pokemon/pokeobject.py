@@ -1,4 +1,5 @@
-from typing import List, Dict
+import json
+from typing import List, Dict, Set
 
 
 class Type:
@@ -175,13 +176,30 @@ class PokeObject:
             
             class DefenseStat:
                 
-                def __init__(self, defenses: dict) -> None:
+                def __init__(self, _type: str, val: str) -> None:
                     
-                    pass
+                    self._type: str = _type
+                    self._val: str = val
+                    
+                @property
+                def poke_type(self) -> str:
+                    return self._type
+                
+                @property
+                def value(self) -> str:
+                    return self._val
             
             def __init__(self, defense_stats: dict) -> None:
                 
-                pass
+                self._defense_categories: Dict[str, Set[self.DefenseStat]] = { name: self.__defense_stat_processor(defense_stats[name]) for name in defense_stats }
+                
+            def __defense_stat_processor(self, defense_stats: dict) -> Set[DefenseStat]:
+                
+                return {self.DefenseStat(_type, defense_stats[_type]) for _type in defense_stats}
+            
+            @property
+            def defenses(self) -> Dict[str, Set[DefenseStat]]:
+                return self._defense_categories
             
         class Images:
             
@@ -260,7 +278,6 @@ class PokeObject:
                 return self._nickname
 
         def __init__(self, evolution) -> None:
-            
             self._from = self.EvolutionPokemon(evolution['from'])
             self._to = self.EvolutionPokemon(evolution['to'])
             self._requirement: str = evolution['requirement']
@@ -284,17 +301,67 @@ class PokeObject:
             
     class AttackCategory:
         
-        def __init__(self, category_name, category_moves) -> None:
+        class Attack:
             
+            def __init__(self, name: str, val: str | None) -> None:
+                
+                self._name: str = name
+                self._val: str | None = val
+                
+            @property
+            def name(self) -> str:
+                return self._name
             
+            @property
+            def val(self) -> str | None:
+                return self._val
+            
+            def __str__(self) -> str:
+                return self._name
+        
+        def __init__(self, category_name: str, category_moves) -> None:
+            
+            self._name: str = category_name
+            self._moves: List[self.Attack] = []
+            
+            for move in category_moves:
+                for name in move:
+                    self._moves.append(self.Attack(name, move[name]))
+
+        @property
+        def name(self) -> str:
+            return self._name
+        
+        @property
+        def moves(self) -> List[Attack]:
+            return self._moves
     
+    class EntryVersion:
+        
+        class Entry:
+            
+            def __init__(self, entry) -> None:
+                
+                self._text: str = entry
+                
+            @property
+            def text(self) -> str:
+                return self._text
+        
+        def __init__(self, entries: list) -> None:
+            
+            self._entries: List[self.Entry] = [self.Entry(entry) for entry in entries]
     
+        @property
+        def entries(self) -> List[Entry]:
+            return self._entries
+        
     def __init__(self, pokemon_raw: dict) -> None:
         
         self._versions = self.__pokemon_version_processor(pokemon_raw['versions'])
         self._evo_stats = self.__pokemon_evolution_processor(pokemon_raw['evo_stats'])
-        self._attacks_data = pokemon_raw['attacks_data']
-        self._entries = pokemon_raw['entries']
+        self._attacks_data = self.__pokemon_attacks_processor(pokemon_raw['attacks_data'])
+        self._entries = self.__pokemon_entries_processor(pokemon_raw['entries'])
         self._name = pokemon_raw['name']
         
     @property
@@ -304,6 +371,18 @@ class PokeObject:
     @property
     def evolutions(self) -> List[Evolution]:
         return self._evo_stats
+    
+    @property
+    def attacks(self) -> List[AttackCategory]:
+        return self._attacks_data
+    
+    @property
+    def entries(self) -> Dict[str, EntryVersion]:
+        return self._entries
+    
+    @property
+    def name(self) -> str:
+        return self._name
         
     def __pokemon_version_processor(self, pokemon_versions_raw: dict) -> List[Version]:
         
@@ -311,17 +390,17 @@ class PokeObject:
     
     def __pokemon_evolution_processor(self, pokemon_evolution_raw: list) -> List[Evolution]:
         
-        return [self.Evolution(evolution) for evolution in [evo_chart for evo_chart in pokemon_evolution_raw]]
-    
+        return [[self.Evolution(evolution) for evolution in evolution_category] for evolution_category in pokemon_evolution_raw]
+
     def __pokemon_attacks_processor(self, pokemon_attacks_raw: dict) -> List[AttackCategory]:
         
         return [self.AttackCategory(category, pokemon_attacks_raw[category]) for category in pokemon_attacks_raw]
     
-    def __pokemon_entries_processor(self, pokemon_entires_raw: dict):
+    def __pokemon_entries_processor(self, pokemon_entires_raw: dict) -> Dict[str, EntryVersion]:
         
-        return
+        return { name: self.EntryVersion(pokemon_entires_raw[name]) for name in pokemon_entires_raw }
 
-pikachu = PokeObject({})
+with open('/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/new_pokedex/6.json', 'r') as pokemon_json:
+    pokemon_raw = json.load(pokemon_json)
 
-for version in pikachu.versions:
-    version.name
+pikachu = PokeObject(pokemon_raw)
