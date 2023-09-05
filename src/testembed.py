@@ -25,58 +25,53 @@ DEFAULT_TYPE = 0
 
 class PokedexExtras(Embed):
     def __init__(self, pokemon: PokeObject.Version):
-        style = Style(
-            pokemon.versions[DEFAULT_VERSION].pokedex_data.poke_types[DEFAULT_TYPE]
-        )[0]
+        style = Style(pokemon.pokedex_data.poke_types[DEFAULT_TYPE])[0]
         super().__init__(
-            colour=Style(
-                pokemon.versions[DEFAULT_VERSION].pokedex_data.poke_types[DEFAULT_TYPE]
-            )[1],
+            colour=Style(pokemon.pokedex_data.poke_types[DEFAULT_TYPE])[1],
             title=translateText(style, "pokedex"),
             description=f"{createSeparator(SEPARATOR_LENGTH)}",
         )
 
-        version: PokeObject.Version = pokemon.versions[DEFAULT_VERSION]
         self.set_thumbnail(url=style.ICON_IMAGE.value)
         self.add_field(
             name=f'{translateText(text_style=style, text="number")}',
-            value=f"{version.national_number}",
+            value=f"{pokemon.pokedex_data.national_no}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="species")}',
-            value=f"{version.species}",
+            value=f"{pokemon.pokedex_data.species}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="weight")}',
-            value=f"{version.weight}",
+            value=f"{pokemon.pokedex_data.weight}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="height")}',
-            value=f"{version.height}",
+            value=f"{pokemon.pokedex_data.height}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="base xp")}',
-            value=f"{version.base_xp}",
+            value=f"{pokemon.training_data.base_exp}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="growth")}',
-            value=f"{version.growth_rate}",
+            value=f"{pokemon.training_data.growth_rate}",
             inline=False,
         )
         self.add_field(name=f"{Default.BLANK.value}", value="")
         self.add_field(
             name=f'{translateText(text_style=style, text="catch")}',
-            value=f"{version.catch_rate}",
+            value=f"{pokemon.training_data.catch_rate}",
             inline=False,
         )
 
@@ -91,52 +86,53 @@ class PokedexStats(Embed):
         )
 
         self.set_thumbnail(url=pokemon.images.discord_image)
-        style = Style(pokemon.pokedex_data.poke_types[DEFAULT_TYPE].type_name)[0]
+        # print(pokemon.pokedex_data.poke_types[DEFAULT_TYPE])
+        style = Style(pokemon.pokedex_data.poke_types[DEFAULT_TYPE])[0]
         pokemon_stats = pokemon.base_stats
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='HP')} [{int(pokemon_stats.hp.base)}/{int(pokemon_stats.hp.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.hp.base), int(pokemon_stats.hp.min)), style)}",
+            name=f"{translateText(text_style=style, text='HP')} [{int(pokemon_stats.hp.base)}/{int(pokemon_stats.hp.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.hp.base), int(pokemon_stats.hp.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Attack')} [{int(pokemon_stats.attack.base)}/{int(pokemon_stats.attack.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.attack.base), int(pokemon_stats.attack.min)), style)}",
+            name=f"{translateText(text_style=style, text='Attack')} [{int(pokemon_stats.attack.base)}/{int(pokemon_stats.attack.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.attack.base), int(pokemon_stats.attack.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Defense')} [{int(pokemon_stats.defense.base)}/{int(pokemon_stats.defense.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.defense.base), int(pokemon_stats.defense.min)), style)}",
+            name=f"{translateText(text_style=style, text='Defense')} [{int(pokemon_stats.defense.base)}/{int(pokemon_stats.defense.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.defense.base), int(pokemon_stats.defense.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Sp Atk')} [{int(pokemon_stats.sp_atk.base)}/{int(pokemon_stats.sp_atk.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.sp_atk.base), int(pokemon_stats.sp_atk.min)), style)}",
+            name=f"{translateText(text_style=style, text='Sp Atk')} [{int(pokemon_stats.sp_atk.base)}/{int(pokemon_stats.sp_atk.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.sp_atk.base), int(pokemon_stats.sp_atk.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Sp Def')} [{int(pokemon_stats.sp_def.base)}/{int(pokemon_stats.sp_def.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.sp_def.base), int(pokemon_stats.sp_def.min)), style)}",
+            name=f"{translateText(text_style=style, text='Sp Def')} [{int(pokemon_stats.sp_def.base)}/{int(pokemon_stats.sp_def.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.sp_def.base), int(pokemon_stats.sp_def.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Speed')} [{int(pokemon_stats.speed.base)}/{int(pokemon_stats.speed.min)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.speed.base), int(pokemon_stats.speed.min)), style)}",
+            name=f"{translateText(text_style=style, text='Speed')} [{int(pokemon_stats.speed.base)}/{int(pokemon_stats.speed.minimum)}]",
+            value=f"{createBar(calcBar(int(pokemon_stats.speed.base), int(pokemon_stats.speed.minimum)), style)}",
             inline=False,
         )
 
