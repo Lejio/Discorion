@@ -144,7 +144,10 @@ class PokedexStats(Embed):
 
 class PokedexFrontPage(Embed):
     def __init__(
-        self, pokemon: PokeObject.Version, entries: Dict[str, PokeObject.EntryVersion]
+        self,
+        pokemon: PokeObject.Version,
+        default_pokemon,
+        entries: Dict[str, PokeObject.EntryVersion],
     ):
         super().__init__(
             colour=Style(pokemon.pokedex_data.poke_types[DEFAULT_TYPE])[1],
@@ -163,21 +166,29 @@ class PokedexFrontPage(Embed):
 
         # Randomizeing a entry for display.
         # -- Might mean the number of versions a pokemon has?
-        # print(type(entries))
-        # print(len(entries))
-        # print(entries)
-        if len(entries[pokemon.name].entries) > 0:
+
+        try:
+            if len(entries[pokemon.name].entries) > 0:
+                rand = Random()
+                # entry = rand.randint(0, len(entries[pokemon.name].entries) - 1)
+                self.add_field(
+                    name="Pokedex Entry:",
+                    value=entries[pokemon.name]
+                    .entries[rand.randint(0, len(entries[pokemon.name].entries) - 1)]
+                    .text,
+                    inline=False,
+                )
+            else:
+                self.add_field(name="Pokedex Entry:", value="???", inline=False)
+        except KeyError:
             rand = Random()
-            # entry = rand.randint(0, len(entries[pokemon.name].entries) - 1)
             self.add_field(
                 name="Pokedex Entry:",
-                value=entries[pokemon.name]
-                .entries[rand.randint(0, len(entries[pokemon.name].entries) - 1)]
+                value=entries[default_pokemon]
+                .entries[rand.randint(0, len(entries[default_pokemon].entries) - 1)]
                 .text,
                 inline=False,
             )
-        else:
-            self.add_field(name="Pokedex Entry:", value="???", inline=False)
         self.set_image(url=pokemon.images.discord_image)
 
 
@@ -473,7 +484,11 @@ class PokemonPage(dict):
         for version in range(len(pokemon.versions)):
             self[pokemon.versions[version].name] = PokedexInformation(
                 [
-                    PokedexFrontPage(pokemon.versions[version], pokemon.entries),
+                    PokedexFrontPage(
+                        pokemon.versions[version],
+                        pokemon.versions[0].name,
+                        pokemon.entries,
+                    ),
                     PokedexStats(pokemon.versions[version]),
                     PokedexExtras(pokemon.versions[version]),
                 ]
@@ -511,7 +526,9 @@ class PokemonSelect(Select):
         pokepage = PokedexInformation(
             [
                 PokedexFrontPage(
-                    self.pokemon.versions[chosen_version], self.pokemon.entries
+                    self.pokemon.versions[chosen_version],
+                    self.pokemon.versions[0].name,
+                    self.pokemon.entries,
                 ),
                 PokedexStats(self.pokemon.versions[chosen_version]),
                 PokedexExtras(self.pokemon.versions[chosen_version]),
@@ -540,7 +557,9 @@ class PokemonSelect(Select):
                 pokepage = PokedexInformation(
                     [
                         PokedexFrontPage(
-                            self.pokemon.versions[chosen_value], self.pokemon.entries
+                            self.pokemon.versions[chosen_value],
+                            self.pokemon.versions[0].name,
+                            self.pokemon.entries,
                         ),
                         PokedexStats(self.pokemon.versions[chosen_value]),
                         PokedexExtras(self.pokemon.versions[chosen_value]),
