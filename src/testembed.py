@@ -535,7 +535,7 @@ class PokemonSelect(Select):
             #     self.options[self.pokemon_version_len + 2].default = True
             #     self.default_val = self.options[self.pokemon_version_len + 2]
             case _:
-                chosen_value = self.pokemon.versions.index(value)
+                chosen_value = self.pokemon.versions_list.index(value)
 
                 pokepage = PokedexInformation(
                     [

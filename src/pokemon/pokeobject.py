@@ -347,6 +347,10 @@ class PokeObject:
         self._name = pokemon_raw["name"]
 
     @property
+    def versions_list(self) -> List[str]:
+        return [version.name for version in self._versions]
+
+    @property
     def versions(self) -> List[Version]:
         return self._versions
 
