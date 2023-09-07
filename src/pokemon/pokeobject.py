@@ -288,7 +288,7 @@ class PokeObject:
         def shed(self) -> EvolutionPokemon | None:
             return self._shed
 
-    class AttackCategory:
+    class AttackCategory(dict):
         class Attack:
             def __init__(self, name: str, val: str | None) -> None:
                 self._name: str = name
@@ -309,8 +309,10 @@ class PokeObject:
             self._name: str = category_name
             self._moves: List[self.Attack] = []
 
+            print("1", category_moves)
             for move in category_moves:
                 for name in move:
+                    print(name)
                     self._moves.append(self.Attack(name, move[name]))
 
         @property
