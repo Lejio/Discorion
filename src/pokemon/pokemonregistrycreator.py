@@ -26,7 +26,7 @@ if __name__ == "__main__":
             versions: list = p['versions']
             # versions.append(p['name'])
             name: str = p['name']
-            registry['name_based'][name]: dict = {
+            registry['name_based'][name] = {
                 'id': str(int(versions[0]['data']['pokedex_data']['National No.'])),
                 'versions': []
             }
