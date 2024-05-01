@@ -6,6 +6,7 @@ from poketranslator import translateText, Style
 from poketools.pokemon.pokecalc import *
 from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
+from random import choice
 
 from random import Random
 
@@ -19,65 +20,64 @@ class PokeStats(Embed):
 
     def __init__(self, pokemon: PokeObject):
         super().__init__(
-            colour=Style(pokemon.versions[0].type[0])[1],
-            title=translateText(Style(pokemon.versions[0].type[0])[0], "stats"),
+            colour=Style(pokemon.versions[0].pokedex_data.poke_types[0])[1],
+            title=translateText(Style(pokemon.versions[0].pokedex_data.poke_types[0])[0], "stats"),
             description=f"{createSeparator(10)}",
         )
-
-        self.set_thumbnail(url=pokemon.discord_image)
+        self.set_thumbnail(url=pokemon.versions[0].images.discord_image)
 
         version = pokemon.versions[0]
-        style = Style(pokemon.versions[0].type[0])[0]
+        style = Style(pokemon.versions[0].pokedex_data.poke_types[0])[0]
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='HP')} [{int(version.stats['HP'].base)}/{int(version.stats['HP'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['HP'].base), int(version.stats['HP'].min)), style)}",
+            name=f"{translateText(text_style=style, text='HP')} [{int(version.base_stats.hp.base)}/{int(version.base_stats.hp.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.hp.base), int(version.base_stats.hp.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Attack')} [{int(version.stats['Attack'].base)}/{int(version.stats['Attack'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['Attack'].base), int(version.stats['Attack'].min)), style)}",
+            name=f"{translateText(text_style=style, text='Attack')} [{int(version.base_stats.attack.base)}/{int(version.base_stats.attack.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.attack.base), int(version.base_stats.attack.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Defense')} [{int(version.stats['Defense'].base)}/{int(version.stats['Defense'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['Defense'].base), int(version.stats['Defense'].min)), style)}",
+            name=f"{translateText(text_style=style, text='Defense')} [{int(version.base_stats.defense.base)}/{int(version.base_stats.defense.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.defense.base), int(version.base_stats.defense.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Sp Atk')} [{int(version.stats['Sp. Atk'].base)}/{int(version.stats['Sp. Atk'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['Sp. Atk'].base), int(version.stats['Sp. Atk'].min)), style)}",
+            name=f"{translateText(text_style=style, text='Sp Atk')} [{int(version.base_stats.sp_atk.base)}/{int(version.base_stats.sp_atk.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.sp_atk.base), int(version.base_stats.sp_atk.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Sp Def')} [{int(version.stats['Sp. Def'].base)}/{int(version.stats['Sp. Def'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['Sp. Def'].base), int(version.stats['Sp. Def'].min)), style)}",
+            name=f"{translateText(text_style=style, text='Sp Def')} [{int(version.base_stats.sp_def.base)}/{int(version.base_stats.sp_def.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.sp_def.base), int(version.base_stats.sp_def.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Speed')} [{int(version.stats['Speed'].base)}/{int(version.stats['Speed'].min)}]",
-            value=f"{createBar(calcBar(int(version.stats['Speed'].base), int(version.stats['Speed'].min)), style)}",
+            name=f"{translateText(text_style=style, text='Speed')} [{int(version.base_stats.speed.base)}/{int(version.base_stats.speed.minimum)}]",
+            value=f"{createBar(calcBar(int(version.base_stats.speed.base), int(version.base_stats.speed.minimum)), style)}",
             inline=False,
         )
 
         self.add_field(
             name=f"{createSeparator(10)}",
-            value=f'{translateText(text_style=style, text="Total")} **[{version.stats["Total"]}]**',
+            value=f'{translateText(text_style=style, text="Total")} **[{version.base_stats.total}]**',
         )
 
 
@@ -86,93 +86,92 @@ class PokeInfo(Embed):
         super().__init__(
             colour=Style(pokemon.versions[0].pokedex_data.poke_types[0])[1],
             title="Search Result",
-            description=f"{translateText(text_style=Style(pokemon.versions[0].type[0])[0], text=pokemon.name)}",
+            description=f"{translateText(text_style=Style(pokemon.versions[0].pokedex_data.poke_types[0])[0], text=pokemon.name)}",
         )
         types = ""
 
-        for s in pokemon.versions[0].type:
+        for s in pokemon.versions[0].pokedex_data.poke_types:
             types += Style(style=s)[0].ICON.value
             types += Default.BLANK.value
 
         self.add_field(name=types, value=str(createSeparator(16)), inline=False)
 
-        if len(pokemon.pokedex_entries) > 0:
+        if len(pokemon.entries) > 0:
+            version, entry = choice(list(pokemon.entries.items()))
             rand = Random()
-            entry = rand.randint(0, len(pokemon.pokedex_entries) - 1)
+            entry_val = entry.entries[rand.randint(0, len(entry.entries) - 1)]
             self.add_field(
                 name="Pokedex Entry:",
-                value=pokemon.pokedex_entries[entry].entries[
-                    rand.randint(0, len(pokemon.pokedex_entries[entry].entries) - 1)
-                ],
+                value=f"{entry_val.text}",
                 inline=False,
             )
         else:
             self.add_field(name="Pokedex Entry:", value="???", inline=False)
-        self.set_image(url=pokemon.discord_image)
+        self.set_image(url=pokemon.versions[0].images.discord_image)
 
 
-class PokePokedex(Embed):
-    def __init__(self, pokemon: PokeObject):
-        style = Style(pokemon.versions[0].type[0])[0]
-        super().__init__(
-            colour=Style(pokemon.versions[0].type[0])[1],
-            title=translateText(style, "pokedex"),
-            description=f"{createSeparator(10)}",
-        )
+# class PokePokedex(Embed):
+#     def __init__(self, pokemon: PokeObject):
+#         style = Style(pokemon.versions[0].pokedex_data.poke_types[0])[0]
+#         super().__init__(
+#             colour=Style(pokemon.versions[0].pokedex_data.poke_types[0])[1],
+#             title=translateText(style, "pokedex"),
+#             description=f"{createSeparator(10)}",
+#         )
 
-        version: PokeObject.Version = pokemon.versions[0]
-        self.set_thumbnail(url=style.ICON_IMAGE.value)
-        self.add_field(
-            name=f'{translateText(text_style=style, text="number")}',
-            value=f"{version.national_number}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="species")}',
-            value=f"{version.species}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="weight")}',
-            value=f"{version.weight}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="height")}',
-            value=f"{version.height}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="base xp")}',
-            value=f"{version.base_xp}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="growth")}',
-            value=f"{version.growth_rate}",
-            inline=False,
-        )
-        self.add_field(name=f"{Default.BLANK.value}", value="")
-        self.add_field(
-            name=f'{translateText(text_style=style, text="catch")}',
-            value=f"{version.catch_rate}",
-            inline=False,
-        )
+#         version: PokeObject.Version = pokemon.versions[0]
+#         self.set_thumbnail(url=style.ICON_IMAGE.value)
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="number")}',
+#             value=f"{version.national_number}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="species")}',
+#             value=f"{version.species}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="weight")}',
+#             value=f"{version.weight}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="height")}',
+#             value=f"{version.height}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="base xp")}',
+#             value=f"{version.base_xp}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="growth")}',
+#             value=f"{version.growth_rate}",
+#             inline=False,
+#         )
+#         self.add_field(name=f"{Default.BLANK.value}", value="")
+#         self.add_field(
+#             name=f'{translateText(text_style=style, text="catch")}',
+#             value=f"{version.catch_rate}",
+#             inline=False,
+#         )
 
 
-class PokeAttacks(Embed):
-    def __init__(self, pokemon: PokeObject):
-        style = Style(pokemon.versions[0].type[0])[0]
-        super().__init__(
-            colour=Style(pokemon.versions[0].type[0])[1],
-            title=translateText(style, "moves"),
-            description=f"{createSeparator(10)}",
-        )
+# class PokeAttacks(Embed):
+#     def __init__(self, pokemon: PokeObject):
+#         style = Style(pokemon.versions[0].pokedex_data.poke_types[0])[0]
+#         super().__init__(
+#             colour=Style(pokemon.versions[0].pokedex_data.poke_types[0])[1],
+#             title=translateText(style, "moves"),
+#             description=f"{createSeparator(10)}",
+#         )
 
 
 class TestPrag(View):
@@ -220,15 +219,15 @@ class TestPrag(View):
         await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
 
-class VersionSelect(Select):
-    # Takes in the message and edits it based on the version selected.
-    def __init__(self, versions: list) -> None:
-        options = [SelectOption(label=v, value=v) for v in versions]
-        super().__init__(min_values=1, max_values=1, options=options)
+# class VersionSelect(Select):
+#     # Takes in the message and edits it based on the version selected.
+#     def __init__(self, versions: list) -> None:
+#         options = [SelectOption(label=v, value=v) for v in versions]
+#         super().__init__(min_values=1, max_values=1, options=options)
 
-        self.options[0].default = True
+#         self.options[0].default = True
 
-    async def callback(self, interaction: Interaction):
-        await interaction.response.send_message(
-            f"Selected: {self.values[0]}", ephemeral=True
-        )
+#     async def callback(self, interaction: Interaction):
+#         await interaction.response.send_message(
+#             f"Selected: {self.values[0]}", ephemeral=True
+#         )

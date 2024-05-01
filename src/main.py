@@ -12,10 +12,10 @@ from discord.ext import commands
 from discord import File, Intents, Guild, Embed, Colour, Interaction, Emoji, TextChannel
 
 from pymongo.collection import Collection
-from discord.discorddatabase import DiscordDatabase
+from discorddata.discorddatabase import DiscordDatabase
 
 from utils.supabase import supabase_loader
-from utils.pymongo import load_mongodb
+from utils.mongodriver import load_mongodb
 from poketools.pokemon.pokecalc import *
 from poketools.pokegenerator.pokedatabase import FetchWild
 from poketranslator import *
@@ -114,11 +114,11 @@ async def searchPokemon(interaction: Interaction, name: str):
     pokemon_response = PokeObject(
         pokeCollection.find_one({"_id": int(result_list[1]["id"])})["data"]
     )
-
+    print("Creating pokemon response.")
     pokepage = [
-        PokeInfo(pokemon=pokemon_response),
-        PokeStats(pokemon=pokemon_response),
-        PokePokedex(pokemon=pokemon_response),
+        PokeInfo(pokemon=pokemon_response)
+        # PokeStats(pokemon=pokemon_response),
+        # PokePokedex(pokemon=pokemon_response),
     ]
 
     testview = TestPrag(pokepage)

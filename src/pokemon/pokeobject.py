@@ -309,10 +309,10 @@ class PokeObject:
             self._name: str = category_name
             self._moves: List[self.Attack] = []
 
-            print("1", category_moves)
+            # print("1", category_moves)
             for move in category_moves:
                 for name in move:
-                    print(name)
+                    # print(name)
                     self._moves.append(self.Attack(name, move[name]))
 
         @property
@@ -400,10 +400,12 @@ class PokeObject:
         }
 
 
-with open(
-    "/Users/geneni/Developer/Workspace/Projects/Discoreon/src/poketools/pokegenerator/new_pokedex/6.json",
-    "r",
-) as pokemon_json:
-    pokemon_raw = json.load(pokemon_json)
+# with open(
+#     "../poketools/pokegenerator/new_pokedex/6.json",
+#     "r",
+# ) as pokemon_json:
+#     pokemon_raw = json.load(pokemon_json)
 
-pikachu = PokeObject(pokemon_raw)
+# pikachu = PokeObject(pokemon_raw)
+
+# print(pikachu.versions[0].pokedex_data.poke_types[0])
