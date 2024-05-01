@@ -3,13 +3,12 @@ import time
 from dotenv import load_dotenv
 import os
 
-# import time
 from datetime import datetime
 import json
 
 import logging
 from discord.ext import commands
-from discord.abc import GuildChannel
+# from discord.abc import GuildChannel
 from discord import File, Intents, Guild, Embed, Colour, Interaction, Emoji, TextChannel
 
 from pymongo.collection import Collection
