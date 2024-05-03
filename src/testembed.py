@@ -4,13 +4,8 @@ from discord.colour import Colour
 from discord.types.embed import EmbedType
 from discord.ui import Select, button, View, Button
 from discord import SelectOption, Interaction, Message, InteractionMessage, Embed
-from poketools.pokemon.pokecalc import (
-    calcBar,
-    createBar,
-    createSeparator,
-    translateText,
-)
-from poketranslator import Style
+from pokeutils import createBar, createSeparator, calcBar, translateText
+from pokeutils import Style
 
 from pymongo.collection import Collection
 

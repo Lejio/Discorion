@@ -1,6 +1,20 @@
 from enum import Enum
 
 class Normal(Enum):
+    """Normal type enums pointing to normal emojis in Discord.\n
+    Contains the text emojis, discord icon, icon image, and style bars.\n
+    \n
+    Contains:\n
+    Letters A-Z - Discord emoji pointers to normal letters\n
+    ICON - Discord icon\n
+    ICON_IMAGE - Icon image link\n
+    BAR_END_FILL - End of bar filled\n
+    BAR_START_FILL - Start of bar filled\n
+    BAR_MIDDLE_FILL_SPLIT - Half filled bar middle\n
+    BAR_MIDDLE_FILL - Fully filled bar middle\n
+    BAR_START_FILL_SPLIT - Bar start filled a little bit\n
+    """
+    
     A = "<:N_A:1131683597250740284>"
     B = "<:N_B:1131683606276878347>"
     C = "<:N_C:1131683614669672568>"

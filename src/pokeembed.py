@@ -2,8 +2,8 @@ from discord import Embed, InteractionMessage, Interaction, SelectOption
 from discord.components import SelectOption
 from discord.interactions import Interaction
 from discord.ui import View, Button, Select, Item, button
-from poketranslator import translateText, Style
-from poketools.pokemon.pokecalc import *
+from pokeutils import translateText, Style
+from pokeutils import createBar, createSeparator, calcBar
 from pokemon.pokeobject import PokeObject
 from poketypes.default import Default
 from random import choice
@@ -70,8 +70,8 @@ class PokeStats(Embed):
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Speed')} [{int(version.base_stats.speed.base)}/{int(version.base_stats.speed.minimum)}]",
-            value=f"{createBar(calcBar(int(version.base_stats.speed.base), int(version.base_stats.speed.minimum)), style)}",
+            name=f"{translateText(text_style=style, text='Speed')} [{version.base_stats.speed.base}/{version.base_stats.speed.minimum}]",
+            value=f"{createBar(calcBar(version.base_stats.speed.base, version.base_stats.speed.minimum), style)}",
             inline=False,
         )
 
@@ -110,58 +110,58 @@ class PokeInfo(Embed):
         self.set_image(url=pokemon.versions[0].images.discord_image)
 
 
-# class PokePokedex(Embed):
-#     def __init__(self, pokemon: PokeObject):
-#         style = Style(pokemon.versions[0].pokedex_data.poke_types[0])[0]
-#         super().__init__(
-#             colour=Style(pokemon.versions[0].pokedex_data.poke_types[0])[1],
-#             title=translateText(style, "pokedex"),
-#             description=f"{createSeparator(10)}",
-#         )
+class PokePokedex(Embed):
+    def __init__(self, pokemon: PokeObject):
+        style = Style(pokemon.versions[0].pokedex_data.poke_types[0].type_name)[0]
+        super().__init__(
+            colour=Style(pokemon.versions[0].pokedex_data.poke_types[0].type_name)[1],
+            title=translateText(style, "pokedex"),
+            description=f"{createSeparator(10)}",
+        )
 
-#         version: PokeObject.Version = pokemon.versions[0]
-#         self.set_thumbnail(url=style.ICON_IMAGE.value)
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="number")}',
-#             value=f"{version.national_number}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="species")}',
-#             value=f"{version.species}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="weight")}',
-#             value=f"{version.weight}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="height")}',
-#             value=f"{version.height}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="base xp")}',
-#             value=f"{version.base_xp}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="growth")}',
-#             value=f"{version.growth_rate}",
-#             inline=False,
-#         )
-#         self.add_field(name=f"{Default.BLANK.value}", value="")
-#         self.add_field(
-#             name=f'{translateText(text_style=style, text="catch")}',
-#             value=f"{version.catch_rate}",
-#             inline=False,
-#         )
+        version: PokeObject.Version = pokemon.versions[0]
+        self.set_thumbnail(url=style.ICON_IMAGE.value)
+        self.add_field(
+            name=f'{translateText(text_style=style, text="number")}',
+            value=f"{version.national_number}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="species")}',
+            value=f"{version.species}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="weight")}',
+            value=f"{version.weight}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="height")}',
+            value=f"{version.height}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="base xp")}',
+            value=f"{version.base_xp}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="growth")}',
+            value=f"{version.growth_rate}",
+            inline=False,
+        )
+        self.add_field(name=f"{Default.BLANK.value}", value="")
+        self.add_field(
+            name=f'{translateText(text_style=style, text="catch")}',
+            value=f"{version.catch_rate}",
+            inline=False,
+        )
 
 
 # class PokeAttacks(Embed):

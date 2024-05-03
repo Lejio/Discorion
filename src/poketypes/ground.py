@@ -1,6 +1,19 @@
 from enum import Enum
 
 class Ground(Enum):
+    """Ground type enums pointing to ground emojis in Discord.\n
+    Contains the text emojis, discord icon, icon image, and style bars.\n
+    \n
+    Contains:\n
+    Letters A-Z - Discord emoji pointers to ground letters\n
+    ICON - Discord icon\n
+    ICON_IMAGE - Icon image link\n
+    BAR_END_FILL - End of bar filled\n
+    BAR_START_FILL - Start of bar filled\n
+    BAR_MIDDLE_FILL_SPLIT - Half filled bar middle\n
+    BAR_MIDDLE_FILL - Fully filled bar middle\n
+    BAR_START_FILL_SPLIT - Bar start filled a little bit\n
+    """
 
     A = "<:G_A:1131684728592932874>"
     B = "<:G_B:1131684736700530688>"

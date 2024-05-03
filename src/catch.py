@@ -5,7 +5,7 @@ from discord.ext import commands
 
 import random
 
-from poketranslator import Types, PokeTranslator, StyleBundler
+from pokeutils import Types, PokeTranslator, StyleBundler
 
 types = StyleBundler()
 

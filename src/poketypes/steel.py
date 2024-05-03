@@ -1,6 +1,20 @@
 from enum import Enum
 
 class Steel(Enum):
+    """Steel type enums pointing to steel emojis in Discord.\n
+    Contains the text emojis, discord icon, icon image, and style bars.\n
+    \n
+    Contains:\n
+    Letters A-Z - Discord emoji pointers to steel letters\n
+    ICON - Discord icon\n
+    ICON_IMAGE - Icon image link\n
+    BAR_END_FILL - End of bar filled\n
+    BAR_START_FILL - Start of bar filled\n
+    BAR_MIDDLE_FILL_SPLIT - Half filled bar middle\n
+    BAR_MIDDLE_FILL - Fully filled bar middle\n
+    BAR_START_FILL_SPLIT - Bar start filled a little bit\n
+    """
+    
     A = "<:S_A:1131677835115905044>"
     B = "<:S_B:1131677843726811207>"
     C = "<:S_C:1131677852283179079>"
