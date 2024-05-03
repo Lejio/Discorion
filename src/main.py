@@ -15,9 +15,8 @@ from discorddata.discorddatabase import DiscordDatabase
 
 from utils.supabase import supabase_loader
 from utils.mongodriver import load_mongodb
-from poketools.pokemon.pokecalc import *
 from poketools.pokegenerator.pokedatabase import FetchWild
-from poketranslator import *
+from pokeutils import *
 from pokemon.pokeobject import PokeObject
 from poketools.pokequery import PokeQuery
 from pokeembed import *
@@ -115,9 +114,9 @@ async def searchPokemon(interaction: Interaction, name: str):
     )
     print("Creating pokemon response.")
     pokepage = [
-        PokeInfo(pokemon=pokemon_response)
-        # PokeStats(pokemon=pokemon_response),
-        # PokePokedex(pokemon=pokemon_response),
+        PokeInfo(pokemon=pokemon_response),
+        PokeStats(pokemon=pokemon_response),
+        PokePokedex(pokemon=pokemon_response)
     ]
 
     testview = TestPrag(pokepage)
