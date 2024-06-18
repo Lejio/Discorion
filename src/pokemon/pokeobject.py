@@ -399,13 +399,3 @@ class PokeObject:
             for name in pokemon_entires_raw
         }
 
-
-# with open(
-#     "../poketools/pokegenerator/new_pokedex/6.json",
-#     "r",
-# ) as pokemon_json:
-#     pokemon_raw = json.load(pokemon_json)
-
-# pikachu = PokeObject(pokemon_raw)
-
-# print(pikachu.versions[0].pokedex_data.poke_types[0])

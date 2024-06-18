@@ -85,16 +85,16 @@ class PokedexStats(Embed):
         pokemon_stats = pokemon.base_stats
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='HP')} [{int(pokemon_stats.hp.base)}/{int(pokemon_stats.hp.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.hp.base), int(pokemon_stats.hp.minimum)), style)}",
+            name=f"{translateText(text_style=style, text='HP')} [{pokemon_stats.hp.base}/{pokemon_stats.hp.minimum}]",
+            value=f"{createBar(style, calcBar(pokemon_stats.hp.base, pokemon_stats.hp.minimum))}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Attack')} [{int(pokemon_stats.attack.base)}/{int(pokemon_stats.attack.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.attack.base), int(pokemon_stats.attack.minimum)), style)}",
+            name=f"{translateText(text_style=style, text='Attack')} [{pokemon_stats.attack.base}/{pokemon_stats.attack.minimum}]",
+            value=f"{createBar(style, calcBar(pokemon_stats.attack.base, pokemon_stats.attack.minimum))}",
             inline=False,
         )
 
@@ -102,7 +102,7 @@ class PokedexStats(Embed):
 
         self.add_field(
             name=f"{translateText(text_style=style, text='Defense')} [{int(pokemon_stats.defense.base)}/{int(pokemon_stats.defense.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.defense.base), int(pokemon_stats.defense.minimum)), style)}",
+            value=f"{createBar(style, calcBar(pokemon_stats.defense.base, pokemon_stats.defense.minimum))}",
             inline=False,
         )
 
@@ -110,7 +110,7 @@ class PokedexStats(Embed):
 
         self.add_field(
             name=f"{translateText(text_style=style, text='Sp Atk')} [{int(pokemon_stats.sp_atk.base)}/{int(pokemon_stats.sp_atk.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.sp_atk.base), int(pokemon_stats.sp_atk.minimum)), style)}",
+            value=f"{createBar(style, calcBar(pokemon_stats.sp_atk.base, pokemon_stats.sp_atk.minimum))}",
             inline=False,
         )
 
@@ -118,15 +118,15 @@ class PokedexStats(Embed):
 
         self.add_field(
             name=f"{translateText(text_style=style, text='Sp Def')} [{int(pokemon_stats.sp_def.base)}/{int(pokemon_stats.sp_def.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.sp_def.base), int(pokemon_stats.sp_def.minimum)), style)}",
+            value=f"{createBar(style, calcBar(pokemon_stats.sp_def.base, pokemon_stats.sp_def.minimum))}",
             inline=False,
         )
 
         self.add_field(name=f"{Default.BLANK.value}", value="")
 
         self.add_field(
-            name=f"{translateText(text_style=style, text='Speed')} [{int(pokemon_stats.speed.base)}/{int(pokemon_stats.speed.minimum)}]",
-            value=f"{createBar(calcBar(int(pokemon_stats.speed.base), int(pokemon_stats.speed.minimum)), style)}",
+            name=f"{translateText(text_style=style, text='Speed')} [{pokemon_stats.speed.base}/{pokemon_stats.speed.minimum}]",
+            value=f"{createBar(style, calcBar(pokemon_stats.speed.base, pokemon_stats.speed.minimum))}",
             inline=False,
         )
 
@@ -186,7 +186,7 @@ class PokedexFrontPage(Embed):
 
 
 class PokedexInformation(View):
-    def __init__(self, pages: [Embed]):
+    def __init__(self, pages):
         super().__init__(timeout=600)
         self.pages = pages
         self.page_len = len(pages)
@@ -402,66 +402,66 @@ class EvolutionInformation(View):
         await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
 
-class MovesInformation(View):
-    class MovesPage(Embed):
-        def __init__(self, pokemon: PokeObject, num: int, range_: List[int]):
-            super().__init__(
-                colour=Style(pokemon.versions[DEFAULT_VERSION].type[DEFAULT_TYPE])[1],
-                title="Moves Page",
-                description=f"Page {num} of the moves page",
-            )
+# class MovesInformation(View):
+#     class MovesPage(Embed):
+#         def __init__(self, pokemon: PokeObject, num: int, range_: List[int]):
+#             super().__init__(
+#                 colour=Style(pokemon.versions[DEFAULT_VERSION].pokedex_data.poke_types[DEFAULT_TYPE])[1],
+#                 title="Moves Page",
+#                 description=f"Page {num} of the moves page",
+#             )
 
-            if len(range_) != 2:
-                raise IndexError("Invalid pair range.")
+#             if len(range_) != 2:
+#                 raise IndexError("Invalid pair range.")
 
-            try:
-                self.add_field(name="Moves", value=str(pokemon.attacks))
-            except Exception:
-                print(str(pokemon.attacks))
+#             try:
+#                 self.add_field(name="Moves", value=str(pokemon.attacks))
+#             except Exception:
+#                 print(str(pokemon.attacks))
 
-    def __init__(self, pokemon: PokeObject):
-        super().__init__(timeout=600)
-        self.pages = [self.MovesPage(pokemon, 1, [0, 0])]
-        self.page_len = len(self.pages)
+#     def __init__(self, pokemon: PokeObject):
+#         super().__init__(timeout=600)
+#         self.pages = [self.MovesPage(pokemon, 1, [0, 0])]
+#         self.page_len = len(self.pages)
 
-    async def send(self, message: InteractionMessage, select: Select):
-        self.curr_page = 0
-        # Make custom select object that is able to do callback functions.
-        # Add Embeds to a list and somehow make the buttons show each embed
-        self.prevButton.disabled = True
+#     async def send(self, message: InteractionMessage, select: Select):
+#         self.curr_page = 0
+#         # Make custom select object that is able to do callback functions.
+#         # Add Embeds to a list and somehow make the buttons show each embed
+#         self.prevButton.disabled = True
 
-        if self.page_len == 1:
-            self.nextButton.disabled = True
+#         if self.page_len == 1:
+#             self.nextButton.disabled = True
 
-        self.add_item(select)
-        await message.edit(embed=self.pages[self.curr_page], view=self)
-        self.message = message
+#         self.add_item(select)
+#         await message.edit(embed=self.pages[self.curr_page], view=self)
+#         self.message = message
 
-    @button(label="Prev")
-    async def prevButton(self, interaction: Interaction, button: Button):
-        await interaction.response.defer()
-        self.curr_page -= 1
+#     @button(label="Prev")
+#     async def prevButton(self, interaction: Interaction, button: Button):
+#         await interaction.response.defer()
+#         self.curr_page -= 1
 
-        if self.curr_page == 0:
-            self.prevButton.disabled = True
-            self.nextButton.disabled = False
-        else:
-            self.nextButton.disabled = False
+#         if self.curr_page == 0:
+#             self.prevButton.disabled = True
+#             self.nextButton.disabled = False
+#         else:
+#             self.nextButton.disabled = False
 
-        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+#         await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
-    @button(label="Next")
-    async def nextButton(self, interaction: Interaction, button: Button):
-        await interaction.response.defer()
-        self.curr_page += 1
+#     @button(label="Next")
+#     async def nextButton(self, interaction: Interaction, button: Button):
+#         await interaction.response.defer()
+#         self.curr_page += 1
 
-        if self.curr_page + 1 == self.page_len:
-            self.nextButton.disabled = True
-            self.prevButton.disabled = False
-        else:
-            self.prevButton.disabled = False
+#         if self.curr_page + 1 == self.page_len:
+#             self.nextButton.disabled = True
+#             self.prevButton.disabled = False
+#         else:
+#             self.prevButton.disabled = False
 
-        await self.message.edit(embed=self.pages[self.curr_page], view=self)
+#         await self.message.edit(embed=self.pages[self.curr_page], view=self)
 
 
 class PokemonPage(dict):
@@ -481,7 +481,7 @@ class PokemonPage(dict):
         self["Evolution Information"] = EvolutionInformation(
             cache=cache, pokemon=pokemon
         )
-        self["Moves Information"] = MovesInformation(pokemon)
+        # self["Moves Information"] = MovesInformation(pokemon)
 
 
 class PokemonSelect(Select):
@@ -532,10 +532,10 @@ class PokemonSelect(Select):
                 pokepage = EvolutionInformation(cache=self.cache, pokemon=self.pokemon)
                 self.options[self.pokemon_version_len + 1].default = True
                 self.default_val = self.options[self.pokemon_version_len + 1]
-            case "Moves Information":
-                pokepage = MovesInformation(pokemon=self.pokemon)
-                self.options[self.pokemon_version_len + 2].default = True
-                self.default_val = self.options[self.pokemon_version_len + 2]
+            # case "Moves Information":
+            #     pokepage = MovesInformation(pokemon=self.pokemon)
+            #     self.options[self.pokemon_version_len + 2].default = True
+            #     self.default_val = self.options[self.pokemon_version_len + 2]
             case _:
                 chosen_value = self.pokemon.versions_list.index(value)
 

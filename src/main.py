@@ -15,10 +15,11 @@ from discorddata.discorddatabase import DiscordDatabase
 
 from utils.supabase import supabase_loader
 from utils.mongodriver import load_mongodb
-from poketools.pokegenerator.pokedatabase import FetchWild
+# from poketools.pokegenerator.pokedatabase import FetchWild
 from pokeutils import *
 from pokemon.pokeobject import PokeObject
 from poketools.pokequery import PokeQuery
+# from testembed import TestPrag
 from pokeembed import *
 
 from testembed import *
